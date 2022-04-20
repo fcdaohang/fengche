@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>看板 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E7%9C%8B%E6%9D%BF/</link>
+    <description>Recent content in 看板 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Mon, 28 Feb 2022 19:58:50 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E7%9C%8B%E6%9D%BF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>icytools NFT市场常用工具</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Mon, 28 Feb 2022 19:58:50 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>包括正在mint的项目、地板价、成交量等信息的排序看板</description>
+    </item>
+    
+    <item>
+      <title>vestlab 查看代币释放规则看板</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Mon, 28 Feb 2022 17:47:02 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>用于查看代币分配、释放规则的看板</description>
+    </item>
+    
+    <item>
+      <title>airdrops 空投信息看板</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Mon, 28 Feb 2022 17:28:21 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>展示最近正在空投的项目，喜欢撸空投的玩家可以关注</description>
+    </item>
+    
+    <item>
+      <title>DeFiEye充提币及费率看板</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Mon, 28 Feb 2022 01:04:48 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>查看各交易所充提币信息和最新手续费情况，便于搬砖玩家操作</description>
+    </item>
+    
+    <item>
+      <title>icodrops 新币及空投信息看板</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Mon, 28 Feb 2022 01:01:11 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>除了新币发行，还有空投内容，喜欢此门道的朋友不要错过</description>
+    </item>
+    
+    <item>
+      <title>Cryptorank 新币发行看板</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Mon, 28 Feb 2022 00:55:29 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>一目了然最近将要发行的新币，对于牛市打新的朋友来说再合适不过</description>
+    </item>
+    
+  </channel>
+</rss>

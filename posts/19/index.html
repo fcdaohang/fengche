@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>$LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑 | 风车 - 专注区块链快速安全有效的入门信息</title>
+<meta name="keywords" content="LUNA,UST,Terra,稳定币,19.5年化,长文预警" />
+<meta name="description" content="长文预警关于$UST，一直以来有很多疑惑和困扰占用了我的时间是时候好好谈谈与其相关的Anchor协议（$ANC）、19.5%年化收益的可持续性、$UST挂钩还有$LUNA价格影响的问题了本文还将研究Anchor协议的解决方案是如何能以最佳方式处理这些问题的LUNA为何被各种攻击为何有这么多人讨厌$UST和Anchor协议呢？看看这个一年前$UST市值仅2.6亿美金，Terra（LUNA主链）生态还只有一个协议：Mirror协议。今天它的市值高达112亿美金，其生态已有17个协议落地（2022年还...">
+<meta name="author" content="
+徐望川">
+<link rel="canonical" href="https://fengche.io/posts/19/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.9a70498391f8adca004cded811aefa9d98674c66090df071732233658f113870.css" integrity="sha256-mnBJg5H4rcoATN7YEa76nZhnTGYJDfBxcyIzZY8ROHA=" rel="preload stylesheet" as="style">
+<link rel="preload" href="/fclogo.svg" as="image">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-49BWTSEZDZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49BWTSEZDZ');
+</script><meta property="og:title" content="$LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑" />
+<meta property="og:description" content="长文预警关于$UST，一直以来有很多疑惑和困扰占用了我的时间是时候好好谈谈与其相关的Anchor协议（$ANC）、19.5%年化收益的可持续性、$UST挂钩还有$LUNA价格影响的问题了本文还将研究Anchor协议的解决方案是如何能以最佳方式处理这些问题的LUNA为何被各种攻击为何有这么多人讨厌$UST和Anchor协议呢？看看这个一年前$UST市值仅2.6亿美金，Terra（LUNA主链）生态还只有一个协议：Mirror协议。今天它的市值高达112亿美金，其生态已有17个协议落地（2022年还..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fengche.io/posts/19/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-02T22:12:51&#43;08:00" />
+<meta property="article:modified_time" content="2022-03-02T22:12:51&#43;08:00" />
+<meta property="og:image" content="https://fengche.io/fcslogo.png" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="$LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑"/>
+<meta name="twitter:description" content="长文预警关于$UST，一直以来有很多疑惑和困扰占用了我的时间是时候好好谈谈与其相关的Anchor协议（$ANC）、19.5%年化收益的可持续性、$UST挂钩还有$LUNA价格影响的问题了本文还将研究Anchor协议的解决方案是如何能以最佳方式处理这些问题的LUNA为何被各种攻击为何有这么多人讨厌$UST和Anchor协议呢？看看这个一年前$UST市值仅2.6亿美金，Terra（LUNA主链）生态还只有一个协议：Mirror协议。今天它的市值高达112亿美金，其生态已有17个协议落地（2022年还..."/>
+<meta name="twitter:image" content="https://fengche.io/fcslogo.png"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "文章精选",
+      "item": "https://fengche.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "$LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑",
+      "item": "https://fengche.io/posts/19/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "$LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑",
+  "name": "$LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑",
+  "description": "长文预警关于$UST，一直以来有很多疑惑和困扰占用了我的时间是时候好好谈谈与其相关的Anchor协议（$ANC）、19.5%年化收益的可持续性、$UST挂钩还有$LUNA价格影响的问题了本文还将研究Anchor协议的解决方案是如何能以最佳方式处理这些问题的LUNA为何被各种攻击为何有这么多人讨厌$UST和Anchor协议呢？看看这个一年前$UST市值仅2.6亿美金，Terra（LUNA主链）生态还只有一个协议：Mirror协议。今天它的市值高达112亿美金，其生态已有17个协议落地（2022年还...",
+  "keywords": [
+    "LUNA,UST,Terra,稳定币,19.5年化,长文预警"
+  ],
+  "articleBody": "长文预警\n关于$UST，一直以来有很多疑惑和困扰占用了我的时间\n是时候好好谈谈与其相关的Anchor协议（$ANC）、19.5%年化收益的可持续性、$UST挂钩还有$LUNA价格影响的问题了\n本文还将研究Anchor协议的解决方案是如何能以最佳方式处理这些问题的\nLUNA为何被各种攻击 为何有这么多人讨厌$UST和Anchor协议呢？看看这个\n一年前$UST市值仅2.6亿美金，Terra（LUNA主链）生态还只有一个协议：Mirror协议。\n今天它的市值高达112亿美金，其生态已有17个协议落地（2022年还将增加100个以上项目）\n1年增长了43倍\n$UST已经超过$DAI甚至目标为稳定币头把交椅\n听上去不太可能？也许，但是看到Terra在基于0的基础上如此成功的市场营销，简直太疯狂。\n当$UST市值10亿美金时，@stablekwon（Terry联合创始人兼CEO）告诉人们$UST市值在2021年底将达到100亿美金\n只有少数人相信他，而他的确兑现了诺言。\n那么是什么保持着Terra经济生态的发展呢？\n答案是：Anchor Protocol\n了解Anchor协议 Anchor协议大致是一个稳定币储蓄账户，易于使用到一个5岁的孩子也能理解。\n以$UST年化19.5%的收益率进行奖励，你就获得了一个很棒的理财产品。\n你存入$UST，得到$UST 19.5%的年化收益，就是这样。\n几乎所有其他稳定币质押/收益机会要么很难理解很难使用，要么高年化很快就消失。\n也就是说Acnhor协议是一个享有19.5%年化收益且收益率永不过期的储蓄产品。\n还是不相信为什么这个产品如此成功？\n首先，在加密浪潮以及推特上，常见的是了解和使用加密钱包以及各种跨链操作的人，但是请记住，对于现实中大多数人而言，这非常难。\nAnchor协议通过提供一种具有19.5%的存款收益率稳定币解决了这个问题并面向股票、债券和房地产的投资竞争。\n这吸引了这些传统市场的投资者（相对于加密投资者而言）。\n后续会回到稳定保持19.5%年化收益问题\n但在此之前，我们必须了解$UST和$LUNA之间的机制和关系。\n$UST和$LUNA的机制和关系 $UST稳定币由另一种资产提供背后支撑-$LUNA。为了保持挂钩，流通中稳定币的供应将被改变以满足需求。\n过程？\n它是通过$UST和$LUNA之间一个简单的燃烧/铸造机制完成的。\n1个$UST可以随时兑换1美元或价值1美元的$LUNA\n举个例子：$UST 当前价格 $0.95 (低于挂钩价)\n在这个例子中，任何人可用$0.95购买$UST以及燃烧它去换取等值1美元的$LUNA，这将导致$UST重新接近其挂钩价，而且用户获得0.05美元无风险利润。\n例子2：$UST 当前价格 $1.05 (高于挂钩价)\n在这个例子中，用户可购买价值1美元的$LUNA并燃烧它获得1个$UST（价值$1.05）,结果也将导致$UST重新接近挂钩价，而且用户获得0.05美元无风险利润。\n你明白这是如何工作的吗？\n当$UST铸造时，对应的$LUNA也会被烧毁。换句话说，随着对$UST的需求上升，$LUNA的供应量就会下降，反之亦然。\n2021年秋季，我们看到$UST需求大幅增长。这导致了$LUNA的大幅燃烧，也就是$LUNA的供应减少（通货紧缩）。 由于$LUNA流通较少，加上$UST需求增多，$LUNA的价格便水涨船高。\n$UST的市值在3个月内从25亿美金增长至100亿美金，而$LUNA的价格也近乎出现相同的涨幅（大约29美金涨至103美金，并达到ATH年内高点）。\n所以，当市场上涨时，一切都很好。系统性风险来自死亡螺旋或银行挤兑。\n$UST和$LUNA崩盘的风险 而当$UST长期跌破挂钩汇率时，以下操作是有利可图的：\n 烧掉$UST铸造$LUNA 卖掉$LUNA获利 重复以上操作  这将导致$LUNA的价格暴跌，而失去$LUNA价格支撑的$UST将变得一文不值。\n让我进一步解释一下：\n如果$UST跌破1美元，烧掉他并铸造$LUNA就能卖掉赚钱，这将导致$LUNA的供应量大幅增加，加上卖单压力$LUNA价格自然就会降低（OTC柜台交易不是立即的，而是积累一段时间内的大量交易）。\n$LUNA的价格下跌最终导致恐慌，每个人争相恐后出售自己的$LUNA，Terra生态系统中的信任将消失，使$UST变得一文不值。\n然而，自21年5月以来，$UST跌破挂钩汇率，人们谈论这种死亡螺旋的风险却从未发生过。\n$LUNA是否由可能经历519时期跌至6美元相同的崩盘呢？\n自5月以来，Terra生态系统发生了很多事情，让我来解释一下为什么我认为不会再发生这样严重的崩盘。\n519时期，$BTC从6万美元下跌到3万美元时，市场出现了很多恐慌。各种山寨币雪崩，$LUNA也不例外。\n$LUNA大幅下跌的原因和其他币种类似，它也是因为清算，Anchor协议的清算。\n投资者用他们的$LUNA和$ETH借款参与市场，并且没能及时偿还这些贷款。\n$LUNA价格随着清算快速下跌-借入资产的抵押品价值下降-清算-$LUNA价格下跌更多-抵押品价值降低-流动性增加-继续下跌…诸如此类。\n$UST和$LUNA崩盘会发生吗？ 不会，为什么我认为这不会再次发生？请看：\n  Kujira Orca: 一种可以从 Anchor协议 购买他人清算资产的协议（类似于不良资产处置） 这将导致代替被清算的$LUNA直接砸盘的风险，有了这个协议，可以经由其用户扮演买家的角色立即购买这些被清算的$LUNA（相当于保护$LUNA的价格-没有流动性投入二级市场）\n  Whitewhale协议（白鲸协议）：让你我这样的普通散户投资者使用Anchor协议利用套利机会赚钱的协议。 这将保护$UST的汇率挂钩。官方发布了视频解释了协议是如何工作的：https://www.youtube.com/watch?v=ttdYpSmSx4Y（风车注：类似套利机器人，它会自动使用协议资金在$UST汇率脱钩时进行反复的套利交易从而达到获利）\n  Oracle rewards: 社区池中有14亿美元的$UST和3000万美元的$LUNA代币，将在未来2年内奖励$LUNA的质押者。\n  质押奖励将使$LUNA的价格越低越具备吸引力，人们会越来越多的购买$LUNA和$UST 价格上涨+更少清算。（上图）\n19.5%的高年化可持续吗？ OK，现在我们应该明白$UST和$LUNA背后的各种关联机制了，可以开始讨论Anchor协议以及可持续的19.5%年化收益率\n将Anchor协议看作一家公司。\n为了支付19.5%的年化收益率，他们需要收入。\nAnchor两条途径赚钱：\n 用户贷款的利息收入：11.5% 抵押品的质押奖励（风车注明：贷款需要抵押品，而链上抵押品是可以立刻质押获利，没有或极低损耗）：bLUNA 8.5%/bETH 4.6%  Anchor的资产负债表：\n花费 总存款利息支出：$55亿的$USTx19.5% / 100 = $10亿7千万 收入 借出的利息收入： $UST：$13亿5千万 x 15% / 100 = $2亿 质押奖励 bLUNA：$28亿 x 8.5% / 100 = $2.4亿 质押奖励 bETH：$4.3亿 x 4.6% / 100 = $2千万\n余额: -10亿7千万 + 2亿 + 2.4亿 + 2千万 = -$6亿1千万\n目前Anchor协议每年有6.1亿美元的赤字（亏）\n这相当于每天亏170万美元，这就是为什么自12月$LUNA的年内新高以来收益率储备一直下降很多的原因。\n是的，Anchor协议有一个收益储备，可以支付19.5%，直到储备为空。 收益率储备在上个月稳步下降，人们开始担忧。\n但请记住，收益率储备是为这样的市场环境而创建的。我们应该感谢甚至存在收益储备。 如果收益率储备归零，这不是世界末日。 APY将根据市场环境进行调整。\n现在大约是9-10%，但它会更高（你很快会明白为什么），那么 Terra 如何解决这个问题呢？\n @stablekwon 暗示将向收益储备注入 1-3 亿美元（但这只是一个短期解决方案） 更多 bAsset（风车注：跨链资产） 进入 Terra（bSOL 和 bATOM 已确认，我相信还会有更多） Anchor V2协议模型：可以添加多个bAssets（例如$SOL或$AVAX），更高的收入和更高的质押奖励 使用社区池中的 $UST 来增加收益储备（短期） 限制 Degenbox $UST - $MIM：（这在Wonderland $TIME 的 Sifu 丑闻之后已经得到处理），我认为人们不会继续借用 $MIM，这也消除了对 $UST 的需求。 限制每个用户的存款（不太现实，因为这会阻止 Terra 生态系统的发展） 为Anchor协议中的 $ANC-token 做一个用例：比如orion.money或crypto.com，如果你有$ORION或$CRO。和它们相比，你的稳定币投资收益回报更高，为何还去投资不稳定的山寨币呢？所以为什么Anchor协议不能做类似的事情，例如你想要19.5%的高年化，你必须拥有多少数量的$ANC，如果没有，年化收入就降至15%等等。  我确信有人已经写过这方面的文章，但我希望Anchor团队能够更多地探索这个模型。 如果这已经是一个被拒绝的治理提案，我很想知道为什么：D\n如你所见，有很多解决方案，我认为Terra团队会解决这个问题。 我唯一担心的是@stablekwon是否选择不重新填充收益储备。 因为，他不必。\n但 10-15% 之间的短暂锚定利率可能不会受欢迎。 我相信很多人会从Anchor协议中提出他们的存款并寻求其他收益机会（贪婪本性）。\n这样想吧。 11月初，Degenbox策略来了，突然间你可以在$UST稳定币上获得超过100%的年化。人们开始习惯，越来越多的人变得贪婪。\n当然，之后人们开始对Degenbox策略失去信任，重新认可Anchor协议的19.5%年化。\n但$FTM、$AVAX、$SOL和$ETH等其他公链上仍然有很多收益机会，对投资者非常有吸引力。我认为@stablekwon 无法承担不补充收益储备的机会。\n如果锚定率降低，人们将从$UST逃到其他机会（贪婪），这将减少$UST的市值并增加$LUNA供应 = 降低$LUNA价格。\n总结和深入探索 Anchor Protocol 是一个超级成功的借贷协议，也是 Terra 生态系统的基石。我认为 Anchor协议继续照常营业（19.5%年化）对Terra的成功至关重要。\n如果您想要更多关于以下方面的阅读材料： - Anchor协议的收益储备\n@jarzoombek关于Anchor协议和$LUNA的帖子：\n@danku_r 关于Anchor协议和收益储备的视频解释（英文）\n也非常感谢@cryptoharry_ 和@Matt___Cohen对Anchor协议的精彩讨论\n如果你看到$DAI和$FRAX支持者散布关于$LUNA和$UST的谣言，请记住他们没有阅读Terra Luna和Anchor协议白皮书。\n加密货币中没有什么是无风险的，但我希望这个帖子能让你更容易理解 Anchor、$LUNA和$UST的工作原理。\n就是这样。 我还有一份免费的时事通讯，您可以在此处订阅：\n如果您喜欢，可以通过转发第一个帖子来分享它，我会很高兴，谢谢！\n原文链接\n",
+  "wordCount" : "4379",
+  "inLanguage": "zh",
+  "datePublished": "2022-03-02T22:12:51+08:00",
+  "dateModified": "2022-03-02T22:12:51+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://fengche.io/posts/19/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "风车 - 专注区块链快速安全有效的入门信息",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://fengche.io" accesskey="h" title="风车 - 专注区块链快速安全有效的入门信息 (Alt + H)">
+                <img src="/fclogo.svg" alt="logo" aria-label="logo" height=" 36px"></a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://fengche.io/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/nav/" title="导航">
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/editors/" title="作者">
+                    <span>作者</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://fengche.io">主页</a>&nbsp;»&nbsp;<a href="https://fengche.io/posts/">文章精选</a></div>
+    <h1 class="post-title">
+      $LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑
+    </h1>
+    <div class="post-description">
+      内容简介：<br>
+      长文预警关于$UST，一直以来有很多疑惑和困扰占用了我的时间是时候好好谈谈与其相关的Anchor协议（$ANC）、19.5%年化收益的可持续性、$UST挂钩还有$LUNA价格影响的问题了本文还将研究Anchor协议的解决方案是如何能以最佳方式处理这些问题的LUNA为何被各种攻击为何有这么多人讨厌$UST和Anchor协议呢？看看这个一年前$UST市值仅2.6亿美金，Terra（LUNA主链）生态还只有一个协议：Mirror协议。今天它的市值高达112亿美金，其生态已有17个协议落地（2022年还...
+    </div>
+    <div class="post-meta"><span title='2022-03-02 22:12:51 +0800 +0800'>三月 2, 2022</span>&nbsp;·&nbsp;阅读耗时 9 分钟&nbsp;·&nbsp;
+<a href="/editors/%e5%be%90%e6%9c%9b%e5%b7%9d">徐望川</a>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#luna%e4%b8%ba%e4%bd%95%e8%a2%ab%e5%90%84%e7%a7%8d%e6%94%bb%e5%87%bb" aria-label="LUNA为何被各种攻击">LUNA为何被各种攻击</a></li>
+                <li>
+                    <a href="#%e4%ba%86%e8%a7%a3anchor%e5%8d%8f%e8%ae%ae" aria-label="了解Anchor协议">了解Anchor协议</a></li>
+                <li>
+                    <a href="#ust%e5%92%8cluna%e7%9a%84%e6%9c%ba%e5%88%b6%e5%92%8c%e5%85%b3%e7%b3%bb" aria-label="$UST和$LUNA的机制和关系">$UST和$LUNA的机制和关系</a></li>
+                <li>
+                    <a href="#ust%e5%92%8cluna%e5%b4%a9%e7%9b%98%e7%9a%84%e9%a3%8e%e9%99%a9" aria-label="$UST和$LUNA崩盘的风险">$UST和$LUNA崩盘的风险</a></li>
+                <li>
+                    <a href="#ust%e5%92%8cluna%e5%b4%a9%e7%9b%98%e4%bc%9a%e5%8f%91%e7%94%9f%e5%90%97" aria-label="$UST和$LUNA崩盘会发生吗？">$UST和$LUNA崩盘会发生吗？</a></li>
+                <li>
+                    <a href="#195%e7%9a%84%e9%ab%98%e5%b9%b4%e5%8c%96%e5%8f%af%e6%8c%81%e7%bb%ad%e5%90%97" aria-label="19.5%的高年化可持续吗？">19.5%的高年化可持续吗？</a></li>
+                <li>
+                    <a href="#%e6%80%bb%e7%bb%93%e5%92%8c%e6%b7%b1%e5%85%a5%e6%8e%a2%e7%b4%a2" aria-label="总结和深入探索">总结和深入探索</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+    
+    <pre tabindex="0">
+<code class="hljs diff">以下为赞助内容：<br>
+点击风车邀请链接或使用邀请码开户<br>
+每笔手续费均可免去20%<br>
+<a href="https://accounts.binance.me/zh-CN/register?ref=XVZ8RMFQ">币安注册开户</a> 邀请码：XVZ8RMFQ<br>
+<a href="https://www.ouyicn.kim/join/267411054">OKX注册开户</a> 邀请码：267411054
+</code>
+    </pre>
+    <p>长文预警</p>
+<p>关于$UST，一直以来有很多疑惑和困扰占用了我的时间</p>
+<p>是时候好好谈谈与其相关的Anchor协议（$ANC）、19.5%年化收益的可持续性、$UST挂钩还有$LUNA价格影响的问题了</p>
+<p>本文还将研究Anchor协议的解决方案是如何能以最佳方式处理这些问题的</p>
+<h2 id="luna为何被各种攻击">LUNA为何被各种攻击<a hidden class="anchor" aria-hidden="true" href="#luna为何被各种攻击">#</a></h2>
+<p>为何有这么多人讨厌$UST和Anchor协议呢？看看这个</p>
+<p>一年前$UST市值仅2.6亿美金，Terra（LUNA主链）生态还只有一个协议：Mirror协议。</p>
+<p>今天它的市值高达112亿美金，其生态已有17个协议落地（2022年还将增加100个以上项目）</p>
+<p>1年增长了43倍</p>
+<p><img src="http://172.247.143.114:8088/assets/5f62ed5c-01b4-455a-9985-b1dbd0c1c17a.png" alt=""></p>
+<p>$UST已经超过$DAI甚至目标为稳定币头把交椅</p>
+<p>听上去不太可能？也许，但是看到Terra在基于0的基础上如此成功的市场营销，简直太疯狂。</p>
+<p>当$UST市值10亿美金时，<a href="https://twitter.com/stablekwon">@stablekwon</a>（Terry联合创始人兼CEO）告诉人们$UST市值在2021年底将达到100亿美金</p>
+<p>只有少数人相信他，而他的确兑现了诺言。</p>
+<p>那么是什么保持着Terra经济生态的发展呢？</p>
+<p>答案是：Anchor Protocol</p>
+<h2 id="了解anchor协议">了解Anchor协议<a hidden class="anchor" aria-hidden="true" href="#了解anchor协议">#</a></h2>
+<p>Anchor协议大致是一个稳定币储蓄账户，易于使用到一个5岁的孩子也能理解。</p>
+<p>以$UST年化19.5%的收益率进行奖励，你就获得了一个很棒的理财产品。</p>
+<p>你存入$UST，得到$UST 19.5%的年化收益，就是这样。</p>
+<p>几乎所有其他稳定币质押/收益机会要么很难理解很难使用，要么高年化很快就消失。</p>
+<p>也就是说Acnhor协议是一个享有19.5%年化收益且收益率永不过期的储蓄产品。</p>
+<p>还是不相信为什么这个产品如此成功？</p>
+<p>首先，在加密浪潮以及推特上，常见的是了解和使用加密钱包以及各种跨链操作的人，但是请记住，对于现实中大多数人而言，这非常难。</p>
+<p>Anchor协议通过提供一种具有19.5%的存款收益率稳定币解决了这个问题并面向股票、债券和房地产的投资竞争。</p>
+<p>这吸引了这些传统市场的投资者（相对于加密投资者而言）。</p>
+<p>后续会回到稳定保持19.5%年化收益问题</p>
+<p>但在此之前，我们必须了解$UST和$LUNA之间的机制和关系。</p>
+<h2 id="ust和luna的机制和关系">$UST和$LUNA的机制和关系<a hidden class="anchor" aria-hidden="true" href="#ust和luna的机制和关系">#</a></h2>
+<p>$UST稳定币由另一种资产提供背后支撑-$LUNA。为了保持挂钩，流通中稳定币的供应将被改变以满足需求。</p>
+<p>过程？</p>
+<p>它是通过$UST和$LUNA之间一个简单的燃烧/铸造机制完成的。</p>
+<p>1个$UST可以随时兑换1美元或价值1美元的$LUNA</p>
+<p>举个例子：$UST 当前价格 $0.95 (低于挂钩价)</p>
+<p>在这个例子中，任何人可用$0.95购买$UST以及燃烧它去换取等值1美元的$LUNA，这将导致$UST重新接近其挂钩价，而且用户获得0.05美元无风险利润。</p>
+<p>例子2：$UST 当前价格 $1.05 (高于挂钩价)</p>
+<p>在这个例子中，用户可购买价值1美元的$LUNA并燃烧它获得1个$UST（价值$1.05）,结果也将导致$UST重新接近挂钩价，而且用户获得0.05美元无风险利润。</p>
+<p>你明白这是如何工作的吗？</p>
+<p>当$UST铸造时，对应的$LUNA也会被烧毁。换句话说，随着对$UST的需求上升，$LUNA的供应量就会下降，反之亦然。</p>
+<p>2021年秋季，我们看到$UST需求大幅增长。这导致了$LUNA的大幅燃烧，也就是$LUNA的供应减少（通货紧缩）。
+由于$LUNA流通较少，加上$UST需求增多，$LUNA的价格便水涨船高。</p>
+<p>$UST的市值在3个月内从25亿美金增长至100亿美金，而$LUNA的价格也近乎出现相同的涨幅（大约29美金涨至103美金，并达到ATH年内高点）。</p>
+<p>所以，当市场上涨时，一切都很好。系统性风险来自死亡螺旋或银行挤兑。</p>
+<h2 id="ust和luna崩盘的风险">$UST和$LUNA崩盘的风险<a hidden class="anchor" aria-hidden="true" href="#ust和luna崩盘的风险">#</a></h2>
+<p>而当$UST长期跌破挂钩汇率时，以下操作是有利可图的：</p>
+<ol>
+<li>烧掉$UST铸造$LUNA</li>
+<li>卖掉$LUNA获利</li>
+<li>重复以上操作</li>
+</ol>
+<p>这将导致$LUNA的价格暴跌，而失去$LUNA价格支撑的$UST将变得一文不值。</p>
+<p>让我进一步解释一下：</p>
+<p>如果$UST跌破1美元，烧掉他并铸造$LUNA就能卖掉赚钱，这将导致$LUNA的供应量大幅增加，加上卖单压力$LUNA价格自然就会降低（OTC柜台交易不是立即的，而是积累一段时间内的大量交易）。</p>
+<p>$LUNA的价格下跌最终导致恐慌，每个人争相恐后出售自己的$LUNA，Terra生态系统中的信任将消失，使$UST变得一文不值。</p>
+<p>然而，自21年5月以来，$UST跌破挂钩汇率，人们谈论这种死亡螺旋的风险却从未发生过。</p>
+<p>$LUNA是否由可能经历519时期跌至6美元相同的崩盘呢？</p>
+<p>自5月以来，Terra生态系统发生了很多事情，让我来解释一下为什么我认为不会再发生这样严重的崩盘。</p>
+<p>519时期，$BTC从6万美元下跌到3万美元时，市场出现了很多恐慌。各种山寨币雪崩，$LUNA也不例外。</p>
+<p>$LUNA大幅下跌的原因和其他币种类似，它也是因为清算，Anchor协议的清算。</p>
+<p>投资者用他们的$LUNA和$ETH借款参与市场，并且没能及时偿还这些贷款。</p>
+<p>$LUNA价格随着清算快速下跌-&gt;借入资产的抵押品价值下降-&gt;清算-&gt;$LUNA价格下跌更多-&gt;抵押品价值降低-&gt;流动性增加-&gt;继续下跌&hellip;诸如此类。</p>
+<h2 id="ust和luna崩盘会发生吗">$UST和$LUNA崩盘会发生吗？<a hidden class="anchor" aria-hidden="true" href="#ust和luna崩盘会发生吗">#</a></h2>
+<p>不会，为什么我认为这不会再次发生？请看：</p>
+<ol>
+<li>
+<p>Kujira Orca: 一种可以从 Anchor协议 购买他人清算资产的协议（类似于不良资产处置）
+这将导致代替被清算的$LUNA直接砸盘的风险，有了这个协议，可以经由其用户扮演买家的角色立即购买这些被清算的$LUNA（相当于保护$LUNA的价格-没有流动性投入二级市场）</p>
+</li>
+<li>
+<p>Whitewhale协议（白鲸协议）：让你我这样的普通散户投资者使用Anchor协议利用套利机会赚钱的协议。
+这将保护$UST的汇率挂钩。官方发布了视频解释了协议是如何工作的：https://www.youtube.com/watch?v=ttdYpSmSx4Y（风车注：类似套利机器人，它会自动使用协议资金在$UST汇率脱钩时进行反复的套利交易从而达到获利）</p>
+</li>
+<li>
+<p>Oracle rewards: 社区池中有14亿美元的$UST和3000万美元的$LUNA代币，将在未来2年内奖励$LUNA的质押者。</p>
+</li>
+</ol>
+<p>质押奖励将使$LUNA的价格越低越具备吸引力，人们会越来越多的购买$LUNA和$UST
+<img src="http://172.247.143.114:8088/assets/f1ea8493-b5ba-4fc9-88ee-b32ceb92ecb8.png" alt=""></p>
+<p>价格上涨+更少清算。（上图）</p>
+<h2 id="195的高年化可持续吗">19.5%的高年化可持续吗？<a hidden class="anchor" aria-hidden="true" href="#195的高年化可持续吗">#</a></h2>
+<p>OK，现在我们应该明白$UST和$LUNA背后的各种关联机制了，可以开始讨论Anchor协议以及可持续的19.5%年化收益率</p>
+<p>将Anchor协议看作一家公司。</p>
+<p>为了支付19.5%的年化收益率，他们需要收入。</p>
+<p>Anchor两条途径赚钱：</p>
+<ol>
+<li>用户贷款的利息收入：11.5%</li>
+<li>抵押品的质押奖励（风车注明：贷款需要抵押品，而链上抵押品是可以立刻质押获利，没有或极低损耗）：bLUNA 8.5%/bETH 4.6%</li>
+</ol>
+<p>Anchor的资产负债表：</p>
+<p>花费
+总存款利息支出：$55亿的$USTx19.5% / 100 = $10亿7千万
+收入
+借出的利息收入： $UST：$13亿5千万 x 15% / 100 = $2亿
+质押奖励 bLUNA：$28亿 x 8.5% / 100 = $2.4亿
+质押奖励 bETH：$4.3亿 x 4.6% / 100 = $2千万</p>
+<p>余额: -10亿7千万 + 2亿 + 2.4亿 + 2千万 = -$6亿1千万</p>
+<p>目前Anchor协议每年有6.1亿美元的赤字（亏）</p>
+<p>这相当于每天亏170万美元，这就是为什么自12月$LUNA的年内新高以来收益率储备一直下降很多的原因。</p>
+<p><img src="http://172.247.143.114:8088/assets/6bce1aa5-9a6d-4522-8616-a4a10265134c.png" alt=""></p>
+<p>是的，Anchor协议有一个收益储备，可以支付19.5%，直到储备为空。
+收益率储备在上个月稳步下降，人们开始担忧。</p>
+<p>但请记住，收益率储备是为这样的市场环境而创建的。我们应该感谢甚至存在收益储备。
+如果收益率储备归零，这不是世界末日。 APY将根据市场环境进行调整。</p>
+<p>现在大约是9-10%，但它会更高（你很快会明白为什么），那么 Terra 如何解决这个问题呢？</p>
+<ol>
+<li>@stablekwon 暗示将向收益储备注入 1-3 亿美元（但这只是一个短期解决方案）</li>
+<li>更多 bAsset（风车注：跨链资产） 进入 Terra（bSOL 和 bATOM 已确认，我相信还会有更多）</li>
+<li>Anchor V2协议模型：可以添加多个bAssets（例如$SOL或$AVAX），更高的收入和更高的质押奖励</li>
+<li>使用社区池中的 $UST 来增加收益储备（短期）</li>
+<li>限制 Degenbox $UST - $MIM：（这在Wonderland $TIME 的 Sifu 丑闻之后已经得到处理），我认为人们不会继续借用 $MIM，这也消除了对 $UST 的需求。</li>
+<li>限制每个用户的存款（不太现实，因为这会阻止 Terra 生态系统的发展）</li>
+<li>为Anchor协议中的 $ANC-token 做一个用例：比如orion.money或crypto.com，如果你有$ORION或$CRO。和它们相比，你的稳定币投资收益回报更高，为何还去投资不稳定的山寨币呢？所以为什么Anchor协议不能做类似的事情，例如你想要19.5%的高年化，你必须拥有多少数量的$ANC，如果没有，年化收入就降至15%等等。</li>
+</ol>
+<p>我确信有人已经写过这方面的文章，但我希望Anchor团队能够更多地探索这个模型。
+如果这已经是一个被拒绝的治理提案，我很想知道为什么：D</p>
+<p>如你所见，有很多解决方案，我认为Terra团队会解决这个问题。
+我唯一担心的是@stablekwon是否选择不重新填充收益储备。 因为，他不必。</p>
+<p>但 10-15% 之间的短暂锚定利率可能不会受欢迎。
+我相信很多人会从Anchor协议中提出他们的存款并寻求其他收益机会（贪婪本性）。</p>
+<p>这样想吧。 11月初，Degenbox策略来了，突然间你可以在$UST稳定币上获得超过100%的年化。人们开始习惯，越来越多的人变得贪婪。</p>
+<p>当然，之后人们开始对Degenbox策略失去信任，重新认可Anchor协议的19.5%年化。</p>
+<p>但$FTM、$AVAX、$SOL和$ETH等其他公链上仍然有很多收益机会，对投资者非常有吸引力。我认为<a href="https://twitter.com/stablekwon">@stablekwon</a> 无法承担不补充收益储备的机会。</p>
+<p>如果锚定率降低，人们将从$UST逃到其他机会（贪婪），这将减少$UST的市值并增加$LUNA供应 = 降低$LUNA价格。</p>
+<h2 id="总结和深入探索">总结和深入探索<a hidden class="anchor" aria-hidden="true" href="#总结和深入探索">#</a></h2>
+<p>Anchor Protocol 是一个超级成功的借贷协议，也是 Terra 生态系统的基石。我认为 Anchor协议继续照常营业（19.5%年化）对Terra的成功至关重要。</p>
+<p>如果您想要更多关于以下方面的阅读材料： - <a href="https://twitter.com/YieldLabs/status/1486748270646997007">Anchor协议的收益储备</a></p>
+<p><a href="https://twitter.com/jarzoombek/status/1486698407561510919">@jarzoombek关于Anchor协议和$LUNA的帖子：</a></p>
+<p>@danku_r <a href="https://www.youtube.com/watch?v=kobiOyU092M">关于Anchor协议和收益储备的视频解释（英文）</a></p>
+<p>也非常感谢@cryptoharry_ 和@Matt___Cohen对Anchor协议的精彩讨论</p>
+<p>如果你看到$DAI和$FRAX支持者散布关于$LUNA和$UST的谣言，请记住他们没有阅读Terra Luna和Anchor协议白皮书。</p>
+<p>加密货币中没有什么是无风险的，但我希望这个帖子能让你更容易理解 Anchor、$LUNA和$UST的工作原理。</p>
+<p>就是这样。 我还有一份免费的时事通讯，您可以在<a href="https://www.getrevue.co/profile/route2fi/">此处订阅</a>：</p>
+<p>如果您喜欢，可以通过转发第一个帖子来分享它，我会很高兴，谢谢！</p>
+<p><a href="https://twitter.com/Route2FI/status/1487079648609640456">原文链接</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://fengche.io/tags/luna/">LUNA</a></li>
+      <li><a href="https://fengche.io/tags/ust/">UST</a></li>
+      <li><a href="https://fengche.io/tags/terra/">Terra</a></li>
+      <li><a href="https://fengche.io/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/">稳定币</a></li>
+      <li><a href="https://fengche.io/tags/19.5%E5%B9%B4%E5%8C%96/">19.5年化</a></li>
+      <li><a href="https://fengche.io/tags/%E9%95%BF%E6%96%87%E9%A2%84%E8%AD%A6/">长文预警</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://fengche.io/posts/20/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>推上未来一些潜力币，邀请了业内朋友分析并发布如下</span>
+  </a>
+  <a class="next" href="https://fengche.io/posts/18/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>228夜间-301早上，是谁买走了你的比特币？</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share $LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑 on twitter"
+        href="https://twitter.com/intent/tweet/?text=%24LUNA%e5%92%8c%24UST%ef%bc%8c%e4%b8%ba%e4%bb%80%e4%b9%88%e5%b9%b4%e5%8c%96%e8%83%bd%e9%95%bf%e6%9c%9f%e4%bf%9d%e6%8c%8119.5%25%ef%bc%8c%e4%b8%80%e6%96%87%e8%af%b4%e6%98%8e%e4%bd%a0%e7%9a%84%e5%85%a8%e9%83%a8%e5%9b%b0%e6%83%91&amp;url=https%3a%2f%2ffengche.io%2fposts%2f19%2f&amp;hashtags=LUNA%2cUST%2cTerra%2c%e7%a8%b3%e5%ae%9a%e5%b8%81%2c19.5%e5%b9%b4%e5%8c%96%2c%e9%95%bf%e6%96%87%e9%a2%84%e8%ad%a6">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share $LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑 on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2ffengche.io%2fposts%2f19%2f&amp;title=%24LUNA%e5%92%8c%24UST%ef%bc%8c%e4%b8%ba%e4%bb%80%e4%b9%88%e5%b9%b4%e5%8c%96%e8%83%bd%e9%95%bf%e6%9c%9f%e4%bf%9d%e6%8c%8119.5%25%ef%bc%8c%e4%b8%80%e6%96%87%e8%af%b4%e6%98%8e%e4%bd%a0%e7%9a%84%e5%85%a8%e9%83%a8%e5%9b%b0%e6%83%91&amp;summary=%24LUNA%e5%92%8c%24UST%ef%bc%8c%e4%b8%ba%e4%bb%80%e4%b9%88%e5%b9%b4%e5%8c%96%e8%83%bd%e9%95%bf%e6%9c%9f%e4%bf%9d%e6%8c%8119.5%25%ef%bc%8c%e4%b8%80%e6%96%87%e8%af%b4%e6%98%8e%e4%bd%a0%e7%9a%84%e5%85%a8%e9%83%a8%e5%9b%b0%e6%83%91&amp;source=https%3a%2f%2ffengche.io%2fposts%2f19%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share $LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑 on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2ffengche.io%2fposts%2f19%2f&title=%24LUNA%e5%92%8c%24UST%ef%bc%8c%e4%b8%ba%e4%bb%80%e4%b9%88%e5%b9%b4%e5%8c%96%e8%83%bd%e9%95%bf%e6%9c%9f%e4%bf%9d%e6%8c%8119.5%25%ef%bc%8c%e4%b8%80%e6%96%87%e8%af%b4%e6%98%8e%e4%bd%a0%e7%9a%84%e5%85%a8%e9%83%a8%e5%9b%b0%e6%83%91">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share $LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑 on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2ffengche.io%2fposts%2f19%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share $LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑 on whatsapp"
+        href="https://api.whatsapp.com/send?text=%24LUNA%e5%92%8c%24UST%ef%bc%8c%e4%b8%ba%e4%bb%80%e4%b9%88%e5%b9%b4%e5%8c%96%e8%83%bd%e9%95%bf%e6%9c%9f%e4%bf%9d%e6%8c%8119.5%25%ef%bc%8c%e4%b8%80%e6%96%87%e8%af%b4%e6%98%8e%e4%bd%a0%e7%9a%84%e5%85%a8%e9%83%a8%e5%9b%b0%e6%83%91%20-%20https%3a%2f%2ffengche.io%2fposts%2f19%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share $LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑 on telegram"
+        href="https://telegram.me/share/url?text=%24LUNA%e5%92%8c%24UST%ef%bc%8c%e4%b8%ba%e4%bb%80%e4%b9%88%e5%b9%b4%e5%8c%96%e8%83%bd%e9%95%bf%e6%9c%9f%e4%bf%9d%e6%8c%8119.5%25%ef%bc%8c%e4%b8%80%e6%96%87%e8%af%b4%e6%98%8e%e4%bd%a0%e7%9a%84%e5%85%a8%e9%83%a8%e5%9b%b0%e6%83%91&amp;url=https%3a%2f%2ffengche.io%2fposts%2f19%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</span>
+    <span>
+        Powered at 2021
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" fill="currentColor">
+        <path style="fill:#777bc6" d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

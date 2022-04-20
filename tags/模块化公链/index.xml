@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>模块化公链 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E6%A8%A1%E5%9D%97%E5%8C%96%E5%85%AC%E9%93%BE/</link>
+    <description>Recent content in 模块化公链 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 17 Apr 2022 14:10:26 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E6%A8%A1%E5%9D%97%E5%8C%96%E5%85%AC%E9%93%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>三网融合共创未来 - IOTA, Shimmer 和 Assembly</title>
+      <link>https://fengche.io/posts/234/</link>
+      <pubDate>Sun, 17 Apr 2022 14:10:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/234/</guid>
+      <description>[原文链接](https://blog.iota.org/three-networks-to-unite-them-all/)```本文内容：这是一篇关于IOTA整体网络进度路线图的详细介绍用途将是在未来对其工作交付的验证IOTA必然是个长期投资项目，需要不定期对价值进行验证已确保稳定性需要验证时不妨查阅本文--风车注```长文预警全面运行的IOTA、Shimmer和Assembly网络的要求是相互关联和相互依赖的。以下路线图概述了每个网络即将到来的协议升级里程碑，同时概述了它们的相互依赖性。2...</description>
+    </item>
+    
+  </channel>
+</rss>

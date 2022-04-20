@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>文文 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/editors/%E6%96%87%E6%96%87/</link>
+    <description>Recent content in 文文 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Tue, 19 Apr 2022 09:09:04 +0800</lastBuildDate><atom:link href="https://fengche.io/editors/%E6%96%87%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>对于BTC - 20220418 和 20220224 日K线区别的详解</title>
+      <link>https://fengche.io/posts/249/</link>
+      <pubDate>Tue, 19 Apr 2022 09:09:04 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/249/</guid>
+      <description>几个小时前发了个推：{{&amp;lt;twitteruser=wen21447219id=1516199895631159301&amp;gt;}}很多朋友私信询问详情，发文时本意是提示大家自行去寻找差异和线索，而实际上却给大家带来困扰。抱歉，在此统一做详细答复。为了避免大家进入投资误区，首先声明以个人经验来说技术分析最多只占整个投资决策权重的30%，除此之外基本面分析和资金管理都是不容忽略的。接下来我们看图![黑暗模式下此图会看不清楚日期](https://edit.fcdaohang.org/assets/d9709...</description>
+    </item>
+    
+    <item>
+      <title>为了迎接即将到来的Q2行情，安全的问题不容忽视</title>
+      <link>https://fengche.io/posts/236/</link>
+      <pubDate>Sun, 17 Apr 2022 17:30:02 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/236/</guid>
+      <description>```本文内容：你想不到的盗U手段--风车注```很多朋友都很期待接下来的行情，但在此之前，趁现在还是平稳阶段，请仔细对照本文检查隐患避免辛苦赚的钱被人一波带走。币圈，安全的问题不容忽视。这里重点说下最近以及后续可能出现的大规模安全问题：1.假钱包：百度和谷歌搜索IMTOKEN，这里是绝对的重灾区，很多都是假的官方网站，下载到的都是可以把你真钱转走的假钱包。解决办法：1.牢记官方网站网址，尽量使用iphone的Appstore和安卓的googleplay去下载钱包。2.正规渠道购买并使用硬件钱包...</description>
+    </item>
+    
+    <item>
+      <title>BTC突破46000关键阻力已兑现，现在我们来聊聊币圈渣男EOS</title>
+      <link>https://fengche.io/posts/136/</link>
+      <pubDate>Mon, 28 Mar 2022 16:33:54 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/136/</guid>
+      <description>3月28日，即将离开春天月末的日子，BTC首当其冲以迅雷之势突破关键阻力46000，给铁底加了一层防护后，twitter上EOS社区的讨论再度引爆市场言论方{{&amp;lt;twitteruser=trim_botid=1507122533199400964&amp;gt;}}推文大概意思：“$EOS已经经历了这个周期（指贴图的普遍性市场周期），这让我们回到了起点。EOS社区处于“难以置信（disbelief）”阶段。许多持有EOS的人都受到了创伤并且拒绝相信这个下跌是真实的。4月，EOS社区将从“不相信”转向“乐观（o...</description>
+    </item>
+    
+    <item>
+      <title>回复推友的问题系列-Terry-LUNA-BTC-基本面</title>
+      <link>https://fengche.io/posts/96/</link>
+      <pubDate>Wed, 23 Mar 2022 17:49:40 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/96/</guid>
+      <description>Terra购买大量BTC的用意？刚好不久前PlanB（@100trillionUSD）评论了这个事情：{{&amp;lt;twitteruser=100trillionusdid=1506218875284865029&amp;gt;}}翻译下来是：很有趣！UST是目前（并且可能在未来）最大的BTC买家之一。我仍在研究UST，但理论上应该可以使用比特币支持的稳定币，通过适量的超额抵押和再平衡，摆脱BTC的波动性（有指永恒牛市的意思）。我并未在风车发表过公开文章，但老朋友都知道，我说过BTC的最大作用之一，是用于资产抵押。这...</description>
+    </item>
+    
+    <item>
+      <title>VITE项目的总结</title>
+      <link>https://fengche.io/posts/82/</link>
+      <pubDate>Tue, 22 Mar 2022 22:11:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/82/</guid>
+      <description>之前百倍币大哥披露了此币，本着认真钻研的态度看了一下官网，当时以为是跨链。直到看完白皮书，发现里面有肉：#1.高性能是其主要方向在此基础上确保足够的扩展和安全性，账本采用DAG结构#2.共识算法层面进行了改良引入了快照链的概念，快照链是安全的核心基石#3.快照链需要大的存储空间可能和验证节点要求有关，如抵押币？暂未知#4.EMV兼容但代码和Solidity略有区别，命名为Solidity&#43;&#43;，拥有标准库#5.原生代币VITE用于奖励快照链验证节点出块#6.Gas费模式和ETH不同高频使用者的Ga...</description>
+    </item>
+    
+    <item>
+      <title>V神登上时代周刊的是一篇什么文章？- 以太坊背后的人正为加密货币的未来而担忧</title>
+      <link>https://fengche.io/posts/76/</link>
+      <pubDate>Tue, 22 Mar 2022 02:55:56 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/76/</guid>
+      <description>风车汇总：全文描写了V神的性格和出生-发明ETH-维护ETH的整个历程其核心思想和标题一致：V神出于自身的乌托邦想法发明了ETH，但是每次ETH成为热门时，往往变成了他所不愿意看到的样子风车评价：世界万物思想都有不同，可以进行粗略归纳分为简单几种，但无论如何粗最终会落到三种：支持、中立、反对。任何事物都是如此，但若加上时间和空间的因素，实际上ETH可以是熊市、牛市两种状态；当处于熊市时，狂欢的不是赌徒和投机客，而是Builder，因为他们可以安静的持续的Build自己感兴趣的世界（当然，必须是真...</description>
+    </item>
+    
+    <item>
+      <title>本周值得关注的事件和信息：比特币繁荣即将来临</title>
+      <link>https://fengche.io/posts/75/</link>
+      <pubDate>Tue, 22 Mar 2022 01:28:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/75/</guid>
+      <description>各位周一好！总体而言，加密市场的情况看起来很乐观。根据今天新闻中的情绪，我们似乎可以在图表中看到一些强劲的上涨势头；不仅适用于比特币，而且适用于$LUNA$SOL$AVAX$ADA。正如我们之前所预估，四年周期可能已经结束。全球采用率继续增长，政府监管态度逐渐缓和：印度、澳大利亚、中国、阿联酋和马来西亚等等。此外，Web3也继续看到很多动作。刚刚发生：[马来西亚通讯部副部长提出加密货币应为法定货币](https://www.bloomberg.com/news/articles/2022-03-...</description>
+    </item>
+    
+  </channel>
+</rss>

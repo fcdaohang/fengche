@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tangle on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/tangle/</link>
+    <description>Recent content in Tangle on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Mon, 18 Apr 2022 16:29:35 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/tangle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>信任机器 — 第 4 部分：Tangle — 一种广义的投票协议</title>
+      <link>https://fengche.io/posts/247/</link>
+      <pubDate>Mon, 18 Apr 2022 16:29:35 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/247/</guid>
+      <description>[原文链接](https://husqy.medium.com/the-trust-machine-part4-the-tangle-a-generalized-voting-protocol-38c57f0eb7c?source=fenche.io)为数字世界设计人文信任层```本文你可以了解到：网络结构的设计和考量以及每个细节的优化和权衡--风车注```作者：[HansMoog](https://husqy.medium.com/)-一名为IOTA工作并努力让世界变得更美好的黑客、女权主义者...</description>
+    </item>
+    
+    <item>
+      <title>三网融合共创未来 - IOTA, Shimmer 和 Assembly</title>
+      <link>https://fengche.io/posts/234/</link>
+      <pubDate>Sun, 17 Apr 2022 14:10:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/234/</guid>
+      <description>[原文链接](https://blog.iota.org/three-networks-to-unite-them-all/)```本文内容：这是一篇关于IOTA整体网络进度路线图的详细介绍用途将是在未来对其工作交付的验证IOTA必然是个长期投资项目，需要不定期对价值进行验证已确保稳定性需要验证时不妨查阅本文--风车注```长文预警全面运行的IOTA、Shimmer和Assembly网络的要求是相互关联和相互依赖的。以下路线图概述了每个网络即将到来的协议升级里程碑，同时概述了它们的相互依赖性。2...</description>
+    </item>
+    
+  </channel>
+</rss>

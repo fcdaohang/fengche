@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>智能合约 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/</link>
+    <description>Recent content in 智能合约 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 26 Mar 2022 01:17:49 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20220326-潜力币高级应用赛道-GEL</title>
+      <link>https://fengche.io/posts/125/</link>
+      <pubDate>Sat, 26 Mar 2022 01:17:49 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/125/</guid>
+      <description>说明：潜力币投资风险大，要参与的话请一定以推荐价格甚至低于推荐价格买入后续币种项目资料将通过CMC链接发送，不另外啰嗦（赚钱指标才是重点）潜力币名称：[GEL](https://coinmarketcap.com/currencies/gelato/)现价：$0.2529推荐理由：#1.老徐发了一篇[套利1.13亿的文章](/posts/122/),里面说的需要技术可以用此项目解决掉![](https://edit.fcdaohang.org/assets/c0d8081d-a713-4102-...</description>
+    </item>
+    
+    <item>
+      <title>etherscan 取消授权工具</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Mon, 28 Feb 2022 01:10:43 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>以太坊浏览器官方推出的授权取消工具，优势是gas费最低</description>
+    </item>
+    
+    <item>
+      <title>revoke 取消授权工具</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Mon, 28 Feb 2022 01:06:45 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>交互任何项目都有可能面临风险，该工具可以直观进行合约的授权，规避潜在的损失</description>
+    </item>
+    
+    <item>
+      <title>Opensea疑似合约漏洞被黑客利用进行钓鱼盗取NFT低价抛售</title>
+      <link>https://fengche.io/posts/4/</link>
+      <pubDate>Fri, 25 Feb 2022 16:28:07 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/4/</guid>
+      <description>起因2月20日早间，据部分英文twitter大V透露信息，某黑客钱包地址一直不停和Opensea某合约进行交互，用意不明，但其钱包地址的ETH逐渐增加，怀疑是发生了利用合约漏洞的攻击事件，一时间引发市场恐慌情绪，币价随之暴跌，BTC来到关键支撑区间35-38k，截至发稿最低见379xx发展Opensea官方随后在官网发布置顶公告称：”We&amp;#39;recontinuingtoinvestigaterumorsofaphishingattackoriginatingoutsideofOpenSea.Don...</description>
+    </item>
+    
+    <item>
+      <title>读完倒吸一口寒气，一亿美元差点被骗走！！</title>
+      <link>https://fengche.io/posts/3/</link>
+      <pubDate>Fri, 25 Feb 2022 16:17:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/3/</guid>
+      <description>由于ENS钱包中存有超1亿美元的ETHthomasg.eth被诈骗团伙盯上，个人资产险些全被骗走。在过去两周的时间里，我成为了一个高级诈骗团伙的目标，这几乎让我损失了所有的ETH。我非常幸运能够毫发无损地躲过这一劫，所以想把事件的经过分享给大家。我是Arrow的创始人(这是一个致力于构建开源空中的士平台的DAO）。我们仍处于早期阶段，专注于发展团队，因此对贡献者保持着持开放的态度，如果他们愿意提供帮助，我们不会拒绝任何人。在两周前一个叫做「heckshine」的用户加入了我们的Discord并开...</description>
+    </item>
+    
+  </channel>
+</rss>

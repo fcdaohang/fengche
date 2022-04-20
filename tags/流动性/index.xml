@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>流动性 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E6%B5%81%E5%8A%A8%E6%80%A7/</link>
+    <description>Recent content in 流动性 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 17 Apr 2022 05:35:36 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E6%B5%81%E5%8A%A8%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Liquity 论流动性的价格稳定性</title>
+      <link>https://fengche.io/posts/231/</link>
+      <pubDate>Sun, 17 Apr 2022 05:35:36 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/231/</guid>
+      <description>[原文链接](https://www.liquity.org/blog/on-price-stability-of-liquity)```本文你将学到：稳定币之所以稳定的机制稳定币脱钩会如何重新挂钩哪些稳定币概念项目不能碰--风车注```自2020年5月我们正式宣布项目以来，我们收到了许多关于我们的价格稳定机制的有趣问题和评论。在这篇文章中，除了更深入地了解Liquity如何保持其稳定币LUSD与美元挂钩。我们还将研究其他稳定币所面临的挑战，例如Dai，由于[外部影响](https://defi...</description>
+    </item>
+    
+    <item>
+      <title>Liquity 2022 Q1 季度报告</title>
+      <link>https://fengche.io/posts/230/</link>
+      <pubDate>Sun, 17 Apr 2022 03:58:01 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/230/</guid>
+      <description>[原文链接](https://www.liquity.org/blog/liquity-q1-2022-report)在整个2021年持续增长一段时间后，由于22年Q1的市场波动，Liquity在新的一年开局缓慢。尽管如此，该系统仍然保持健康，LUSD继续保持挂钩，协议也持续产生收入。在以下报告中，我们总结了Liquity系统的所有关键方面以及用户在21年Q4是如何与Liquity进行交互的。系统整体健康#整体抵押率TotalCollateralRatio在整个22年Q1，我们看到ETH的价格在...</description>
+    </item>
+    
+    <item>
+      <title>[深度]为进行即时流动性提供的交易机器人进行行为好坏的定义</title>
+      <link>https://fengche.io/posts/120/</link>
+      <pubDate>Fri, 25 Mar 2022 19:39:34 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/120/</guid>
+      <description>原文出自[ComposableFinance](https://twitter.com/ComposableFin)BotsLead[0xBobafetador](https://twitter.com/bobafetador/status/1506666252126892033?s=21)老徐总结：为了便于读者理解，提一下里面的重点：TVL和资本效率。本文再一次强调资本效率，基本上我们可以视Defi1.0为TVL也就是量，Defi2.0则为CapitalEfficiency资本效率即质，如果有...</description>
+    </item>
+    
+    <item>
+      <title>20220324-NEAR拉升-有预挖活动和可能空投</title>
+      <link>https://fengche.io/posts/100/</link>
+      <pubDate>Thu, 24 Mar 2022 01:21:17 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/100/</guid>
+      <description>活动项目为Bastionprotocol其致力于做NEAR生态的流动性中心，也是符合此定位的借贷协议据其描述还运用了AI算法用来给借贷的流动性增加利用率，但这个暂时不好说，不管这些：现在预挖BSTN，该代币还未上线（市），也可能存在空投[参加地址](https://app.bastionprotocol.com)另外如果你看到一大堆的英文，说明需要切换VPN，比如切到新加坡这些允许加密货币的地区。参与网络为基于NEAR协议的的Aurora主网Aurora是由NEAR协议团队创建的以太坊虚拟机，可...</description>
+    </item>
+    
+    <item>
+      <title>为什么我们选择投资 Wintermute</title>
+      <link>https://fengche.io/posts/97/</link>
+      <pubDate>Wed, 23 Mar 2022 21:35:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/97/</guid>
+      <description>[原文链接](https://sinoglobalcap.medium.com/why-we-invested-in-wintermute-c72b8c151a42)不少朋友看过之前的[为什么我们投资LayerZero](/posts/94/)之后深受启发，除了大家印象中的项目，一些隐藏在幕后的另类基础设施供应商也是SINO的投资标的，这篇我们来看市面上很少见的对于MM的分析为什么我们选择投资WintermuteNotinvestmentadvice-非投资建议介绍Wintermute是一家总部...</description>
+    </item>
+    
+    <item>
+      <title>20220315-今日潜力币挖掘-TROY</title>
+      <link>https://fengche.io/posts/46/</link>
+      <pubDate>Mon, 14 Mar 2022 23:39:00 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/46/</guid>
+      <description>潜力币概述：日期：2022-03-15现价：$0.01066密码：TROY公链：[BEP](https://explorer.binance.org/asset/TROY-9B8)合约：e5a49d7fd57e7178e189d3965d1ee64368a1036d持币：29,761官网：[点击进入官网](https://troytrade.com/)官推：[点击进入官推](https://twitter.com/troytrade)审计：[点击查看审计](https://research.bi...</description>
+    </item>
+    
+    <item>
+      <title>0X协议是什么-0x流动性协议</title>
+      <link>https://fengche.io/posts/28/</link>
+      <pubDate>Tue, 08 Mar 2022 18:25:59 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/28/</guid>
+      <description>关于[0x是一个流动性协议](https://0x.org/)，它能够在以太坊网络中实现DeFi应用。任何人可以通过这个协议来开创去中心化交易所。![](http://fcdaohang.com:8088/assets/4a7710c5-44c7-43e2-b1cb-29fe7c3b3675.png)0x促进了智能合约生态系统，以允许基于以太坊的资产的P2P交换。它的原生代币ZRX使社区成员能够对0x系统内的各种提案进行投票。理论上，各种现实世界和数字资产，包括法定货币、股票和商品，都可以在0x...</description>
+    </item>
+    
+  </channel>
+</rss>

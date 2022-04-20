@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>L2 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/l2/</link>
+    <description>Recent content in L2 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 20 Mar 2022 00:16:49 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/l2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>万字深度长文-以太坊的扩容之路-Zk rollup超细解读</title>
+      <link>https://fengche.io/posts/61/</link>
+      <pubDate>Sun, 20 Mar 2022 00:16:49 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/61/</guid>
+      <description>[原文链接](https://mirror.xyz/0x22034f804960B9B34353d6A7595cC4E83ac0daBe/vVgKwJ0L5A0lm-ysPNipUddrXK_64NcXE_WkkRP_DT8)作者：Luka（Twitter：0x8e06）审阅：Jackson（Twitter：0xOar）随着ETH2.0的发布在即，扩容方案又一次被广大加密社区所关注。而ZKRollup-基于零知识证明兼顾了安全和隐私，以及未来还有更多应用领域，是很有前景的一种扩容方案，感谢推特网...</description>
+    </item>
+    
+    <item>
+      <title>L2的新玩法？L2各公链代币能否起死回生？</title>
+      <link>https://fengche.io/posts/26/</link>
+      <pubDate>Tue, 08 Mar 2022 16:52:01 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/26/</guid>
+      <description>twitter用户[@Wuhuoqiu](https://twitter.com/Wuhuoqiu)分享了关于L2新玩法的一些内容，摘抄如下：上周Aribitrum的AnyTrust链计划公布，让L2的玩法又多了一个选项现在我们不仅要在各个AltL1之间评估他们的技术优劣，比如Sol的POH，Avax的子网，Near的分片，FTM的DAG……连L2自己都能整出一套列表了我觉得还是挺重要的一个事儿，意外的在中文CT上没看到太多点评，那我就简单罗列下好了L2目前为止玩法1.假L2-Polygon，除...</description>
+    </item>
+    
+  </channel>
+</rss>

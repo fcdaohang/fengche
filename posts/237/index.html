@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>探索原生资产的属性和好处 | 风车 - 专注区块链快速安全有效的入门信息</title>
+<meta name="keywords" content="IOTA,原生资产,数字资产,NFT,音乐,O2O" />
+<meta name="description" content="[原文链接](https://blog.iota.org/exploring-the-properties-and-benefits-of-native-assets/)```本文内容：如果你曾经做过或者经历过O2O项目你会发现有了IOTA就可以变成现实--风车注```长文预警从稀有的收藏品到电动汽车，从足球俱乐部到智慧城市，本土资产有能力改变行业和经济——以及价值本身的概念和交换。当IOTA的数字资产框架发布时，由于网络基于零费用的架构，数字资产将变得更加无处不在。数字资产框架是IOTA上最受...">
+<meta name="author" content="
+徐望川">
+<link rel="canonical" href="https://fengche.io/posts/237/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.9a70498391f8adca004cded811aefa9d98674c66090df071732233658f113870.css" integrity="sha256-mnBJg5H4rcoATN7YEa76nZhnTGYJDfBxcyIzZY8ROHA=" rel="preload stylesheet" as="style">
+<link rel="preload" href="/fclogo.svg" as="image">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-49BWTSEZDZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49BWTSEZDZ');
+</script><meta property="og:title" content="探索原生资产的属性和好处" />
+<meta property="og:description" content="[原文链接](https://blog.iota.org/exploring-the-properties-and-benefits-of-native-assets/)```本文内容：如果你曾经做过或者经历过O2O项目你会发现有了IOTA就可以变成现实--风车注```长文预警从稀有的收藏品到电动汽车，从足球俱乐部到智慧城市，本土资产有能力改变行业和经济——以及价值本身的概念和交换。当IOTA的数字资产框架发布时，由于网络基于零费用的架构，数字资产将变得更加无处不在。数字资产框架是IOTA上最受..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fengche.io/posts/237/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-18T03:05:23&#43;08:00" />
+<meta property="article:modified_time" content="2022-04-18T03:05:23&#43;08:00" />
+<meta property="og:image" content="https://fengche.io/fcslogo.png" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="探索原生资产的属性和好处"/>
+<meta name="twitter:description" content="[原文链接](https://blog.iota.org/exploring-the-properties-and-benefits-of-native-assets/)```本文内容：如果你曾经做过或者经历过O2O项目你会发现有了IOTA就可以变成现实--风车注```长文预警从稀有的收藏品到电动汽车，从足球俱乐部到智慧城市，本土资产有能力改变行业和经济——以及价值本身的概念和交换。当IOTA的数字资产框架发布时，由于网络基于零费用的架构，数字资产将变得更加无处不在。数字资产框架是IOTA上最受..."/>
+<meta name="twitter:image" content="https://fengche.io/fcslogo.png"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "文章精选",
+      "item": "https://fengche.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "探索原生资产的属性和好处",
+      "item": "https://fengche.io/posts/237/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "探索原生资产的属性和好处",
+  "name": "探索原生资产的属性和好处",
+  "description": "[原文链接](https://blog.iota.org/exploring-the-properties-and-benefits-of-native-assets/)```本文内容：如果你曾经做过或者经历过O2O项目你会发现有了IOTA就可以变成现实--风车注```长文预警从稀有的收藏品到电动汽车，从足球俱乐部到智慧城市，本土资产有能力改变行业和经济——以及价值本身的概念和交换。当IOTA的数字资产框架发布时，由于网络基于零费用的架构，数字资产将变得更加无处不在。数字资产框架是IOTA上最受...",
+  "keywords": [
+    "IOTA,原生资产,数字资产,NFT,音乐,O2O"
+  ],
+  "articleBody": "原文链接\n本文内容： 如果你曾经做过或者经历过O2O项目 你会发现有了IOTA就可以变成现实 --风车注 长文预警 从稀有的收藏品到电动汽车，从足球俱乐部到智慧城市，本土资产有能力改变行业和经济——以及价值本身的概念和交换。当 IOTA 的数字资产框架发布时，由于网络基于零费用的架构，数字资产将变得更加无处不在。\n数字资产框架是 IOTA 上最受期待的功能之一。在这篇文章中，我们将研究原生资产的使用。但首先我们必须澄清一些困惑。我们所说的“原生资产”到底是什么意思？\nIOTA 上的数字资产使用了许多不同的名称，造成了不确定性。当同时存在第 1 层和第 2 层资产时，这种情况只会在未来变得更糟。因此，我们修改了我们的术语以简化未来的事项。\nIOTA 数字资产的类型 IOTA 上所有资产的总称是数字资产。\n这些资产可能存在于第 1 层（IOTA 主网，作为定制的 IOTA 代币）或第 2 层（在智能合约链中）。为了区分这些资产类别，我们使用了两个不同的名称：\n 第 1 层资产被称为原生资产，因为它们是 IOTA 主网的原生资产。 第 2 层资产被称为智能资产，因为它们存在于智能合约层，并且具有更高的可编程性。  创建任何一种数字资产的过程称为铸币。\n备注：\n  术语”资产“和”代币“可以互换使用，两者含义相同（如原生资产/原生代币、智能资产/智能代币）。例如，您指一件艺术品，您可能会称其为资产，但如果您指的是 Wen Coin，您可能会称其为代币。\n  对于更具技术经验的读者，还将在原生资产的代码库以及未来的钱包和库实现中进行变量名称更改，将“颜色”字段替换为“标签”字段。\n  什么是原生资产？ 原生资产（以前称为“彩色硬币”）是一种定制的 IOTA 代币，在某些情况下或特定应用程序中，它具有数字化代币的功能，代表真实的防篡改和有限资产世界。\n自 2012 年 12 月以来，“彩色硬币”一词一直是加密词典的一部分，其中包括以太坊创造者 Vitalik Buterin 在内的一个团队在比特币区块链上建立了一个项目。\nMeni Rosenfeld 的论文是第一个描述这个概念的论文。该项目源于在区块链上发行现实世界资产（如房地产）的想法，但很快就看到，加密行业内比特币的有限吞吐量（以及相关费用）将无法为这个不断增长的行业提供必要的可扩展性。然而，彩色硬币的最初概念为实验开辟了可能性，并为 IOTA 的原生资产奠定了基础。\n在我们探讨原生资产的创建方式之前，先简要介绍一下它们的优势：\n 它们可以代表几乎任何类型的资产或合同。 不需要繁琐且成本高昂的第三方，以数字方式存储它们或将它们转移给新所有者。 它们是通过“标记” IOTA 代币来铸造的，这意味着它们不会减少 IOTA 代币的整体供应。 使用 IOTA 的免费协议，创建原生资产的成本很低，您可以在分类账本上免费分配您的资产。  IOTA 代币如何变成原生资产？ 要铸造原生资产，只需在执行交易时获取一个普通的 IOTA 代币并为其分配一个唯一的身份。\n铸造原生资产的行为发生在 IOTA 分类账的基础级别，它是安全的、可追溯的和不可变的。通过添加一个“标签”，IOTA 代币被赋予了特定的含义，基本上是给它们一个名字即可。在IOTA 基金会博客上阅读更多信息。\n原生资产的发行人持有特定数量的 IOTA 代币，他们想在钱包中铸造，并以标记这些特定 iota 的方式对传出交易进行编码，以代表发行人想要分配给原生资产的任何资产。\n目前，1个IOTA Token相当于1个原生资产，原生资产的转移过程与IOTA Token的转移过程完全相同。\n“标签”基于生成交易输出时创建的交易哈希。因此，标签是唯一的并且特定于该交易。这意味着无法通过第二次交易获得相同的标签，并且无法将辅助标签添加到同一个硬币上。标签始终是其创世交易的 ID：您不能再次重新创建相同的标签。这也意味着可以轻松查看 Tangle 并查看原生资产的铸造时间和地点。\n原生资产始终可以恢复到其原始 IOTA 代币状态：这意味着流通中的原生代币的总量可以通过将一些代币恢复到其原始状态来减少。 （并且，无论谁是原生资产的当前所有者——即创建者转移原生资产的人——都可以将原生资产恢复到其原始状态，甚至可以再次通过进行另一笔交易来分配新标签）。\n但总金额不能增加，因为上面提到了“标签=交易ID”的要求。\n 有关铸造原生资产的详细技术描述，请深入了解 GitHub 上有关彩色硬币的文章中的“详细设计” 此外，请查看有关使用原生资产创建标记化资产的操作指南：     重要的是，元数据也可以添加到原生资产中，确保代币具有价值表示。通过承诺兑现原生资产（通过将其交换为现实世界的对应物），第三方（公司、政府或个人）可以将现实世界的价值分配给原生资产。\n让我们通过检查原生资产的一些用例来更深入地了解这一点。\n原生资产用例 就像邻里咖啡店会员卡，它可使您每购买 10 次即可获得一杯免费咖啡；或打印的足球比赛门票代表您花在该门票上的钱，并可得到进入足球场的入场券；或每月旅行通行证允许您使用您所在城市的公共交通工具，或者，用于让您拨打长途电话的预付费电话卡，原生资产就像以上月票季票一样，可以让您获得特定和有限的商品、服务或产品。\n我们可以将文中提及的原生资产理解为用IOTA铸造的会员卡或季票 --风车注\n但是，为什么要为在现实世界中似乎令人满意系统的数字版本而烦恼呢？因为原生资产带来了几个重要的好处，而这些好处通过使用 IOTA 的协议（称为 Tangle）得到了提升（以下内容改编自本文）：\n 原生资产不能被伪造。 Tangle 是去中心化的，因此您可以从自己的数字钱包中分配、转移和管理资产，而不受第三方干预。 Tangle 是免费的，因此转移原生资产不涉及任何成本（但是，发行人必须承担购买 IOTA 代币的成本，这些代币将被铸造为原生资产——目前一百万代币不到一美元）。 通过检查 Tangle，发行人可以轻松监控原生资产的分布、使用和可用供应。 将原生资产转换回常规的 IOTA 代币很容易，服务提供商（咖啡店老板、电动汽车制造商、公用事业提供商）可以将原生资产转换为 IOTA 代币并重新铸造它们以用于其他服务。它们的价值不会因使用而减少。它们可以在使用后重复使用或出售。 原生资产将无缝集成到 Firefly 钱包中。  考虑到这一点，描绘原生资产的用例变得容易得多。下面列出了一些潜在的用例——绝不是详尽的清单，也不是 IOTA 基金会的期望。\n要理解以下用例，请先看这个简版解释： 原生资产就是Web2时代的一卡通功能，但是它无需商家联盟 哪怕你周围有一万个商家，只要它们是IOTA网上的 你随时可以使用 $IOTA 去兑换它们的服务 Web2时代，要么一卡通，要么一堆卡 --风车注 忠诚度计划： 对于用于组织忠诚度计划的示例，对于体育或任何其他依赖粉丝支持来维持生存的部门来说，原生资产已经被用作吸引粉丝的奖励因素，开辟了一个全新的互利交易生态系统，甚至是一个全新的经济子系统——例如，由于冠状病毒引发封锁而被冷落的体育俱乐部，现在它们可以通过原生资产继续和粉丝互动。\n巴黎圣日耳曼、尤文图斯、都灵和罗马等欧洲足球俱乐部都在加密货币交易所上市他们的球迷代币。根据 FanTokenStats 的数据，粉丝代币市场的市值估计为数亿美元。\n支付凭证： 原生资产已被电动汽车充电品牌用作加密支付的一种形式。\n然而，改变行业的潜力是存在的：原生资产的互操作性可以将不同的电动汽车充电解决方案（每一种在很大程度上与其他的不兼容）结合在一起，并促进电动汽车的广泛采用。目前，这依赖于客户使用预先在商家系统中注册的卡（或智能手机应用程序）：但如果原生资产可以用于跨所有电动汽车充电器品牌进行交易呢？在您的越野汽车假期中，您的原生资产可以在不同公司的充电站兑换为充电，清算实体会努力确定哪个充电站公司从旅程的哪个部分获得收益（更重要的是，可能是处理交易的车辆本身）。在不兼容性限制采用的领域中，原生资产将是一种实现互操作性的务实方法。\n公用事业： 原生资产也是智慧城市未来的关键。\n例如，一些城市正在尝试使用原生资产来激励其公民采取更环保的行为（例如，拼车的公民获得使用公用事业的奖励）或支持当地经济的行为（例如，在当地购物的奖励而不是使用某个在线电子商务巨头）。\n基于虚拟货币创建区域或地方经济的潜力是惊人的：已经存在几种地方货币，例如纽约哈德逊河谷的 Current、德国的 Chiemgauer 或西班牙的 grama。这些货币试图放大本地乘数效应，其中一些使用一种着色形式来跟踪代币的“旅程”，并提供在当地消费的激励措施。此外，高效的共享经济被认为是应对气候灾难的关键解决方案之一。在这方面，像 IOTA 这样的原生资产可以被视为一种绿色赋能技术。\n智能财产： 原生资产可用于土地管理来代表土地所有权：在被称为“智能财产”的过程中，硬币可以携带带有公共登记详细信息的元数据，例如 GPS 坐标、尺寸、建造日期等。所有权或身份等敏感细节可以加密，因此只有拥有正确私钥的人才能看到信息——在发生争议的情况下尤其重要。\n智能财产的好处是多方面的：它可以更简单地转移和注册财产，并且可以通过使用私钥来证明身份、签署文件和授权交易来防止销售欺诈。在土地登记特别困难的地区（例如，2012 年联合国人居署估计发展中国家 70% 以上的土地未登记），只需一部智能手机即可签发廉价的所有权证书。此外，智能合约可以设置条件以允许财产转让的不同步骤，从签署公证人到将资金存入托管。在许多情况下，市政办公室受到瓶颈效应或低效流程的影响，可以通过原生资产的智能数字化加以改进。\n数字收藏品： 原生资产、狂热和稀有度之间的联系在数字收藏品市场中体现出来。 Rarible、SuperRare 和 Myth Market 等应用程序是在线市场，收藏家可以在其中搜索、交换和展示有限的收藏 NFT。粉丝世界中的传奇人物已经注意到：今年 6 月，漫威——蜘蛛侠、复仇者联盟、黑豹等的故乡——宣布将在 NFT 应用程序 VeVe 上发布有限范围的收藏品.根据 hypebeast.com 的说法，“物品将涵盖稀有甚至秘密、超级稀有的数字漫画书、3D 雕像和其他令人垂涎的物品，然后收藏家可以在他们自己的虚拟陈列室中展示这些物品。”\n音乐： 原生资产作为所有权证明的适用性也可以影响我们如何消费和评估音乐。流媒体对音乐行业造成的破坏仍在衡量之中——查看最近英国议会对流媒体经济影响的调查（剧透警告：他们不是流媒体的粉丝）。盗版、收入减少以及点播流媒体对音乐作为一种相对稀有商品的内在价值提出的挑战，都对行业构成了生存威胁。原生资产可用于标记官方数字商品（唱片的签名副本、个性化稀有物品、现场在线音乐会）与非官方数字商品的区别。\n工资单： 原生资产的透明度——在 Tangle 上可以轻松地跟踪他们的旅程，从创建到分发——使它们成为高度具体的交换案例的理想选择。以 HR 为例：员工每完成一小时的加班，他们就会收到一枚特殊的代币，该代币又可以用来换取休假、培训甚至奖金，这些代币存放在符合 GDPR 的去中心化账本上。在数字游牧的环境中，越来越多的流动劳动力从一个工作转移到另一个工作或同时持有多个工作，一个值得信赖的、透明的和可互操作的方式将员工福利从一个雇主转移到另一个雇主将是真正重要的。\n活动： 充满活力的夜生活是城市经济健康的主要贡献者，但夜生活场景是众所周知的脆弱生态系统：在该行业工作的各方经常面临阻挠或完全敌对的地方政府、扫兴邻居，以及最近对音乐版权，而冠状病毒大流行已经产生了毁灭性的影响。如果您所在城市的俱乐部和酒吧可以为他们自己创造一个新市场，原生资产——以最低价格铸造和分发——可以代替食品和饮料邮票、忠诚度积分等。\n电动汽车： 到目前为止，我们已经探索了非常符合其作为交换和易货代币的流行形象的原生资产的用例。还有没有其他更雄心勃勃的原生资产创建经济子系统的用例呢？\n为了使用德国（欧洲领先的插电式电动汽车销售市场）仅有的大约 45,000 个公共电动汽车充电站，司机必须在数百家运营商之间进行选择才能注册。不太理想的情况是：从运营商的角度来看，每个品牌都必须单独与客户互动以结算付款，其中可能包括退回甚至拖欠付款。从客户的角度来看：祝需要在未注册的运营商处充电的司机好运！被 400 多家运营商的所有（或至少一个财团）接受的原生资产可能是革命性的突破。\n 它可以与法定货币或能源单位耦合。 如果由财团铸造，司机将只需要经过一个注册过程，但在所有参与的充电站使用令牌。 原生资产也可以与 Apple Music、GooglePlay、Amazon 等无数其他代金券一起在加油站或超市出售。 它减少了运营商的管理费用：如果硬币相当于 1 美分，那么铸造价值 50 亿美元的本地资产的行为将只花费运营商 1500 欧元（并且由于 IOTA 的免费基础设施，转移它们不会产生任何成本）。 为了获得比最初铸造的更多供应，财团需要做的就是创建第二个版本的原生资产。 这样，他们就可以保持对代币的控制。 与当前个人结算付款的责任不同，财团中的运营商只需在他们自己之间结算，从而减少管理费用并消除违约风险。 作为现金代金券出售，原生资产变得匿名：这具有使运营商能够回避处理客户详细信息所涉及的基础设施成本和安全/GDPR 问题的额外好处。 可赎回的“能量单位”突然变得可转移，并且随着这个星球上的每个人都消耗能量，它们自己也可能成为交换媒介。  但它并不止于此。如果原生数字资产是可转让的呢？我们案例研究中的运营商可以让车主互相出售多余的能源——现在运营商也成为了市场参与者：对他们来说是一种全新的商业模式。\n关键要点   从数字收藏品到电动汽车的能源交易市场：我们在交换粉丝代币方面取得了长足的进步。原生资产的潜力是非凡的，并且将通过智能合约进一步扩展。\n  为 IOTA 代币等数字资产分配非金融或金融价值的能力为商品和服务交易开辟了新市场。\n  只要商品或服务是有限资源，原生资产就会提供透明、可互操作且安全的方式来以数字方式表示和交易该资源。\n  您最期待哪些原生资产用例？\n原作者：IOTA 基金会\n",
+  "wordCount" : "5396",
+  "inLanguage": "zh",
+  "datePublished": "2022-04-18T03:05:23+08:00",
+  "dateModified": "2022-04-18T03:05:23+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://fengche.io/posts/237/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "风车 - 专注区块链快速安全有效的入门信息",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://fengche.io" accesskey="h" title="风车 - 专注区块链快速安全有效的入门信息 (Alt + H)">
+                <img src="/fclogo.svg" alt="logo" aria-label="logo" height=" 36px"></a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://fengche.io/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/nav/" title="导航">
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/editors/" title="作者">
+                    <span>作者</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://fengche.io">主页</a>&nbsp;»&nbsp;<a href="https://fengche.io/posts/">文章精选</a></div>
+    <h1 class="post-title">
+      探索原生资产的属性和好处
+    </h1>
+    <div class="post-description">
+      内容简介：<br>
+      [原文链接](https://blog.iota.org/exploring-the-properties-and-benefits-of-native-assets/)```本文内容：如果你曾经做过或者经历过O2O项目你会发现有了IOTA就可以变成现实--风车注```长文预警从稀有的收藏品到电动汽车，从足球俱乐部到智慧城市，本土资产有能力改变行业和经济——以及价值本身的概念和交换。当IOTA的数字资产框架发布时，由于网络基于零费用的架构，数字资产将变得更加无处不在。数字资产框架是IOTA上最受...
+    </div>
+    <div class="post-meta"><span title='2022-04-18 03:05:23 +0800 +0800'>四月 18, 2022</span>&nbsp;·&nbsp;阅读耗时 11 分钟&nbsp;·&nbsp;
+<a href="/editors/%e5%be%90%e6%9c%9b%e5%b7%9d">徐望川</a>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e9%95%bf%e6%96%87%e9%a2%84%e8%ad%a6" aria-label="长文预警">长文预警</a></li>
+                <li>
+                    <a href="#iota-%e6%95%b0%e5%ad%97%e8%b5%84%e4%ba%a7%e7%9a%84%e7%b1%bb%e5%9e%8b" aria-label="IOTA 数字资产的类型">IOTA 数字资产的类型</a></li>
+                <li>
+                    <a href="#%e4%bb%80%e4%b9%88%e6%98%af%e5%8e%9f%e7%94%9f%e8%b5%84%e4%ba%a7" aria-label="什么是原生资产？">什么是原生资产？</a></li>
+                <li>
+                    <a href="#iota-%e4%bb%a3%e5%b8%81%e5%a6%82%e4%bd%95%e5%8f%98%e6%88%90%e5%8e%9f%e7%94%9f%e8%b5%84%e4%ba%a7" aria-label="IOTA 代币如何变成原生资产？">IOTA 代币如何变成原生资产？</a></li>
+                <li>
+                    <a href="#%e5%8e%9f%e7%94%9f%e8%b5%84%e4%ba%a7%e7%94%a8%e4%be%8b" aria-label="原生资产用例">原生资产用例</a><ul>
+                        
+                <li>
+                    <a href="#%e5%bf%a0%e8%af%9a%e5%ba%a6%e8%ae%a1%e5%88%92" aria-label="忠诚度计划：">忠诚度计划：</a></li>
+                <li>
+                    <a href="#%e6%94%af%e4%bb%98%e5%87%ad%e8%af%81" aria-label="支付凭证：">支付凭证：</a></li>
+                <li>
+                    <a href="#%e5%85%ac%e7%94%a8%e4%ba%8b%e4%b8%9a" aria-label="公用事业：">公用事业：</a></li>
+                <li>
+                    <a href="#%e6%99%ba%e8%83%bd%e8%b4%a2%e4%ba%a7" aria-label="智能财产：">智能财产：</a></li>
+                <li>
+                    <a href="#%e6%95%b0%e5%ad%97%e6%94%b6%e8%97%8f%e5%93%81" aria-label="数字收藏品：">数字收藏品：</a></li>
+                <li>
+                    <a href="#%e9%9f%b3%e4%b9%90" aria-label="音乐：">音乐：</a></li>
+                <li>
+                    <a href="#%e5%b7%a5%e8%b5%84%e5%8d%95" aria-label="工资单：">工资单：</a></li>
+                <li>
+                    <a href="#%e6%b4%bb%e5%8a%a8" aria-label="活动：">活动：</a></li>
+                <li>
+                    <a href="#%e7%94%b5%e5%8a%a8%e6%b1%bd%e8%bd%a6" aria-label="电动汽车：">电动汽车：</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%85%b3%e9%94%ae%e8%a6%81%e7%82%b9" aria-label="关键要点">关键要点</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+    
+    <pre tabindex="0">
+<code class="hljs diff">以下为赞助内容：<br>
+点击风车邀请链接或使用邀请码开户<br>
+每笔手续费均可免去20%<br>
+<a href="https://accounts.binance.me/zh-CN/register?ref=XVZ8RMFQ">币安注册开户</a> 邀请码：XVZ8RMFQ<br>
+<a href="https://www.ouyicn.kim/join/267411054">OKX注册开户</a> 邀请码：267411054
+</code>
+    </pre>
+    <p><a href="https://blog.iota.org/exploring-the-properties-and-benefits-of-native-assets/">原文链接</a></p>
+<pre tabindex="0"><code>本文内容：    
+如果你曾经做过或者经历过O2O项目   
+你会发现有了IOTA就可以变成现实
+
+--风车注
+</code></pre><h2 id="长文预警">长文预警<a hidden class="anchor" aria-hidden="true" href="#长文预警">#</a></h2>
+<p>从稀有的收藏品到电动汽车，从足球俱乐部到智慧城市，本土资产有能力改变行业和经济——以及价值本身的概念和交换。当 IOTA 的数字资产框架发布时，由于网络基于零费用的架构，数字资产将变得更加无处不在。</p>
+<p>数字资产框架是 IOTA 上最受期待的功能之一。在这篇文章中，我们将研究原生资产的使用。但首先我们必须澄清一些困惑。我们所说的“原生资产”到底是什么意思？</p>
+<p>IOTA 上的数字资产使用了许多不同的名称，造成了不确定性。当同时存在第 1 层和第 2 层资产时，这种情况只会在未来变得更糟。因此，我们修改了我们的术语以简化未来的事项。</p>
+<h2 id="iota-数字资产的类型">IOTA 数字资产的类型<a hidden class="anchor" aria-hidden="true" href="#iota-数字资产的类型">#</a></h2>
+<p>IOTA 上所有资产的总称是数字资产。</p>
+<p>这些资产可能存在于第 1 层（IOTA 主网，作为定制的 IOTA 代币）或第 2 层（在智能合约链中）。为了区分这些资产类别，我们使用了两个不同的名称：</p>
+<ul>
+<li>第 1 层资产被称为原生资产，因为它们是 IOTA 主网的原生资产。</li>
+<li>第 2 层资产被称为智能资产，因为它们存在于智能合约层，并且具有更高的可编程性。</li>
+</ul>
+<p>创建任何一种数字资产的过程称为铸币。</p>
+<p>备注：</p>
+<ul>
+<li>
+<p>术语”资产“和”代币“可以互换使用，两者含义相同（如原生资产/原生代币、智能资产/智能代币）。例如，您指一件艺术品，您可能会称其为资产，但如果您指的是 Wen Coin，您可能会称其为代币。</p>
+</li>
+<li>
+<p>对于更具技术经验的读者，还将在原生资产的代码库以及未来的钱包和库实现中进行变量名称更改，将“颜色”字段替换为“标签”字段。</p>
+</li>
+</ul>
+<h2 id="什么是原生资产">什么是原生资产？<a hidden class="anchor" aria-hidden="true" href="#什么是原生资产">#</a></h2>
+<p>原生资产（以前称为“彩色硬币”）是一种定制的 IOTA 代币，在某些情况下或特定应用程序中，它具有数字化代币的功能，代表真实的防篡改和有限资产世界。</p>
+<p>自 2012 年 12 月以来，“彩色硬币”一词一直是加密词典的一部分，其中包括以太坊创造者 Vitalik Buterin 在内的一个团队在比特币区块链上建立了一个项目。</p>
+<p><a href="https://bitcoil.co.il/BitcoinX.pdf">Meni Rosenfeld 的论文是第一个描述这个概念的论文</a>。该项目源于在区块链上发行现实世界资产（如房地产）的想法，但很快就看到，加密行业内比特币的有限吞吐量（以及相关费用）将无法为这个不断增长的行业提供必要的可扩展性。然而，彩色硬币的最初概念为实验开辟了可能性，并为 IOTA 的原生资产奠定了基础。</p>
+<p>在我们探讨原生资产的创建方式之前，先简要介绍一下它们的优势：</p>
+<ol>
+<li>它们可以代表几乎任何类型的资产或合同。</li>
+<li>不需要繁琐且成本高昂的第三方，以数字方式存储它们或将它们转移给新所有者。</li>
+<li>它们是通过“标记” IOTA 代币来铸造的，这意味着它们不会减少 IOTA 代币的整体供应。</li>
+<li>使用 IOTA 的免费协议，创建原生资产的成本很低，您可以在分类账本上免费分配您的资产。</li>
+</ol>
+<h2 id="iota-代币如何变成原生资产">IOTA 代币如何变成原生资产？<a hidden class="anchor" aria-hidden="true" href="#iota-代币如何变成原生资产">#</a></h2>
+<p>要铸造原生资产，只需在执行交易时获取一个普通的 IOTA 代币并为其分配一个唯一的身份。</p>
+<p>铸造原生资产的行为发生在 IOTA 分类账的基础级别，它是安全的、可追溯的和不可变的。通过添加一个“标签”，IOTA 代币被赋予了特定的含义，基本上是给它们一个名字即可。在<a href="https://blog.iota.org/iota-native-digital-assets-devnet/"> IOTA 基金会博客上阅读更多信息</a>。</p>
+<p>原生资产的发行人持有特定数量的 IOTA 代币，他们想在钱包中铸造，并以标记这些特定 iota 的方式对传出交易进行编码，以代表发行人想要分配给原生资产的任何资产。</p>
+<p>目前，1个IOTA Token相当于1个原生资产，原生资产的转移过程与IOTA Token的转移过程完全相同。</p>
+<p>“标签”基于生成交易输出时创建的交易哈希。因此，标签是唯一的并且特定于该交易。这意味着无法通过第二次交易获得相同的标签，并且无法将辅助标签添加到同一个硬币上。标签始终是其创世交易的 ID：您不能再次重新创建相同的标签。这也意味着可以轻松查看 Tangle 并查看原生资产的铸造时间和地点。</p>
+<p>原生资产始终可以恢复到其原始 IOTA 代币状态：这意味着流通中的原生代币的总量可以通过将一些代币恢复到其原始状态来减少。 （并且，无论谁是原生资产的当前所有者——即创建者转移原生资产的人——都可以将原生资产恢复到其原始状态，甚至可以再次通过进行另一笔交易来分配新标签）。</p>
+<p>但总金额不能增加，因为上面提到了“标签=交易ID”的要求。</p>
+<ul>
+<li>有关铸造原生资产的详细技术描述，请深入了解 <a href="https://github.com/iotaledger/protocol-rfcs/blob/24b300652244d2047e855b787e2984cc88fc922a/text/0034-colored-coins/0034-colored-coins.md">GitHub 上有关彩色硬币的文章</a>中的“详细设计”</li>
+<li>此外，请查看有关使用原生资产创建标记化资产的操作指南：
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/8c2zAP_h9sY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="IOTA 数字资产框架演示 - 创建代币和代币化资产"></iframe>
+</div>
+</li>
+</ul>
+<p>重要的是，元数据也可以添加到原生资产中，确保代币具有价值表示。通过承诺兑现原生资产（通过将其交换为现实世界的对应物），第三方（公司、政府或个人）可以将现实世界的价值分配给原生资产。</p>
+<p>让我们通过检查原生资产的一些用例来更深入地了解这一点。</p>
+<h2 id="原生资产用例">原生资产用例<a hidden class="anchor" aria-hidden="true" href="#原生资产用例">#</a></h2>
+<p>就像邻里咖啡店会员卡，它可使您每购买 10 次即可获得一杯免费咖啡；或打印的足球比赛门票代表您花在该门票上的钱，并可得到进入足球场的入场券；或每月旅行通行证允许您使用您所在城市的公共交通工具，或者，用于让您拨打长途电话的预付费电话卡，原生资产就像以上月票季票一样，可以让您获得特定和有限的商品、服务或产品。</p>
+<p><code>我们可以将文中提及的原生资产理解为用IOTA铸造的会员卡或季票 --风车注</code></p>
+<p>但是，为什么要为在现实世界中似乎令人满意系统的数字版本而烦恼呢？因为原生资产带来了几个重要的好处，而这些好处通过使用 IOTA 的协议（称为 Tangle）得到了提升（以下内容改编自本文）：</p>
+<ul>
+<li>原生资产不能被伪造。</li>
+<li>Tangle 是去中心化的，因此您可以从自己的数字钱包中分配、转移和管理资产，而不受第三方干预。</li>
+<li>Tangle 是免费的，因此转移原生资产不涉及任何成本（但是，发行人必须承担购买 IOTA 代币的成本，这些代币将被铸造为原生资产——目前一百万代币不到一美元）。</li>
+<li>通过检查 Tangle，发行人可以轻松监控原生资产的分布、使用和可用供应。</li>
+<li>将原生资产转换回常规的 IOTA 代币很容易，服务提供商（咖啡店老板、电动汽车制造商、公用事业提供商）可以将原生资产转换为 IOTA 代币并重新铸造它们以用于其他服务。它们的价值不会因使用而减少。它们可以在使用后重复使用或出售。</li>
+<li>原生资产将无缝集成到 Firefly 钱包中。</li>
+</ul>
+<p>考虑到这一点，描绘原生资产的用例变得容易得多。下面列出了一些潜在的用例——绝不是详尽的清单，也不是 IOTA 基金会的期望。</p>
+<pre tabindex="0"><code>要理解以下用例，请先看这个简版解释：
+原生资产就是Web2时代的一卡通功能，但是它无需商家联盟  
+哪怕你周围有一万个商家，只要它们是IOTA网上的  
+你随时可以使用 $IOTA 去兑换它们的服务
+Web2时代，要么一卡通，要么一堆卡
+
+--风车注
+</code></pre><h3 id="忠诚度计划">忠诚度计划：<a hidden class="anchor" aria-hidden="true" href="#忠诚度计划">#</a></h3>
+<p>对于用于组织忠诚度计划的示例，对于体育或任何其他依赖粉丝支持来维持生存的部门来说，原生资产已经被用作吸引粉丝的奖励因素，开辟了一个全新的互利交易生态系统，甚至是一个全新的经济子系统——例如，由于冠状病毒引发封锁而被冷落的体育俱乐部，现在它们可以通过原生资产继续和粉丝互动。</p>
+<p>巴黎圣日耳曼、尤文图斯、都灵和罗马等欧洲足球俱乐部都在加密货币交易所上市他们的球迷代币。根据 FanTokenStats 的数据，粉丝代币市场的市值估计为数亿美元。</p>
+<h3 id="支付凭证">支付凭证：<a hidden class="anchor" aria-hidden="true" href="#支付凭证">#</a></h3>
+<p>原生资产已被电动汽车充电品牌用作加密支付的一种形式。</p>
+<p>然而，改变行业的潜力是存在的：原生资产的互操作性可以将不同的电动汽车充电解决方案（每一种在很大程度上与其他的不兼容）结合在一起，并促进电动汽车的广泛采用。目前，这依赖于客户使用预先在商家系统中注册的卡（或智能手机应用程序）：但如果原生资产可以用于跨所有电动汽车充电器品牌进行交易呢？在您的越野汽车假期中，您的原生资产可以在不同公司的充电站兑换为充电，清算实体会努力确定哪个充电站公司从旅程的哪个部分获得收益（更重要的是，可能是处理交易的车辆本身）。在不兼容性限制采用的领域中，原生资产将是一种实现互操作性的务实方法。</p>
+<h3 id="公用事业">公用事业：<a hidden class="anchor" aria-hidden="true" href="#公用事业">#</a></h3>
+<p>原生资产也是智慧城市未来的关键。</p>
+<p>例如，一些城市正在尝试使用原生资产来激励其公民采取更环保的行为（例如，拼车的公民获得使用公用事业的奖励）或支持当地经济的行为（例如，在当地购物的奖励而不是使用某个在线电子商务巨头）。</p>
+<p>基于虚拟货币创建区域或地方经济的潜力是惊人的：已经存在几种地方货币，例如<a href="https://hudsonvalleycurrent.org/">纽约哈德逊河谷的 Current</a>、<a href="https://en.wikipedia.org/wiki/Chiemgauer">德国的 Chiemgauer</a> 或<a href="https://www.shareable.net/how-one-city-in-spain-launched-a-local-currency/">西班牙的 grama</a>。这些货币试图放大本地乘数效应，其中一些使用一种着色形式来跟踪代币的“旅程”，并提供在当地消费的激励措施。此外，高效的共享经济被认为是应对气候灾难的关键解决方案之一。在这方面，像 IOTA 这样的原生资产可以被视为一种绿色赋能技术。</p>
+<h3 id="智能财产">智能财产：<a hidden class="anchor" aria-hidden="true" href="#智能财产">#</a></h3>
+<p>原生资产可用于土地管理来代表土地所有权：在被称为“智能财产”的过程中，硬币可以携带带有公共登记详细信息的元数据，例如 GPS 坐标、尺寸、建造日期等。所有权或身份等敏感细节可以加密，因此只有拥有正确私钥的人才能看到信息——在发生争议的情况下尤其重要。</p>
+<p>智能财产的好处是多方面的：它可以更简单地转移和注册财产，并且可以通过使用私钥来证明身份、签署文件和授权交易来防止销售欺诈。在土地登记特别困难的地区（例如，2012 年<a href="https://unhabitat.org/valuation-of-unregistered-lands-a-policy-guide">联合国人居署估计</a>发展中国家 70% 以上的土地未登记），只需一部智能手机即可签发廉价的所有权证书。此外，智能合约可以设置条件以允许财产转让的不同步骤，从签署公证人到将资金存入托管。在许多情况下，市政办公室受到瓶颈效应或低效流程的影响，可以通过原生资产的智能数字化加以改进。</p>
+<h3 id="数字收藏品">数字收藏品：<a hidden class="anchor" aria-hidden="true" href="#数字收藏品">#</a></h3>
+<p>原生资产、狂热和稀有度之间的联系在数字收藏品市场中体现出来。 Rarible、SuperRare 和 Myth Market 等应用程序是在线市场，收藏家可以在其中搜索、交换和展示有限的收藏 NFT。粉丝世界中的传奇人物已经注意到：今年 6 月，漫威——蜘蛛侠、复仇者联盟、黑豹等的故乡——宣布将在 NFT 应用程序 VeVe 上发布有限范围的收藏品.根据 <a href="https://hypebeast.com/2021/6/marvel-nfts-veve-partnership-info">hypebeast.com</a> 的说法，“物品将涵盖稀有甚至秘密、超级稀有的数字漫画书、3D 雕像和其他令人垂涎的物品，然后收藏家可以在他们自己的虚拟陈列室中展示这些物品。”</p>
+<h3 id="音乐">音乐：<a hidden class="anchor" aria-hidden="true" href="#音乐">#</a></h3>
+<p>原生资产作为所有权证明的适用性也可以影响我们如何消费和评估音乐。流媒体对音乐行业造成的破坏仍在衡量之中——查看最近<a href="https://committees.parliament.uk/work/646/economics-of-music-streaming/">英国议会对流媒体经济影响的调查</a>（剧透警告：他们不是流媒体的粉丝）。盗版、收入减少以及点播流媒体对音乐作为一种相对稀有商品的内在价值提出的挑战，都对行业构成了生存威胁。原生资产可用于标记官方数字商品（唱片的签名副本、个性化稀有物品、现场在线音乐会）与非官方数字商品的区别。</p>
+<h3 id="工资单">工资单：<a hidden class="anchor" aria-hidden="true" href="#工资单">#</a></h3>
+<p>原生资产的透明度——在 Tangle 上可以轻松地跟踪他们的旅程，从创建到分发——使它们成为高度具体的交换案例的理想选择。以 HR 为例：员工每完成一小时的加班，他们就会收到一枚特殊的代币，该代币又可以用来换取休假、培训甚至奖金，这些代币存放在符合 GDPR 的去中心化账本上。在数字游牧的环境中，越来越多的流动劳动力从一个工作转移到另一个工作或同时持有多个工作，一个值得信赖的、透明的和可互操作的方式将员工福利从一个雇主转移到另一个雇主将是真正重要的。</p>
+<h3 id="活动">活动：<a hidden class="anchor" aria-hidden="true" href="#活动">#</a></h3>
+<p>充满活力的夜生活是城市经济健康的主要贡献者，但夜生活场景是众所周知的脆弱生态系统：在该行业工作的各方经常面临阻挠或完全敌对的地方政府、扫兴邻居，以及最近对音乐版权，而冠状病毒大流行已经产生了毁灭性的影响。如果您所在城市的俱乐部和酒吧可以为他们自己创造一个新市场，原生资产——以最低价格铸造和分发——可以代替食品和饮料邮票、忠诚度积分等。</p>
+<h3 id="电动汽车">电动汽车：<a hidden class="anchor" aria-hidden="true" href="#电动汽车">#</a></h3>
+<p>到目前为止，我们已经探索了非常符合其作为交换和易货代币的流行形象的原生资产的用例。还有没有其他更雄心勃勃的原生资产创建经济子系统的用例呢？</p>
+<p>为了使用<a href="https://www.statista.com/statistics/932998/number-of-electric-vehicle-charging-stations-germany/">德国（欧洲领先的插电式电动汽车销售市场）</a>仅有的大约 45,000 个<a href="https://www.statista.com/statistics/626633/eu-new-electric-vehicle-registrations/">公共电动汽车充电站</a>，司机必须在数百家运营商之间进行选择才能注册。不太理想的情况是：从运营商的角度来看，每个品牌都必须单独与客户互动以结算付款，其中可能包括退回甚至拖欠付款。从客户的角度来看：祝需要在未注册的运营商处充电的司机好运！被 400 多家运营商的所有（或至少一个财团）接受的原生资产可能是革命性的突破。</p>
+<ul>
+<li>它可以与法定货币或能源单位耦合。</li>
+<li>如果由财团铸造，司机将只需要经过一个注册过程，但在所有参与的充电站使用令牌。</li>
+<li>原生资产也可以与 Apple Music、GooglePlay、Amazon 等无数其他代金券一起在加油站或超市出售。</li>
+<li>它减少了运营商的管理费用：如果硬币相当于 1 美分，那么铸造价值 50 亿美元的本地资产的行为将只花费运营商 1500 欧元（并且由于 IOTA 的免费基础设施，转移它们不会产生任何成本）。</li>
+<li>为了获得比最初铸造的更多供应，财团需要做的就是创建第二个版本的原生资产。</li>
+<li>这样，他们就可以保持对代币的控制。</li>
+<li>与当前个人结算付款的责任不同，财团中的运营商只需在他们自己之间结算，从而减少管理费用并消除违约风险。</li>
+<li>作为现金代金券出售，原生资产变得匿名：这具有使运营商能够回避处理客户详细信息所涉及的基础设施成本和安全/GDPR 问题的额外好处。</li>
+<li>可赎回的“能量单位”突然变得可转移，并且随着这个星球上的每个人都消耗能量，它们自己也可能成为交换媒介。</li>
+</ul>
+<p>但它并不止于此。如果原生数字资产是可转让的呢？我们案例研究中的运营商可以让车主互相出售多余的能源——现在运营商也成为了市场参与者：对他们来说是一种全新的商业模式。</p>
+<h2 id="关键要点">关键要点<a hidden class="anchor" aria-hidden="true" href="#关键要点">#</a></h2>
+<ul>
+<li>
+<p>从数字收藏品到电动汽车的能源交易市场：我们在交换粉丝代币方面取得了长足的进步。原生资产的潜力是非凡的，并且将通过智能合约进一步扩展。</p>
+</li>
+<li>
+<p>为 IOTA 代币等数字资产分配非金融或金融价值的能力为商品和服务交易开辟了新市场。</p>
+</li>
+<li>
+<p>只要商品或服务是有限资源，原生资产就会提供透明、可互操作且安全的方式来以数字方式表示和交易该资源。</p>
+</li>
+</ul>
+<p>您最期待哪些原生资产用例？</p>
+<p>原作者：<a href="https://blog.iota.org/author/if/">IOTA 基金会</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://fengche.io/tags/iota/">IOTA</a></li>
+      <li><a href="https://fengche.io/tags/%E5%8E%9F%E7%94%9F%E8%B5%84%E4%BA%A7/">原生资产</a></li>
+      <li><a href="https://fengche.io/tags/%E6%95%B0%E5%AD%97%E8%B5%84%E4%BA%A7/">数字资产</a></li>
+      <li><a href="https://fengche.io/tags/nft/">NFT</a></li>
+      <li><a href="https://fengche.io/tags/%E9%9F%B3%E4%B9%90/">音乐</a></li>
+      <li><a href="https://fengche.io/tags/o2o/">O2O</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://fengche.io/posts/238/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>以太坊基金会报告2022年4月</span>
+  </a>
+  <a class="next" href="https://fengche.io/posts/236/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>为了迎接即将到来的Q2行情，安全的问题不容忽视</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 探索原生资产的属性和好处 on twitter"
+        href="https://twitter.com/intent/tweet/?text=%e6%8e%a2%e7%b4%a2%e5%8e%9f%e7%94%9f%e8%b5%84%e4%ba%a7%e7%9a%84%e5%b1%9e%e6%80%a7%e5%92%8c%e5%a5%bd%e5%a4%84&amp;url=https%3a%2f%2ffengche.io%2fposts%2f237%2f&amp;hashtags=IOTA%2c%e5%8e%9f%e7%94%9f%e8%b5%84%e4%ba%a7%2c%e6%95%b0%e5%ad%97%e8%b5%84%e4%ba%a7%2cNFT%2c%e9%9f%b3%e4%b9%90%2cO2O">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 探索原生资产的属性和好处 on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2ffengche.io%2fposts%2f237%2f&amp;title=%e6%8e%a2%e7%b4%a2%e5%8e%9f%e7%94%9f%e8%b5%84%e4%ba%a7%e7%9a%84%e5%b1%9e%e6%80%a7%e5%92%8c%e5%a5%bd%e5%a4%84&amp;summary=%e6%8e%a2%e7%b4%a2%e5%8e%9f%e7%94%9f%e8%b5%84%e4%ba%a7%e7%9a%84%e5%b1%9e%e6%80%a7%e5%92%8c%e5%a5%bd%e5%a4%84&amp;source=https%3a%2f%2ffengche.io%2fposts%2f237%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 探索原生资产的属性和好处 on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2ffengche.io%2fposts%2f237%2f&title=%e6%8e%a2%e7%b4%a2%e5%8e%9f%e7%94%9f%e8%b5%84%e4%ba%a7%e7%9a%84%e5%b1%9e%e6%80%a7%e5%92%8c%e5%a5%bd%e5%a4%84">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 探索原生资产的属性和好处 on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2ffengche.io%2fposts%2f237%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 探索原生资产的属性和好处 on whatsapp"
+        href="https://api.whatsapp.com/send?text=%e6%8e%a2%e7%b4%a2%e5%8e%9f%e7%94%9f%e8%b5%84%e4%ba%a7%e7%9a%84%e5%b1%9e%e6%80%a7%e5%92%8c%e5%a5%bd%e5%a4%84%20-%20https%3a%2f%2ffengche.io%2fposts%2f237%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 探索原生资产的属性和好处 on telegram"
+        href="https://telegram.me/share/url?text=%e6%8e%a2%e7%b4%a2%e5%8e%9f%e7%94%9f%e8%b5%84%e4%ba%a7%e7%9a%84%e5%b1%9e%e6%80%a7%e5%92%8c%e5%a5%bd%e5%a4%84&amp;url=https%3a%2f%2ffengche.io%2fposts%2f237%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</span>
+    <span>
+        Powered at 2021
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" fill="currentColor">
+        <path style="fill:#777bc6" d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

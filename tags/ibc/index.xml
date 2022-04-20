@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IBC on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/ibc/</link>
+    <description>Recent content in IBC on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 20 Mar 2022 21:13:46 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/ibc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LayerZero - 致力于IBC（Inter-Blockchain Communication 跨链通信）传输层建设</title>
+      <link>https://fengche.io/posts/66/</link>
+      <pubDate>Sun, 20 Mar 2022 21:13:46 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/66/</guid>
+      <description>长文预警：在LayerZero之上对IBC进行更深入的技术研究全链互操作性协议有望在不同链上的任意两个协定之间实现安全、有序和通用的消息传输。为此，[IBC](https://github.com/cosmos/ibc)定义了一组标准，定义了一个通用消息传输层，其中包括数据结构、抽象和语义，一旦由参与链实现，它们将允许它们安全地进行通信。在传输层之上，IBC还定义了一个具有一组标准的应用层，例如用于可替代令牌的ICS-20，用于定义应如何解释消息。但是，IBC的传输层使用成本高昂，并且跨链的连接...</description>
+    </item>
+    
+    <item>
+      <title>跨链的三难困境</title>
+      <link>https://fengche.io/posts/64/</link>
+      <pubDate>Sun, 20 Mar 2022 21:11:36 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/64/</guid>
+      <description>长文预警我们介绍了一个建立在LayerZero之上完全可组合的原生资产跨链桥，具有统一流动性和即时保证的最终性。在设计桥时，有一个著名的三难困境，它是指在以下三个方面取得平衡：1.即时保证的确定性：当交易在源链上成功提交时，目标链上有对应资金保证交易成功。2.统一流动性：多个链之间的单个流动性池的共享访问。3.原生资产：目标链上用户想要的资产（原生或最具流动性的合成资产）。![](https://edit.fcdaohang.org/assets/e800549a-b99b-4e7f-8a92-...</description>
+    </item>
+    
+    <item>
+      <title>潜力项目-StargateFinance-STG概述</title>
+      <link>https://fengche.io/posts/62/</link>
+      <pubDate>Sun, 20 Mar 2022 15:14:31 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/62/</guid>
+      <description>最新补充：希望可以了解更多项目信息的小伙伴可以查看这三篇文章[LayerZero-一种全链互操作性协议](/posts/63/)[跨链的三难困境](/posts/64/)[Stargate星际之门-告别过去的桥](/posts/65/)[LayerZero-致力于IBC（Inter-BlockchainCommunication跨链通信）传输层建设](/posts/66/)[推友@shitcoin_daily](https://twitter.com/shitcoin_daily)发布了关于[该...</description>
+    </item>
+    
+  </channel>
+</rss>

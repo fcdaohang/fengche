@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>钓鱼 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E9%92%93%E9%B1%BC/</link>
+    <description>Recent content in 钓鱼 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 17 Apr 2022 17:30:02 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E9%92%93%E9%B1%BC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为了迎接即将到来的Q2行情，安全的问题不容忽视</title>
+      <link>https://fengche.io/posts/236/</link>
+      <pubDate>Sun, 17 Apr 2022 17:30:02 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/236/</guid>
+      <description>```本文内容：你想不到的盗U手段--风车注```很多朋友都很期待接下来的行情，但在此之前，趁现在还是平稳阶段，请仔细对照本文检查隐患避免辛苦赚的钱被人一波带走。币圈，安全的问题不容忽视。这里重点说下最近以及后续可能出现的大规模安全问题：1.假钱包：百度和谷歌搜索IMTOKEN，这里是绝对的重灾区，很多都是假的官方网站，下载到的都是可以把你真钱转走的假钱包。解决办法：1.牢记官方网站网址，尽量使用iphone的Appstore和安卓的googleplay去下载钱包。2.正规渠道购买并使用硬件钱包...</description>
+    </item>
+    
+    <item>
+      <title>Opensea疑似合约漏洞被黑客利用进行钓鱼盗取NFT低价抛售</title>
+      <link>https://fengche.io/posts/4/</link>
+      <pubDate>Fri, 25 Feb 2022 16:28:07 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/4/</guid>
+      <description>起因2月20日早间，据部分英文twitter大V透露信息，某黑客钱包地址一直不停和Opensea某合约进行交互，用意不明，但其钱包地址的ETH逐渐增加，怀疑是发生了利用合约漏洞的攻击事件，一时间引发市场恐慌情绪，币价随之暴跌，BTC来到关键支撑区间35-38k，截至发稿最低见379xx发展Opensea官方随后在官网发布置顶公告称：”We&amp;#39;recontinuingtoinvestigaterumorsofaphishingattackoriginatingoutsideofOpenSea.Don...</description>
+    </item>
+    
+  </channel>
+</rss>

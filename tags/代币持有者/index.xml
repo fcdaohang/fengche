@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>代币持有者 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E4%BB%A3%E5%B8%81%E6%8C%81%E6%9C%89%E8%80%85/</link>
+    <description>Recent content in 代币持有者 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Mon, 18 Apr 2022 14:42:22 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E4%BB%A3%E5%B8%81%E6%8C%81%E6%9C%89%E8%80%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>认识 Assembly 03：Assembly 即市场</title>
+      <link>https://fengche.io/posts/241/</link>
+      <pubDate>Mon, 18 Apr 2022 14:42:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/241/</guid>
+      <description>[原文链接](url)认识Assembly的主要参与者长文预警系列导航：[认识Assembly01：让你打开和去中心化世界的钥匙](/posts/242/)[认识Assembly02：验证者和验证者委员会](/posts/241/)[认识Assembly03：Assembly即市场](/posts/240/)[认识Assembly04：互操作性和可组合性](/posts/239/)Assembly的低费用为在Assembly网络上构建业务模型的新用例和可预测性提供了巨大的机会。您可以作为IOTA...</description>
+    </item>
+    
+  </channel>
+</rss>

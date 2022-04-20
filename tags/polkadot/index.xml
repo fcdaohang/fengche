@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Polkadot on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/polkadot/</link>
+    <description>Recent content in Polkadot on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 26 Feb 2022 01:20:30 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/polkadot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DOT波卡-Polkadot{.js}</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Feb 2022 01:20:30 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>波卡钱包使用像其生态一样复杂，优点在于花费一些成本，可使用代理账户进行交互，而资金汇总在主账户，冷热一体</description>
+    </item>
+    
+  </channel>
+</rss>

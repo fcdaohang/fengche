@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>科技 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E7%A7%91%E6%8A%80/</link>
+    <description>Recent content in 科技 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Wed, 20 Apr 2022 04:56:47 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E7%A7%91%E6%8A%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>什么是KuCoin交易机器人以及如何使用它</title>
+      <link>https://fengche.io/posts/267/</link>
+      <pubDate>Wed, 20 Apr 2022 04:56:47 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/267/</guid>
+      <description>什么是KuCoin交易机器人？顾名思义，KuCoin交易机器人是KuCoin上的一个交易工具，它可以把交易任务从你手中拿出来。这些工具允许您预先设置机器人将执行交易的某些条件，允许您在睡眠时进行交易。也带走了交易中情绪的因素。KuCoin说，这个工具可以“组装和复制重复的任务”，这将帮助你以系统的方式进行交易。此外，它将允许您采取交易，您本来会错过否则。除了机器人，没有人2坐在办公桌前！KuCoin交易机器人提供哪些策略？KuCoin宣传了几种不同的策略，主要侧重于 现货交易，但是 期货 也是。...</description>
+    </item>
+    
+  </channel>
+</rss>

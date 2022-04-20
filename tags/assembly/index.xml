@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Assembly on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/assembly/</link>
+    <description>Recent content in Assembly on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Mon, 18 Apr 2022 14:53:18 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/assembly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>认识 Assembly 04：互操作性和可组合性</title>
+      <link>https://fengche.io/posts/242/</link>
+      <pubDate>Mon, 18 Apr 2022 14:53:18 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/242/</guid>
+      <description>[原文链接](https://blog.assembly.sc/meet-assembly-4-interoperability-and-composability/)无缝创建跨链dApp长文预警系列导航：[认识Assembly01：让你打开和去中心化世界的钥匙](/posts/242/)[认识Assembly02：验证者和验证者委员会](/posts/241/)[认识Assembly03：Assembly即市场](/posts/240/)[认识Assembly04：互操作性和可组合性](/po...</description>
+    </item>
+    
+    <item>
+      <title>认识 Assembly 03：Assembly 即市场</title>
+      <link>https://fengche.io/posts/241/</link>
+      <pubDate>Mon, 18 Apr 2022 14:42:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/241/</guid>
+      <description>[原文链接](url)认识Assembly的主要参与者长文预警系列导航：[认识Assembly01：让你打开和去中心化世界的钥匙](/posts/242/)[认识Assembly02：验证者和验证者委员会](/posts/241/)[认识Assembly03：Assembly即市场](/posts/240/)[认识Assembly04：互操作性和可组合性](/posts/239/)Assembly的低费用为在Assembly网络上构建业务模型的新用例和可预测性提供了巨大的机会。您可以作为IOTA...</description>
+    </item>
+    
+    <item>
+      <title>认识 Assembly 02：验证者和验证者委员会</title>
+      <link>https://fengche.io/posts/240/</link>
+      <pubDate>Mon, 18 Apr 2022 14:28:32 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/240/</guid>
+      <description>[原文链接](https://blog.assembly.sc/meet-assembly-2-validators-and-committees/)通往无许可和去中心化IOTA智能合约的道路。长文预警系列导航：[认识Assembly01：让你打开和去中心化世界的钥匙](/posts/242/)[认识Assembly02：验证者和验证者委员会](/posts/241/)[认识Assembly03：Assembly即市场](/posts/240/)[认识Assembly04：互操作性和可组合性](...</description>
+    </item>
+    
+    <item>
+      <title>认识 Assembly 01：让你打开和去中心化世界的钥匙</title>
+      <link>https://fengche.io/posts/239/</link>
+      <pubDate>Mon, 18 Apr 2022 14:20:39 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/239/</guid>
+      <description>[原文链接](https://blog.assembly.sc/meet-assembly-1-your-key-to-open-and-decentralized-worlds/)使用分片智能合约链并在任意地点连接以构建您的世界长文预警系列导航：[认识Assembly01：让你打开和去中心化世界的钥匙](/posts/242/)[认识Assembly02：验证者和验证者委员会](/posts/241/)[认识Assembly03：Assembly即市场](/posts/240/)[认识Asse...</description>
+    </item>
+    
+    <item>
+      <title>三网融合共创未来 - IOTA, Shimmer 和 Assembly</title>
+      <link>https://fengche.io/posts/234/</link>
+      <pubDate>Sun, 17 Apr 2022 14:10:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/234/</guid>
+      <description>[原文链接](https://blog.iota.org/three-networks-to-unite-them-all/)```本文内容：这是一篇关于IOTA整体网络进度路线图的详细介绍用途将是在未来对其工作交付的验证IOTA必然是个长期投资项目，需要不定期对价值进行验证已确保稳定性需要验证时不妨查阅本文--风车注```长文预警全面运行的IOTA、Shimmer和Assembly网络的要求是相互关联和相互依赖的。以下路线图概述了每个网络即将到来的协议升级里程碑，同时概述了它们的相互依赖性。2...</description>
+    </item>
+    
+    <item>
+      <title>IOTA 质押获取 Assembly 网络原生代币活动继续！</title>
+      <link>https://fengche.io/posts/233/</link>
+      <pubDate>Sun, 17 Apr 2022 13:56:27 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/233/</guid>
+      <description>[原文链接](https://blog.iota.org/iota-staking-for-assembly-continues/)```本文内容：质押IOTA获得ASMB空投第二轮即将开始时间为2022年4月19日星期二下午3:00CEST（UTC&#43;2北京时间晚上9点）IOTA主网上线以及后期项目上线可能会奖励前期支持者质押成本不到1美元，建议最低10美元的IOTA参与详细质押教程详见全文--风车注```让活动继续！#长文预警Assembly网络（ASMB代币）的IOTA质押将于4月19日星期...</description>
+    </item>
+    
+    <item>
+      <title>IOTA、Shimmer 和 Assembly 质押路线图</title>
+      <link>https://fengche.io/posts/232/</link>
+      <pubDate>Sun, 17 Apr 2022 13:26:51 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/232/</guid>
+      <description>[原文链接](https://blog.iota.org/iota-shimmer-and-assembly-staking-roadmap/)```IOTA质押奖励的两个代币目前是未分发状态所以这接近于盲挖，有一定风险当然也可能有惊喜，想想YFI惊喜的可能来自于币价这个就不提了，未知但是可以肯定的是，作为早期参与者，后面必然会有相关空投所以值得尝试--风车注```截止发稿，新一轮质押活动将于2022年4月19日北京时间21点开始，有兴趣的朋友请留意官方动态。{{&amp;lt;twitteruser=iot...</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>清算 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E6%B8%85%E7%AE%97/</link>
+    <description>Recent content in 清算 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 17 Apr 2022 03:58:01 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E6%B8%85%E7%AE%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Liquity 2022 Q1 季度报告</title>
+      <link>https://fengche.io/posts/230/</link>
+      <pubDate>Sun, 17 Apr 2022 03:58:01 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/230/</guid>
+      <description>[原文链接](https://www.liquity.org/blog/liquity-q1-2022-report)在整个2021年持续增长一段时间后，由于22年Q1的市场波动，Liquity在新的一年开局缓慢。尽管如此，该系统仍然保持健康，LUSD继续保持挂钩，协议也持续产生收入。在以下报告中，我们总结了Liquity系统的所有关键方面以及用户在21年Q4是如何与Liquity进行交互的。系统整体健康#整体抵押率TotalCollateralRatio在整个22年Q1，我们看到ETH的价格在...</description>
+    </item>
+    
+  </channel>
+</rss>

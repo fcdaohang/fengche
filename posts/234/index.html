@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>三网融合共创未来 - IOTA, Shimmer 和 Assembly | 风车 - 专注区块链快速安全有效的入门信息</title>
+<meta name="keywords" content="IOTA,Shimmer,Assembly,模块化公链,IOTA2.0,Roadmap,质押,Coordicide,GoShimmer,Hornet,Bee,Tangle" />
+<meta name="description" content="[原文链接](https://blog.iota.org/three-networks-to-unite-them-all/)```本文内容：这是一篇关于IOTA整体网络进度路线图的详细介绍用途将是在未来对其工作交付的验证IOTA必然是个长期投资项目，需要不定期对价值进行验证已确保稳定性需要验证时不妨查阅本文--风车注```长文预警全面运行的IOTA、Shimmer和Assembly网络的要求是相互关联和相互依赖的。以下路线图概述了每个网络即将到来的协议升级里程碑，同时概述了它们的相互依赖性。2...">
+<meta name="author" content="
+徐望川">
+<link rel="canonical" href="https://fengche.io/posts/234/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.9a70498391f8adca004cded811aefa9d98674c66090df071732233658f113870.css" integrity="sha256-mnBJg5H4rcoATN7YEa76nZhnTGYJDfBxcyIzZY8ROHA=" rel="preload stylesheet" as="style">
+<link rel="preload" href="/fclogo.svg" as="image">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-49BWTSEZDZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49BWTSEZDZ');
+</script><meta property="og:title" content="三网融合共创未来 - IOTA, Shimmer 和 Assembly" />
+<meta property="og:description" content="[原文链接](https://blog.iota.org/three-networks-to-unite-them-all/)```本文内容：这是一篇关于IOTA整体网络进度路线图的详细介绍用途将是在未来对其工作交付的验证IOTA必然是个长期投资项目，需要不定期对价值进行验证已确保稳定性需要验证时不妨查阅本文--风车注```长文预警全面运行的IOTA、Shimmer和Assembly网络的要求是相互关联和相互依赖的。以下路线图概述了每个网络即将到来的协议升级里程碑，同时概述了它们的相互依赖性。2..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fengche.io/posts/234/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-17T14:10:26&#43;08:00" />
+<meta property="article:modified_time" content="2022-04-17T14:10:26&#43;08:00" />
+<meta property="og:image" content="https://fengche.io/fcslogo.png" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="三网融合共创未来 - IOTA, Shimmer 和 Assembly"/>
+<meta name="twitter:description" content="[原文链接](https://blog.iota.org/three-networks-to-unite-them-all/)```本文内容：这是一篇关于IOTA整体网络进度路线图的详细介绍用途将是在未来对其工作交付的验证IOTA必然是个长期投资项目，需要不定期对价值进行验证已确保稳定性需要验证时不妨查阅本文--风车注```长文预警全面运行的IOTA、Shimmer和Assembly网络的要求是相互关联和相互依赖的。以下路线图概述了每个网络即将到来的协议升级里程碑，同时概述了它们的相互依赖性。2..."/>
+<meta name="twitter:image" content="https://fengche.io/fcslogo.png"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "文章精选",
+      "item": "https://fengche.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "三网融合共创未来 - IOTA, Shimmer 和 Assembly",
+      "item": "https://fengche.io/posts/234/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "三网融合共创未来 - IOTA, Shimmer 和 Assembly",
+  "name": "三网融合共创未来 - IOTA, Shimmer 和 Assembly",
+  "description": "[原文链接](https://blog.iota.org/three-networks-to-unite-them-all/)```本文内容：这是一篇关于IOTA整体网络进度路线图的详细介绍用途将是在未来对其工作交付的验证IOTA必然是个长期投资项目，需要不定期对价值进行验证已确保稳定性需要验证时不妨查阅本文--风车注```长文预警全面运行的IOTA、Shimmer和Assembly网络的要求是相互关联和相互依赖的。以下路线图概述了每个网络即将到来的协议升级里程碑，同时概述了它们的相互依赖性。2...",
+  "keywords": [
+    "IOTA,Shimmer,Assembly,模块化公链,IOTA2.0,Roadmap,质押,Coordicide,GoShimmer,Hornet,Bee,Tangle"
+  ],
+  "articleBody": "原文链接\n本文内容： 这是一篇关于IOTA整体网络进度路线图的详细介绍 用途将是在未来对其工作交付的验证 IOTA必然是个长期投资项目，需要不定期对价值进行验证已确保稳定性 需要验证时不妨查阅本文 --风车注 长文预警 全面运行的 IOTA、Shimmer 和 Assembly 网络的要求是相互关联和相互依赖的。以下路线图概述了每个网络即将到来的协议升级里程碑，同时概述了它们的相互依赖性。\n2021 年 10 月发布的 IOTA 智能合约 (ISC) 测试版开启了 IOTA 上 Web3 应用程序开发的热潮。 ISC 的发布与完全去中心化的 IOTA 2.0 版本（Coordicide）相结合，清楚地表明，过渡网络将非常有益。因此，我们决定通过一个名为 Shimmer 的临时网络来扩展 IOTA 生态系统，该网络为 ISC 和所有 Coordicide 模块提供挑战性测试。\n为了适应 IOTA 基础设施层的未来创新，我们需要一个高度可扩展、无需许可和去中心化的环境。只有在这样的环境下，才有可能促进我们的生态系统已经经历的指数级增长。我们被围绕 ISC 发布的所有活动所震撼。到目前为止，我们已经看到去中心化交易所、DAO、NFT分发、几个 DeFi 应用程序、借贷平台、空投，甚至筹集大量资金的各种项目。\nAssembly 网络专门针对这些项目和其他项目背后的创新思维而设计。 Assembly 提供了一个并行的多链区块链网络，它将成为未来生态系统构建的高度可扩展和可组合的温床。\n作为 Assembly 网络的最佳基础设施锚定层，IOTA 实用的扩展性显着增加了所有三个网络的相互依赖性及其计划的升级里程碑。为了更深入地了解即将到来的发展并更清楚地了解里程碑和相应网络之间的相互关系，我们编制了以下路线图，该路线图代表了每个网络将实现里程碑的时间顺序。\n由于网络之间的相互依赖关系，我们没有包含任何 ETA（Estimated Time of Arrival 预估交付时间），因为它们很容易受到其他网络中里程碑的影响。\n最初的 90 天 IOTA 代币质押期 2022 年 3 月 28 日，IOTA 代币的 Assembly 和 Shimmer 代币的 90 天质押期结束，所有三个网络都过渡到新的质押期。在第一个质押期结束后不久，质押 IOTA 进行 Assembly 代币分发将继续进行，而质押 IOTA 以获得 Shimmer 代币将在初始代币质押期结束时结束。最终，Shimmer 代币的总供应量已全部分配给质押者。\n在 IOTA 代币质押期之后 在 Hornet 节点和 Firefly 钱包软件将收到更新的短暂休息后，为 Assembly 代币质押 IOTA 代币将恢复。 Hornet 节点所有者将通过公共渠道收到更新其节点的通知。 Firefly Github 存储库允许跟踪 Firefly 钱包的进度。\nHornet 节点和萤火虫钱包更新成功后，Staking 将恢复，Staking 奖励将持续发放，就像 90 天 Staking 期间一样。在 Shimmer 和 Assembly 网络分别启动后，将可以在前两个质押期间质押收到的 ASMB 和 SMR 代币，如下所述。\nPre-Shimmer 内部测试网（基于 Stardust） 在升级可以在 IOTA 主网上实施之前，Shimmer 将成为功能丰富的 Stardust 代币化框架协议升级的测试平台。因此，在实际的 Shimmer 网络推出之前，Stardust 将经历两个测试周期：第一个是内部预 Shimmer 测试网，第二个是公测版。\n第一个内部测试周期将已经包括 IOTA 智能合约 (ISC) 支持和新的 Stardust 代币化框架协议。 Stardust 将把 Shimmer 登台网络分类账变成一个多资产分类账，具有原生资产、原生 L1 NFT 等新功能。\nDAO 国库投票 在 IOTA 代币质押和 Shimmer with Stardust 的内部测试之间，对于 IOTA 社区中的所有流动民主爱好者来说，将会有一个重要的事件：IOTA 社区首次对基于代币的投票系统进行投票。 IOTA 代币持有者将能够在 Firefly 钱包中对无人认领的国库代币的命运进行投票。如果这是您第一次听说宝藏投票，请务必阅读我们之前博客文章中的详细信息。\nIOTA 智能合约虚拟机 (ISC VM) alpha 集成 如果没有以太坊虚拟机，智能合约平台会怎样？ IOTA 智能合约虚拟机将在 IOTA 上运行与 EVM 兼容的智能合约。虚拟机的首次集成将在向公众发布之前进行内部测试。该虚拟机将用于 Shimmer，经过实战测试后，将用于 Assembly 虚拟化以太坊智能合约。\nPre-Shimmer 公测网络 一旦 Stardust 升级的内部测试成功完成，该网络将向公众开放。广泛的公开测试将确保为 Shimmer 网络的正式启动找到并修复最大的错误。我们邀请我们的社区开发人员和节点运营商加入我们，在这个重要的里程碑中构建 IOTA 的未来。我们社区的广泛参与对于推动发展至关重要。此时，构建者可以在 Shimmer 网络上的许可环境中部署他们的 ISC 合约。这使得他们的集成能够在首次部署到现场场景之前进行测试。\nShimmer 网络启动 随着 Stardust 升级经过测试、尝试和验证，Shimmer 网络将启动。在启动之前，社区必须在最初的 90 天质押期结束后验证所有代币分配（账本中的余额），以便进行 Shimmer 代币生成活动。\n网络启动后，Shimmer 代币将可自由转让。 IOTA 质押者将能够使用 Firefly 钱包访问他们的 SMR 代币。在网络启动并升级节点和 Firefly 钱包后，将可以质押 Shimmer 代币。\n新的 Stardust 功能将使构建者能够在 Shimmer 上开发他们的第一个应用程序，包括原生资产和原生 L1 NFT。 Stardust 还将成为第 2 层应用程序的基础，包括第 2 层 NFT 和 Assembly 上的智能资产。 IOTA 网络上已经可用的工具，例如网络浏览器，允许用户在 Shimmer 网络中搜索交易、地址、代币等，也将可用。从那时起，构建者可以部署和测试基于原生 Shimmer 网络及其多账本布局和原生资产的智能合约。\nShimmer 网络质押开始 一旦 Shimmer 网络上线，将实施一些功能升级。其中一项升级可以开始在 Shimmer 网络上进行质押。一旦集成并启用，就可以在 Firefly 中进行质押，并且 Shimmer 代币的通货膨胀率将设定在 8% 左右，可能会在稍后阶段由基于社区的 DAO 进行管理和调整。\nShimmer EVM 发布（公共 IOTA 智能合约虚拟机） 随着 Stardust 升级的实施、测试和运行，ISC 虚拟机的集成使构建者能够部署他们的 dApp。在测试和试用 ShimmerEVM 集成以及使用虚拟机部署他们的应用程序时，构建者帮助准备 ISC 虚拟机以在 IOTA 主网上全面发布。\nIOTA Stardust 升级 一旦 Stardust 令牌化框架在 Shimmer 网络中通过验证，它将在 IOTA 主网上实施。这将为 IOTA 网络带来新的实用性水平，并为智能合约集成奠定基础，进而启动 Assembly 网络。\n借助 Stardust，原生资产将找到通往 IOTA 网络的途径。与其他竞争对手相比，IOTA 上的 NFT 将有很大不同，因为它们不需要转移汽油费。还可以创建持有其他原生资产的 NFT：例如，使游戏中的角色能够自己支付某些物品，或接收代币并分发代币。如果您尚未阅读代币化框架，请在此处深入了解。\n在 IOTA 上启动 Assembly 根链 Assembly 网络将在 IOTA 主网上实施其根链，标志着分阶段网络部署的开始，直到它达到可扩展、去中心化多链网络的完全设想状态。\nAssembly 根链的推出将使 Assembly 代币能够自由转移。之后，抵押 ASMB 代币将能够以 8% 的年通货膨胀率获得 ASMB。\n一旦Assembly 根链启动，我们还将提供相应的开发者工具、Assembly 的Firefly 钱包升级，以及一个网络浏览器，供用户探索和搜索Assembly 网络中的交易、地址、代币等。此外，探索所有 Assembly 智能合约也将成为可能。\nIOTA 质押 在 Firefly 和 Hornet 节点更新后，将恢复 IOTA 代币的 ASMB 代币质押。整个质押期一直持续到满 24 个月。\nCoordicide 和第一个即将到来的真实世界验证 无协调器的 IOTA 2.0 DevNet 正在不断开发、测试和改进。 Shimmer 网络的推出将使我们首次能够通过将 Coordicide 组件引入实时网络来验证它们。\nIOTA 2.0 DevNet 基于一个名为 GoShimmer 的原型节点，该节点面向快速迭代，以保持高速并测试组件，直到它们可以在 Shimmer 网络上实现：从“GoShimmer”到“Shimmer”。\n所有迭代都遵循该过程：在 IOTA DevNet 上的 GoShimmer 中被证明按预期工作的组件正在集成到生产就绪的 Hornet 和 Bee 节点软件中，以便在 Shimmer 主网上的真实条件下进行验证。一旦组件在 Shimmer 网络上证明了自己，它们就会进入 IOTA 主网。\n这个开发过程以最终的 Coordicide 加冕，分期计划并与三个主网 IOTA、Shimmer 和 Assembly 一起开发。\n您可以期待很快找到一个公开的 Tangle Improvement Proposal (TIP)，用于将第一部分集成到 Hornet（并因此集成到 Shimmer 网络）中。此外，我们计划在单独的博客文章中发布即将发布的 Coordicide 组件分期付款的依赖关系图大纲。\n概括 上述里程碑是成为一个网络生态系统以将它们团结起来的关键组成部分。通过将 IOTA、L1 基础设施、Shimmer、暂存网络和 Assembly 的多链方法结合在一起，我们确定了扩展核心实用程序的视野并为 Web3 构建的未来开创先例。\n我们与社区密切合作，完成了许多我们同样重视的重大成就，这些成就塑造了我们的核心身份：社区项目。透明度在这一旅程中发挥着至关重要的作用，因此该路线图不仅旨在为社区提供全面的概述，而且还鼓励他们，尤其是所有开发人员和建设者，在前进的道路上加入我们。因此，我们邀请大家通过我们的 GitHub 存储库以及我们的 IOTA、Assembly 和 Shimmer Twitter 帐户密切跟踪我们在每个概述的里程碑上的进展。请务必关注我们的 IOTA、Assembly 和 Shimmer Twitter 帐户以获取即将发布的新闻。\n原文作者：IOTA 基金会\n",
+  "wordCount" : "3346",
+  "inLanguage": "zh",
+  "datePublished": "2022-04-17T14:10:26+08:00",
+  "dateModified": "2022-04-17T14:10:26+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://fengche.io/posts/234/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "风车 - 专注区块链快速安全有效的入门信息",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://fengche.io" accesskey="h" title="风车 - 专注区块链快速安全有效的入门信息 (Alt + H)">
+                <img src="/fclogo.svg" alt="logo" aria-label="logo" height=" 36px"></a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://fengche.io/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/nav/" title="导航">
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/editors/" title="作者">
+                    <span>作者</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://fengche.io">主页</a>&nbsp;»&nbsp;<a href="https://fengche.io/posts/">文章精选</a></div>
+    <h1 class="post-title">
+      三网融合共创未来 - IOTA, Shimmer 和 Assembly
+    </h1>
+    <div class="post-description">
+      内容简介：<br>
+      [原文链接](https://blog.iota.org/three-networks-to-unite-them-all/)```本文内容：这是一篇关于IOTA整体网络进度路线图的详细介绍用途将是在未来对其工作交付的验证IOTA必然是个长期投资项目，需要不定期对价值进行验证已确保稳定性需要验证时不妨查阅本文--风车注```长文预警全面运行的IOTA、Shimmer和Assembly网络的要求是相互关联和相互依赖的。以下路线图概述了每个网络即将到来的协议升级里程碑，同时概述了它们的相互依赖性。2...
+    </div>
+    <div class="post-meta"><span title='2022-04-17 14:10:26 +0800 +0800'>四月 17, 2022</span>&nbsp;·&nbsp;阅读耗时 7 分钟&nbsp;·&nbsp;
+<a href="/editors/%e5%be%90%e6%9c%9b%e5%b7%9d">徐望川</a>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e9%95%bf%e6%96%87%e9%a2%84%e8%ad%a6" aria-label="长文预警">长文预警</a></li>
+                <li>
+                    <a href="#%e6%9c%80%e5%88%9d%e7%9a%84-90-%e5%a4%a9-iota-%e4%bb%a3%e5%b8%81%e8%b4%a8%e6%8a%bc%e6%9c%9f" aria-label="最初的 90 天 IOTA 代币质押期">最初的 90 天 IOTA 代币质押期</a></li>
+                <li>
+                    <a href="#%e5%9c%a8-iota-%e4%bb%a3%e5%b8%81%e8%b4%a8%e6%8a%bc%e6%9c%9f%e4%b9%8b%e5%90%8e" aria-label="在 IOTA 代币质押期之后">在 IOTA 代币质押期之后</a></li>
+                <li>
+                    <a href="#pre-shimmer-%e5%86%85%e9%83%a8%e6%b5%8b%e8%af%95%e7%bd%91%e5%9f%ba%e4%ba%8e-stardust" aria-label="Pre-Shimmer 内部测试网（基于 Stardust）">Pre-Shimmer 内部测试网（基于 Stardust）</a></li>
+                <li>
+                    <a href="#dao-%e5%9b%bd%e5%ba%93%e6%8a%95%e7%a5%a8" aria-label="DAO 国库投票">DAO 国库投票</a></li>
+                <li>
+                    <a href="#iota-%e6%99%ba%e8%83%bd%e5%90%88%e7%ba%a6%e8%99%9a%e6%8b%9f%e6%9c%ba-isc-vm-alpha-%e9%9b%86%e6%88%90" aria-label="IOTA 智能合约虚拟机 (ISC VM) alpha 集成">IOTA 智能合约虚拟机 (ISC VM) alpha 集成</a></li>
+                <li>
+                    <a href="#pre-shimmer-%e5%85%ac%e6%b5%8b%e7%bd%91%e7%bb%9c" aria-label="Pre-Shimmer 公测网络">Pre-Shimmer 公测网络</a></li>
+                <li>
+                    <a href="#shimmer-%e7%bd%91%e7%bb%9c%e5%90%af%e5%8a%a8" aria-label="Shimmer 网络启动">Shimmer 网络启动</a></li>
+                <li>
+                    <a href="#shimmer-%e7%bd%91%e7%bb%9c%e8%b4%a8%e6%8a%bc%e5%bc%80%e5%a7%8b" aria-label="Shimmer 网络质押开始">Shimmer 网络质押开始</a></li>
+                <li>
+                    <a href="#shimmer-evm-%e5%8f%91%e5%b8%83%e5%85%ac%e5%85%b1-iota-%e6%99%ba%e8%83%bd%e5%90%88%e7%ba%a6%e8%99%9a%e6%8b%9f%e6%9c%ba" aria-label="Shimmer EVM 发布（公共 IOTA 智能合约虚拟机）">Shimmer EVM 发布（公共 IOTA 智能合约虚拟机）</a></li>
+                <li>
+                    <a href="#iota-stardust-%e5%8d%87%e7%ba%a7" aria-label="IOTA Stardust 升级">IOTA Stardust 升级</a></li>
+                <li>
+                    <a href="#%e5%9c%a8-iota-%e4%b8%8a%e5%90%af%e5%8a%a8-assembly-%e6%a0%b9%e9%93%be" aria-label="在 IOTA 上启动 Assembly 根链">在 IOTA 上启动 Assembly 根链</a></li>
+                <li>
+                    <a href="#iota-%e8%b4%a8%e6%8a%bc" aria-label="IOTA 质押">IOTA 质押</a></li>
+                <li>
+                    <a href="#coordicide-%e5%92%8c%e7%ac%ac%e4%b8%80%e4%b8%aa%e5%8d%b3%e5%b0%86%e5%88%b0%e6%9d%a5%e7%9a%84%e7%9c%9f%e5%ae%9e%e4%b8%96%e7%95%8c%e9%aa%8c%e8%af%81" aria-label="Coordicide 和第一个即将到来的真实世界验证">Coordicide 和第一个即将到来的真实世界验证</a></li>
+                <li>
+                    <a href="#%e6%a6%82%e6%8b%ac" aria-label="概括">概括</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+    
+    <pre tabindex="0">
+<code class="hljs diff">以下为赞助内容：<br>
+点击风车邀请链接或使用邀请码开户<br>
+每笔手续费均可免去20%<br>
+<a href="https://accounts.binance.me/zh-CN/register?ref=XVZ8RMFQ">币安注册开户</a> 邀请码：XVZ8RMFQ<br>
+<a href="https://www.ouyicn.kim/join/267411054">OKX注册开户</a> 邀请码：267411054
+</code>
+    </pre>
+    <p><a href="https://blog.iota.org/three-networks-to-unite-them-all/">原文链接</a></p>
+<pre tabindex="0"><code>本文内容：  
+这是一篇关于IOTA整体网络进度路线图的详细介绍  
+用途将是在未来对其工作交付的验证  
+IOTA必然是个长期投资项目，需要不定期对价值进行验证已确保稳定性  
+需要验证时不妨查阅本文  
+
+--风车注
+</code></pre><h2 id="长文预警">长文预警<a hidden class="anchor" aria-hidden="true" href="#长文预警">#</a></h2>
+<p>全面运行的 IOTA、Shimmer 和 Assembly 网络的要求是相互关联和相互依赖的。以下路线图概述了每个网络即将到来的协议升级里程碑，同时概述了它们的相互依赖性。</p>
+<p>2021 年 10 月发布的 IOTA 智能合约 (ISC) 测试版开启了 IOTA 上 Web3 应用程序开发的热潮。 ISC 的发布与完全去中心化的 IOTA 2.0 版本（Coordicide）相结合，清楚地表明，过渡网络将非常有益。因此，我们决定通过一个名为 <a href="https://blog.shimmer.network/announcing-the-shimmer-network-and-token/">Shimmer</a> 的临时网络来扩展 IOTA 生态系统，该网络为 ISC 和所有 Coordicide 模块提供挑战性测试。</p>
+<p>为了适应 IOTA 基础设施层的未来创新，我们需要一个高度可扩展、无需许可和去中心化的环境。只有在这样的环境下，才有可能促进我们的生态系统已经经历的指数级增长。我们被围绕 ISC 发布的所有活动所震撼。到目前为止，我们已经看到去中心化交易所、DAO、NFT分发、几个 DeFi 应用程序、借贷平台、空投，甚至筹集大量资金的各种项目。</p>
+<p>Assembly 网络专门针对这些项目和其他项目背后的创新思维而设计。 Assembly 提供了一个并行的多链区块链网络，它将成为未来生态系统构建的高度可扩展和可组合的温床。</p>
+<p>作为 Assembly 网络的最佳基础设施锚定层，IOTA 实用的扩展性显着增加了所有三个网络的相互依赖性及其计划的升级里程碑。为了更深入地了解即将到来的发展并更清楚地了解里程碑和相应网络之间的相互关系，我们编制了以下路线图，该路线图代表了每个网络将实现里程碑的时间顺序。</p>
+<p>由于网络之间的相互依赖关系，我们没有包含任何 ETA（Estimated Time of Arrival 预估交付时间），因为它们很容易受到其他网络中里程碑的影响。</p>
+<p><img src="https://img.fengche.io/cf808ce1-0a5d-4439-a6a6-7fe6aec3a913.png" alt=""></p>
+<h2 id="最初的-90-天-iota-代币质押期">最初的 90 天 IOTA 代币质押期<a hidden class="anchor" aria-hidden="true" href="#最初的-90-天-iota-代币质押期">#</a></h2>
+<p>2022 年 3 月 28 日，IOTA 代币的 Assembly 和 Shimmer 代币的 90 天质押期结束，所有三个网络都过渡到新的质押期。在第一个质押期结束后不久，质押 IOTA 进行 Assembly 代币分发将继续进行，而质押 IOTA 以获得 Shimmer 代币将在初始代币质押期结束时结束。最终，Shimmer 代币的总供应量已全部分配给质押者。</p>
+<h2 id="在-iota-代币质押期之后">在 IOTA 代币质押期之后<a hidden class="anchor" aria-hidden="true" href="#在-iota-代币质押期之后">#</a></h2>
+<p>在 <a href="https://github.com/iotaledger/hornet">Hornet</a> 节点和 Firefly 钱包软件将收到更新的短暂休息后，为 Assembly 代币质押 IOTA 代币将恢复。 Hornet 节点所有者将通过公共渠道收到更新其节点的通知。 <a href="https://github.com/iotaledger/firefly">Firefly Github 存储库</a>允许跟踪 Firefly 钱包的进度。</p>
+<p>Hornet 节点和萤火虫钱包更新成功后，Staking 将恢复，Staking 奖励将持续发放，就像 90 天 Staking 期间一样。在 Shimmer 和 Assembly 网络分别启动后，将可以在前两个质押期间质押收到的 ASMB 和 SMR 代币，如下所述。</p>
+<h2 id="pre-shimmer-内部测试网基于-stardust">Pre-Shimmer 内部测试网（基于 Stardust）<a hidden class="anchor" aria-hidden="true" href="#pre-shimmer-内部测试网基于-stardust">#</a></h2>
+<p>在升级可以在 IOTA 主网上实施之前，Shimmer 将成为功能丰富的 Stardust <a href="https://blog.iota.org/iota-tokenization-framework-specifications/">代币化框架协议</a>升级的测试平台。因此，在实际的 Shimmer 网络推出之前，Stardust 将经历两个测试周期：第一个是内部预 Shimmer 测试网，第二个是公测版。</p>
+<p>第一个内部测试周期将已经包括 IOTA 智能合约 (ISC) 支持和新的 Stardust <a href="https://blog.iota.org/iota-tokenization-framework-specifications/">代币化框架协议</a>。 Stardust 将把 Shimmer 登台网络分类账变成一个多资产分类账，具有原生资产、原生 L1 NFT 等新功能。</p>
+<h2 id="dao-国库投票">DAO 国库投票<a hidden class="anchor" aria-hidden="true" href="#dao-国库投票">#</a></h2>
+<p>在 IOTA 代币质押和 Shimmer with Stardust 的内部测试之间，对于 IOTA 社区中的所有流动民主爱好者来说，将会有一个重要的事件：IOTA 社区首次对<a href="https://blog.iota.org/iota-community-treasury-vote/">基于代币的投票系统进行投票</a>。 IOTA 代币持有者将能够在 Firefly 钱包中对无人认领的国库代币的命运进行投票。如果这是您第一次听说宝藏投票，请务必阅读<a href="https://blog.iota.org/iota-community-treasury-vote/">我们之前博客文章中的详细信息</a>。</p>
+<h2 id="iota-智能合约虚拟机-isc-vm-alpha-集成">IOTA 智能合约虚拟机 (ISC VM) alpha 集成<a hidden class="anchor" aria-hidden="true" href="#iota-智能合约虚拟机-isc-vm-alpha-集成">#</a></h2>
+<p>如果没有以太坊虚拟机，智能合约平台会怎样？ IOTA 智能合约虚拟机将在 IOTA 上运行与 EVM 兼容的智能合约。虚拟机的首次集成将在向公众发布之前进行内部测试。该虚拟机将用于 Shimmer，经过实战测试后，将用于 Assembly 虚拟化以太坊智能合约。</p>
+<h2 id="pre-shimmer-公测网络">Pre-Shimmer 公测网络<a hidden class="anchor" aria-hidden="true" href="#pre-shimmer-公测网络">#</a></h2>
+<p>一旦 Stardust 升级的内部测试成功完成，该网络将向公众开放。广泛的公开测试将确保为 Shimmer 网络的正式启动找到并修复最大的错误。我们邀请我们的社区开发人员和节点运营商加入我们，在这个重要的里程碑中构建 IOTA 的未来。我们社区的广泛参与对于推动发展至关重要。此时，构建者可以在 Shimmer 网络上的许可环境中部署他们的 ISC 合约。这使得他们的集成能够在首次部署到现场场景之前进行测试。</p>
+<h2 id="shimmer-网络启动">Shimmer 网络启动<a hidden class="anchor" aria-hidden="true" href="#shimmer-网络启动">#</a></h2>
+<p>随着 Stardust 升级经过测试、尝试和验证，Shimmer 网络将启动。在启动之前，社区必须在最初的 90 天质押期结束后<a href="https://github.com/iotaledger/participation-events/pull/3">验证所有代币分配</a>（账本中的余额），以便进行 Shimmer 代币生成活动。</p>
+<p>网络启动后，Shimmer 代币将可自由转让。 IOTA 质押者将能够使用 Firefly 钱包访问他们的 SMR 代币。在网络启动并升级节点和 Firefly 钱包后，将可以质押 Shimmer 代币。</p>
+<p>新的 Stardust 功能将使构建者能够在 Shimmer 上开发他们的第一个应用程序，包括原生资产和原生 L1 NFT。 Stardust 还将成为第 2 层应用程序的基础，包括第 2 层 NFT 和 Assembly 上的智能资产。 IOTA 网络上已经可用的工具，例如网络浏览器，允许用户在 Shimmer 网络中搜索交易、地址、代币等，也将可用。从那时起，构建者可以部署和测试基于原生 Shimmer 网络及其多账本布局和原生资产的智能合约。</p>
+<h2 id="shimmer-网络质押开始">Shimmer 网络质押开始<a hidden class="anchor" aria-hidden="true" href="#shimmer-网络质押开始">#</a></h2>
+<p>一旦 Shimmer 网络上线，将实施一些功能升级。其中一项升级可以开始在 Shimmer 网络上进行质押。一旦集成并启用，就可以在 Firefly 中进行质押，并且 Shimmer 代币的通货膨胀率将设定在 8% 左右，可能会在稍后阶段由基于社区的 DAO 进行管理和调整。</p>
+<h2 id="shimmer-evm-发布公共-iota-智能合约虚拟机">Shimmer EVM 发布（公共 IOTA 智能合约虚拟机）<a hidden class="anchor" aria-hidden="true" href="#shimmer-evm-发布公共-iota-智能合约虚拟机">#</a></h2>
+<p>随着 Stardust 升级的实施、测试和运行，ISC 虚拟机的集成使构建者能够部署他们的 dApp。在测试和试用 ShimmerEVM 集成以及使用虚拟机部署他们的应用程序时，构建者帮助准备 ISC 虚拟机以在 IOTA 主网上全面发布。</p>
+<h2 id="iota-stardust-升级">IOTA Stardust 升级<a hidden class="anchor" aria-hidden="true" href="#iota-stardust-升级">#</a></h2>
+<p>一旦 Stardust 令牌化框架在 Shimmer 网络中通过验证，它将在 IOTA 主网上实施。这将为 IOTA 网络带来新的实用性水平，并为智能合约集成奠定基础，进而启动 Assembly 网络。</p>
+<p>借助 Stardust，原生资产将找到通往 IOTA 网络的途径。与其他竞争对手相比，IOTA 上的 NFT 将有很大不同，因为它们不需要转移汽油费。还可以创建持有其他原生资产的 NFT：例如，使游戏中的角色能够自己支付某些物品，或接收代币并分发代币。如果您尚未阅读代币化框架，请在<a href="https://blog.iota.org/iota-tokenization-framework-specifications/">此处</a>深入了解。</p>
+<h2 id="在-iota-上启动-assembly-根链">在 IOTA 上启动 Assembly 根链<a hidden class="anchor" aria-hidden="true" href="#在-iota-上启动-assembly-根链">#</a></h2>
+<p>Assembly 网络将在 IOTA 主网上实施其根链，标志着分阶段网络部署的开始，直到它达到可扩展、去中心化多链网络的完全设想状态。</p>
+<p>Assembly 根链的推出将使 Assembly 代币能够自由转移。之后，抵押 ASMB 代币将能够以 8% 的年通货膨胀率获得 ASMB。</p>
+<p>一旦Assembly 根链启动，我们还将提供相应的开发者工具、Assembly 的Firefly 钱包升级，以及一个网络浏览器，供用户探索和搜索Assembly 网络中的交易、地址、代币等。此外，探索所有 Assembly 智能合约也将成为可能。</p>
+<h2 id="iota-质押">IOTA 质押<a hidden class="anchor" aria-hidden="true" href="#iota-质押">#</a></h2>
+<p>在 Firefly 和 Hornet 节点更新后，将恢复 IOTA 代币的 ASMB 代币质押。整个质押期一直持续到满 24 个月。</p>
+<h2 id="coordicide-和第一个即将到来的真实世界验证">Coordicide 和第一个即将到来的真实世界验证<a hidden class="anchor" aria-hidden="true" href="#coordicide-和第一个即将到来的真实世界验证">#</a></h2>
+<p>无协调器的 <a href="https://v2.iota.org/visualizer">IOTA 2.0 DevNet</a> 正在不断开发、测试和改进。 Shimmer 网络的推出将使我们首次能够通过将 Coordicide 组件引入实时网络来验证它们。</p>
+<p>IOTA 2.0 DevNet 基于一个名为 <a href="https://github.com/iotaledger/goshimmer">GoShimmer</a> 的原型节点，该节点面向快速迭代，以保持高速并测试组件，直到它们可以在 Shimmer 网络上实现：从“GoShimmer”到“Shimmer”。</p>
+<p>所有迭代都遵循该过程：在 IOTA DevNet 上的 GoShimmer 中被证明按预期工作的组件正在集成到生产就绪的 <a href="https://github.com/gohornet/hornet">Hornet</a> 和 <a href="https://github.com/iotaledger/bee">Bee</a> 节点软件中，以便在 Shimmer 主网上的真实条件下进行验证。一旦组件在 Shimmer 网络上证明了自己，它们就会进入 IOTA 主网。</p>
+<p>这个开发过程以最终的 Coordicide 加冕，分期计划并与三个主网 IOTA、Shimmer 和 Assembly 一起开发。</p>
+<p>您可以期待很快找到一个公开的 <a href="https://github.com/iotaledger/tips">Tangle Improvement Proposal (TIP)</a>，用于将第一部分集成到 Hornet（并因此集成到 Shimmer 网络）中。此外，我们计划在单独的博客文章中发布即将发布的 Coordicide 组件分期付款的依赖关系图大纲。</p>
+<h2 id="概括">概括<a hidden class="anchor" aria-hidden="true" href="#概括">#</a></h2>
+<p>上述里程碑是成为一个网络生态系统以将它们团结起来的关键组成部分。通过将 IOTA、L1 基础设施、Shimmer、暂存网络和 Assembly 的多链方法结合在一起，我们确定了扩展核心实用程序的视野并为 Web3 构建的未来开创先例。</p>
+<p>我们与社区密切合作，完成了许多我们同样重视的重大成就，这些成就塑造了我们的核心身份：社区项目。透明度在这一旅程中发挥着至关重要的作用，因此该路线图不仅旨在为社区提供全面的概述，而且还鼓励他们，尤其是所有开发人员和建设者，在前进的道路上加入我们。因此，我们邀请大家通过我们的 GitHub 存储库以及我们的 <a href="https://twitter.com/iota">IOTA</a>、<a href="https://twitter.com/assembly_net">Assembly</a> 和 <a href="https://twitter.com/shimmernet">Shimmer</a> Twitter 帐户密切跟踪我们在每个概述的里程碑上的进展。请务必关注我们的 IOTA、Assembly 和 Shimmer Twitter 帐户以获取即将发布的新闻。</p>
+<p>原文作者：<a href="https://blog.iota.org/author/if/">IOTA 基金会</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://fengche.io/tags/iota/">IOTA</a></li>
+      <li><a href="https://fengche.io/tags/shimmer/">Shimmer</a></li>
+      <li><a href="https://fengche.io/tags/assembly/">Assembly</a></li>
+      <li><a href="https://fengche.io/tags/%E6%A8%A1%E5%9D%97%E5%8C%96%E5%85%AC%E9%93%BE/">模块化公链</a></li>
+      <li><a href="https://fengche.io/tags/iota2.0/">IOTA2.0</a></li>
+      <li><a href="https://fengche.io/tags/roadmap/">Roadmap</a></li>
+      <li><a href="https://fengche.io/tags/%E8%B4%A8%E6%8A%BC/">质押</a></li>
+      <li><a href="https://fengche.io/tags/coordicide/">Coordicide</a></li>
+      <li><a href="https://fengche.io/tags/goshimmer/">GoShimmer</a></li>
+      <li><a href="https://fengche.io/tags/hornet/">Hornet</a></li>
+      <li><a href="https://fengche.io/tags/bee/">Bee</a></li>
+      <li><a href="https://fengche.io/tags/tangle/">Tangle</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://fengche.io/posts/235/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>IOTA 代币化框架规范</span>
+  </a>
+  <a class="next" href="https://fengche.io/posts/233/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>IOTA 质押获取 Assembly 网络原生代币活动继续！</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 三网融合共创未来 - IOTA, Shimmer 和 Assembly on twitter"
+        href="https://twitter.com/intent/tweet/?text=%e4%b8%89%e7%bd%91%e8%9e%8d%e5%90%88%e5%85%b1%e5%88%9b%e6%9c%aa%e6%9d%a5%20-%20IOTA%2c%20Shimmer%20%e5%92%8c%20Assembly&amp;url=https%3a%2f%2ffengche.io%2fposts%2f234%2f&amp;hashtags=IOTA%2cShimmer%2cAssembly%2c%e6%a8%a1%e5%9d%97%e5%8c%96%e5%85%ac%e9%93%be%2cIOTA2.0%2cRoadmap%2c%e8%b4%a8%e6%8a%bc%2cCoordicide%2cGoShimmer%2cHornet%2cBee%2cTangle">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 三网融合共创未来 - IOTA, Shimmer 和 Assembly on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2ffengche.io%2fposts%2f234%2f&amp;title=%e4%b8%89%e7%bd%91%e8%9e%8d%e5%90%88%e5%85%b1%e5%88%9b%e6%9c%aa%e6%9d%a5%20-%20IOTA%2c%20Shimmer%20%e5%92%8c%20Assembly&amp;summary=%e4%b8%89%e7%bd%91%e8%9e%8d%e5%90%88%e5%85%b1%e5%88%9b%e6%9c%aa%e6%9d%a5%20-%20IOTA%2c%20Shimmer%20%e5%92%8c%20Assembly&amp;source=https%3a%2f%2ffengche.io%2fposts%2f234%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 三网融合共创未来 - IOTA, Shimmer 和 Assembly on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2ffengche.io%2fposts%2f234%2f&title=%e4%b8%89%e7%bd%91%e8%9e%8d%e5%90%88%e5%85%b1%e5%88%9b%e6%9c%aa%e6%9d%a5%20-%20IOTA%2c%20Shimmer%20%e5%92%8c%20Assembly">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 三网融合共创未来 - IOTA, Shimmer 和 Assembly on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2ffengche.io%2fposts%2f234%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 三网融合共创未来 - IOTA, Shimmer 和 Assembly on whatsapp"
+        href="https://api.whatsapp.com/send?text=%e4%b8%89%e7%bd%91%e8%9e%8d%e5%90%88%e5%85%b1%e5%88%9b%e6%9c%aa%e6%9d%a5%20-%20IOTA%2c%20Shimmer%20%e5%92%8c%20Assembly%20-%20https%3a%2f%2ffengche.io%2fposts%2f234%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 三网融合共创未来 - IOTA, Shimmer 和 Assembly on telegram"
+        href="https://telegram.me/share/url?text=%e4%b8%89%e7%bd%91%e8%9e%8d%e5%90%88%e5%85%b1%e5%88%9b%e6%9c%aa%e6%9d%a5%20-%20IOTA%2c%20Shimmer%20%e5%92%8c%20Assembly&amp;url=https%3a%2f%2ffengche.io%2fposts%2f234%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</span>
+    <span>
+        Powered at 2021
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" fill="currentColor">
+        <path style="fill:#777bc6" d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

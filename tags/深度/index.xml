@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>深度 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E6%B7%B1%E5%BA%A6/</link>
+    <description>Recent content in 深度 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Thu, 31 Mar 2022 23:53:49 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E6%B7%B1%E5%BA%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>高智商带你看懂LFG如何运作$UST $LUNA以及它将如何影响Terra甚至BTC生态</title>
+      <link>https://fengche.io/posts/164/</link>
+      <pubDate>Thu, 31 Mar 2022 23:53:49 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/164/</guid>
+      <description>推友[@danku_r](https://twitter.com/danku_r)发表了一个主题：{{&amp;lt;twitteruser=danku_rid=1509173542268645377&amp;gt;}}图文并茂详解了$UST的运行机制以及对其生态甚至BTC的影响，桃子帮大家进行了归纳如下（方便赶时间的朋友）：桃子总结：Terra引入BTC之前，一旦UST脱钩美元，则会造成UST换LUNA，再抛售LUNA，造成LUNA下跌，并进一步造成UST脱钩，形成死亡螺旋，价格阶梯式下降的可怕后果引入之后，其设计了一个...</description>
+    </item>
+    
+    <item>
+      <title>一个很有意思的记录-从BTC2020年起飞开始</title>
+      <link>https://fengche.io/posts/140/</link>
+      <pubDate>Mon, 28 Mar 2022 22:43:56 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/140/</guid>
+      <description>推上一个很有意思的记录贴，推友[@VijayBoyapati](https://twitter.com/real_vijay)从2020年8月1日起记录下了BTC各点位的多空深度信息，并将空头的卖单称之为墙。有兴趣的小伙伴可以去查看一下，这里面可以学到很多技术知识也不一定{{&amp;lt;twitteruser=real_vijayid=1289433660316246017&amp;gt;}}...</description>
+    </item>
+    
+    <item>
+      <title>[深度]没钱怎么办？用一个稳定币套利策略 4 个月内悄悄赚 1.13 亿美金</title>
+      <link>https://fengche.io/posts/122/</link>
+      <pubDate>Fri, 25 Mar 2022 21:04:29 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/122/</guid>
+      <description>[原文链接](https://eigenphi.substack.com/p/how-one-stablecoins-arbitrage-strategy?r=1avow0&amp;amp;s=w)由于风险敞口较小，类似闪电贷的套利将稳定币送上风口浪尖。5个重点-MIM-UST套利策略在过去四个月中赚1.13亿美元。-这是一种无需大额投资加快速贷款的高级形式，它仅支付Gas费而获得650倍的回报，而无需像三明治套利支付矿工高昂gas费，也不需要智能合约编程能力。-该策略一直在相对低调的流动资金池上搜寻机会，因此...</description>
+    </item>
+    
+    <item>
+      <title>[深度]为进行即时流动性提供的交易机器人进行行为好坏的定义</title>
+      <link>https://fengche.io/posts/120/</link>
+      <pubDate>Fri, 25 Mar 2022 19:39:34 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/120/</guid>
+      <description>原文出自[ComposableFinance](https://twitter.com/ComposableFin)BotsLead[0xBobafetador](https://twitter.com/bobafetador/status/1506666252126892033?s=21)老徐总结：为了便于读者理解，提一下里面的重点：TVL和资本效率。本文再一次强调资本效率，基本上我们可以视Defi1.0为TVL也就是量，Defi2.0则为CapitalEfficiency资本效率即质，如果有...</description>
+    </item>
+    
+  </channel>
+</rss>

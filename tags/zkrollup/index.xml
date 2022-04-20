@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ZkRollup on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/zkrollup/</link>
+    <description>Recent content in ZkRollup on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 20 Mar 2022 00:16:49 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/zkrollup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>万字深度长文-以太坊的扩容之路-Zk rollup超细解读</title>
+      <link>https://fengche.io/posts/61/</link>
+      <pubDate>Sun, 20 Mar 2022 00:16:49 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/61/</guid>
+      <description>[原文链接](https://mirror.xyz/0x22034f804960B9B34353d6A7595cC4E83ac0daBe/vVgKwJ0L5A0lm-ysPNipUddrXK_64NcXE_WkkRP_DT8)作者：Luka（Twitter：0x8e06）审阅：Jackson（Twitter：0xOar）随着ETH2.0的发布在即，扩容方案又一次被广大加密社区所关注。而ZKRollup-基于零知识证明兼顾了安全和隐私，以及未来还有更多应用领域，是很有前景的一种扩容方案，感谢推特网...</description>
+    </item>
+    
+  </channel>
+</rss>

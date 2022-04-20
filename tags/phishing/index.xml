@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Phishing on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/phishing/</link>
+    <description>Recent content in Phishing on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Wed, 20 Apr 2022 04:36:27 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/phishing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MetaMask警告苹果用户提防iCloud网络钓鱼攻击</title>
+      <link>https://fengche.io/posts/257/</link>
+      <pubDate>Wed, 20 Apr 2022 04:36:27 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/257/</guid>
+      <description>该公司警告称，如果苹果用户启用了MetaMask钱包数据的iCloud自动备份，他们的助记词就会被存储在网上。ConsenSys旗下的加密钱包提供商MetaMask已就AppleiCloud网络钓鱼攻击向社区发出警告。iPhone、Mac和iPad用户的安全问题与默认设备设置有关，如果用户启用了其应用程序数据的自动备份功能，那么他们的助记词或“密码加密的MetaMask保管库”就会存储在iCloud上。MetaMask在4月18日发布的推特帖子中指出，如果用户的Apple密码“强度不高”，攻击者...</description>
+    </item>
+    
+  </channel>
+</rss>

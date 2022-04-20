@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ICP on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/icp/</link>
+    <description>Recent content in ICP on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Wed, 20 Apr 2022 09:55:48 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/icp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过 Internet Computer 的区块链进行直接 HTTP 请求</title>
+      <link>https://fengche.io/posts/274/</link>
+      <pubDate>Wed, 20 Apr 2022 09:55:48 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/274/</guid>
+      <description>[原文链接](https://thenewstack.io/blockchain-direct-http-requests-via-the-internet-computer/)尽管Web3对一切都发生在区块链上的未来充满乐观，但我们离实现这一目标还有很长的路要走。绝大多数有用数据是在传统数据中心或云计算基础设施中生成的，并使用基于HTTP或HTTPS协议的接口进行传输。运行在任何第1层区块链（如Ethereum或Solana）上的去中心化应用程序使用所谓的预言机与基于HTTP的服务交互。这些预...</description>
+    </item>
+    
+    <item>
+      <title>DFINITY，世界的精神先祖</title>
+      <link>https://fengche.io/posts/252/</link>
+      <pubDate>Wed, 20 Apr 2022 03:24:00 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/252/</guid>
+      <description>[原文链接](http://www.itechpost.com/articles/109411/20220304/dfinity-the-spiritual-ancestor-of-the-world.htm)![](https://img.fengche.io/cfe24881-756c-4ee6-8280-355cd6dd2e6a.jpg)前言很难相信时间流逝的速度，今年，万维网已经32岁了，并且正在缓慢而坚定地迈向“中年”。那些在网络兴起后出生的人，包括DFINITY和互联网计算机（Int...</description>
+    </item>
+    
+    <item>
+      <title>Layer 1 的性能 - 比较 6 个领先的区块链项目</title>
+      <link>https://fengche.io/posts/251/</link>
+      <pubDate>Tue, 19 Apr 2022 18:06:52 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/251/</guid>
+      <description>[原文链接](https://coincodex.com/article/14198/layer-1-performance-comparing-6-leading-blockchains/)中本聪（SatoshiNakamoto）对比特币和区块链的发展标志着彻底改变全球金融的潜力。然后，以太坊智能合约的引入使分散式应用程序（dApps）的增长超出了中心化公司的控制范围。但比特币和以太坊的表现都有限，导致许多人认为区块链本质上是缓慢、昂贵且难以扩展的。已经出现了一系列第1层协议，旨在改善不同用例...</description>
+    </item>
+    
+  </channel>
+</rss>

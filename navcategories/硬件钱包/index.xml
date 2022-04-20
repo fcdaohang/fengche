@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>硬件钱包 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/navcategories/%E7%A1%AC%E4%BB%B6%E9%92%B1%E5%8C%85/</link>
+    <description>Recent content in 硬件钱包 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 26 Feb 2022 01:24:14 +0800</lastBuildDate><atom:link href="https://fengche.io/navcategories/%E7%A1%AC%E4%BB%B6%E9%92%B1%E5%8C%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trezor-特锐兹</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Feb 2022 01:24:14 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>同样出色的硬件钱包，缺点是没有蓝牙，不支持手机，支持币种相对少一点；优点是有触摸屏，有Shamir备份功能</description>
+    </item>
+    
+    <item>
+      <title>Ledger-分类账/乐基</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Feb 2022 01:23:28 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>市场占有率最大的硬件钱包，大部分币种均可支持，部分币种需要通过相关软钱包进行操作。一站式管理最佳选择</description>
+    </item>
+    
+  </channel>
+</rss>

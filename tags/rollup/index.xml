@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rollup on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/rollup/</link>
+    <description>Recent content in Rollup on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Tue, 08 Mar 2022 16:52:01 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/rollup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>L2的新玩法？L2各公链代币能否起死回生？</title>
+      <link>https://fengche.io/posts/26/</link>
+      <pubDate>Tue, 08 Mar 2022 16:52:01 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/26/</guid>
+      <description>twitter用户[@Wuhuoqiu](https://twitter.com/Wuhuoqiu)分享了关于L2新玩法的一些内容，摘抄如下：上周Aribitrum的AnyTrust链计划公布，让L2的玩法又多了一个选项现在我们不仅要在各个AltL1之间评估他们的技术优劣，比如Sol的POH，Avax的子网，Near的分片，FTM的DAG……连L2自己都能整出一套列表了我觉得还是挺重要的一个事儿，意外的在中文CT上没看到太多点评，那我就简单罗列下好了L2目前为止玩法1.假L2-Polygon，除...</description>
+    </item>
+    
+  </channel>
+</rss>

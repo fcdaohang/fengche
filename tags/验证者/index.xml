@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>验证者 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E9%AA%8C%E8%AF%81%E8%80%85/</link>
+    <description>Recent content in 验证者 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Mon, 18 Apr 2022 14:42:22 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E9%AA%8C%E8%AF%81%E8%80%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>认识 Assembly 03：Assembly 即市场</title>
+      <link>https://fengche.io/posts/241/</link>
+      <pubDate>Mon, 18 Apr 2022 14:42:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/241/</guid>
+      <description>[原文链接](url)认识Assembly的主要参与者长文预警系列导航：[认识Assembly01：让你打开和去中心化世界的钥匙](/posts/242/)[认识Assembly02：验证者和验证者委员会](/posts/241/)[认识Assembly03：Assembly即市场](/posts/240/)[认识Assembly04：互操作性和可组合性](/posts/239/)Assembly的低费用为在Assembly网络上构建业务模型的新用例和可预测性提供了巨大的机会。您可以作为IOTA...</description>
+    </item>
+    
+    <item>
+      <title>认识 Assembly 02：验证者和验证者委员会</title>
+      <link>https://fengche.io/posts/240/</link>
+      <pubDate>Mon, 18 Apr 2022 14:28:32 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/240/</guid>
+      <description>[原文链接](https://blog.assembly.sc/meet-assembly-2-validators-and-committees/)通往无许可和去中心化IOTA智能合约的道路。长文预警系列导航：[认识Assembly01：让你打开和去中心化世界的钥匙](/posts/242/)[认识Assembly02：验证者和验证者委员会](/posts/241/)[认识Assembly03：Assembly即市场](/posts/240/)[认识Assembly04：互操作性和可组合性](...</description>
+    </item>
+    
+  </channel>
+</rss>

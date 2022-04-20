@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>面板 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E9%9D%A2%E6%9D%BF/</link>
+    <description>Recent content in 面板 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Mon, 28 Feb 2022 00:53:25 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E9%9D%A2%E6%9D%BF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>YFT流动性挖矿看板</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Mon, 28 Feb 2022 00:53:25 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>挖矿资深人士最爱的工具，堪称矿产地图。可以直观看到各链上的流动性挖矿项目信息，新版支持展示正在挖的矿，便于操作</description>
+    </item>
+    
+  </channel>
+</rss>

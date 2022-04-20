@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Backd on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/backd/</link>
+    <description>Recent content in Backd on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 27 Mar 2022 17:36:36 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/backd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>空投信号 - Airdrop Guide - Backd 测试网交互 空投指南</title>
+      <link>https://fengche.io/posts/135/</link>
+      <pubDate>Sun, 27 Mar 2022 17:36:36 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/135/</guid>
+      <description>Backd是一个让您抵押品投入使用，提高收益的同时保护贷款免于清算的项目。目前，[Backd主网](https://backd.fund/)已上线**Backd的开发人员已经向测试网用户表示了空投的可能性，但尚未得到任何确认。因此，请考虑自己是否想在测试网上花费时间。**首先将钱包的网络切换到“KovanTestNetwork”。![](https://edit.fcdaohang.org/assets/fd4beee8-ee77-4af6-b9e3-79cc99da12c3.png)然后在[他...</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>StarShell on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/starshell/</link>
+    <description>Recent content in StarShell on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 26 Mar 2022 23:19:45 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/starshell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测试网交互空投机会-StarShell &amp; Secret Network</title>
+      <link>https://fengche.io/posts/131/</link>
+      <pubDate>Sat, 26 Mar 2022 23:19:45 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/131/</guid>
+      <description>介绍[StarShell](https://twitter.com/StarShellWallet)是SecretNetwork和Cosmos生态系统中保护隐私的Web3钱包。他们获得了SCRT实验室的资助。[阅读此处](https://github.com/scrtlabs/Grants/issues/24)了解有关其资助的详细信息。![](https://edit.fcdaohang.org/assets/64b109c7-bd5e-4257-b5e8-47d3d9ac876d.png)规则...</description>
+    </item>
+    
+  </channel>
+</rss>

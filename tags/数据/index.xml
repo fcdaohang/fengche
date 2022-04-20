@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>数据 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E6%95%B0%E6%8D%AE/</link>
+    <description>Recent content in 数据 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Wed, 30 Mar 2022 22:45:17 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从NFT mint数据看市场短期趋势</title>
+      <link>https://fengche.io/posts/152/</link>
+      <pubDate>Wed, 30 Mar 2022 22:45:17 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/152/</guid>
+      <description>NFT 铸造者的行为，可以作为短期市场趋势的一个信号。在 Chainalysis 之前分享的见解，我们了解到，20% 的 NFT 铸造者们在 Mint 阶段从购买的 NFT 中赚取了利润。虽然他们的报告确立了 NFT 铸造者的优势，但它促使我们更深入地挖掘 NFT 铸造者的行为。利用来自 Nansen 仪表板的数据，我们探索与 NFT 铸造有关的趋势。我们的分析显示，NFT 铸造者的行为可以作为短期市场趋势的信号，就像我们观察矿工的行为作为比特币价格的代表一样。来自 Nansen NFT 指数和...</description>
+    </item>
+    
+    <item>
+      <title>cryptoslam NFT交易数据追踪</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Mon, 28 Feb 2022 19:57:19 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>追踪各链上交易数据情况，有助于发现大项目</description>
+    </item>
+    
+    <item>
+      <title>dune 链上数据分析器</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Mon, 28 Feb 2022 00:49:45 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>一个高阶玩家用来分析链上数据的工具，提供简易的数据分析工具。但对新手而言依然比较复杂</description>
+    </item>
+    
+    <item>
+      <title>coindix 稳定币收益率仪表板</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Feb 2022 02:04:37 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>Coindix 仪表板可监控各链上稳定币收益率，包括一些公链和Layer2上的DeFi LP收益率</description>
+    </item>
+    
+  </channel>
+</rss>

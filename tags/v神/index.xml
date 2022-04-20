@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>V神 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/v%E7%A5%9E/</link>
+    <description>Recent content in V神 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Tue, 22 Mar 2022 02:55:56 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/v%E7%A5%9E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>V神登上时代周刊的是一篇什么文章？- 以太坊背后的人正为加密货币的未来而担忧</title>
+      <link>https://fengche.io/posts/76/</link>
+      <pubDate>Tue, 22 Mar 2022 02:55:56 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/76/</guid>
+      <description>风车汇总：全文描写了V神的性格和出生-发明ETH-维护ETH的整个历程其核心思想和标题一致：V神出于自身的乌托邦想法发明了ETH，但是每次ETH成为热门时，往往变成了他所不愿意看到的样子风车评价：世界万物思想都有不同，可以进行粗略归纳分为简单几种，但无论如何粗最终会落到三种：支持、中立、反对。任何事物都是如此，但若加上时间和空间的因素，实际上ETH可以是熊市、牛市两种状态；当处于熊市时，狂欢的不是赌徒和投机客，而是Builder，因为他们可以安静的持续的Build自己感兴趣的世界（当然，必须是真...</description>
+    </item>
+    
+    <item>
+      <title>V神不愧是V神，发出来的教程你大概率看不懂</title>
+      <link>https://fengche.io/posts/32/</link>
+      <pubDate>Wed, 09 Mar 2022 22:00:58 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/32/</guid>
+      <description>[V神发推](https://twitter.com/vitalikbuterin/status/1501253352235180032?s=21)关于多项式重心评估如何工作的快速教程（在ZK-SNARK协议、数据可用性采样和许多其他与以太坊相关的用例中很有用）：[原文链接](https://hackmd.io/@vbuterin/barycentric_evaluation)内容不多，但是要琢磨透，相信你必须高数以上&#43;&#43;&#43;的水平才行不愧是科学家级别...</description>
+    </item>
+    
+  </channel>
+</rss>

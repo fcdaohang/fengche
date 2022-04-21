@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Zero-Knowledge 零知识证明 概览 | 风车 - 专注区块链快速安全有效的入门信息</title>
+<meta name="keywords" content="Zero-Knowledge,ZK,零知识证明,概览" />
+<meta name="description" content="本文译自tolks的TheZero-KnowledgeLandscape[原文链接](https://page1.substack.com/p/the-zero-knowledge-landscape?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web&amp;s=r)为什么要了解ZK，主要是ZK作为WEB3.0核心的一部分，真正展开了和WEB2.0的差异W2时代，我们需要信任才能验证信息，而W3时代的高效，则需要用ZK这个核心去除信任这...">
+<meta name="author" content="
+徐望川">
+<link rel="canonical" href="https://fengche.io/posts/55/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.9a70498391f8adca004cded811aefa9d98674c66090df071732233658f113870.css" integrity="sha256-mnBJg5H4rcoATN7YEa76nZhnTGYJDfBxcyIzZY8ROHA=" rel="preload stylesheet" as="style">
+<link rel="preload" href="/fclogo.svg" as="image">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-49BWTSEZDZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49BWTSEZDZ');
+</script><meta property="og:title" content="Zero-Knowledge 零知识证明 概览" />
+<meta property="og:description" content="本文译自tolks的TheZero-KnowledgeLandscape[原文链接](https://page1.substack.com/p/the-zero-knowledge-landscape?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web&amp;s=r)为什么要了解ZK，主要是ZK作为WEB3.0核心的一部分，真正展开了和WEB2.0的差异W2时代，我们需要信任才能验证信息，而W3时代的高效，则需要用ZK这个核心去除信任这..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fengche.io/posts/55/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-18T18:03:04&#43;08:00" />
+<meta property="article:modified_time" content="2022-03-18T18:03:04&#43;08:00" />
+<meta property="og:image" content="https://fengche.io/fcslogo.png" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Zero-Knowledge 零知识证明 概览"/>
+<meta name="twitter:description" content="本文译自tolks的TheZero-KnowledgeLandscape[原文链接](https://page1.substack.com/p/the-zero-knowledge-landscape?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web&amp;s=r)为什么要了解ZK，主要是ZK作为WEB3.0核心的一部分，真正展开了和WEB2.0的差异W2时代，我们需要信任才能验证信息，而W3时代的高效，则需要用ZK这个核心去除信任这..."/>
+<meta name="twitter:image" content="https://fengche.io/fcslogo.png"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "文章精选",
+      "item": "https://fengche.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Zero-Knowledge 零知识证明 概览",
+      "item": "https://fengche.io/posts/55/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Zero-Knowledge 零知识证明 概览",
+  "name": "Zero-Knowledge 零知识证明 概览",
+  "description": "本文译自tolks的TheZero-KnowledgeLandscape[原文链接](https://page1.substack.com/p/the-zero-knowledge-landscape?utm_source=substack\u0026utm_campaign=post_embed\u0026utm_medium=web\u0026s=r)为什么要了解ZK，主要是ZK作为WEB3.0核心的一部分，真正展开了和WEB2.0的差异W2时代，我们需要信任才能验证信息，而W3时代的高效，则需要用ZK这个核心去除信任这...",
+  "keywords": [
+    "Zero-Knowledge,ZK,零知识证明,概览"
+  ],
+  "articleBody": "本文译自tolks的The Zero-Knowledge Landscape\n原文链接\n为什么要了解ZK，主要是ZK作为WEB3.0核心的一部分，真正展开了和WEB2.0的差异 W2时代，我们需要信任才能验证信息，而W3时代的高效，则需要用ZK这个核心去除信任这一步骤，让你获取到的信息无需信任，只需选择。–风车注\n全文：\n概述 有些时候，保持最新状态并回顾加密生态系统可能是一项艰巨的任务，但你仍然可以看到特定项目或行业的叙述和炒作。\n在过去的几个月里，ZK项目的资金、开发和应用不断以越来越快的速度浮出水面。许多最聪明、根深蒂固的加密OGs（币圈术语-可理解为圈层–风车注），以及越来越多的杰出CT（加密推特er–风车注）贡献者，都认为，当ZK-rollup（ZKR）技术大规模投入使用时，加密生态系统以及潜在的世界将在技术上取得进步。\n虽然这一现实在其全面发展中还需要5-10年的时间，但我们将在未来几个月内开始看到完全兼容的ZKR区块链的应用。\n这篇文章旨在回顾最近的发展，绘制当前ZK玩家的立场、他们所构建内容的潜在时间表以及何时发币。很明显我们正在慢慢接近ZK的未来。没有解释区分所强调的协议的技术细节，因为它们需要对数据可用性，有效性和意志验证，安全性和分散性进行细致入微的讨论，以及每个协议采取的其他次要权衡和技术差异。帖子底部有一些链接，其中包括这些深入的讨论以及两个市场领导者zkSync和StarkWare的比较。\nZK概述 汇总扩展的重点是降低区块链的成本（成本不仅仅包括费用，还有隐私、时间等等–风车注），并且对于将区块链技术（L1不可知）扩展到数亿（可能是数十亿用户）至关重要。虽然使用欺诈证明的Optimistic Rollups现在正在扩展（Arbitrum/Optimism），但使用链下计算的ZK Rollup是我们未来扩展的最佳选择。\n你会发现对Rollup技术最深入的了解来自V神，毫不奇怪，他总结道，“从中长期来看，随着ZK-SNARK技术的改进，ZK Rollup将在所有情况下获胜。\nZKR 实现了与Optimistic Rollups相同的目标，同时为用户提供了隐私和提高可扩展性的选项。正如EthHub上所说，“ZK通过减少交易中保存的数据量，减少了用于验证区块的计算和存储资源；对整个数据零知识。归纳来说，ZK技术允许用户证明他们拥有或知道某些东西，而无需提供任何关于所述事物是什么或多少的信息。对于ZK技术来说，随着对加拿大高调的金融平台化以及围绕俄罗斯入侵乌克兰的经济制裁，ZK技术的新热情和对隐私交易的需求而重新燃起。\n图片来自Matter Labs博客，2021年4月\nZK 近期公告回顾 据报道，StarkWare以60亿美元估值募集了1亿美元资金，在此之前2021年11月报道募集5千万美元资金估值达到20亿美元。\nStarkWare构建的StarkNet于2月22日完成发布，并将在\"下半年\"转移到社区控制。\nImmutable X 以25亿美元的估值筹集2亿美元\nGameStop与Immutable X合作建立他们的NFT市场，并宣布为其生态系统提供1亿美元的基金\nZK技术区块链Aleo于2月7日以14.5亿美元的估值筹集了2亿美元\nzkSync开发人员Matter Labs于2021年11月筹集了5000万美元，并于2月22日在以太坊的测试网上向公众推出了zkEVM。\nMatter Labs和BitDAO宣布提供2亿美元的DAO，以继续为zkSync生态系统进行扩展和核心基础设施建设。\nPolygon 以4亿美元的价格收购ZK rollup创业公司Mir Protocol\nPolygon此前曾在八月份以2.5亿美元的价格收购了Hermez Network，这是另一个ZK rollup扩展解决方案，合并了代币MATIC和HEZ - 总共6.5亿美元购买了ZK rollup协议。\nPolygon最近一轮于2月7日筹集了4.5亿美元，以扩大ETH规模和ZK技术运营\nEspresso，ZK技术支持的L1，于3月6日stealth building中脱颖而出并宣布启动3200万美元的资金\nAztec Network在2021年12月筹集了1700万美元的A轮融资\nArgent，ETH DeFi移动钱包，推出zkSync驱动的L2钱包，等候名单上有超过50万人\n当前参与者\nStarkWare — 构建 StarkNet 和 StarkEx\nStarkNet\nStarkNet是使用ZK-STARKs的ZK-Rollup L2，于11月29日首次登陆ETH主网，该团队一直在不懈地发布新功能和更新。\n2月23日，StarkNet宣布了他们的最新版本StarkNet Alpha，并且扩展解决方案已准备好用于应用程序构建和事务。要查看StarkNet生态系统的最新概述，您可以查看他们的网站。\n最近，StarkNet宣布与Aave，Opera Browser，DeversiFi和Argent合作，还有无数其他协议等待部署。\n何时发币：“在下半年” - 大概是向早期用户空投\nStarkEx\nStarkEx是通过编程语言Cairo构建的可扩展性引擎，自2020年6月以来一直在主网上运行，目前由DeversiFi，Immutable X，dYdX和Sorare使用。\n根据StarkWare的数据，他们从3月9日开始对StarkEx使用量的最后一次更新是11亿美元的TVL，1.23亿笔交易和4.62亿美元的累计价值。\n何时发币：“最终由社区运行”，但我的假设是，在StarkNet令牌发布后不久，如上所述，这是\"在下半年”。- 再次可能向早期用户空投\nzkSync\nzkSync是使用ZK-SNARKs的ZK rollup，自2020年6月以来一直上线，由Matter Labs开发。在2月22日的一条推文中，zkSync宣布zkSync 2.0已经上线，并在以太坊的测试网上包含了第一个与EVM兼容的ZK Rollup。\n上面链接的推文中的博客文章包括zkEVM里程碑的含义，“去年五月，我们为zkSync的zkEVM制定了我们的愿景，这是一个无需许可的图灵完备ZK rollup，将允许开发人员使用以太坊的原生编程语言Solidity在低费用，高度可扩展的第2层环境中构建和部署分散的应用程序。他们的帖子中有关zkSync 2.0当前功能的更多详细信息。 有关zkSync的更多信息，您可以在此处查看他们使用ZK解决方案构建的项目生态系统，并参考Dune Analytics zkSync看板，其中包含交易，TVL，存款和取款到zkSync以及其他信息的概述\n何时发币：根据他们的官方文档，确认令牌将存在，但很难知道何时存在。\nImmutable X\n$IMX由StarkWare的StarkEx提供支持，是领先的ZK技术支持的协议之一，具有以游戏和NFT为中心的应用程序。$IMX形容自己说：“毫不妥协地为市场，游戏和应用程序体验零汽油费，即时交易和碳中和NFT”。\n基于$IMX构建的产品包括Gods Unchained，Illuvium（$ILV）和TikTok的Top Moments系列。\nGameStop x Immutable X - 2月3日，GameStop宣布将在$IMX的基础上建立其NFT市场，并宣布设立1亿美元的基金，专门用于支持其生态系统内的游戏开发。GameStop还表示，他们计划将市场纳入\"数十亿个可以轻松买卖的低成本游戏内资产”。\n$IMX已经构建了多年，并完成了支持 ZK 的 NFT 和未来大规模游戏所需的绝大部分繁重开发和提升。\nPolygon （$MATIC）\n目前有三个独立的 ZK 汇总扩展计划正在开发\nPolygon Miden - “一个基于STARK的zk-Rollup，支持任意智能合约” - 目前正在开发中\nPolygon Zero - “提供汇总和验证模式，使用户能够访问更高的吞吐量和更低的费用” - 正在开发中\nPolygon Hermez - “一种开源zk-Rollup，针对安全，低成本和可用的令牌转移进行了优化”\nPolygon在2021年8月写了一篇很好的博客，讲述了他们对ZK技术的承诺，他们对该行业的10亿美元资金分配，以及对ZK技术的总体概述。\n虽然很难获得他们的ZK rollup套件的详细时间表，但很明显，他们致力于通过支持ZK的技术解决方案来扩展ETH，这可以从他们最近价值约6.5亿美元的收购中得到证明。\nEspresso Systems\nEspresso于3月6日从stealth building中脱颖而出，宣布了资金并介绍了他们的愿景和区块链。\nEspresso将自己描述为\"一个结合了权益证明共识和ZK rollup机制的第1层区块链系统”，从而产生了\"单次扩展和隐私解决方案\"。\n发布了CAPE（以太坊的可配置资产隐私），这是一个EVM应用程序，允许用户自定义谁可以看到所有权详细信息和资产的移动，并能够在CAPE中包装和解开当前的ERC-20令牌。\nCAPE将在\"未来几周\"部署到Rinkeby测试网，以及有关其ZK扩展解决方案的更多详细信息。\nAztec Network\nL2 ZK-Rollup扩展解决方案，“充当ERC20令牌传输和其他DeFi交互的隐私保护”。\nzk.money是Aztec构建的核心应用程序，允许MetMask用户与团队秘密发送DAI和ETH，希望\"今年晚些时候\"获得完整的钱包级资产隐私。\nAztec的L2汇总解决方案使用zk-SNARKs，目前部署在Goerli测试网上\nAleo\nAleo是一个启用ZK的，默认私有的基础层区块链，它\"处理链下交易，然后由网络节点验证（而不是执行和重新执行）。\nAleo于2月7日在B轮融资中筹集了2亿美元，他们的区块链目前处于测试网中，计划于今年第三季度在主网上推出。\n结论和延伸阅读 零知识证明处于月球数学，密码学和技术创新的前沿，越来越多地将我们推向全球24/7，隐私支持的廉价交易的未来。目前的两个行业领导者是zkSync和StarkWare（StarkEx / StarkNet），他们都在今年某个时候确认了代币，这是为自己定位的东西。正如其融资轮次和当前估值所证明的那样，需求将是天文数字，但期待已久的L2 szn和下游效应可能最终发生，因为这些协议和其他L2激励用户和流动性将代币的压力转移到彼此身上。虽然我们距离在微观尺度上看到这一点还有几个月的时间，但在宏观上还有几年的时间，但ZK技术可能会改变区块链行业的未来。\n对于更深入的技术和实际应用，我强烈建议阅读这些链接的文章和线程：\nSupercycled在ZK汇总上有一个很好的主题，特别是两个主要竞争对手zkSync和StarkWare之间的差异，你可以在这里阅读。\nPacky McCormick 和 Espresso 的联合创始人 Jill Gunter 写了一篇关于 ZKRs 的优秀文章，以及它们是什么，可以实现什么。\nEthHub关于ZK-SNARKs和ZK-STARKs之间的差异\nSuzuha解释了ZK允许的突破性潜力\nVitalik的博客是一个很好的资源，他之前曾多次写过关于ZK技术和Rollup的文章。\n来自Polygon的Optimistic 和ZK Rollup的详细对比\n",
+  "wordCount" : "4520",
+  "inLanguage": "zh",
+  "datePublished": "2022-03-18T18:03:04+08:00",
+  "dateModified": "2022-03-18T18:03:04+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://fengche.io/posts/55/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "风车 - 专注区块链快速安全有效的入门信息",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://fengche.io" accesskey="h" title="风车 - 专注区块链快速安全有效的入门信息 (Alt + H)">
+                <img src="/fclogo.svg" alt="logo" aria-label="logo" height=" 36px"></a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://fengche.io/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/nav/" title="导航">
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/editors/" title="作者">
+                    <span>作者</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://fengche.io">主页</a>&nbsp;»&nbsp;<a href="https://fengche.io/posts/">文章精选</a></div>
+    <h1 class="post-title">
+      Zero-Knowledge 零知识证明 概览
+    </h1>
+    <div class="post-description">
+      内容简介：<br>
+      本文译自tolks的TheZero-KnowledgeLandscape[原文链接](https://page1.substack.com/p/the-zero-knowledge-landscape?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web&amp;s=r)为什么要了解ZK，主要是ZK作为WEB3.0核心的一部分，真正展开了和WEB2.0的差异W2时代，我们需要信任才能验证信息，而W3时代的高效，则需要用ZK这个核心去除信任这...
+    </div>
+    <div class="post-meta"><span title='2022-03-18 18:03:04 +0800 +0800'>三月 18, 2022</span>&nbsp;·&nbsp;阅读耗时 10 分钟&nbsp;·&nbsp;
+<a href="/editors/%e5%be%90%e6%9c%9b%e5%b7%9d">徐望川</a>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e6%a6%82%e8%bf%b0" aria-label="概述">概述</a></li>
+                <li>
+                    <a href="#zk%e6%a6%82%e8%bf%b0" aria-label="ZK概述">ZK概述</a></li>
+                <li>
+                    <a href="#zk-%e8%bf%91%e6%9c%9f%e5%85%ac%e5%91%8a%e5%9b%9e%e9%a1%be" aria-label="ZK 近期公告回顾">ZK 近期公告回顾</a></li>
+                <li>
+                    <a href="#%e7%bb%93%e8%ae%ba%e5%92%8c%e5%bb%b6%e4%bc%b8%e9%98%85%e8%af%bb" aria-label="结论和延伸阅读">结论和延伸阅读</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+    
+    <pre tabindex="0">
+<code class="hljs diff">以下为赞助内容：<br>
+点击风车邀请链接或使用邀请码开户<br>
+每笔手续费均可免去20%<br>
+<a href="https://accounts.binance.me/zh-CN/register?ref=XVZ8RMFQ">币安注册开户</a> 邀请码：XVZ8RMFQ<br>
+<a href="https://www.ouyicn.kim/join/267411054">OKX注册开户</a> 邀请码：267411054
+</code>
+    </pre>
+    <p>本文译自tolks的The Zero-Knowledge Landscape</p>
+<p><a href="https://page1.substack.com/p/the-zero-knowledge-landscape?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web&amp;s=r">原文链接</a></p>
+<p>为什么要了解ZK，主要是ZK作为WEB3.0核心的一部分，真正展开了和WEB2.0的差异
+W2时代，我们需要信任才能验证信息，而W3时代的高效，则需要用ZK这个核心去除信任这一步骤，让你获取到的信息无需信任，只需选择。&ndash;风车注</p>
+<p>全文：</p>
+<h2 id="概述">概述<a hidden class="anchor" aria-hidden="true" href="#概述">#</a></h2>
+<p>有些时候，保持最新状态并回顾加密生态系统可能是一项艰巨的任务，但你仍然可以看到特定项目或行业的叙述和炒作。</p>
+<p>在过去的几个月里，ZK项目的资金、开发和应用不断以越来越快的速度浮出水面。许多最聪明、根深蒂固的加密OGs（币圈术语-可理解为圈层&ndash;风车注），以及越来越多的杰出CT（加密推特er&ndash;风车注）贡献者，都认为，当ZK-rollup（ZKR）技术大规模投入使用时，加密生态系统以及潜在的世界将在技术上取得进步。</p>
+<p>虽然这一现实在其全面发展中还需要5-10年的时间，但我们将在未来几个月内开始看到完全兼容的ZKR区块链的应用。</p>
+<p>这篇文章旨在回顾最近的发展，绘制当前ZK玩家的立场、他们所构建内容的潜在时间表以及何时发币。很明显我们正在慢慢接近ZK的未来。没有解释区分所强调的协议的技术细节，因为它们需要对数据可用性，有效性和意志验证，安全性和分散性进行细致入微的讨论，以及每个协议采取的其他次要权衡和技术差异。帖子底部有一些链接，其中包括这些深入的讨论以及两个市场领导者zkSync和StarkWare的比较。</p>
+<h2 id="zk概述">ZK概述<a hidden class="anchor" aria-hidden="true" href="#zk概述">#</a></h2>
+<p>汇总扩展的重点是降低区块链的成本（成本不仅仅包括费用，还有隐私、时间等等&ndash;风车注），并且对于将区块链技术（L1不可知）扩展到数亿（可能是数十亿用户）至关重要。虽然使用欺诈证明的Optimistic Rollups现在正在扩展（Arbitrum/Optimism），但使用链下计算的ZK Rollup是我们未来扩展的最佳选择。</p>
+<p>你会发现对Rollup技术<a href="https://vitalik.ca/general/2021/01/05/rollup.html">最深入的了解</a>来自V神，毫不奇怪，他总结道，&ldquo;从中长期来看，随着ZK-SNARK技术的改进，ZK Rollup将在所有情况下获胜。</p>
+<p>ZKR 实现了与Optimistic Rollups相同的目标，同时为用户提供了隐私和提高可扩展性的选项。正如<a href="https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/zk-rollups/">EthHub上所说</a>，&ldquo;ZK通过减少交易中保存的数据量，减少了用于验证区块的计算和存储资源；对整个数据零知识。归纳来说，ZK技术允许用户证明他们拥有或知道某些东西，而无需提供任何关于所述事物是什么或多少的信息。对于ZK技术来说，随着对加拿大高调的金融平台化以及围绕俄罗斯入侵乌克兰的经济制裁，ZK技术的新热情和对隐私交易的需求而重新燃起。</p>
+<p><img src="http://fcdaohang.com:8088/assets/e8c8ba43-1ccd-4ae1-b8b9-21163ed1f737.png" alt=""></p>
+<p>图片来自<a href="https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf">Matter Labs博客</a>，2021年4月</p>
+<h2 id="zk-近期公告回顾">ZK 近期公告回顾<a hidden class="anchor" aria-hidden="true" href="#zk-近期公告回顾">#</a></h2>
+<p>据报道，StarkWare<a href="https://www.theblockcrypto.com/linked/137206/ethereum-layer-2-starkware-funding-6-billion-valuation-report?utm_source=website&amp;utm_medium=fcdaohang.com">以60亿美元估值募集了1亿美元资金</a>，在此之前2021年11月<a href="https://www.theblockcrypto.com/post/124479/ethereum-layer-2-developer-starkware-raises-50-million-now-valued-at-2-billion">报道募集5千万美元资金估值达到20亿美元</a>。</p>
+<p>StarkWare构建的<a href="https://www.theblockcrypto.com/post/135161/ethereum-scaling-solution-starknet-completes-launch-with-goal-to-move-to-community-control">StarkNet于2月22日完成发布</a>，并将在&quot;下半年&quot;转移到社区控制。</p>
+<p>Immutable X <a href="https://twitter.com/Immutable/status/1500832924442128387?s=20&amp;t=MWq_PBSkUyrI757u4HkwwQ">以25亿美元的估值筹集2亿美元</a></p>
+<p>GameStop<a href="https://www.coindesk.com/business/2022/02/03/gamestop-taps-immutable-x-for-nft-marketplace-launches-100m-gaming-fund/">与Immutable X合作</a>建立他们的NFT市场，并宣布为其生态系统提供1亿美元的基金</p>
+<p>ZK技术区块链<a href="https://www.aleo.org/">Aleo</a>于2月7日<a href="https://www.theblockcrypto.com/post/133218/aleo-raises-200-million-softbank-tiger-others-blockchain">以14.5亿美元的估值筹集了2亿美元</a></p>
+<p>zkSync<a href="https://www.theblockcrypto.com/linked/123617/ethereum-layer-2-scaling-solution-developer-matter-labs-raises-50-million">开发人员Matter Labs于2021年11月筹集了5000万美元</a>，并于2月22日在以太坊的测试网上向公众推出了zkEVM。</p>
+<p>Matter Labs和BitDAO<a href="https://www.coindesk.com/business/2022/01/27/matter-labs-bitdao-back-200m-dao-for-zksync/">宣布提供2亿美元的DAO</a>，以继续为zkSync生态系统进行扩展和核心基础设施建设。</p>
+<p><a href="https://www.theblockcrypto.com/post/126991/polygon-acquires-mir-protocol-400-million-zk-rollups">Polygon 以4亿美元的价格收购</a>ZK rollup创业公司Mir Protocol</p>
+<p>Polygon此前曾在八月份<a href="https://www.theblockcrypto.com/post/114479/polygon-hermez-merger-matic-hez-tokens-ethereum-projects">以2.5亿美元的价格收购了Hermez Network</a>，这是另一个ZK rollup扩展解决方案，合并了代币MATIC和HEZ - 总共6.5亿美元购买了ZK rollup协议。</p>
+<p>Polygon<a href="https://www.theblockcrypto.com/post/133269/polygon-raises-450-million-matic-token-sale">最近一轮于2月7日筹集了4.5亿美元</a>，以扩大ETH规模和ZK技术运营</p>
+<p>Espresso，ZK技术支持的L1，于3月6日stealth building中脱颖而出并<a href="https://blockworks.co/espresso-systems-launches-to-public-amid-a-32m-raise/#:~:text=A%20scaling%20and%20privacy%20solution,a%20%2432%20million%20funding%20round.">宣布启动3200万美元的资金</a></p>
+<p>Aztec Network在2021年12月<a href="https://www.coindesk.com/business/2021/12/16/ethereum-privacy-startup-aztec-raises-17m-in-paradigm-led-series-a/">筹集了1700万美元</a>的A轮融资</p>
+<p>Argent，ETH DeFi移动钱包，推出<a href="https://www.theblockcrypto.com/linked/136501/defi-wallet-argent-launches-layer-2-account-with-waitlist-over-500000?utm_source=twitter&amp;utm_medium=social">zkSync驱动的L2钱包</a>，等候名单上有超过50万人</p>
+<p>当前参与者</p>
+<p><a href="https://starkware.co/">StarkWare</a> — 构建 StarkNet 和 StarkEx</p>
+<p><a href="https://starknet.io/">StarkNet</a></p>
+<p>StarkNet是使用ZK-STARKs的ZK-Rollup L2，于11月29日首次登陆ETH主网，该团队一直在不懈地发布新功能和更新。</p>
+<p>2月23日，StarkNet宣布了他们的最新版本StarkNet Alpha，并且扩展解决方案已准备好用于应用程序构建和事务。要查看<a href="https://www.starknet-ecosystem.com/">StarkNet生态系统</a>的最新概述，您可以查看他们的网站。</p>
+<p>最近，StarkNet宣布与Aave，Opera Browser，DeversiFi和Argent合作，还有无数其他协议等待部署。</p>
+<p>何时发币：&ldquo;在下半年&rdquo; - 大概是向早期用户空投</p>
+<p><a href="https://starkware.co/starkex/">StarkEx</a></p>
+<p>StarkEx是通过编程语言Cairo构建的可扩展性引擎，自2020年6月以来一直在主网上运行，目前由DeversiFi，Immutable X，dYdX和Sorare使用。</p>
+<p>根据<a href="https://starkware.co/starkex/">StarkWare的数据</a>，他们从3月9日开始对StarkEx使用量的最后一次更新是11亿美元的TVL，1.23亿笔交易和4.62亿美元的累计价值。</p>
+<p>何时发币：&ldquo;最终由社区运行&rdquo;，但我的假设是，在StarkNet令牌发布后不久，如上所述，这是&quot;在下半年&rdquo;。- 再次可能向早期用户空投</p>
+<p><a href="https://zksync.io/">zkSync</a></p>
+<p>zkSync是使用ZK-SNARKs的ZK rollup，自2020年6月以来一直上线，由Matter Labs开发。在2月22日的一条<a href="https://twitter.com/zksync/status/1496128244038660102?s=20&amp;t=Sc1hCV7gIgheNcGgrgVG5g">推文</a>中，zkSync宣布zkSync 2.0已经上线，并在以太坊的测试网上包含了第一个与EVM兼容的ZK Rollup。</p>
+<p>上面链接的推文中的博客文章包括zkEVM里程碑的含义，&ldquo;去年五月，我们为zkSync的zkEVM制定了<a href="https://blog.matter-labs.io/zksync-2-0-hello-ethereum-ca48588de179">我们的愿景</a>，这是一个无需许可的图灵完备ZK rollup，将允许开发人员使用以太坊的原生编程语言Solidity在低费用，高度可扩展的第2层环境中构建和部署分散的应用程序。他们的帖子中有关zkSync 2.0当前功能的更多详细信息。
+<img src="http://fcdaohang.com:8088/assets/8083864b-ebb8-491f-8e13-7442996fc8bc.png" alt=""></p>
+<p>有关zkSync的更多信息，您可以在<a href="https://ecosystem.zksync.io/">此处查看</a>他们使用ZK解决方案构建的项目生态系统，并参考<a href="https://dune.xyz/kylin/Zksync">Dune Analytics zkSync看板</a>，其中包含交易，TVL，存款和取款到zkSync以及其他信息的概述</p>
+<p>何时发币：根据他们的官方文档，确认令牌将存在，但很难知道何时存在。</p>
+<p><a href="https://www.immutable.com/">Immutable X</a></p>
+<p>$IMX由StarkWare的StarkEx提供支持，是领先的ZK技术支持的协议之一，具有以游戏和NFT为中心的应用程序。$IMX形容自己说：&ldquo;毫不妥协地为市场，游戏和应用程序体验零汽油费，即时交易和碳中和NFT&rdquo;。</p>
+<p>基于$IMX构建的产品包括<a href="https://godsunchained.com/">Gods Unchained</a>，<a href="https://www.illuvium.io/">Illuvium</a>（$ILV）和<a href="https://tiktok.immutable.com/">TikTok的Top Moments系列</a>。</p>
+<p>GameStop x Immutable X - 2月3日，GameStop宣布将在$IMX的基础上建立其NFT市场，并宣布设立1亿美元的基金，专门用于支持其生态系统内的游戏开发。GameStop还表示，他们计划将市场纳入&quot;数十亿个可以轻松买卖的低成本游戏内资产&rdquo;。</p>
+<p>$IMX已经构建了多年，并完成了支持 ZK 的 NFT 和未来大规模游戏所需的绝大部分繁重开发和提升。</p>
+<p><a href="https://polygon.technology/">Polygon</a> （$MATIC）</p>
+<p>目前有三个独立的 ZK 汇总扩展计划正在开发</p>
+<p><a href="https://polygon.technology/solutions/polygon-miden">Polygon Miden</a> - &ldquo;一个基于STARK的zk-Rollup，支持任意智能合约&rdquo; - 目前正在开发中</p>
+<p><a href="https://polygon.technology/solutions/polygon-zero">Polygon Zero</a> - &ldquo;提供汇总和验证模式，使用户能够访问更高的吞吐量和更低的费用&rdquo; - 正在开发中</p>
+<p><a href="https://polygon.technology/solutions/polygon-hermez">Polygon Hermez</a> - &ldquo;一种开源zk-Rollup，针对安全，低成本和可用的令牌转移进行了优化&rdquo;</p>
+<p>Polygon在2021年8月写了一篇很好的<a href="https://blog.polygon.technology/the-polygon-thesis-strategic-focus-on-zk-technology-as-the-next-major-chapter-for-polygon-1b-treasury-allocation/">博客</a>，讲述了他们对ZK技术的承诺，他们对该行业的10亿美元资金分配，以及对ZK技术的总体概述。</p>
+<p>虽然很难获得他们的ZK rollup套件的详细时间表，但很明显，他们致力于通过支持ZK的技术解决方案来扩展ETH，这可以从他们最近价值约6.5亿美元的收购中得到证明。</p>
+<p><a href="https://www.espressosys.com/">Espresso Systems</a></p>
+<p>Espresso于3月6日从stealth building中脱颖而出，宣布了资金并<a href="https://www.espressosys.com/blog/introducing-espresso-systems">介绍了他们的愿景和区块链</a>。</p>
+<p>Espresso将自己描述为&quot;一个结合了权益证明共识和ZK rollup机制的第1层区块链系统&rdquo;，从而产生了&quot;<a href="https://twitter.com/EspressoSys/status/1500834456575221765?s=20&amp;t=9tUr4-3WRQwS0JKtCTct5w">单次扩展和隐私解决方案</a>&quot;。</p>
+<p>发布了CAPE（以太坊的可配置资产隐私），这是一个EVM应用程序，允许用户自定义谁可以看到所有权详细信息和资产的移动，并能够在CAPE中包装和解开当前的ERC-20令牌。</p>
+<p>CAPE将在&quot;未来几周&quot;部署到Rinkeby测试网，以及有关其ZK扩展解决方案的更多详细信息。</p>
+<p><a href="https://aztec.network/">Aztec Network</a></p>
+<p>L2 ZK-Rollup扩展解决方案，&ldquo;充当ERC20令牌传输和其他DeFi交互的隐私保护&rdquo;。</p>
+<p>zk.money是Aztec构建的核心应用程序，允许MetMask用户与团队秘密发送DAI和ETH，希望&quot;今年晚些时候&quot;获得完整的钱包级资产隐私。</p>
+<p>Aztec的L2汇总解决方案使用zk-SNARKs，目前部署在Goerli测试网上</p>
+<p><a href="https://www.aleo.org/">Aleo</a></p>
+<p>Aleo是一个启用ZK的，默认私有的基础层区块链，它&quot;处理链下交易，然后由网络节点验证（而不是执行和重新执行）。</p>
+<p>Aleo于2月7日在B轮融资中筹集了2亿美元，他们的区块链目前处于测试网中，计划于今年第三季度在主网上推出。</p>
+<h2 id="结论和延伸阅读">结论和延伸阅读<a hidden class="anchor" aria-hidden="true" href="#结论和延伸阅读">#</a></h2>
+<p>零知识证明处于月球数学，密码学和技术创新的前沿，越来越多地将我们推向全球24/7，隐私支持的廉价交易的未来。目前的两个行业领导者是zkSync和StarkWare（StarkEx / StarkNet），他们都在今年某个时候确认了代币，这是为自己定位的东西。正如其融资轮次和当前估值所证明的那样，需求将是天文数字，但期待已久的L2 szn和下游效应可能最终发生，因为这些协议和其他L2激励用户和流动性将代币的压力转移到彼此身上。虽然我们距离在微观尺度上看到这一点还有几个月的时间，但在宏观上还有几年的时间，但ZK技术可能会改变区块链行业的未来。</p>
+<p>对于更深入的技术和实际应用，我强烈建议阅读这些链接的文章和线程：</p>
+<p><a href="https://twitter.com/_supercycled">Supercycled</a>在ZK汇总上有一个很好的主题，特别是两个主要竞争对手zkSync和StarkWare之间的差异，你可以在<a href="https://twitter.com/_supercycled/status/1469242551836332032?s=20&amp;t=zxECCXwItMt5u9CDsYjwwQ">这里阅读</a>。</p>
+<p>Packy McCormick 和 Espresso 的联合创始人 Jill Gunter 写了一篇<a href="https://www.notboring.co/p/zero-knowledge?s=r">关于 ZKRs 的优秀文章</a>，以及它们是什么，可以实现什么。</p>
+<p>EthHub<a href="https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/zk-starks/#differences-between-zk-snarks-and-zk-starks">关于ZK-SNARKs和ZK-STARKs之间的差异</a></p>
+<p>Suzuha解释了<a href="https://twitter.com/dystopiabreaker/status/1499864241108844544?s=20&amp;t=7cfBomJMpNHQxGleoxWQzg">ZK允许的突破性潜力</a></p>
+<p><a href="https://vitalik.ca/">Vitalik的博客</a>是一个很好的资源，他之前曾多次写过关于ZK技术和Rollup的文章。</p>
+<p>来自Polygon的Optimistic 和ZK Rollup的<a href="https://blog.polygon.technology/the-polygon-thesis-strategic-focus-on-zk-technology-as-the-next-major-chapter-for-polygon-1b-treasury-allocation/">详细对比</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://fengche.io/tags/zero-knowledge/">Zero-Knowledge</a></li>
+      <li><a href="https://fengche.io/tags/zk/">ZK</a></li>
+      <li><a href="https://fengche.io/tags/%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E/">零知识证明</a></li>
+      <li><a href="https://fengche.io/tags/%E6%A6%82%E8%A7%88/">概览</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://fengche.io/posts/56/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>加密词典（保持更新）</span>
+  </a>
+  <a class="next" href="https://fengche.io/posts/54/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>20220318-百倍币来了-ADP</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Zero-Knowledge 零知识证明 概览 on twitter"
+        href="https://twitter.com/intent/tweet/?text=Zero-Knowledge%20%e9%9b%b6%e7%9f%a5%e8%af%86%e8%af%81%e6%98%8e%20%e6%a6%82%e8%a7%88&amp;url=https%3a%2f%2ffengche.io%2fposts%2f55%2f&amp;hashtags=Zero-Knowledge%2cZK%2c%e9%9b%b6%e7%9f%a5%e8%af%86%e8%af%81%e6%98%8e%2c%e6%a6%82%e8%a7%88">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Zero-Knowledge 零知识证明 概览 on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2ffengche.io%2fposts%2f55%2f&amp;title=Zero-Knowledge%20%e9%9b%b6%e7%9f%a5%e8%af%86%e8%af%81%e6%98%8e%20%e6%a6%82%e8%a7%88&amp;summary=Zero-Knowledge%20%e9%9b%b6%e7%9f%a5%e8%af%86%e8%af%81%e6%98%8e%20%e6%a6%82%e8%a7%88&amp;source=https%3a%2f%2ffengche.io%2fposts%2f55%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Zero-Knowledge 零知识证明 概览 on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2ffengche.io%2fposts%2f55%2f&title=Zero-Knowledge%20%e9%9b%b6%e7%9f%a5%e8%af%86%e8%af%81%e6%98%8e%20%e6%a6%82%e8%a7%88">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Zero-Knowledge 零知识证明 概览 on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2ffengche.io%2fposts%2f55%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Zero-Knowledge 零知识证明 概览 on whatsapp"
+        href="https://api.whatsapp.com/send?text=Zero-Knowledge%20%e9%9b%b6%e7%9f%a5%e8%af%86%e8%af%81%e6%98%8e%20%e6%a6%82%e8%a7%88%20-%20https%3a%2f%2ffengche.io%2fposts%2f55%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Zero-Knowledge 零知识证明 概览 on telegram"
+        href="https://telegram.me/share/url?text=Zero-Knowledge%20%e9%9b%b6%e7%9f%a5%e8%af%86%e8%af%81%e6%98%8e%20%e6%a6%82%e8%a7%88&amp;url=https%3a%2f%2ffengche.io%2fposts%2f55%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</span>
+    <span>
+        Powered at 2021
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" fill="currentColor">
+        <path style="fill:#777bc6" d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>代币化框架 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E4%BB%A3%E5%B8%81%E5%8C%96%E6%A1%86%E6%9E%B6/</link>
+    <description>Recent content in 代币化框架 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 17 Apr 2022 16:36:40 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E4%BB%A3%E5%B8%81%E5%8C%96%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IOTA 代币化框架规范</title>
+      <link>https://fengche.io/posts/235/</link>
+      <pubDate>Sun, 17 Apr 2022 16:36:40 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/235/</guid>
+      <description>[原文链接](https://blog.iota.org/iota-tokenization-framework-specifications/)```本文内容：了解为什么要有WETH，什么是多资产分类账IOTA的NFT有什么不同之处（音乐NFT解决方案）--风车注```长文预警今天，我们发布了IOTA主网新代币化框架的规范。这次未来的升级将把主网协议转变为具有智能合约和无缝跨链资产转移的多资产分类账。原生代币和NFT存在于Tangle中，并继承了基础货币IOTA硬币的无费用和可扩展性。原生代币...</description>
+    </item>
+    
+  </channel>
+</rss>

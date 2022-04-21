@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>安全 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E5%AE%89%E5%85%A8/</link>
+    <description>Recent content in 安全 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 17 Apr 2022 17:30:02 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为了迎接即将到来的Q2行情，安全的问题不容忽视</title>
+      <link>https://fengche.io/posts/236/</link>
+      <pubDate>Sun, 17 Apr 2022 17:30:02 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/236/</guid>
+      <description>```本文内容：你想不到的盗U手段--风车注```很多朋友都很期待接下来的行情，但在此之前，趁现在还是平稳阶段，请仔细对照本文检查隐患避免辛苦赚的钱被人一波带走。币圈，安全的问题不容忽视。这里重点说下最近以及后续可能出现的大规模安全问题：1.假钱包：百度和谷歌搜索IMTOKEN，这里是绝对的重灾区，很多都是假的官方网站，下载到的都是可以把你真钱转走的假钱包。解决办法：1.牢记官方网站网址，尽量使用iphone的Appstore和安卓的googleplay去下载钱包。2.正规渠道购买并使用硬件钱包...</description>
+    </item>
+    
+    <item>
+      <title>您的 Metamask 是如何被黑客入侵的</title>
+      <link>https://fengche.io/posts/216/</link>
+      <pubDate>Sun, 10 Apr 2022 12:29:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/216/</guid>
+      <description>[原文链接](https://medium.com/coinmonks/how-your-metamask-got-hacked-probably-795abca4534a)前言我欣然承认我喜欢DeFi加密投资--从大量垃圾项目和庞氏骗局中寻找新合法项目并确定其能产生收益是一项令人愉快且有利可图的挑战。但是DeFi有一个明显的缺点--你必须使用像Metamask这样的非中心化交易所托管钱包来与DeFi交易所进行交互。是的，Metamask运行良好，完全符合您的要求，但遗憾的是它在安全性方面存在严...</description>
+    </item>
+    
+  </channel>
+</rss>

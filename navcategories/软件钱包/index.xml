@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>软件钱包 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/navcategories/%E8%BD%AF%E4%BB%B6%E9%92%B1%E5%8C%85/</link>
+    <description>Recent content in 软件钱包 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 26 Feb 2022 01:22:20 +0800</lastBuildDate><atom:link href="https://fengche.io/navcategories/%E8%BD%AF%E4%BB%B6%E9%92%B1%E5%8C%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coin98 wallet C98</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Feb 2022 01:22:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>一个以平台化为目标的钱包，集成各链主流的去中心化交易所DEX，以及各类DAPP，便于一站式交易，适合老手玩家</description>
+    </item>
+    
+    <item>
+      <title>Trust Wallet</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Feb 2022 01:21:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>除了支持多链这一主要属性外，还集成了简单的交换功能，可以换币，也可以法币买币，手机使用最方便。新版本集成了浏览器，从此可以直接交互</description>
+    </item>
+    
+    <item>
+      <title>DOT波卡-Polkadot{.js}</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Feb 2022 01:20:30 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>波卡钱包使用像其生态一样复杂，优点在于花费一些成本，可使用代理账户进行交互，而资金汇总在主账户，冷热一体</description>
+    </item>
+    
+    <item>
+      <title>Terra/LUNA-Terra Station</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Feb 2022 01:18:44 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>名字上不叫wallet而是station，项目方可能想把自家钱包做成集收付、交互一体的平台。钱包下载在Learn菜单中，插件形式</description>
+    </item>
+    
+    <item>
+      <title>TRON波场-波宝钱包Tronlink</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Feb 2022 01:18:08 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>最常用的TRON钱包，收发TRC20代币首选，最常用于收发TRC20的USDT</description>
+    </item>
+    
+    <item>
+      <title>BTC-Bitpay</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Feb 2022 01:17:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>老牌比特币钱包，只支持BTC。方便用于BTC付款，支持很多BTC支付。软件内置买币功能，但需要信用卡</description>
+    </item>
+    
+    <item>
+      <title>Metamask小狐狸钱包</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Fri, 25 Feb 2022 14:28:53 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>Metamask 最常用钱包，最常使用于电脑chrome浏览器插件，其次使用手机app</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PandasTA on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/pandasta/</link>
+    <description>Recent content in PandasTA on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Tue, 05 Apr 2022 17:16:31 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/pandasta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>今天有什么好玩的？给炒币程序员们找了一个好东西-Pandas TA Library</title>
+      <link>https://fengche.io/posts/195/</link>
+      <pubDate>Tue, 05 Apr 2022 17:16:31 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/195/</guid>
+      <description>PandasTALibrary地址：[https://github.com/twopirllc/pandas-ta](https://github.com/twopirllc/pandas-ta)这是一个python3中使用的技术指标公式库熟悉的朋友都知道，我们在交易界面看到的技术分析指标和图几乎都来自tradingview，而其指标代码是使用他们自创的pinescript的语言，且只能在其平台上使用那如果我需要用python来将价格进行指标解析并加上告警在小飞机上提示呢？这个东西就能帮到你，试...</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>大白话科普 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E5%A4%A7%E7%99%BD%E8%AF%9D%E7%A7%91%E6%99%AE/</link>
+    <description>Recent content in 大白话科普 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Tue, 05 Apr 2022 20:21:46 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%A4%A7%E7%99%BD%E8%AF%9D%E7%A7%91%E6%99%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用大白话新人科普-什么是提供流动性（质押），什么是质押（流动性）挖矿</title>
+      <link>https://fengche.io/posts/198/</link>
+      <pubDate>Tue, 05 Apr 2022 20:21:46 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/198/</guid>
+      <description>本文一部分自撰，一部分来自推友[@文文](https://twitter.com/wen21447219)才华横溢的小剧场提供流动性这是源自传统交易市场做市商的专属名词，要完全了解它，需要先了解--市场核心。市场一直运行在订单薄这个核心系统之上，哪怕现在进入数字时代，也只不过是换成了效率更高的数字传输，模式一直未变：![订单薄的格式](https://edit.fcdaohang.org/assets/b7d31345-9444-46af-a40b-e81ee38ff0a7.png)这张图上以1...</description>
+    </item>
+    
+  </channel>
+</rss>

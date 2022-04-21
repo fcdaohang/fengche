@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>套利 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E5%A5%97%E5%88%A9/</link>
+    <description>Recent content in 套利 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 26 Mar 2022 01:43:55 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%A5%97%E5%88%A9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>套利追踪 - eigenphi</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Mar 2022 01:43:55 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>eigenphi是一个分析链上交易中潜力线索的平台</description>
+    </item>
+    
+    <item>
+      <title>LUNA 幣本位套利 圖文教學 - 原创 jordan-c.eth</title>
+      <link>https://fengche.io/posts/34/</link>
+      <pubDate>Thu, 10 Mar 2022 02:03:59 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/34/</guid>
+      <description>[推友jordan](https://twitter.com/choten9623?s=21)最近原创一篇图文教学，LUNA币本位套利的技巧，转载如下：收益試算假設每次套利的利潤為2%一年的套利次數為365/21=17.38次每次套利手續費為0.05%APY=(1.02-0.05%)^17.38-1)~=40%下面介紹三種套利方式，分別為bLUNA套利cLUNA套利LUNAX套利套利收益取決於交易對的匯率，可以自行選擇最優惠的方式做套利bLUNA套利方法1.在[Astroport](https:...</description>
+    </item>
+    
+  </channel>
+</rss>

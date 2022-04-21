@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Solidity on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/solidity/</link>
+    <description>Recent content in Solidity on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Mon, 18 Apr 2022 14:53:18 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/solidity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>认识 Assembly 04：互操作性和可组合性</title>
+      <link>https://fengche.io/posts/242/</link>
+      <pubDate>Mon, 18 Apr 2022 14:53:18 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/242/</guid>
+      <description>[原文链接](https://blog.assembly.sc/meet-assembly-4-interoperability-and-composability/)无缝创建跨链dApp长文预警系列导航：[认识Assembly01：让你打开和去中心化世界的钥匙](/posts/242/)[认识Assembly02：验证者和验证者委员会](/posts/241/)[认识Assembly03：Assembly即市场](/posts/240/)[认识Assembly04：互操作性和可组合性](/po...</description>
+    </item>
+    
+    <item>
+      <title>以太坊基金会报告2022年4月</title>
+      <link>https://fengche.io/posts/238/</link>
+      <pubDate>Mon, 18 Apr 2022 08:18:23 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/238/</guid>
+      <description>[原文链接PDF格式](https://ethereum.foundation/report-2022-04.pdf)```本文内容：通过此报告，你将了解到以太坊和以太坊基金会不是一回事以太坊基金会是什么其工作目的和方法以及投资者关心的财务状况&#43;报告提及的几个项目这次报告首次披露了资产组合占比，意味着监管时代即将拉开帷幕加密或许即将由边缘正式跻身主流地位--风车注```以太坊基金会今日发布了官方报告{{&amp;lt;twitteruser=ethereumid=1515950624592080900&amp;gt;}}!...</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>万字深度长文-以太坊的扩容之路-Zk rollup超细解读 | 风车 - 专注区块链快速安全有效的入门信息</title>
+<meta name="keywords" content="ETH,L2,扩容,ZkRollup,长文" />
+<meta name="description" content="[原文链接](https://mirror.xyz/0x22034f804960B9B34353d6A7595cC4E83ac0daBe/vVgKwJ0L5A0lm-ysPNipUddrXK_64NcXE_WkkRP_DT8)作者：Luka（Twitter：0x8e06）审阅：Jackson（Twitter：0xOar）随着ETH2.0的发布在即，扩容方案又一次被广大加密社区所关注。而ZKRollup-基于零知识证明兼顾了安全和隐私，以及未来还有更多应用领域，是很有前景的一种扩容方案，感谢推特网...">
+<meta name="author" content="
+找乐子的桃子">
+<link rel="canonical" href="https://fengche.io/posts/61/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.9a70498391f8adca004cded811aefa9d98674c66090df071732233658f113870.css" integrity="sha256-mnBJg5H4rcoATN7YEa76nZhnTGYJDfBxcyIzZY8ROHA=" rel="preload stylesheet" as="style">
+<link rel="preload" href="/fclogo.svg" as="image">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-49BWTSEZDZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49BWTSEZDZ');
+</script><meta property="og:title" content="万字深度长文-以太坊的扩容之路-Zk rollup超细解读" />
+<meta property="og:description" content="[原文链接](https://mirror.xyz/0x22034f804960B9B34353d6A7595cC4E83ac0daBe/vVgKwJ0L5A0lm-ysPNipUddrXK_64NcXE_WkkRP_DT8)作者：Luka（Twitter：0x8e06）审阅：Jackson（Twitter：0xOar）随着ETH2.0的发布在即，扩容方案又一次被广大加密社区所关注。而ZKRollup-基于零知识证明兼顾了安全和隐私，以及未来还有更多应用领域，是很有前景的一种扩容方案，感谢推特网..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fengche.io/posts/61/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-20T00:16:49&#43;08:00" />
+<meta property="article:modified_time" content="2022-03-20T00:16:49&#43;08:00" />
+<meta property="og:image" content="https://fengche.io/fcslogo.png" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="万字深度长文-以太坊的扩容之路-Zk rollup超细解读"/>
+<meta name="twitter:description" content="[原文链接](https://mirror.xyz/0x22034f804960B9B34353d6A7595cC4E83ac0daBe/vVgKwJ0L5A0lm-ysPNipUddrXK_64NcXE_WkkRP_DT8)作者：Luka（Twitter：0x8e06）审阅：Jackson（Twitter：0xOar）随着ETH2.0的发布在即，扩容方案又一次被广大加密社区所关注。而ZKRollup-基于零知识证明兼顾了安全和隐私，以及未来还有更多应用领域，是很有前景的一种扩容方案，感谢推特网..."/>
+<meta name="twitter:image" content="https://fengche.io/fcslogo.png"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "文章精选",
+      "item": "https://fengche.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "万字深度长文-以太坊的扩容之路-Zk rollup超细解读",
+      "item": "https://fengche.io/posts/61/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "万字深度长文-以太坊的扩容之路-Zk rollup超细解读",
+  "name": "万字深度长文-以太坊的扩容之路-Zk rollup超细解读",
+  "description": "[原文链接](https://mirror.xyz/0x22034f804960B9B34353d6A7595cC4E83ac0daBe/vVgKwJ0L5A0lm-ysPNipUddrXK_64NcXE_WkkRP_DT8)作者：Luka（Twitter：0x8e06）审阅：Jackson（Twitter：0xOar）随着ETH2.0的发布在即，扩容方案又一次被广大加密社区所关注。而ZKRollup-基于零知识证明兼顾了安全和隐私，以及未来还有更多应用领域，是很有前景的一种扩容方案，感谢推特网...",
+  "keywords": [
+    "ETH,L2,扩容,ZkRollup,长文"
+  ],
+  "articleBody": "原文链接\n作者：Luka（Twitter：0x8e06） 审阅：Jackson（Twitter：0xOar）\n随着ETH2.0的发布在即，扩容方案又一次被广大加密社区所关注。而ZK Rollup-基于零知识证明兼顾了安全和隐私，以及未来还有更多应用领域，是很有前景的一种扩容方案，感谢推特网友的热情原创，本篇内容机会可以说是迄今为止中文领域公开发表的最通俗易懂且深入描述该方案和背后技术的文章–风车注\n前言 无论你是不是区块链技术方面的专家，只要你待在Crypto的世界里够久。以太坊扩容，layer2，Rollup这些词语对于你来说都不会陌生。很多人都对这些概念中的一个或多个有所了解，但是他们之间的关系到底是怎样的？我们为什么需要这些技术？他们想要解决什么样的问题？\n如果你想要知道以上问题的答案，那希望这篇文章会对你有所帮助：\n本文中的所有内容都是逻辑上的梳理，不会涉及密码学/计算机科学方面的知识，所以相信只要你对以太坊本身熟悉，基本都可以理解。\n自从CryotoKitty造成以太坊链上拥堵的那天开始，以太坊开发者们就在不停的探索提高以太坊吞吐量的方案。\n从原理上可以分为两类 （1）：是对以太坊区块本身进行改造，我们姑且称之为Layer1方案，这里的主要解决方案是分片。\n（2）：是改变我们使用以太坊的方式，将交易的执行和处理放在链下，以太坊本身只用来校验其交易有效性，提供安全性。这就是我们经常听到的Layer2。\nLayer2的核心思想是将大批实际发生的交易放在链下执行和计算，再将其通过以太坊上极少量的交易进行交易最终有效性的验证。无论是State Channel，Plasma还是Rollup，实际上都遵循了这一原则。\n现在谈起Layer2，很多人第一反应都是将其与Optimistic/ZK Rollup挂钩，但在这里我们先简单介绍一下状态通道和Plasma，这有助于我们理解为何Rollup最终胜出，成为当前我们谈论最多的Layer2解决方案：\n一：状态通道 以下是一个状态通道的最原始结构:\n状态通道是一种已经存在很久的区块链扩展方案，他最出名的应用是比特币的闪电网络。\n1：举例说明 相比描述他的原理，一个例子更能够说清楚什么是状态通道：\n你很喜欢楼下的一家理发店，每次去理发店的时候Tony老师都会在你的耳边一直让你办卡。\n有一天你终于决定了，办卡就办卡吧，反正我以后还会来。于是你向理发店转账一千元办了一张卡。\n以后每次去理发，你都不需要再向理发店转账，取而代之的是你的卡里的余额会被扣除，同时每次理发你都和理发店完成了一次实际上的交易。\n过了一个月，你要搬家了，可是你卡里的钱还没用完。于是你向理发店申请退卡，理发店的Tony老师退给了你200元。\n在这一个月的时间里，你在理发店消费了十几次，但你和理发店实际上只互相转账了两次。\n将这个过程放在区块链上，你买卡的过程实际上是将钱存进了某个智能合约，同时开启了一个你与理发店间的状态通道。你退卡的过程关闭了你与理发店之间的“状态通道”。你和理发店之间的互相转账相当于在以太坊主链上的两笔交易。\n设想一下你没有办卡，那每次理完头你都需要给理发店转一次帐。\n通过这个例子我们发现，通过状态通道，只有第一步和最后一步需要我们在区块链上进行交易，在这些步骤之间，你 和 理发店 可以向对方发送无限数量的签名消息（完成一次消费），指示付款。在这种情况下，以太坊区块链仅用作结算层来处理一次性付款的最终交易，这大大减轻了底层区块链的负担。\n2：应用场景 （1）状态通道在某些简单场景如流支付中能够发挥很大的作用，其通过在链下对消息签名的方式对交易数据进行记录，将大量在逻辑上发生了的交易简化成了主链上的两笔交易。 （2）状态通道因为其成本较低，很适合一些微支付的场景，比如用ETH或者BTC买早餐咖啡等。\n3：局限性 但同时，状态通道需要资金的发送方和接受方都进入这个通道来，而为了维护状态通道，支持比流支付更复杂的操作，大笔的资金需要被锁定。因此开发者们很快意识到状态通道无法作为可选的扩容方案之一。\n二：Plasma 1：原理 现在我们都知道了状态通道的局限性，而为了解决这个问题。——Plasma应运而生 其解决了将资产发送给任意目标人的问题，同时也能够确保TPS的提升。 事实上在开发者们研究Layer2解决方案的开始很长一段时间里，Plasma一度被认为就是那 “一个”。\n要理解Plasma，首先要明白它并不是一种实际的技术，它更像是一种设计思想或者技术架构。\nPlasma通常是一条链，它可以拥有与主链不同的共识机制，也可以拥有自己的矿工。但最重要的是Plasma链上会有一个叫做“Operator”的角色定期的根据子链上的状态转换，生成一棵默克尔树，并将这棵默克尔树的树根哈希值提交给主链做验证和记录。关于为什么默克尔树和其树根哈希值能够用作状态转换的验证，我们会在同样使用了这一应用的Rollup中讲到。\n通过这样的方式，无论在两次提交期间，子链上发生了多少笔交易，子链只需要将交易执行造成的状态信息提交到主链上即可。\n以下是使用Plasma机制的简单示意图：\n用户想要进入Plasma链需要在以太坊主链上做资产的映射，而当其需要将Plasma链上的资产转移或主链上时，需要经历一段时间的挑战期来供其他人使用「 欺诈证明 」机制来确认资产转移的有效性。\n「 欺诈证明 」意味着任何人在这段挑战期（通常是7天或者更久）内，都可以通过默克尔树校验的方式来提交证明用户资产的退出是不合法的。\n2：问题 但这带来两个问题： （1）想要验证这个提款的正确性需要有节点保存Layer2上的交易和状态信息，因为Plasma只会提交其状态转移的结果，而想要提交欺诈证明必须有Layer2上的信息，这将大大提升 验证者 这一角色的成本。\n（2）是所谓的 「 数据不可用」，他的意思是Plasma不会将其链上发生的交易数据发给主链进行存储，主链的节点无法获取到这些交易数据，无法通过主链本身的安全性为其做验证。当然有些解决方案会把这些数据提交到中心化存储或者IPFS上，但这对主链来说没有任何意义，因为用户使用Layer2的基础是信任主链本身的安全性。\n三：Rollup 我们可以看到Plasma一个很重要的问题是他的 “数据不可用”，主链只会收到Operator提交的状态转移结果，其只能期待有人存储了链下的的交易和状态信息，通过欺诈证明机制来确保子链的提交真实性，它在这个过程中只承担了确认者的角色，其安全级别是较差的。\n1：具体理解“数据不可用” 以太坊将其链上发生的所有数据都公开，所有人都可以查询。但Plasma不会提交这些交易数据到主链上，而只提交执行结果，因此其效率上的提升是很高的，但是这样做的代价是Plasma无法建立和以太坊主链同一级别的信任。\nRollup实际上可以算是原始主链处理方式和Plasma方式的折中，其会将数据提交给主链，但他会最大限度通过聪明的编码方式压缩这些数据，同时基于Rollup本身的特性适当删除和缩减一部分数据，只要保证最终的提交能够供任何人验证即可。\n交易数据上链后，任何人都可以根据这个数据来校验Rollup提交的结果是否正确。因此，Rollup的安全性要比Plasma高。\n总结一下，Rollup的核心优势是所谓的“数据可用性”，它会将数据提交给主链，这大大加强了安全性。\n那么究竟Rollup是如何实现的呢？\n2：原理 （1）State Root 首先Rollup在主链上拥有一个(或者一系列相互关联的)合约：\n这个合约用来维护Rollup层中的状态记录，这个状态记录实际上是一棵默克尔树的根节点存储的哈希值，这个哈希值被称为state root。\n而这颗默克尔树的叶子节点是Rollup中的账户状态信息。如果你不知道什么是默克尔树，以下是一个简单的例子：\n可以看到这是一颗二叉树，在二叉树的叶子节点上记录着当前rollup层账户的状态信息。\n对于每两个状态信息(例如State 1/State 2)，我们可以根据某种哈希公式计算出一个唯一的哈希值(eg: Hash(1,2) )来作为这两个叶子节点的父亲节点，依次一层一层往上类推，最终得到一个哈希值存储在根节点中：\n你不需要知道怎样计算哈希值，你只需要记住几件事情。\n1 任意一个叶子结点的改变都会导致根节点的值变化（任何一个状态的变化都会导致Root hash发生变化） 2 如果两棵树的根哈希值相同，那说明他们的叶子结点存储的信息完全一致（因此只需要对比两个根节点哈希值就可以确认底层状态信息的一致性） 3 根据根节点的哈希值和指向某一个状态信息的路径，我们可以确认某一个状态信息存在于这颗哈希树中。\n（2）Batch 通过 state root 我们可以得出一个账户状态的key-value map：\n其中key是账户地址，value则包含余额/Nonce/合约代码/存储（对于合约账户）等状态信息\n当rollup上发生交易的时候，很显然的，这些账户的状态会发生改变，由此产生新的state root。\n虽然这样可以非常准确和及时的反馈Rollup上最新的状态变化，但是如果每发生一笔交易就在主链更新一次state root，产生的成本反而会比将这些交易在Layer1上执行更高。\n所以为了解决这个问题，rollup中产生的交易将被按批次打包汇总，同时根据这批交易全部执行完成后的状态，会产生一个新的state root。无论是谁将交易打包提交给主链上的智能合约，他都需要计算这个新的state root，并将其和上一个state root以及交易数据一并提交。\n这一部分的打包被称为一个”batch”，提交者将batch提交给Rollup contract之后，主链会去验证新的state root是否正确，如果通过验证，则将state root更新为最新提交的state root，并最终完成一次rollup内的状态转移确认。\n（3）Rollup的实质 以下是一个简化版本的Optimstic Rollup流程，可以看到和Plasma的最大的区别其实在于新增了交易数据的提交。\n所以，Rollup的实质是将一大笔实际产生的交易汇总成一笔主链上的交易，这些交易由Rollup链来执行和计算，但会将数据提交给主链，同时由主链扮演一个“最高法院法官”的角色最终确认这些交易。由此我们利用了主链的共识和安全性，同时提升了实际上的交易效率，降低了交易成本。\n3：疑惑 看完以上的描述你可能会有一些问题，别担心，我们会一步一步进行推演和解释。\n（1）如果提交全量交易数据，还是很难扩容吧？前文说的数据压缩是解决这个问题的嘛？怎么做的？ 这两种技术方案能够做到扩容，核心都是交易的压缩和打包。这是因为以太坊的区块 gas limit 是有上限的, 压缩后的交易越小，一次能提交给主链的交易就越多。那么如何做到这一点呢？\n以下是Vitalik在其文章中描述的一种压缩模式，作为例子帮我们理解\n以太坊主链上一笔简单的交易（比如发送 ETH）通常消耗约 110 字节。然而，在 Rollup 上发送 ETH 可以缩减到约 12 字节。\n达到这样的压缩效果，一方面是采用了更简单高级编码，而目前 Ethereum 的 RLP 在每个值的长度上都浪费了 1 字节。另一方面，还有一些巧妙的压缩技巧：\nNonce：在 rollup 中可以完全省略 nonce\nGasprice：我们可以允许用户使用固定范围的 gasprices 进行支付，例如 2 的 16 次幂等\nGas：我们同样也可以将 gas 设置为 2 的多次幂。另外，我们也可以在 batch 层面设置 gas 限制。\nTo：可以通过默克尔树上的索引来标识地址\nValue：我们可以用科学计数法存储 value。在大多数情况下，转账仅需 1 ～ 3 有效位。\nSignature：我们可以使用 BLS 聚合签名，将多个签名整合为一个\n这些压缩技巧是 rollup 扩容的关键，如果我们不对交易数据进行压缩，rollup 或许只能在主链的基础上的有大约 10 倍的提升效率，但有了这些压缩技巧，我们才能做到50倍 100倍甚至更高的压缩效率。\n与此同时，为了节省gas，这些被压缩过的交易数据会被放入calldata参数中存储。著名的EIP-4488，提出calldata中每一字节数据gas消耗降低，就是为了进一步优化一笔主链交易能够承载的roll层交易数据量。对于具体的压缩效果，我们会在下面对于两种不同的ZK-Rollup进行对比时展示简单的数据。\n（2）怎么来验证提交的可供验证的信息是正确的？ 既然最终的状态转换确认（也代表着交易的确认）由state root的更新决定，但是目前看起来Rollup上的提交者可以随意提交他想要的交易数据和state root，那么怎么来验证他提交的这些信息是正确的呢？\n对于这一问题，大体上有两种解决方案，而根据解决方案的不同，rollup也被分成了两类：\n4：Optimistic Rollup 正和它的名字一样，这种解决方案选择乐观的相信提交者提交的batch是正确的，除非有人通过一个欺诈证明来证明提交者是其实是一个坏蛋，他提交了一个错误的batch。\n（1）以下是一个欺诈证明构建的简单例子（再次感谢Vitalik）： 提交一个欺诈证明来证明某个提交的batch是错误的，需要下图的绿色部分包括的信息：\n提交者提交的batch\n上一个state root代表的默克尔树（实际上代表了真实的账户状态信息）的一部分，根据这一部分能够构建完整的默克尔树\n基于第二部分构建的默克尔树，我们模拟执行batch中提交的交易，从而得到了新的账户状态，得到新的默克尔树，得到新的state root。 将上一步得到的state root和batch中的state root进行比对从而验证batch中的是否正确\n（2）验证过程 我们从逻辑上梳理了Optimstic确保state root真实性的过程，实际上，为了确保能够威慑提交者不作恶，提交者往往需要质押资金，当他的提交被验证为错误时，一部分质押资金将会被扣除作为惩罚。同时，提交了相应欺诈证明的验证者在某些解决方案中会得到被扣除的资金，以此来激励监测和提交欺诈证明的行为。\n如果我们将OR和Plasma进行比对，我们会发现一些相似性，例如他们都使用了欺诈证明机制，需要有一个验证者的角色来监测OR给主链的提交。但由于OR同时向主链提交了交易数据，所以OR上的验证者不需要在自己去保存记录OR上的交易，作为对比，再将前文的简单架构图放在这里以供读者对比：\n5：ZK-Rollup （1）Zk-rollup的核心 另一类解决方案是ZK Rollup，与OR（Optimistic Rollup）不同，ZK Rollup做了这样的根本假设：\n不相信提交者能主动提交正确的batch，或者说类似法律学中的“有罪推定”。提交者在提交batch时除了交易数据以及post/previous state root 之外，还要携带一个ZK-SNARK证明。\nZK-SNARK本质上是一个“有效性证明”，他可以直接用来被验证所提交的batch是正确的。这个证明被提交到Rollup合约之后，任何人都可以使用它来验证Rollup层中特定批次的交易，而，这意味着rollup不再需要在提交后再等待7-14天来做验证。\n（2）有效性证明和欺诈证明的区别 那么如何通俗的理解ZK-Rollup这样的“有效性证明”和Plasma/Optimsitic Rollup使用的“欺诈性证明”之间的区别呢？\n首先这三种方案都需要有人来做Layer2上交易的排序，执行和打包，我们姑且称这个角色为“执行者”。\nPlasma的执行者只会提交执行结果，秉承着其他人爱信不信的原则，你如果不信任我就需要发起挑战，而发起挑战需要你自己保存底层的交易数据。\nOR也是一样，但是执行者在提交的同时会把交易数据也放上来，同样是爱信不信，你如果不信就自己根据这个交易数据去验证就完了。\n但ZK不一样，ZK说我不想等你好几天让你来挑战我，那多浪费时间啊，我赶着确认我的交易呢。于是ZK直接在提交的时候生成一个证明，把这个证明也放上去，在提交的同时完成验证。\n与此同时，Plasma/OR都需要通过质押的方式来确保执行者作恶是有损失的，而ZK不用，因为它不需要别人相信它，每次提交他都会自证清白。\n除了这方面的区别外，另一个有意义的地方在于，ZK-SNARK可以让我们在不提交全部交易数据的情况下证明这批交易的有效性，这对于Rollup来说是很重要的，在下面我们会解释这一点。\n（3）ZK-Rollup的实现逻辑 首先ZK-Rollup本质上还是一种Rollup解决方案，因此其仍然需要做以下两件事情：\n打包压缩一个批次的交易数据 生成新的state root\n唯一不同的是验证方式，ZK-Rollup不会等待验证者发起欺诈证明流程，而是直接生成一个ZK-SNARK 证明并添加到Batch里提交给主链rollup合约。\n如图示，提交的内容相比OR来说 增加了一个ZK-Proof，同时验证人这一角色被隐去了。\n提交到rollup合约之后任何人都可以进行验证，验证成功后主链rollup合约会将State root更新为提交的最新数据。\n（4）如何生成一个ZK-SNARK 有效性证明？ A 什么是ZK-SNARK？ ZK-SNARK的全称是“Zero-Knowledge Succinct Non-Interactive Argument of Knowledge.” 简洁非交互零知识证明。我会尽量解释其中每一部分的意思：\nSuccint（简明）：与实际证明的数据量相比，这种方法生成的证明要小很多。\n例如我们要证明一系列交易确实存在并发生，所生成的证明数据量必须要小于这些交易本身的数据量。\nNon-interactive (无交互): 在证明构建完成后，证明者只需要向验证者发一次简单的消息，而且通常情况下允许任何人无需许可的验证。\n这对于ZK-Rollup或者区块链上的ZK应用是很重要的，因为有一些ZK证明需要证明人和验证人之间多次交互(猜颜色问题是一个典型的例子)，放在链上则意味着要发起多笔交易，这在成本上是不可容忍的。\nArguments：可以抵抗计算能力有限的证明者的攻击\n这一部分意味着生成证明使用的加密算法复杂度在现有的算力条件下，无法以可接受的时间和经济成本被暴力破解。\nof Knowledge：在不知晓要证明的是什么的情况下 不可能构建一个证明\n这对于ZK-Rollup来说也是很重要的，因为我们不能允许有人能够根据非交易数据创建一个ZK Proof 提交给主链合约。\n最后，也是最重要的”Zero-Knowledge“：\n零知识意味着在证明人向验证者证明某个论断（Statement）时，不透露任何有用的或和所证明的实体本身有关的任何信息。\nB 一个最简单的零知识证明例子是这样的 Alice想向Bob证明知道某个保险箱的密码，密码是打开保险箱的唯一方式，但她不想告诉Bob保险箱的密码，怎么办呢？\n正好Bob知道保险箱里有一副Bob前女友写给他的情书，上面有Bob和前女友共同的指纹。\n于是Alice背着Bob打开了保险箱，拿出了这封情书给了Bob。\n由此证明了Alice知道保险箱的密码，同时Alice并没有告诉Bob密码是什么，成功！\nC 如何为ZK-Rollup生成一个ZK-SNARK证明！ 简要的说，生成一个ZK-SNARK证明分为以下几步：\n确定问题在逻辑上的验证规则（例如检查balance，nonce是否符合要求等） 将逻辑上的验证规则转化为门电路Circle问题 将门电路Circle问题转化为R1CS(rank-1 constraint system，一阶约束系统)形式 将R1CS转化为QAP （Quadratic Arithmetic Program)\n经过以上转换，我们就可以根据逻辑上的验证规则得到一组可通过固定验证方法验证的ZK-SNARK证明。具体的转换过程可以看这篇文章：\n《零知识证明 – zkSNARK 入门》— PPIO Code Talks 第二期\n如果你觉得这一部分的复杂程度超过了之前的每一部分，你是对的。同样觉得复杂的还有目前的ZK-Rollup解决方案提供商，这也是为什么目前ZK-Rollup研发进度和实际应用要比Optimstic Rollup慢的原因之一。如果你不是数学/密码学专家，或者不是Matter Labs的开发者，你只需要知道以下几件事情：\n生成一个ZK-SNARK证明比验证一棵默克尔树需要花费的算力和时间成本都要高很多 并不是随便一种语言，编译环境，虚拟机，指令集都能够无缝支持完成以上提到的过程，需要做额外的适配。\n对于第一点，这是各大ZK解决方案提供商目前在努力的方向。首先是时间成本，如果生成一个可用的ZK-Proof需要一个小时，那么间接的用户提款的时间也会变长。而计算成本包括两部分，一部分是生成的ZK-Proof的数据量，另一部分是验证这个Proof所需要花费的算力。这两部分越大，在以太坊上需要消耗的Gas就越多，进而影响到ZK-Rollup的优化表现。\n对于第二点，这是当前限制ZK-Rollup发展的一大原因。在EVM设计之初，开发者们完全没有想到之后会用到ZK技术。因此为EVM操作生成可用的零知识证明是几乎不可能的，由此催生了ZK-EVM的需求。\nD 为什么兼容EVM对于ZK来说如此困难？ 打开DeFillama，你会发现TVL排名前几的Layer2解决方案清一色的都是OR，这是因为这些OR解决方案都已经有了自己的网络，这些网络都做到了EVM兼容，开发者可以无缝的将以太坊上的智能合约移植到他们的网络上，用户也可以在其网络上做到swap，抵押，提供流动性等操作。\n而ZK-Rollup目前还很难做到这一点，现有的很多解决方案只能够支持简单的支付和swap场景。\n为什么如此呢，首先我们要明确一点，在 Layer 1 上，已部署智能合约的字节码都存储在以太坊 storage（存储项）内。然后交易将在点对点网络中传播，对于每一笔交易，每个全节点需要加载对应的字节码并在 EVM 上执行以获得相同的状态（交易将作为输入数据）。\n而在 Layer 2 上，智能合约的字节码虽然同样存储在存储项内，用户的操作方式也相同。但是其交易将在链下发送至一个中心化的 zkEVM 节点，同时，zkEVM 不单需要执行字节码，还必须生成一个Proof来表明交易达成后状态已正确更新。最后，Layer 1 合约才能验证该证明并更新状态，而这时layer2上不需要重新执行交易。\n也就是说在zk-Rollup上执行交易是完全不同的逻辑和路径，与此同时zkEVM还有在执行交易的同时适配生成zk电路证明，而现有的EVM生成ZK-SNARK证明有以下几个问题：\n对ZK-SNARK所需要的部分椭圆曲线运算不支持 和传统虚拟机相比，EVM有许多独特的操作码，这些操作码对电路设计来说很困难 EVM 基于 256 位整数运行（就像大多数基于 32～64 位整数运行的普通虚拟机那样），零知识证明则 “天然” 基于素域运行。\n这些也只是在EVM中生成ZK Proof的部分问题，而OR虽然同样需要构建虚拟机来执行EVM操作，但由于其只需要在执行交易的基础上在完成交易打包等功能即可，所以构建起来要简单的多。对于ZK-Rollup，除了在兼容EVM的同时生成ZK-Proof存在难度之外，在Layer1上验证这个证明也并不容易。\n如果你想了解更多关于ZK-EVM难度的更多信息，可以看这篇文章：\n看完以上内容，不可否认的是zk-Rollup的实现有很高的技术难度，那为什么我们不直接使用更“简单的”的Optimistic Rollup技术呢？\n现在让我们对这两种Rollup技术做一个简单的对比。\n6：Optimstic VS ZK (1)效率优化（TPS/交易费用） 以下是特定以太坊环境下，目前市场上几种不同方案的费用和TPS对比： 来源：https://w3hitchhiker.mirror.xyz/7dwD76ZZIlR7ep731K6y9vTTuXGHOojxWSnkXKzqPzI\n感谢@W3.Hitchhiker 团队的贡献！ 图上我们可以看到ZK方案要比OR方案的效率更高，为什么呢？\n对于一个Rollup方案来说，最重要的是在一笔以太坊交易中能够携带多少Layer2上交易的数据，而这和两个参数有关：\nRollup压缩的一笔交易的Gas消耗 以太坊区块的max gas limit\n其中Rollup可以解决的是第一点，虽然ZK-Rollup证明的存储和验证需要消耗一定的存储空间和gas(一个可信的数据是在500K 左右)。但是由于在交易压缩上做的更好，而交易数据的存储消耗是Gas消耗的绝大部分，所以ZK-Rollup要比OR效率优化表现更好。\n另外提一句，你可能注意到表中ZKPort的TPS和交易成本优化最好，这主要由于其使用的Validium本质上是一种将欺诈证明替换为ZK Proof的 Plasma 方案，它不会提交交易数据，其效率完全是由Plasma链的处理效率决定的，但是安全性上同样面临着数据不可用的问题。\n上面的计算假设gas price为30 Gwei，而我们都知道以太坊活动大幅上升时，gas price会达到什么样的水平。届时Rollup尤其是ZK方案的成本优化效果会更加明显。\n(2)时间成本 我们之前说到过，因为欺诈证明机制，在Optimtisc Rollup上提款需要7-14天的提交期以供其他人来证伪潜在的作恶行为。\n当然我们可以通过一些独立于Rollup机制本身的行为来减少提款期，类似Boba Network等Optimstic Rollup解决方案提出的流动性池机制。\n让我们假设这样一个场景：\nAlice是OR用户，在L2上拥有5ETH的资产。\n在L1上又一个流动性池B，转为ALice这样的OR用户提供流动性。\n现在Alice想从OR上取回所有资产，现在他和B做了一笔交易：\nAlice可以从Bob这里直接拿走5ETH，同时支付一定的手续费\n7天后Alice的资产被解锁，这时Alice拿走的5ETH回到池子里。\n这对于流动性池来说有一定的风险，因此他可以通过监测OR合约，获取不诚实提交的罚金来对冲风险，同时收取的手续费也是降低风险的储备。\n但是这种方式不适用于NFT，因为NFT不可分割，而且流动性池无法简单的复制一个NFT给用户。\n而ZK-Rollup并不存在这一问题，提交者在提交时必须自证清白，提供可供验证的ZK-SNARK证明，目前的ZK-SNARK证明生成时间已经可以达到几分钟。用户只需要等待下一个batch提交并被验证即可。\n时间成本是OR的硬伤，也是ZK-Rollup的显著优势之一。\n(3)可适配性 Optimsitic和ZK 都面临着需要兼容适配复杂EVM合约调用操作的问题，但显然Optimstic实现起来更容易。\n包括Arbiturm，Optimsim在内的OR解决方案都拥有EVM兼容的虚拟机，允许其能够处理在以太坊主链上发生的所有事务。一些OG级别的DeFi协议如Uniswap/Synthetix/Curve等也都已经在OR 网络上部署。\n而构造兼容EVM的ZK-SNARK证明难度很大，以至于目前为止都没有能够公开使用的ZK-Rollup解决方案。不过我们在最近有一些好消息，zkSync 2.0公共测试网在二月底正式上线，这也是以太坊测试网上首个兼容 EVM 的 ZK Rollup。或许ZK Rollup的正式大规模实际使用要比我们想象的要快一些。\n(4)安全性 这个问题的答案是显而易见的，OR 的安全性来自于经济学。为了能够良好的运转，OR必须设计合理的激励机制驱使一批主链上的验证人随时监测提交者，并准备提交欺诈证明。而对于提交者，其也需要通过质押等方式确保节点作恶会付出相应的代价。\n而ZK的安全性来自于数学或者密码学，正如区块链中建立信任的一大基础：代码不会作恶一样。数学和密码学提供的保障要远比乐观的相信人性不会作恶来的稳。\n当然，当前的Rollup机制本身也存在一定的安全问题，虽然rollup将数据提交到主链解决了数据可用性问题。但是我们还没有讨论过到底谁来负责交易的处理，排序，压缩，打包和提交。当前一些主流解决方案，如 Arbitrum、Optimism 和 StarkNet，使用一个叫sequencer的角色， 是它们自己运行的单个节点。这种方式带来的结果是高度的中心化。\n我们知道去中心化是一切安全的前提，这种sequencer模式好处在于效率高，在rollup还在摸索阶段时可以进行快速的迭代，这些解决方案也声明了要在未来逐步进行sequencer的去中心化过程。例如使用PoS或dPoS方式进行sequencer节点的选举等，像Metis这样新的解决方案已经进行了一些探索。\n(5)总结 让我们根据一个表格来具像化上面的讨论：\n总体而言，OR在现阶段是更成熟的解决方案，事实上也是如此，目前Optimstic和Arbiturm的产品已经可供以太坊开发人员使用。但是由于使用欺诈证明机制，其提款时间和安全性目前来看值得商榷，同时其成本优化相比ZK也略逊一筹。\n而ZK Rollup的弱点基本都属于技术问题，随着大量优秀的开发人员投入到相关研究，包括Vitalik在内的大多数人都认同ZK Rollup在未来会是更优秀的扩容方案。\n7：Rollup是完美的吗？ 经过以上对于三类Layer2方案的阐述，相信你已经对他们有了一定的认知。事实上文章撰写的顺序也是开发者们对于Layer2扩容方案研究的顺序，往往是发现某一种解决方案存在的问题之后，另一种更好的解决方案被提出用来解决相关问题。不仅在加密研究领域如此，这一流程可以被推及到所有工程类的问题上：\n提出想法，测试，迭代，优化，直到找到最可行的解决方案。\n现在看上去Rollup就是我们想找的那个答案，他解决了普适性的问题，解决了数据可用性的问题，同时在安全性和效率上看起来也不错。那么，它是完美无缺的那一个吗？\n答案是否定的，任何方案都不能做到完美无缺，Rollup同样存在着许多问题，即使是看上去更好的ZK-rollup，也无法避免它们。\n(1)效率优化存在天花板： 当我们说到rollup和plasma的主要区别时，我们谈到为了保证数据可用性。rollup需要将交易数据提交给主链，这是rollup方案战胜plasma的主要原因。\n但我们要看到另一方面，交易上链意味着rollup仍会收到以太坊主链容量的限制: 简单算一笔账： 当前以太坊区块 max gas limit：12.5M gas 每字节存储在链上的数据成本：16 gas 每个块的最大字节数：~781,000 bytes (12500000/16) Rollup进行 一次ETH 转账所需的数据量：12 bytes（可见上节gas成本） 每个区块能承载的交易：~65,000（781,000 bytes/ 12 bytes） 以太坊的平均出块时间：13 秒 TPS：~5000（65,000 tx/13 s）\n在这里我们做了很多的假设，例如我们假设所有交易都是简单的ETH转账。而实际的交易会包含很多的复杂合约调用，消耗的gas要更高。而且对于ZK-Rollup 我们还需要算上验证ZK-Proof的成本（一半在500K gas左右) 。\n即使如此Rollup所能达到的TPS也只有5000左右，我们也在上面看到使用Plasma机制带来的直接效率优化要比Rollup高很多。\n以太坊基金会也很清楚这个问题，目前它们主推的方案是分片+rollup，这将使得rollup带来的TPS提升再上一个数量级。\n(2)流动性的割裂： 在当前多链格局的影响下，本身的流动性割裂情况已经日趋严重。\n而由于目前多种技术方案，多家解决方案提供上的存在，未来的rollup网络的数量只会不断增长，由此带来了更严重的流动性割裂情况。\n当前以太坊及其layer2网络TVL一览\n好消息是跨链通信可以解决这一问题，代表性的事件是Synthetix已经在着手将其在以太坊主链和Optimism上的债务池进行合并。如果这一过程顺利且丝滑的完成，相信会对主链和子链上的流动性合并趋势有一定的推进。\n毕竟合成资产项目的债务池模型远比目前更常见的流动性池模型复杂，可以预见Uniswap等主流DeFi项目延续这一进程。\n(3)通信难题和技术障碍带来的可组合性降低： 上一个问题中我们谈到了通信问题使得流动性发生了割裂，这一现象同样适用于主链dapp和子链dapp之间的交互，在以太坊上构建的每个新协议都像乐高积木一样，其他协议可以轻松地在其上构建，这也是DeFi 发展迅速的原因之一。\n如果无法解决通信问题，那么子链上的dapp需要重新建立自己的生态，这就造成了更大的资源浪费。不仅是子链和主链之间，子链和子链之间也需要构建通信机制。\nAgain，一些优秀的开发者也正在解决这方面的问题，让我们希望他们能够简化这些操作和流程。毕竟Layer1本身的操作已经够繁琐了，如果再加上layer2的复杂度，这将使Web3世界的门槛更高。\n(4)中心化风险 我们在上文提到当前各类Rollup解决方案中，负责执行，排序，压缩和打包交易的sequencer目前都是一个较为中心化的角色。Rollup若想进一步的提升安全性，必须要着手解决当然的中心化问题。\n三：总结 全文写完已经超过一万字，远远超出了我的预期。以太坊的扩容本身是一个很宏大，很复杂的主题。而本文中只涉及到了Layer2解决方案的一部分。Layer1的扩容解决方案（分片），以及其他Layer2方案如Side Chain，Validium 等都没有提及。事实上以太坊的扩容并不是某一个单一方案能够一劳永逸解决的。很多解决方案提供商也都在多条路径上进行着探索，像Polygon这样的公司更是投资了一大批不同类型的Layer2方案。\n同时文中很多东西限于篇幅原因还有待挖掘，比如Layer2和Layer1之间的提交需要的通信支持是怎么样的。欺诈证明/有效性证明在Layer1上都是如何具体实现的，各家ZK/OR实现方案之间的具体区别等。理解这些事情对于想要深入了解Layer2尤其是Rollup扩容的研究者来说都是相当重要的。文章中的某些概念为了便于理解和梳理，我们做了比较笼统的概括，例如OR/ZK在交易数据压缩方面解决方案有很大的不同等，文中使用的vitalik的例子更偏向ZK的解决方案。在写作的过程当中我们也参考了一些优秀的Layer2内容，在文中和文末我们都做了标记，我们也希望有更多更优秀的内容能够出现，帮助大家进一步建立相关的认知。\n最后，单就我们介绍的Rollup两种方案来看，Optimstic Rollup目前已经占据市场先机，上线可用产品的同时逐步吸引主流Dapp融入生态，不可否认相关开发者的伟大贡献。但是从长远来看ZK Rollup + 分片是我们更应该期待的未来。\n参考： 1.An Incomplete Guide to Rollups （Vitalik） https://vitalik.ca/general/2021/01/05/rollup.html\n2.W3hitchhiker 团队对四种Layer2解决方案的成本对比 https://w3hitchhiker.mirror.xyz/7dwD76ZZIlR7ep731K6y9vTTuXGHOojxWSnkXKzqPzI\nScorll Tech 对于zkEVM实现的解读 https://hackmd.io/@yezhang/S1_KMMbGt\n举手之劳分享到你喜欢的加密社区支持作者和辛勤的Builder，Web3的世界一定会更精彩！\n",
+  "wordCount" : "13888",
+  "inLanguage": "zh",
+  "datePublished": "2022-03-20T00:16:49+08:00",
+  "dateModified": "2022-03-20T00:16:49+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://fengche.io/posts/61/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "风车 - 专注区块链快速安全有效的入门信息",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://fengche.io" accesskey="h" title="风车 - 专注区块链快速安全有效的入门信息 (Alt + H)">
+                <img src="/fclogo.svg" alt="logo" aria-label="logo" height=" 36px"></a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://fengche.io/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/nav/" title="导航">
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/editors/" title="作者">
+                    <span>作者</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://fengche.io">主页</a>&nbsp;»&nbsp;<a href="https://fengche.io/posts/">文章精选</a></div>
+    <h1 class="post-title">
+      万字深度长文-以太坊的扩容之路-Zk rollup超细解读
+    </h1>
+    <div class="post-description">
+      内容简介：<br>
+      [原文链接](https://mirror.xyz/0x22034f804960B9B34353d6A7595cC4E83ac0daBe/vVgKwJ0L5A0lm-ysPNipUddrXK_64NcXE_WkkRP_DT8)作者：Luka（Twitter：0x8e06）审阅：Jackson（Twitter：0xOar）随着ETH2.0的发布在即，扩容方案又一次被广大加密社区所关注。而ZKRollup-基于零知识证明兼顾了安全和隐私，以及未来还有更多应用领域，是很有前景的一种扩容方案，感谢推特网...
+    </div>
+    <div class="post-meta"><span title='2022-03-20 00:16:49 +0800 +0800'>三月 20, 2022</span>&nbsp;·&nbsp;阅读耗时 28 分钟&nbsp;·&nbsp;
+<a href="/editors/%e6%89%be%e4%b9%90%e5%ad%90%e7%9a%84%e6%a1%83%e5%ad%90">找乐子的桃子</a>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%89%8d%e8%a8%80" aria-label="前言">前言</a></li>
+                <li>
+                    <a href="#%e4%b8%80%e7%8a%b6%e6%80%81%e9%80%9a%e9%81%93" aria-label="一：状态通道">一：状态通道</a><ul>
+                        
+                <li>
+                    <a href="#1%e4%b8%be%e4%be%8b%e8%af%b4%e6%98%8e" aria-label="1：举例说明">1：举例说明</a></li>
+                <li>
+                    <a href="#2%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af" aria-label="2：应用场景">2：应用场景</a></li>
+                <li>
+                    <a href="#3%e5%b1%80%e9%99%90%e6%80%a7" aria-label="3：局限性">3：局限性</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%ba%8cplasma" aria-label="二：Plasma">二：Plasma</a><ul>
+                        
+                <li>
+                    <a href="#1%e5%8e%9f%e7%90%86" aria-label="1：原理">1：原理</a></li>
+                <li>
+                    <a href="#2%e9%97%ae%e9%a2%98" aria-label="2：问题">2：问题</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%b8%89rollup" aria-label="三：Rollup">三：Rollup</a><ul>
+                        
+                <li>
+                    <a href="#1%e5%85%b7%e4%bd%93%e7%90%86%e8%a7%a3%e6%95%b0%e6%8d%ae%e4%b8%8d%e5%8f%af%e7%94%a8" aria-label="1：具体理解“数据不可用”">1：具体理解“数据不可用”</a></li>
+                <li>
+                    <a href="#2%e5%8e%9f%e7%90%86" aria-label="2：原理">2：原理</a><ul>
+                        
+                <li>
+                    <a href="#1state-root" aria-label="（1）State Root">（1）State Root</a></li>
+                <li>
+                    <a href="#2batch" aria-label="（2）Batch">（2）Batch</a></li>
+                <li>
+                    <a href="#3rollup%e7%9a%84%e5%ae%9e%e8%b4%a8" aria-label="（3）Rollup的实质">（3）Rollup的实质</a></li></ul>
+                </li>
+                <li>
+                    <a href="#3%e7%96%91%e6%83%91" aria-label="3：疑惑">3：疑惑</a><ul>
+                        
+                <li>
+                    <a href="#1%e5%a6%82%e6%9e%9c%e6%8f%90%e4%ba%a4%e5%85%a8%e9%87%8f%e4%ba%a4%e6%98%93%e6%95%b0%e6%8d%ae%e8%bf%98%e6%98%af%e5%be%88%e9%9a%be%e6%89%a9%e5%ae%b9%e5%90%a7%e5%89%8d%e6%96%87%e8%af%b4%e7%9a%84%e6%95%b0%e6%8d%ae%e5%8e%8b%e7%bc%a9%e6%98%af%e8%a7%a3%e5%86%b3%e8%bf%99%e4%b8%aa%e9%97%ae%e9%a2%98%e7%9a%84%e5%98%9b%e6%80%8e%e4%b9%88%e5%81%9a%e7%9a%84" aria-label="（1）如果提交全量交易数据，还是很难扩容吧？前文说的数据压缩是解决这个问题的嘛？怎么做的？">（1）如果提交全量交易数据，还是很难扩容吧？前文说的数据压缩是解决这个问题的嘛？怎么做的？</a></li>
+                <li>
+                    <a href="#2%e6%80%8e%e4%b9%88%e6%9d%a5%e9%aa%8c%e8%af%81%e6%8f%90%e4%ba%a4%e7%9a%84%e5%8f%af%e4%be%9b%e9%aa%8c%e8%af%81%e7%9a%84%e4%bf%a1%e6%81%af%e6%98%af%e6%ad%a3%e7%a1%ae%e7%9a%84" aria-label="（2）怎么来验证提交的可供验证的信息是正确的？">（2）怎么来验证提交的可供验证的信息是正确的？</a></li></ul>
+                </li>
+                <li>
+                    <a href="#4optimistic-rollup" aria-label="4：Optimistic Rollup">4：Optimistic Rollup</a><ul>
+                        
+                <li>
+                    <a href="#1%e4%bb%a5%e4%b8%8b%e6%98%af%e4%b8%80%e4%b8%aa%e6%ac%ba%e8%af%88%e8%af%81%e6%98%8e%e6%9e%84%e5%bb%ba%e7%9a%84%e7%ae%80%e5%8d%95%e4%be%8b%e5%ad%90%e5%86%8d%e6%ac%a1%e6%84%9f%e8%b0%a2vitalik" aria-label="（1）以下是一个欺诈证明构建的简单例子（再次感谢Vitalik）：">（1）以下是一个欺诈证明构建的简单例子（再次感谢Vitalik）：</a></li>
+                <li>
+                    <a href="#2%e9%aa%8c%e8%af%81%e8%bf%87%e7%a8%8b" aria-label="（2）验证过程">（2）验证过程</a></li></ul>
+                </li>
+                <li>
+                    <a href="#5zk-rollup" aria-label="5：ZK-Rollup">5：ZK-Rollup</a><ul>
+                        
+                <li>
+                    <a href="#1zk-rollup%e7%9a%84%e6%a0%b8%e5%bf%83" aria-label="（1）Zk-rollup的核心">（1）Zk-rollup的核心</a></li>
+                <li>
+                    <a href="#2%e6%9c%89%e6%95%88%e6%80%a7%e8%af%81%e6%98%8e%e5%92%8c%e6%ac%ba%e8%af%88%e8%af%81%e6%98%8e%e7%9a%84%e5%8c%ba%e5%88%ab" aria-label="（2）有效性证明和欺诈证明的区别">（2）有效性证明和欺诈证明的区别</a></li>
+                <li>
+                    <a href="#3zk-rollup%e7%9a%84%e5%ae%9e%e7%8e%b0%e9%80%bb%e8%be%91" aria-label="（3）ZK-Rollup的实现逻辑">（3）ZK-Rollup的实现逻辑</a></li>
+                <li>
+                    <a href="#4%e5%a6%82%e4%bd%95%e7%94%9f%e6%88%90%e4%b8%80%e4%b8%aazk-snark-%e6%9c%89%e6%95%88%e6%80%a7%e8%af%81%e6%98%8e" aria-label="（4）如何生成一个ZK-SNARK 有效性证明？">（4）如何生成一个ZK-SNARK 有效性证明？</a><ul>
+                        
+                <li>
+                    <a href="#a-%e4%bb%80%e4%b9%88%e6%98%afzk-snark" aria-label="A 什么是ZK-SNARK？">A 什么是ZK-SNARK？</a></li>
+                <li>
+                    <a href="#b-%e4%b8%80%e4%b8%aa%e6%9c%80%e7%ae%80%e5%8d%95%e7%9a%84%e9%9b%b6%e7%9f%a5%e8%af%86%e8%af%81%e6%98%8e%e4%be%8b%e5%ad%90%e6%98%af%e8%bf%99%e6%a0%b7%e7%9a%84" aria-label="B 一个最简单的零知识证明例子是这样的">B 一个最简单的零知识证明例子是这样的</a></li>
+                <li>
+                    <a href="#c-%e5%a6%82%e4%bd%95%e4%b8%bazk-rollup%e7%94%9f%e6%88%90%e4%b8%80%e4%b8%aazk-snark%e8%af%81%e6%98%8e" aria-label="C 如何为ZK-Rollup生成一个ZK-SNARK证明！">C 如何为ZK-Rollup生成一个ZK-SNARK证明！</a></li>
+                <li>
+                    <a href="#d-%e4%b8%ba%e4%bb%80%e4%b9%88%e5%85%bc%e5%ae%b9evm%e5%af%b9%e4%ba%8ezk%e6%9d%a5%e8%af%b4%e5%a6%82%e6%ad%a4%e5%9b%b0%e9%9a%be" aria-label="D 为什么兼容EVM对于ZK来说如此困难？">D 为什么兼容EVM对于ZK来说如此困难？</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#6optimstic-vs-zk" aria-label="6：Optimstic VS ZK">6：Optimstic VS ZK</a><ul>
+                        
+                <li>
+                    <a href="#1%e6%95%88%e7%8e%87%e4%bc%98%e5%8c%96tps%e4%ba%a4%e6%98%93%e8%b4%b9%e7%94%a8" aria-label="(1)效率优化（TPS/交易费用）">(1)效率优化（TPS/交易费用）</a></li>
+                <li>
+                    <a href="#2%e6%97%b6%e9%97%b4%e6%88%90%e6%9c%ac" aria-label="(2)时间成本">(2)时间成本</a></li>
+                <li>
+                    <a href="#3%e5%8f%af%e9%80%82%e9%85%8d%e6%80%a7" aria-label="(3)可适配性">(3)可适配性</a></li>
+                <li>
+                    <a href="#4%e5%ae%89%e5%85%a8%e6%80%a7" aria-label="(4)安全性">(4)安全性</a></li>
+                <li>
+                    <a href="#5%e6%80%bb%e7%bb%93" aria-label="(5)总结">(5)总结</a></li></ul>
+                </li>
+                <li>
+                    <a href="#7rollup%e6%98%af%e5%ae%8c%e7%be%8e%e7%9a%84%e5%90%97" aria-label="7：Rollup是完美的吗？">7：Rollup是完美的吗？</a><ul>
+                        
+                <li>
+                    <a href="#1%e6%95%88%e7%8e%87%e4%bc%98%e5%8c%96%e5%ad%98%e5%9c%a8%e5%a4%a9%e8%8a%b1%e6%9d%bf" aria-label="(1)效率优化存在天花板：">(1)效率优化存在天花板：</a></li>
+                <li>
+                    <a href="#2%e6%b5%81%e5%8a%a8%e6%80%a7%e7%9a%84%e5%89%b2%e8%a3%82" aria-label="(2)流动性的割裂：">(2)流动性的割裂：</a></li>
+                <li>
+                    <a href="#3%e9%80%9a%e4%bf%a1%e9%9a%be%e9%a2%98%e5%92%8c%e6%8a%80%e6%9c%af%e9%9a%9c%e7%a2%8d%e5%b8%a6%e6%9d%a5%e7%9a%84%e5%8f%af%e7%bb%84%e5%90%88%e6%80%a7%e9%99%8d%e4%bd%8e" aria-label="(3)通信难题和技术障碍带来的可组合性降低：">(3)通信难题和技术障碍带来的可组合性降低：</a></li>
+                <li>
+                    <a href="#4%e4%b8%ad%e5%bf%83%e5%8c%96%e9%a3%8e%e9%99%a9" aria-label="(4)中心化风险">(4)中心化风险</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%b8%89%e6%80%bb%e7%bb%93" aria-label="三：总结">三：总结</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+    
+    <pre tabindex="0">
+<code class="hljs diff">以下为赞助内容：<br>
+点击风车邀请链接或使用邀请码开户<br>
+每笔手续费均可免去20%<br>
+<a href="https://accounts.binance.me/zh-CN/register?ref=XVZ8RMFQ">币安注册开户</a> 邀请码：XVZ8RMFQ<br>
+<a href="https://www.ouyicn.kim/join/267411054">OKX注册开户</a> 邀请码：267411054
+</code>
+    </pre>
+    <p><a href="https://mirror.xyz/0x22034f804960B9B34353d6A7595cC4E83ac0daBe/vVgKwJ0L5A0lm-ysPNipUddrXK_64NcXE_WkkRP_DT8">原文链接</a></p>
+<p>作者：Luka（Twitter：0x8e06）
+审阅：Jackson（Twitter：0xOar）</p>
+<p>随着ETH2.0的发布在即，扩容方案又一次被广大加密社区所关注。而ZK Rollup-基于零知识证明兼顾了安全和隐私，以及未来还有更多应用领域，是很有前景的一种扩容方案，感谢推特网友的热情原创，本篇内容机会可以说是迄今为止中文领域公开发表的最通俗易懂且深入描述该方案和背后技术的文章&ndash;风车注</p>
+<h2 id="前言">前言<a hidden class="anchor" aria-hidden="true" href="#前言">#</a></h2>
+<p>无论你是不是区块链技术方面的专家，只要你待在Crypto的世界里够久。以太坊扩容，layer2，Rollup这些词语对于你来说都不会陌生。很多人都对这些概念中的一个或多个有所了解，但是他们之间的关系到底是怎样的？我们为什么需要这些技术？他们想要解决什么样的问题？</p>
+<p>如果你想要知道以上问题的答案，那希望这篇文章会对你有所帮助：</p>
+<p>本文中的所有内容都是逻辑上的梳理，不会涉及密码学/计算机科学方面的知识，所以相信只要你对以太坊本身熟悉，基本都可以理解。</p>
+<p>自从CryotoKitty造成以太坊链上拥堵的那天开始，以太坊开发者们就在不停的探索提高以太坊吞吐量的方案。</p>
+<p>从原理上可以分为两类
+（1）：是对以太坊区块本身进行改造，我们姑且称之为Layer1方案，这里的主要解决方案是分片。</p>
+<p>（2）：是改变我们使用以太坊的方式，将交易的执行和处理放在链下，以太坊本身只用来校验其交易有效性，提供安全性。这就是我们经常听到的Layer2。</p>
+<p>Layer2的核心思想是将大批实际发生的交易放在链下执行和计算，再将其通过以太坊上极少量的交易进行交易最终有效性的验证。无论是State Channel，Plasma还是Rollup，实际上都遵循了这一原则。</p>
+<p>现在谈起Layer2，很多人第一反应都是将其与Optimistic/ZK Rollup挂钩，但在这里我们先简单介绍一下状态通道和Plasma，这有助于我们理解为何Rollup最终胜出，成为当前我们谈论最多的Layer2解决方案：</p>
+<h2 id="一状态通道">一：状态通道<a hidden class="anchor" aria-hidden="true" href="#一状态通道">#</a></h2>
+<p>以下是一个状态通道的最原始结构:</p>
+<p><img src="http://fcdaohang.com:8088/assets/ca869b3a-5313-42f0-89c9-782028d668a4.png" alt=""></p>
+<p>状态通道是一种已经存在很久的区块链扩展方案，他最出名的应用是比特币的闪电网络。</p>
+<h3 id="1举例说明">1：举例说明<a hidden class="anchor" aria-hidden="true" href="#1举例说明">#</a></h3>
+<p>相比描述他的原理，一个例子更能够说清楚什么是状态通道：</p>
+<p>你很喜欢楼下的一家理发店，每次去理发店的时候Tony老师都会在你的耳边一直让你办卡。</p>
+<p>有一天你终于决定了，办卡就办卡吧，反正我以后还会来。于是你向理发店转账一千元办了一张卡。</p>
+<p>以后每次去理发，你都不需要再向理发店转账，取而代之的是你的卡里的余额会被扣除，同时每次理发你都和理发店完成了一次实际上的交易。</p>
+<p>过了一个月，你要搬家了，可是你卡里的钱还没用完。于是你向理发店申请退卡，理发店的Tony老师退给了你200元。</p>
+<p>在这一个月的时间里，你在理发店消费了十几次，但你和理发店实际上只互相转账了两次。</p>
+<p>将这个过程放在区块链上，你买卡的过程实际上是将钱存进了某个智能合约，同时开启了一个你与理发店间的状态通道。你退卡的过程关闭了你与理发店之间的“状态通道”。你和理发店之间的互相转账相当于在以太坊主链上的两笔交易。</p>
+<p>设想一下你没有办卡，那每次理完头你都需要给理发店转一次帐。</p>
+<p>通过这个例子我们发现，通过状态通道，只有第一步和最后一步需要我们在区块链上进行交易，在这些步骤之间，你 和 理发店 可以向对方发送无限数量的签名消息（完成一次消费），指示付款。在这种情况下，以太坊区块链仅用作结算层来处理一次性付款的最终交易，这大大减轻了底层区块链的负担。</p>
+<h3 id="2应用场景">2：应用场景<a hidden class="anchor" aria-hidden="true" href="#2应用场景">#</a></h3>
+<p>（1）状态通道在某些简单场景如流支付中能够发挥很大的作用，其通过在链下对消息签名的方式对交易数据进行记录，将大量在逻辑上发生了的交易简化成了主链上的两笔交易。
+（2）状态通道因为其成本较低，很适合一些微支付的场景，比如用ETH或者BTC买早餐咖啡等。</p>
+<h3 id="3局限性">3：局限性<a hidden class="anchor" aria-hidden="true" href="#3局限性">#</a></h3>
+<p>但同时，状态通道需要资金的发送方和接受方都进入这个通道来，而为了维护状态通道，支持比流支付更复杂的操作，大笔的资金需要被锁定。因此开发者们很快意识到状态通道无法作为可选的扩容方案之一。</p>
+<h2 id="二plasma">二：Plasma<a hidden class="anchor" aria-hidden="true" href="#二plasma">#</a></h2>
+<h3 id="1原理">1：原理<a hidden class="anchor" aria-hidden="true" href="#1原理">#</a></h3>
+<p>现在我们都知道了状态通道的局限性，而为了解决这个问题。——Plasma应运而生 其解决了将资产发送给任意目标人的问题，同时也能够确保TPS的提升。 事实上在开发者们研究Layer2解决方案的开始很长一段时间里，Plasma一度被认为就是那 “一个”。</p>
+<p>要理解Plasma，首先要明白它并不是一种实际的技术，它更像是一种设计思想或者技术架构。</p>
+<p>Plasma通常是一条链，它可以拥有与主链不同的共识机制，也可以拥有自己的矿工。但最重要的是Plasma链上会有一个叫做“Operator”的角色定期的根据子链上的状态转换，生成一棵默克尔树，并将这棵默克尔树的树根哈希值提交给主链做验证和记录。关于为什么默克尔树和其树根哈希值能够用作状态转换的验证，我们会在同样使用了这一应用的Rollup中讲到。</p>
+<p>通过这样的方式，无论在两次提交期间，子链上发生了多少笔交易，子链只需要将交易执行造成的状态信息提交到主链上即可。</p>
+<p>以下是使用Plasma机制的简单示意图：</p>
+<p><img src="http://fcdaohang.com:8088/assets/7d69e8c2-49d3-4d99-9e59-1052c281a4be.png" alt=""></p>
+<p>用户想要进入Plasma链需要在以太坊主链上做资产的映射，而当其需要将Plasma链上的资产转移或主链上时，需要经历一段时间的挑战期来供其他人使用「 欺诈证明 」机制来确认资产转移的有效性。</p>
+<p>「 欺诈证明 」意味着任何人在这段挑战期（通常是7天或者更久）内，都可以通过默克尔树校验的方式来提交证明用户资产的退出是不合法的。</p>
+<h3 id="2问题">2：问题<a hidden class="anchor" aria-hidden="true" href="#2问题">#</a></h3>
+<p>但这带来两个问题：
+（1）想要验证这个提款的正确性需要有节点保存Layer2上的交易和状态信息，因为Plasma只会提交其状态转移的结果，而想要提交欺诈证明必须有Layer2上的信息，这将大大提升 验证者 这一角色的成本。</p>
+<p>（2）是所谓的 「 数据不可用」，他的意思是Plasma不会将其链上发生的交易数据发给主链进行存储，主链的节点无法获取到这些交易数据，无法通过主链本身的安全性为其做验证。当然有些解决方案会把这些数据提交到中心化存储或者IPFS上，但这对主链来说没有任何意义，因为用户使用Layer2的基础是信任主链本身的安全性。</p>
+<h2 id="三rollup">三：Rollup<a hidden class="anchor" aria-hidden="true" href="#三rollup">#</a></h2>
+<p>我们可以看到Plasma一个很重要的问题是他的 “数据不可用”，主链只会收到Operator提交的状态转移结果，其只能期待有人存储了链下的的交易和状态信息，通过欺诈证明机制来确保子链的提交真实性，它在这个过程中只承担了确认者的角色，其安全级别是较差的。</p>
+<h3 id="1具体理解数据不可用">1：具体理解“数据不可用”<a hidden class="anchor" aria-hidden="true" href="#1具体理解数据不可用">#</a></h3>
+<p>以太坊将其链上发生的所有数据都公开，所有人都可以查询。但Plasma不会提交这些交易数据到主链上，而只提交执行结果，因此其效率上的提升是很高的，但是这样做的代价是Plasma无法建立和以太坊主链同一级别的信任。</p>
+<p>Rollup实际上可以算是原始主链处理方式和Plasma方式的折中，其会将数据提交给主链，但他会最大限度通过聪明的编码方式压缩这些数据，同时基于Rollup本身的特性适当删除和缩减一部分数据，只要保证最终的提交能够供任何人验证即可。</p>
+<p>交易数据上链后，任何人都可以根据这个数据来校验Rollup提交的结果是否正确。因此，Rollup的安全性要比Plasma高。</p>
+<p>总结一下，Rollup的核心优势是所谓的“数据可用性”，它会将数据提交给主链，这大大加强了安全性。</p>
+<p>那么究竟Rollup是如何实现的呢？</p>
+<h3 id="2原理">2：原理<a hidden class="anchor" aria-hidden="true" href="#2原理">#</a></h3>
+<h4 id="1state-root">（1）State Root<a hidden class="anchor" aria-hidden="true" href="#1state-root">#</a></h4>
+<p>首先Rollup在主链上拥有一个(或者一系列相互关联的)合约：</p>
+<p><img src="http://fcdaohang.com:8088/assets/4fe1620d-69d2-4db0-936e-3e47ce6594b6.png" alt=""></p>
+<p>这个合约用来维护Rollup层中的状态记录，这个状态记录实际上是一棵默克尔树的根节点存储的哈希值，这个哈希值被称为state root。</p>
+<p>而这颗默克尔树的叶子节点是Rollup中的账户状态信息。如果你不知道什么是默克尔树，以下是一个简单的例子：</p>
+<p><img src="http://fcdaohang.com:8088/assets/6c60e0b4-4b56-420d-ae42-d84444b9aea5.png" alt=""></p>
+<p>可以看到这是一颗二叉树，在二叉树的叶子节点上记录着当前rollup层账户的状态信息。</p>
+<p>对于每两个状态信息(例如State 1/State 2)，我们可以根据某种哈希公式计算出一个唯一的哈希值(eg: Hash(1,2) )来作为这两个叶子节点的父亲节点，依次一层一层往上类推，最终得到一个哈希值存储在根节点中：</p>
+<p>你不需要知道怎样计算哈希值，你只需要记住几件事情。</p>
+<p>1 任意一个叶子结点的改变都会导致根节点的值变化（任何一个状态的变化都会导致Root hash发生变化）
+2 如果两棵树的根哈希值相同，那说明他们的叶子结点存储的信息完全一致（因此只需要对比两个根节点哈希值就可以确认底层状态信息的一致性）
+3 根据根节点的哈希值和指向某一个状态信息的路径，我们可以确认某一个状态信息存在于这颗哈希树中。</p>
+<h4 id="2batch">（2）Batch<a hidden class="anchor" aria-hidden="true" href="#2batch">#</a></h4>
+<p>通过 state root 我们可以得出一个账户状态的key-value map：</p>
+<p>其中key是账户地址，value则包含余额/Nonce/合约代码/存储（对于合约账户）等状态信息</p>
+<p><img src="http://fcdaohang.com:8088/assets/54be4379-d9f2-44e0-8f8f-508bd163017f.png" alt=""></p>
+<p>当rollup上发生交易的时候，很显然的，这些账户的状态会发生改变，由此产生新的state root。</p>
+<p>虽然这样可以非常准确和及时的反馈Rollup上最新的状态变化，但是如果每发生一笔交易就在主链更新一次state root，产生的成本反而会比将这些交易在Layer1上执行更高。</p>
+<p>所以为了解决这个问题，rollup中产生的交易将被按批次打包汇总，同时根据这批交易全部执行完成后的状态，会产生一个新的state root。无论是谁将交易打包提交给主链上的智能合约，他都需要计算这个新的state root，并将其和上一个state root以及交易数据一并提交。</p>
+<p><img src="http://fcdaohang.com:8088/assets/6b57fa36-593b-4318-8c95-5b380edbc788.png" alt=""></p>
+<p>这一部分的打包被称为一个”batch”，提交者将batch提交给Rollup contract之后，主链会去验证新的state root是否正确，如果通过验证，则将state root更新为最新提交的state root，并最终完成一次rollup内的状态转移确认。</p>
+<h4 id="3rollup的实质">（3）Rollup的实质<a hidden class="anchor" aria-hidden="true" href="#3rollup的实质">#</a></h4>
+<p>以下是一个简化版本的Optimstic Rollup流程，可以看到和Plasma的最大的区别其实在于新增了交易数据的提交。</p>
+<p><img src="http://fcdaohang.com:8088/assets/19dba842-a001-4c75-abc7-5066ca1d1cb9.png" alt=""></p>
+<p>所以，Rollup的实质是将一大笔实际产生的交易汇总成一笔主链上的交易，这些交易由Rollup链来执行和计算，但会将数据提交给主链，同时由主链扮演一个“最高法院法官”的角色最终确认这些交易。由此我们利用了主链的共识和安全性，同时提升了实际上的交易效率，降低了交易成本。</p>
+<h3 id="3疑惑">3：疑惑<a hidden class="anchor" aria-hidden="true" href="#3疑惑">#</a></h3>
+<p>看完以上的描述你可能会有一些问题，别担心，我们会一步一步进行推演和解释。</p>
+<h4 id="1如果提交全量交易数据还是很难扩容吧前文说的数据压缩是解决这个问题的嘛怎么做的">（1）如果提交全量交易数据，还是很难扩容吧？前文说的数据压缩是解决这个问题的嘛？怎么做的？<a hidden class="anchor" aria-hidden="true" href="#1如果提交全量交易数据还是很难扩容吧前文说的数据压缩是解决这个问题的嘛怎么做的">#</a></h4>
+<p>这两种技术方案能够做到扩容，核心都是交易的压缩和打包。这是因为以太坊的区块 gas limit 是有上限的, 压缩后的交易越小，一次能提交给主链的交易就越多。那么如何做到这一点呢？</p>
+<p>以下是Vitalik在其文章中描述的一种压缩模式，作为例子帮我们理解</p>
+<p>以太坊主链上一笔简单的交易（比如发送 ETH）通常消耗约 110 字节。然而，在 Rollup 上发送 ETH 可以缩减到约 12 字节。</p>
+<p><img src="http://fcdaohang.com:8088/assets/434502c1-5431-467a-b093-f47cb6511892.png" alt=""></p>
+<p>达到这样的压缩效果，一方面是采用了更简单高级编码，而目前 Ethereum 的 RLP 在每个值的长度上都浪费了 1 字节。另一方面，还有一些巧妙的压缩技巧：</p>
+<p>Nonce：在 rollup 中可以完全省略 nonce</p>
+<p>Gasprice：我们可以允许用户使用固定范围的 gasprices 进行支付，例如 2 的 16 次幂等</p>
+<p>Gas：我们同样也可以将 gas 设置为 2 的多次幂。另外，我们也可以在 batch 层面设置 gas 限制。</p>
+<p>To：可以通过默克尔树上的索引来标识地址</p>
+<p>Value：我们可以用科学计数法存储 value。在大多数情况下，转账仅需 1 ～ 3 有效位。</p>
+<p>Signature：我们可以使用 BLS 聚合签名，将多个签名整合为一个</p>
+<p>这些压缩技巧是 rollup 扩容的关键，如果我们不对交易数据进行压缩，rollup 或许只能在主链的基础上的有大约 10 倍的提升效率，但有了这些压缩技巧，我们才能做到50倍 100倍甚至更高的压缩效率。</p>
+<p>与此同时，为了节省gas，这些被压缩过的交易数据会被放入calldata参数中存储。著名的EIP-4488，提出calldata中每一字节数据gas消耗降低，就是为了进一步优化一笔主链交易能够承载的roll层交易数据量。对于具体的压缩效果，我们会在下面对于两种不同的ZK-Rollup进行对比时展示简单的数据。</p>
+<h4 id="2怎么来验证提交的可供验证的信息是正确的">（2）怎么来验证提交的可供验证的信息是正确的？<a hidden class="anchor" aria-hidden="true" href="#2怎么来验证提交的可供验证的信息是正确的">#</a></h4>
+<p>既然最终的状态转换确认（也代表着交易的确认）由state root的更新决定，但是目前看起来Rollup上的提交者可以随意提交他想要的交易数据和state root，那么怎么来验证他提交的这些信息是正确的呢？</p>
+<p>对于这一问题，大体上有两种解决方案，而根据解决方案的不同，rollup也被分成了两类：</p>
+<h3 id="4optimistic-rollup">4：Optimistic Rollup<a hidden class="anchor" aria-hidden="true" href="#4optimistic-rollup">#</a></h3>
+<p>正和它的名字一样，这种解决方案选择乐观的相信提交者提交的batch是正确的，除非有人通过一个欺诈证明来证明提交者是其实是一个坏蛋，他提交了一个错误的batch。</p>
+<h4 id="1以下是一个欺诈证明构建的简单例子再次感谢vitalik">（1）以下是一个欺诈证明构建的简单例子（再次感谢Vitalik）：<a hidden class="anchor" aria-hidden="true" href="#1以下是一个欺诈证明构建的简单例子再次感谢vitalik">#</a></h4>
+<p>提交一个欺诈证明来证明某个提交的batch是错误的，需要下图的绿色部分包括的信息：</p>
+<p>提交者提交的batch</p>
+<p>上一个state root代表的默克尔树（实际上代表了真实的账户状态信息）的一部分，根据这一部分能够构建完整的默克尔树</p>
+<p><img src="http://fcdaohang.com:8088/assets/2e022803-ea23-4f4b-a565-aebdef6a7487.png" alt=""></p>
+<p>基于第二部分构建的默克尔树，我们模拟执行batch中提交的交易，从而得到了新的账户状态，得到新的默克尔树，得到新的state root。
+将上一步得到的state root和batch中的state root进行比对从而验证batch中的是否正确</p>
+<h4 id="2验证过程">（2）验证过程<a hidden class="anchor" aria-hidden="true" href="#2验证过程">#</a></h4>
+<p>我们从逻辑上梳理了Optimstic确保state root真实性的过程，实际上，为了确保能够威慑提交者不作恶，提交者往往需要质押资金，当他的提交被验证为错误时，一部分质押资金将会被扣除作为惩罚。同时，提交了相应欺诈证明的验证者在某些解决方案中会得到被扣除的资金，以此来激励监测和提交欺诈证明的行为。</p>
+<p>如果我们将OR和Plasma进行比对，我们会发现一些相似性，例如他们都使用了欺诈证明机制，需要有一个验证者的角色来监测OR给主链的提交。但由于OR同时向主链提交了交易数据，所以OR上的验证者不需要在自己去保存记录OR上的交易，作为对比，再将前文的简单架构图放在这里以供读者对比：</p>
+<p><img src="http://fcdaohang.com:8088/assets/aa9f8793-8a48-4812-99af-bee3cf674cfb.png" alt=""></p>
+<h3 id="5zk-rollup">5：ZK-Rollup<a hidden class="anchor" aria-hidden="true" href="#5zk-rollup">#</a></h3>
+<h4 id="1zk-rollup的核心">（1）Zk-rollup的核心<a hidden class="anchor" aria-hidden="true" href="#1zk-rollup的核心">#</a></h4>
+<p>另一类解决方案是ZK Rollup，与OR（Optimistic Rollup）不同，ZK Rollup做了这样的根本假设：</p>
+<p>不相信提交者能主动提交正确的batch，或者说类似法律学中的“有罪推定”。提交者在提交batch时除了交易数据以及post/previous state root 之外，还要携带一个ZK-SNARK证明。</p>
+<p>ZK-SNARK本质上是一个“有效性证明”，他可以直接用来被验证所提交的batch是正确的。这个证明被提交到Rollup合约之后，任何人都可以使用它来验证Rollup层中特定批次的交易，而，这意味着rollup不再需要在提交后再等待7-14天来做验证。</p>
+<h4 id="2有效性证明和欺诈证明的区别">（2）有效性证明和欺诈证明的区别<a hidden class="anchor" aria-hidden="true" href="#2有效性证明和欺诈证明的区别">#</a></h4>
+<p>那么如何通俗的理解ZK-Rollup这样的“有效性证明”和Plasma/Optimsitic Rollup使用的“欺诈性证明”之间的区别呢？</p>
+<p>首先这三种方案都需要有人来做Layer2上交易的排序，执行和打包，我们姑且称这个角色为“执行者”。</p>
+<p>Plasma的执行者只会提交执行结果，秉承着其他人爱信不信的原则，你如果不信任我就需要发起挑战，而发起挑战需要你自己保存底层的交易数据。</p>
+<p>OR也是一样，但是执行者在提交的同时会把交易数据也放上来，同样是爱信不信，你如果不信就自己根据这个交易数据去验证就完了。</p>
+<p>但ZK不一样，ZK说我不想等你好几天让你来挑战我，那多浪费时间啊，我赶着确认我的交易呢。于是ZK直接在提交的时候生成一个证明，把这个证明也放上去，在提交的同时完成验证。</p>
+<p>与此同时，Plasma/OR都需要通过质押的方式来确保执行者作恶是有损失的，而ZK不用，因为它不需要别人相信它，每次提交他都会自证清白。</p>
+<p>除了这方面的区别外，另一个有意义的地方在于，ZK-SNARK可以让我们在不提交全部交易数据的情况下证明这批交易的有效性，这对于Rollup来说是很重要的，在下面我们会解释这一点。</p>
+<h4 id="3zk-rollup的实现逻辑">（3）ZK-Rollup的实现逻辑<a hidden class="anchor" aria-hidden="true" href="#3zk-rollup的实现逻辑">#</a></h4>
+<p>首先ZK-Rollup本质上还是一种Rollup解决方案，因此其仍然需要做以下两件事情：</p>
+<p>打包压缩一个批次的交易数据
+生成新的state root</p>
+<p>唯一不同的是验证方式，ZK-Rollup不会等待验证者发起欺诈证明流程，而是直接生成一个ZK-SNARK 证明并添加到Batch里提交给主链rollup合约。</p>
+<p><img src="http://fcdaohang.com:8088/assets/78e36562-7690-4f94-ae57-6049fa95caaa.png" alt=""></p>
+<p>如图示，提交的内容相比OR来说 增加了一个ZK-Proof，同时验证人这一角色被隐去了。</p>
+<p>提交到rollup合约之后任何人都可以进行验证，验证成功后主链rollup合约会将State root更新为提交的最新数据。</p>
+<h4 id="4如何生成一个zk-snark-有效性证明">（4）如何生成一个ZK-SNARK 有效性证明？<a hidden class="anchor" aria-hidden="true" href="#4如何生成一个zk-snark-有效性证明">#</a></h4>
+<h5 id="a-什么是zk-snark">A 什么是ZK-SNARK？<a hidden class="anchor" aria-hidden="true" href="#a-什么是zk-snark">#</a></h5>
+<p>ZK-SNARK的全称是“Zero-Knowledge Succinct Non-Interactive Argument of Knowledge.”
+简洁非交互零知识证明。我会尽量解释其中每一部分的意思：</p>
+<p>Succint（简明）：与实际证明的数据量相比，这种方法生成的证明要小很多。</p>
+<p>例如我们要证明一系列交易确实存在并发生，所生成的证明数据量必须要小于这些交易本身的数据量。</p>
+<p>Non-interactive (无交互): 在证明构建完成后，证明者只需要向验证者发一次简单的消息，而且通常情况下允许任何人无需许可的验证。</p>
+<p>这对于ZK-Rollup或者区块链上的ZK应用是很重要的，因为有一些ZK证明需要证明人和验证人之间多次交互(猜颜色问题是一个典型的例子)，放在链上则意味着要发起多笔交易，这在成本上是不可容忍的。</p>
+<p>Arguments：可以抵抗计算能力有限的证明者的攻击</p>
+<p>这一部分意味着生成证明使用的加密算法复杂度在现有的算力条件下，无法以可接受的时间和经济成本被暴力破解。</p>
+<p>of Knowledge：在不知晓要证明的是什么的情况下 不可能构建一个证明</p>
+<p>这对于ZK-Rollup来说也是很重要的，因为我们不能允许有人能够根据非交易数据创建一个ZK Proof 提交给主链合约。</p>
+<p>最后，也是最重要的”Zero-Knowledge“：</p>
+<p>零知识意味着在证明人向验证者证明某个论断（Statement）时，不透露任何有用的或和所证明的实体本身有关的任何信息。</p>
+<h5 id="b-一个最简单的零知识证明例子是这样的">B 一个最简单的零知识证明例子是这样的<a hidden class="anchor" aria-hidden="true" href="#b-一个最简单的零知识证明例子是这样的">#</a></h5>
+<p>Alice想向Bob证明知道某个保险箱的密码，密码是打开保险箱的唯一方式，但她不想告诉Bob保险箱的密码，怎么办呢？</p>
+<p>正好Bob知道保险箱里有一副Bob前女友写给他的情书，上面有Bob和前女友共同的指纹。</p>
+<p>于是Alice背着Bob打开了保险箱，拿出了这封情书给了Bob。</p>
+<p>由此证明了Alice知道保险箱的密码，同时Alice并没有告诉Bob密码是什么，成功！</p>
+<h5 id="c-如何为zk-rollup生成一个zk-snark证明">C 如何为ZK-Rollup生成一个ZK-SNARK证明！<a hidden class="anchor" aria-hidden="true" href="#c-如何为zk-rollup生成一个zk-snark证明">#</a></h5>
+<p>简要的说，生成一个ZK-SNARK证明分为以下几步：</p>
+<p>确定问题在逻辑上的验证规则（例如检查balance，nonce是否符合要求等）
+将逻辑上的验证规则转化为门电路Circle问题
+将门电路Circle问题转化为R1CS(rank-1 constraint system，一阶约束系统)形式
+将R1CS转化为QAP （Quadratic Arithmetic Program)</p>
+<p>经过以上转换，我们就可以根据逻辑上的验证规则得到一组可通过固定验证方法验证的ZK-SNARK证明。具体的转换过程可以看这篇文章：</p>
+<p><a href="https://mp.weixin.qq.com/s/M1ZAXPSPqO8KpE3VyExwTw">《零知识证明 – zkSNARK 入门》— PPIO Code Talks 第二期</a></p>
+<p>如果你觉得这一部分的复杂程度超过了之前的每一部分，你是对的。同样觉得复杂的还有目前的ZK-Rollup解决方案提供商，这也是为什么目前ZK-Rollup研发进度和实际应用要比Optimstic Rollup慢的原因之一。如果你不是数学/密码学专家，或者不是Matter Labs的开发者，你只需要知道以下几件事情：</p>
+<p>生成一个ZK-SNARK证明比验证一棵默克尔树需要花费的算力和时间成本都要高很多
+并不是随便一种语言，编译环境，虚拟机，指令集都能够无缝支持完成以上提到的过程，需要做额外的适配。</p>
+<p>对于第一点，这是各大ZK解决方案提供商目前在努力的方向。首先是时间成本，如果生成一个可用的ZK-Proof需要一个小时，那么间接的用户提款的时间也会变长。而计算成本包括两部分，一部分是生成的ZK-Proof的数据量，另一部分是验证这个Proof所需要花费的算力。这两部分越大，在以太坊上需要消耗的Gas就越多，进而影响到ZK-Rollup的优化表现。</p>
+<p>对于第二点，这是当前限制ZK-Rollup发展的一大原因。在EVM设计之初，开发者们完全没有想到之后会用到ZK技术。因此为EVM操作生成可用的零知识证明是几乎不可能的，由此催生了ZK-EVM的需求。</p>
+<h5 id="d-为什么兼容evm对于zk来说如此困难">D 为什么兼容EVM对于ZK来说如此困难？<a hidden class="anchor" aria-hidden="true" href="#d-为什么兼容evm对于zk来说如此困难">#</a></h5>
+<p><img src="http://fcdaohang.com:8088/assets/c8fcefbf-7309-4bb7-bc8a-14d3f28eedd8.png" alt=""></p>
+<p>打开DeFillama，你会发现TVL排名前几的Layer2解决方案清一色的都是OR，这是因为这些OR解决方案都已经有了自己的网络，这些网络都做到了EVM兼容，开发者可以无缝的将以太坊上的智能合约移植到他们的网络上，用户也可以在其网络上做到swap，抵押，提供流动性等操作。</p>
+<p>而ZK-Rollup目前还很难做到这一点，现有的很多解决方案只能够支持简单的支付和swap场景。</p>
+<p>为什么如此呢，首先我们要明确一点，在 Layer 1 上，已部署智能合约的字节码都存储在以太坊 storage（存储项）内。然后交易将在点对点网络中传播，对于每一笔交易，每个全节点需要加载对应的字节码并在 EVM 上执行以获得相同的状态（交易将作为输入数据）。</p>
+<p>而在 Layer 2 上，智能合约的字节码虽然同样存储在存储项内，用户的操作方式也相同。但是其交易将在链下发送至一个中心化的 zkEVM 节点，同时，zkEVM 不单需要执行字节码，还必须生成一个Proof来表明交易达成后状态已正确更新。最后，Layer 1 合约才能验证该证明并更新状态，而这时layer2上不需要重新执行交易。</p>
+<p>也就是说在zk-Rollup上执行交易是完全不同的逻辑和路径，与此同时zkEVM还有在执行交易的同时适配生成zk电路证明，而现有的EVM生成ZK-SNARK证明有以下几个问题：</p>
+<p>对ZK-SNARK所需要的部分椭圆曲线运算不支持
+和传统虚拟机相比，EVM有许多独特的操作码，这些操作码对电路设计来说很困难
+EVM 基于 256 位整数运行（就像大多数基于 32～64 位整数运行的普通虚拟机那样），零知识证明则 “天然” 基于素域运行。</p>
+<p>这些也只是在EVM中生成ZK Proof的部分问题，而OR虽然同样需要构建虚拟机来执行EVM操作，但由于其只需要在执行交易的基础上在完成交易打包等功能即可，所以构建起来要简单的多。对于ZK-Rollup，除了在兼容EVM的同时生成ZK-Proof存在难度之外，在Layer1上验证这个证明也并不容易。</p>
+<p>如果你想了解更多关于ZK-EVM难度的更多信息，可以看<a href="https://hackmd.io/@yezhang/S1_KMMbGt">这篇文章：</a></p>
+<p>看完以上内容，不可否认的是zk-Rollup的实现有很高的技术难度，那为什么我们不直接使用更“简单的”的Optimistic Rollup技术呢？</p>
+<p>现在让我们对这两种Rollup技术做一个简单的对比。</p>
+<h3 id="6optimstic-vs-zk">6：Optimstic VS ZK<a hidden class="anchor" aria-hidden="true" href="#6optimstic-vs-zk">#</a></h3>
+<h4 id="1效率优化tps交易费用">(1)效率优化（TPS/交易费用）<a hidden class="anchor" aria-hidden="true" href="#1效率优化tps交易费用">#</a></h4>
+<p>以下是特定以太坊环境下，目前市场上几种不同方案的费用和TPS对比：
+来源：<a href="https://w3hitchhiker.mirror.xyz/7dwD76ZZIlR7ep731K6y9vTTuXGHOojxWSnkXKzqPzI">https://w3hitchhiker.mirror.xyz/7dwD76ZZIlR7ep731K6y9vTTuXGHOojxWSnkXKzqPzI</a></p>
+<p><img src="http://fcdaohang.com:8088/assets/31b4af5b-d50d-4827-a069-2344e4fe2ab7.png" alt=""></p>
+<p>感谢@W3.Hitchhiker 团队的贡献！
+图上我们可以看到ZK方案要比OR方案的效率更高，为什么呢？</p>
+<p>对于一个Rollup方案来说，最重要的是在一笔以太坊交易中能够携带多少Layer2上交易的数据，而这和两个参数有关：</p>
+<p>Rollup压缩的一笔交易的Gas消耗
+以太坊区块的max gas limit</p>
+<p>其中Rollup可以解决的是第一点，虽然ZK-Rollup证明的存储和验证需要消耗一定的存储空间和gas(一个可信的数据是在500K 左右)。但是由于在交易压缩上做的更好，而交易数据的存储消耗是Gas消耗的绝大部分，所以ZK-Rollup要比OR效率优化表现更好。</p>
+<p>另外提一句，你可能注意到表中ZKPort的TPS和交易成本优化最好，这主要由于其使用的Validium本质上是一种将欺诈证明替换为ZK Proof的 Plasma 方案，它不会提交交易数据，其效率完全是由Plasma链的处理效率决定的，但是安全性上同样面临着数据不可用的问题。</p>
+<p>上面的计算假设gas price为30 Gwei，而我们都知道以太坊活动大幅上升时，gas price会达到什么样的水平。届时Rollup尤其是ZK方案的成本优化效果会更加明显。</p>
+<h4 id="2时间成本">(2)时间成本<a hidden class="anchor" aria-hidden="true" href="#2时间成本">#</a></h4>
+<p>我们之前说到过，因为欺诈证明机制，在Optimtisc Rollup上提款需要7-14天的提交期以供其他人来证伪潜在的作恶行为。</p>
+<p>当然我们可以通过一些独立于Rollup机制本身的行为来减少提款期，类似Boba Network等Optimstic Rollup解决方案提出的流动性池机制。</p>
+<p>让我们假设这样一个场景：</p>
+<p>Alice是OR用户，在L2上拥有5ETH的资产。</p>
+<p>在L1上又一个流动性池B，转为ALice这样的OR用户提供流动性。</p>
+<p>现在Alice想从OR上取回所有资产，现在他和B做了一笔交易：</p>
+<p>Alice可以从Bob这里直接拿走5ETH，同时支付一定的手续费</p>
+<p>7天后Alice的资产被解锁，这时Alice拿走的5ETH回到池子里。</p>
+<p>这对于流动性池来说有一定的风险，因此他可以通过监测OR合约，获取不诚实提交的罚金来对冲风险，同时收取的手续费也是降低风险的储备。</p>
+<p>但是这种方式不适用于NFT，因为NFT不可分割，而且流动性池无法简单的复制一个NFT给用户。</p>
+<p>而ZK-Rollup并不存在这一问题，提交者在提交时必须自证清白，提供可供验证的ZK-SNARK证明，目前的ZK-SNARK证明生成时间已经可以达到几分钟。用户只需要等待下一个batch提交并被验证即可。</p>
+<p>时间成本是OR的硬伤，也是ZK-Rollup的显著优势之一。</p>
+<h4 id="3可适配性">(3)可适配性<a hidden class="anchor" aria-hidden="true" href="#3可适配性">#</a></h4>
+<p>Optimsitic和ZK 都面临着需要兼容适配复杂EVM合约调用操作的问题，但显然Optimstic实现起来更容易。</p>
+<p>包括Arbiturm，Optimsim在内的OR解决方案都拥有EVM兼容的虚拟机，允许其能够处理在以太坊主链上发生的所有事务。一些OG级别的DeFi协议如Uniswap/Synthetix/Curve等也都已经在OR 网络上部署。</p>
+<p>而构造兼容EVM的ZK-SNARK证明难度很大，以至于目前为止都没有能够公开使用的ZK-Rollup解决方案。不过我们在最近有一些好消息，zkSync 2.0公共测试网在二月底正式上线，这也是以太坊测试网上首个兼容 EVM 的 ZK Rollup。或许ZK Rollup的正式大规模实际使用要比我们想象的要快一些。</p>
+<h4 id="4安全性">(4)安全性<a hidden class="anchor" aria-hidden="true" href="#4安全性">#</a></h4>
+<p>这个问题的答案是显而易见的，OR 的安全性来自于经济学。为了能够良好的运转，OR必须设计合理的激励机制驱使一批主链上的验证人随时监测提交者，并准备提交欺诈证明。而对于提交者，其也需要通过质押等方式确保节点作恶会付出相应的代价。</p>
+<p>而ZK的安全性来自于数学或者密码学，正如区块链中建立信任的一大基础：代码不会作恶一样。数学和密码学提供的保障要远比乐观的相信人性不会作恶来的稳。</p>
+<p>当然，当前的Rollup机制本身也存在一定的安全问题，虽然rollup将数据提交到主链解决了数据可用性问题。但是我们还没有讨论过到底谁来负责交易的处理，排序，压缩，打包和提交。当前一些主流解决方案，如 Arbitrum、Optimism 和 StarkNet，使用一个叫sequencer的角色， 是它们自己运行的单个节点。这种方式带来的结果是高度的中心化。</p>
+<p>我们知道去中心化是一切安全的前提，这种sequencer模式好处在于效率高，在rollup还在摸索阶段时可以进行快速的迭代，这些解决方案也声明了要在未来逐步进行sequencer的去中心化过程。例如使用PoS或dPoS方式进行sequencer节点的选举等，像Metis这样新的解决方案已经进行了一些探索。</p>
+<h4 id="5总结">(5)总结<a hidden class="anchor" aria-hidden="true" href="#5总结">#</a></h4>
+<p>让我们根据一个表格来具像化上面的讨论：</p>
+<p><img src="http://fcdaohang.com:8088/assets/cb415483-eaea-4e45-a6b6-2116ea46395b.png" alt=""></p>
+<p>总体而言，OR在现阶段是更成熟的解决方案，事实上也是如此，目前Optimstic和Arbiturm的产品已经可供以太坊开发人员使用。但是由于使用欺诈证明机制，其提款时间和安全性目前来看值得商榷，同时其成本优化相比ZK也略逊一筹。</p>
+<p>而ZK Rollup的弱点基本都属于技术问题，随着大量优秀的开发人员投入到相关研究，包括Vitalik在内的大多数人都认同ZK Rollup在未来会是更优秀的扩容方案。</p>
+<h3 id="7rollup是完美的吗">7：Rollup是完美的吗？<a hidden class="anchor" aria-hidden="true" href="#7rollup是完美的吗">#</a></h3>
+<p>经过以上对于三类Layer2方案的阐述，相信你已经对他们有了一定的认知。事实上文章撰写的顺序也是开发者们对于Layer2扩容方案研究的顺序，往往是发现某一种解决方案存在的问题之后，另一种更好的解决方案被提出用来解决相关问题。不仅在加密研究领域如此，这一流程可以被推及到所有工程类的问题上：</p>
+<p>提出想法，测试，迭代，优化，直到找到最可行的解决方案。</p>
+<p>现在看上去Rollup就是我们想找的那个答案，他解决了普适性的问题，解决了数据可用性的问题，同时在安全性和效率上看起来也不错。那么，它是完美无缺的那一个吗？</p>
+<p>答案是否定的，任何方案都不能做到完美无缺，Rollup同样存在着许多问题，即使是看上去更好的ZK-rollup，也无法避免它们。</p>
+<h4 id="1效率优化存在天花板">(1)效率优化存在天花板：<a hidden class="anchor" aria-hidden="true" href="#1效率优化存在天花板">#</a></h4>
+<p>当我们说到rollup和plasma的主要区别时，我们谈到为了保证数据可用性。rollup需要将交易数据提交给主链，这是rollup方案战胜plasma的主要原因。</p>
+<p>但我们要看到另一方面，交易上链意味着rollup仍会收到以太坊主链容量的限制:
+简单算一笔账：
+当前以太坊区块 max gas limit：12.5M gas
+每字节存储在链上的数据成本：16 gas
+每个块的最大字节数：~781,000 bytes (12500000/16)
+Rollup进行 一次ETH 转账所需的数据量：12 bytes（可见上节gas成本）
+每个区块能承载的交易：~65,000（781,000 bytes/ 12 bytes）
+以太坊的平均出块时间：13 秒
+TPS：~5000（65,000 tx/13 s）</p>
+<p>在这里我们做了很多的假设，例如我们假设所有交易都是简单的ETH转账。而实际的交易会包含很多的复杂合约调用，消耗的gas要更高。而且对于ZK-Rollup 我们还需要算上验证ZK-Proof的成本（一半在500K gas左右) 。</p>
+<p>即使如此Rollup所能达到的TPS也只有5000左右，我们也在上面看到使用Plasma机制带来的直接效率优化要比Rollup高很多。</p>
+<p>以太坊基金会也很清楚这个问题，目前它们主推的方案是分片+rollup，这将使得rollup带来的TPS提升再上一个数量级。</p>
+<h4 id="2流动性的割裂">(2)流动性的割裂：<a hidden class="anchor" aria-hidden="true" href="#2流动性的割裂">#</a></h4>
+<p>在当前多链格局的影响下，本身的流动性割裂情况已经日趋严重。</p>
+<p>而由于目前多种技术方案，多家解决方案提供上的存在，未来的rollup网络的数量只会不断增长，由此带来了更严重的流动性割裂情况。</p>
+<p><img src="http://fcdaohang.com:8088/assets/ac8bd786-8237-4453-82d8-a390699aca7b.png" alt=""></p>
+<p>当前以太坊及其layer2网络TVL一览</p>
+<p>好消息是跨链通信可以解决这一问题，代表性的事件是Synthetix已经在着手将其在以太坊主链和Optimism上的债务池进行合并。如果这一过程顺利且丝滑的完成，相信会对主链和子链上的流动性合并趋势有一定的推进。</p>
+<p>毕竟合成资产项目的债务池模型远比目前更常见的流动性池模型复杂，可以预见Uniswap等主流DeFi项目延续这一进程。</p>
+<h4 id="3通信难题和技术障碍带来的可组合性降低">(3)通信难题和技术障碍带来的可组合性降低：<a hidden class="anchor" aria-hidden="true" href="#3通信难题和技术障碍带来的可组合性降低">#</a></h4>
+<p>上一个问题中我们谈到了通信问题使得流动性发生了割裂，这一现象同样适用于主链dapp和子链dapp之间的交互，在以太坊上构建的每个新协议都像乐高积木一样，其他协议可以轻松地在其上构建，这也是DeFi 发展迅速的原因之一。</p>
+<p>如果无法解决通信问题，那么子链上的dapp需要重新建立自己的生态，这就造成了更大的资源浪费。不仅是子链和主链之间，子链和子链之间也需要构建通信机制。</p>
+<p>Again，一些优秀的开发者也正在解决这方面的问题，让我们希望他们能够简化这些操作和流程。毕竟Layer1本身的操作已经够繁琐了，如果再加上layer2的复杂度，这将使Web3世界的门槛更高。</p>
+<h4 id="4中心化风险">(4)中心化风险<a hidden class="anchor" aria-hidden="true" href="#4中心化风险">#</a></h4>
+<p>我们在上文提到当前各类Rollup解决方案中，负责执行，排序，压缩和打包交易的sequencer目前都是一个较为中心化的角色。Rollup若想进一步的提升安全性，必须要着手解决当然的中心化问题。</p>
+<h2 id="三总结">三：总结<a hidden class="anchor" aria-hidden="true" href="#三总结">#</a></h2>
+<p>全文写完已经超过一万字，远远超出了我的预期。以太坊的扩容本身是一个很宏大，很复杂的主题。而本文中只涉及到了Layer2解决方案的一部分。Layer1的扩容解决方案（分片），以及其他Layer2方案如Side Chain，Validium 等都没有提及。事实上以太坊的扩容并不是某一个单一方案能够一劳永逸解决的。很多解决方案提供商也都在多条路径上进行着探索，像Polygon这样的公司更是投资了一大批不同类型的Layer2方案。</p>
+<p>同时文中很多东西限于篇幅原因还有待挖掘，比如Layer2和Layer1之间的提交需要的通信支持是怎么样的。欺诈证明/有效性证明在Layer1上都是如何具体实现的，各家ZK/OR实现方案之间的具体区别等。理解这些事情对于想要深入了解Layer2尤其是Rollup扩容的研究者来说都是相当重要的。文章中的某些概念为了便于理解和梳理，我们做了比较笼统的概括，例如OR/ZK在交易数据压缩方面解决方案有很大的不同等，文中使用的vitalik的例子更偏向ZK的解决方案。在写作的过程当中我们也参考了一些优秀的Layer2内容，在文中和文末我们都做了标记，我们也希望有更多更优秀的内容能够出现，帮助大家进一步建立相关的认知。</p>
+<p>最后，单就我们介绍的Rollup两种方案来看，Optimstic Rollup目前已经占据市场先机，上线可用产品的同时逐步吸引主流Dapp融入生态，不可否认相关开发者的伟大贡献。但是从长远来看ZK Rollup + 分片是我们更应该期待的未来。</p>
+<p>参考：
+1.An Incomplete Guide to Rollups （Vitalik）
+<a href="https://vitalik.ca/general/2021/01/05/rollup.html">https://vitalik.ca/general/2021/01/05/rollup.html</a></p>
+<p>2.W3hitchhiker 团队对四种Layer2解决方案的成本对比
+<a href="https://w3hitchhiker.mirror.xyz/7dwD76ZZIlR7ep731K6y9vTTuXGHOojxWSnkXKzqPzI">https://w3hitchhiker.mirror.xyz/7dwD76ZZIlR7ep731K6y9vTTuXGHOojxWSnkXKzqPzI</a></p>
+<p>Scorll Tech 对于zkEVM实现的解读
+<a href="https://hackmd.io/@yezhang/S1_KMMbGt">https://hackmd.io/@yezhang/S1_KMMbGt</a></p>
+<p>举手之劳分享到你喜欢的加密社区支持作者和辛勤的Builder，Web3的世界一定会更精彩！</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://fengche.io/tags/eth/">ETH</a></li>
+      <li><a href="https://fengche.io/tags/l2/">L2</a></li>
+      <li><a href="https://fengche.io/tags/%E6%89%A9%E5%AE%B9/">扩容</a></li>
+      <li><a href="https://fengche.io/tags/zkrollup/">ZkRollup</a></li>
+      <li><a href="https://fengche.io/tags/%E9%95%BF%E6%96%87/">长文</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://fengche.io/posts/62/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>潜力项目-StargateFinance-STG概述</span>
+  </a>
+  <a class="next" href="https://fengche.io/posts/60/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>20220319-周六又现宝石？！-潜力币密码：HIGH</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 万字深度长文-以太坊的扩容之路-Zk rollup超细解读 on twitter"
+        href="https://twitter.com/intent/tweet/?text=%e4%b8%87%e5%ad%97%e6%b7%b1%e5%ba%a6%e9%95%bf%e6%96%87-%e4%bb%a5%e5%a4%aa%e5%9d%8a%e7%9a%84%e6%89%a9%e5%ae%b9%e4%b9%8b%e8%b7%af-Zk%20rollup%e8%b6%85%e7%bb%86%e8%a7%a3%e8%af%bb&amp;url=https%3a%2f%2ffengche.io%2fposts%2f61%2f&amp;hashtags=ETH%2cL2%2c%e6%89%a9%e5%ae%b9%2cZkRollup%2c%e9%95%bf%e6%96%87">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 万字深度长文-以太坊的扩容之路-Zk rollup超细解读 on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2ffengche.io%2fposts%2f61%2f&amp;title=%e4%b8%87%e5%ad%97%e6%b7%b1%e5%ba%a6%e9%95%bf%e6%96%87-%e4%bb%a5%e5%a4%aa%e5%9d%8a%e7%9a%84%e6%89%a9%e5%ae%b9%e4%b9%8b%e8%b7%af-Zk%20rollup%e8%b6%85%e7%bb%86%e8%a7%a3%e8%af%bb&amp;summary=%e4%b8%87%e5%ad%97%e6%b7%b1%e5%ba%a6%e9%95%bf%e6%96%87-%e4%bb%a5%e5%a4%aa%e5%9d%8a%e7%9a%84%e6%89%a9%e5%ae%b9%e4%b9%8b%e8%b7%af-Zk%20rollup%e8%b6%85%e7%bb%86%e8%a7%a3%e8%af%bb&amp;source=https%3a%2f%2ffengche.io%2fposts%2f61%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 万字深度长文-以太坊的扩容之路-Zk rollup超细解读 on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2ffengche.io%2fposts%2f61%2f&title=%e4%b8%87%e5%ad%97%e6%b7%b1%e5%ba%a6%e9%95%bf%e6%96%87-%e4%bb%a5%e5%a4%aa%e5%9d%8a%e7%9a%84%e6%89%a9%e5%ae%b9%e4%b9%8b%e8%b7%af-Zk%20rollup%e8%b6%85%e7%bb%86%e8%a7%a3%e8%af%bb">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 万字深度长文-以太坊的扩容之路-Zk rollup超细解读 on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2ffengche.io%2fposts%2f61%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 万字深度长文-以太坊的扩容之路-Zk rollup超细解读 on whatsapp"
+        href="https://api.whatsapp.com/send?text=%e4%b8%87%e5%ad%97%e6%b7%b1%e5%ba%a6%e9%95%bf%e6%96%87-%e4%bb%a5%e5%a4%aa%e5%9d%8a%e7%9a%84%e6%89%a9%e5%ae%b9%e4%b9%8b%e8%b7%af-Zk%20rollup%e8%b6%85%e7%bb%86%e8%a7%a3%e8%af%bb%20-%20https%3a%2f%2ffengche.io%2fposts%2f61%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 万字深度长文-以太坊的扩容之路-Zk rollup超细解读 on telegram"
+        href="https://telegram.me/share/url?text=%e4%b8%87%e5%ad%97%e6%b7%b1%e5%ba%a6%e9%95%bf%e6%96%87-%e4%bb%a5%e5%a4%aa%e5%9d%8a%e7%9a%84%e6%89%a9%e5%ae%b9%e4%b9%8b%e8%b7%af-Zk%20rollup%e8%b6%85%e7%bb%86%e8%a7%a3%e8%af%bb&amp;url=https%3a%2f%2ffengche.io%2fposts%2f61%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</span>
+    <span>
+        Powered at 2021
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" fill="currentColor">
+        <path style="fill:#777bc6" d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

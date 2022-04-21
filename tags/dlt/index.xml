@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DLT on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/dlt/</link>
+    <description>Recent content in DLT on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Mon, 18 Apr 2022 16:27:54 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/dlt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>信任机器 — 第 3 部分：四维记账法</title>
+      <link>https://fengche.io/posts/246/</link>
+      <pubDate>Mon, 18 Apr 2022 16:27:54 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/246/</guid>
+      <description>[原文链接](https://husqy.medium.com/the-trust-machine-part3-quadruple-entry-accounting-6da022f5e832?source=fengche.io)为数字世界设计人文信任层```本文你可以了解到：记账方式发明对于人类社会变革所产生的根本作用宇宙运行规律和现实世界的类比关系为什么要学习哲学--风车注```作者：[HansMoog](https://husqy.medium.com/)-一名为IOTA工作并努力让世界变得...</description>
+    </item>
+    
+    <item>
+      <title>信任机器 — 第 2 部分：DLT 整体空间模型</title>
+      <link>https://fengche.io/posts/245/</link>
+      <pubDate>Mon, 18 Apr 2022 16:26:11 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/245/</guid>
+      <description>[原文链接](https://husqy.medium.com/the-trust-machine-part2-a-model-of-the-entire-dlt-space-f169fe527c75?source=fengche.io)为数字世界设计人文信任层作者：[HansMoog](https://husqy.medium.com/)-一名为IOTA工作并努力让世界变得更美好的黑客、女权主义者、未来主义者和技术爱好者。```本文可以学到：如何进行项目分析如何通过定义模型分析竞品项目分析的重...</description>
+    </item>
+    
+    <item>
+      <title>信任机器 — 第 1 部分：女巫保护</title>
+      <link>https://fengche.io/posts/244/</link>
+      <pubDate>Mon, 18 Apr 2022 16:24:24 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/244/</guid>
+      <description>[原文链接](https://husqy.medium.com/the-trust-machine-part1-sybil-protection-1799861fa56?source=fengche.io)为数字世界设计人文信任层作者：[HansMoog](https://husqy.medium.com/)-一名为IOTA工作并努力让世界变得更美好的黑客、女权主义者、未来主义者和技术爱好者。本系列所有文章：[信任机器—第1部分：女巫保护](/posts/247/)[信任机器—第2部分：DLT整...</description>
+    </item>
+    
+  </channel>
+</rss>

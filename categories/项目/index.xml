@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>项目 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/categories/%E9%A1%B9%E7%9B%AE/</link>
+    <description>Recent content in 项目 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Thu, 07 Apr 2022 22:06:15 +0800</lastBuildDate><atom:link href="https://fengche.io/categories/%E9%A1%B9%E7%9B%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Terra又有新动作：定位于机密项目开发的组织-Moonshots</title>
+      <link>https://fengche.io/posts/203/</link>
+      <pubDate>Thu, 07 Apr 2022 22:06:15 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/203/</guid>
+      <description>原推如下，发布的信息内容非常少，但也非常有趣{{&amp;lt;twitteruser=TFL_moonshotsid=1511399901837541389&amp;gt;}}其后续推文表示：受洛克希德的SkunkWorks和GoogleX的启发，Moonshots团队的存在是为了孵化和执行最具创新性和令人兴奋的Web3创意其中SkunkWorks是洛克希德·马丁公司高级开发项目（AdvancedDevelopmentPrograms）的官方认可绰号，位于美国加利福尼亚州棕榈谷。SkunkWorks以担任秘密研究计划为主...</description>
+    </item>
+    
+    <item>
+      <title>项目介绍-Analog</title>
+      <link>https://fengche.io/posts/180/</link>
+      <pubDate>Sun, 03 Apr 2022 22:30:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/180/</guid>
+      <description>有段时间未发项目介绍了，相信之前的STG项目让大家拿到了红利，希望后面的也能带来同样的效果：[原文链接](https://medium.com/@analogtime/introducing-analog-6756cb2018a2)这是一篇来自官网的翻译：前言荣幸地向大家介绍-Analog--它是世界上第一个由时间证明提供支持的全链网络。![](https://edit.fcdaohang.org/assets/ed1ecc36-9c63-47d0-8929-4b4c450ea925.png)A...</description>
+    </item>
+    
+    <item>
+      <title>LayerZero - 一种全链互操作性协议</title>
+      <link>https://fengche.io/posts/63/</link>
+      <pubDate>Sun, 20 Mar 2022 15:38:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/63/</guid>
+      <description>![](http://fcdaohang.com:8088/assets/62a4f819-4bc7-4480-bcd8-9eafb0235c09.png)对于跨链桥接和消息传递，几乎现有每种方法都属于两大类之一：一个是形成共识，在链之间验证和转发消息。第二个是在链上运行轻量级节点。让我们来讨论一下。中间链中间链在链之间接收、验证和转发消息。在此模型中，中间链被授予对所有消息的完全签名权，使其成为单点故障风险隐患。如果发生问题，所有链上的流动性可能立即被盗。由于今天的中间链只绑定了数亿美元，同时...</description>
+    </item>
+    
+    <item>
+      <title>[项目] Ziktalk Web 3.0短视频平台</title>
+      <link>https://fengche.io/posts/44/</link>
+      <pubDate>Mon, 14 Mar 2022 21:01:49 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/44/</guid>
+      <description>项目白皮书：ZiktalkWeb3.0短视频平台白皮书v2.0摘要：Ziktalk是Web3.0短视频平台，拥有[超过65万用户](https://ambcrypto.com/ziktalk-aces-luniverse-dapps-in-terms-of-total-transactions/)，允许内容创作者和消费者通过社交挖掘的概念赚取ZIK代币在应用程序内进行交互并奖励有利于生态系统发展的贡献的用户。Ziktalk为98%收入低于贫困线的内容创作者和发展中国家的用户提供了变现机会。#一、...</description>
+    </item>
+    
+    <item>
+      <title>项目分析-MEANFI-财务均衡器-让你的资金以最优惠的成本在DEFI世界中增长</title>
+      <link>https://fengche.io/posts/35/</link>
+      <pubDate>Thu, 10 Mar 2022 14:36:39 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/35/</guid>
+      <description>本期带来推友[KB(@shayethh)](https://twitter.com/shayethh?s=11)和[Shoki.sol(@KoShouki)](https://twitter.com/koshouki?s=11)推荐的项目分析报告项目简介项目名：MEANFI赛道：DEFI公链：SOLANA数据来源：[项目官网](https://www.meanfi.com/)Slogan:TheFinancialEqualizerGrowyourmoneystashwiththebestpric...</description>
+    </item>
+    
+    <item>
+      <title>0X协议是什么-0x流动性协议</title>
+      <link>https://fengche.io/posts/28/</link>
+      <pubDate>Tue, 08 Mar 2022 18:25:59 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/28/</guid>
+      <description>关于[0x是一个流动性协议](https://0x.org/)，它能够在以太坊网络中实现DeFi应用。任何人可以通过这个协议来开创去中心化交易所。![](http://fcdaohang.com:8088/assets/4a7710c5-44c7-43e2-b1cb-29fe7c3b3675.png)0x促进了智能合约生态系统，以允许基于以太坊的资产的P2P交换。它的原生代币ZRX使社区成员能够对0x系统内的各种提案进行投票。理论上，各种现实世界和数字资产，包括法定货币、股票和商品，都可以在0x...</description>
+    </item>
+    
+    <item>
+      <title>欢迎参加 DexGuru DAO 启动阶段</title>
+      <link>https://fengche.io/posts/27/</link>
+      <pubDate>Tue, 08 Mar 2022 18:10:12 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/27/</guid>
+      <description>DexGuruDAOBootstrapPhaseDexGuruDAO启动阶段(注：DexGuru是采用基于[0x协议](/post/28)建立的Dex交易所)长文预警：DexGuruDAO即将推出！从一开始，我们就致力于产品优于一切的法则。我们的目标一直是建立一个人们真正想要使用的强大平台，然后由$GURU代币提供支持，开始将治理权力和资金管理交给社区。我们的目标是尽可能分散地启动DAO治理，同时保持社区的参与和娱乐。我们希望社区成员将自己视为项目的一部分，与相同的目标保持一致。因此，社区应该向...</description>
+    </item>
+    
+  </channel>
+</rss>

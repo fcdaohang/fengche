@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IOTA2.0 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/iota2.0/</link>
+    <description>Recent content in IOTA2.0 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 17 Apr 2022 16:36:40 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/iota2.0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IOTA 代币化框架规范</title>
+      <link>https://fengche.io/posts/235/</link>
+      <pubDate>Sun, 17 Apr 2022 16:36:40 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/235/</guid>
+      <description>[原文链接](https://blog.iota.org/iota-tokenization-framework-specifications/)```本文内容：了解为什么要有WETH，什么是多资产分类账IOTA的NFT有什么不同之处（音乐NFT解决方案）--风车注```长文预警今天，我们发布了IOTA主网新代币化框架的规范。这次未来的升级将把主网协议转变为具有智能合约和无缝跨链资产转移的多资产分类账。原生代币和NFT存在于Tangle中，并继承了基础货币IOTA硬币的无费用和可扩展性。原生代币...</description>
+    </item>
+    
+    <item>
+      <title>三网融合共创未来 - IOTA, Shimmer 和 Assembly</title>
+      <link>https://fengche.io/posts/234/</link>
+      <pubDate>Sun, 17 Apr 2022 14:10:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/234/</guid>
+      <description>[原文链接](https://blog.iota.org/three-networks-to-unite-them-all/)```本文内容：这是一篇关于IOTA整体网络进度路线图的详细介绍用途将是在未来对其工作交付的验证IOTA必然是个长期投资项目，需要不定期对价值进行验证已确保稳定性需要验证时不妨查阅本文--风车注```长文预警全面运行的IOTA、Shimmer和Assembly网络的要求是相互关联和相互依赖的。以下路线图概述了每个网络即将到来的协议升级里程碑，同时概述了它们的相互依赖性。2...</description>
+    </item>
+    
+  </channel>
+</rss>

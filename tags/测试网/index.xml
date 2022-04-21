@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>测试网 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E6%B5%8B%E8%AF%95%E7%BD%91/</link>
+    <description>Recent content in 测试网 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Wed, 20 Apr 2022 12:54:50 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E6%B5%8B%E8%AF%95%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测试网教程 — Pegasus (Optimism) 空投潜伏</title>
+      <link>https://fengche.io/posts/276/</link>
+      <pubDate>Wed, 20 Apr 2022 12:54:50 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/276/</guid>
+      <description>[原文链接](https://medium.com/@CalendarDefi/testnet-guide-pegasus-optimism-816b8949eb8c)介绍[PegasusFinance](https://twitter.com/0xPegasusFi)是一个[AMM](/posts/56/#amm)风格的利率永续平台。交易者可以为Aave和Compound等借贷平台借贷APY的多头和空头头寸。他们于3月9日启动了他们的测试网。![](https://img.fengche.io...</description>
+    </item>
+    
+    <item>
+      <title>空投信息打包-Folks Finance 测试网 和 zk.money交互</title>
+      <link>https://fengche.io/posts/121/</link>
+      <pubDate>Fri, 25 Mar 2022 20:43:59 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/121/</guid>
+      <description>推上筛选的值得埋伏空投的信息：第一个[Defi借贷协议FolksFinance测试网教程](https://mirror.xyz/0x8aBB3f99cA9db88c2675243234800db4846a6035/DWwTkeoUPCGdlLhdI5wwyxKo-2zB2SPS_B_fCJ1NcRM)作者推友[@yyy](https://twitter.com/Yyy1092422472)第二个[zk.money交互教程](https://mirror.xyz/0x85A61295752440...</description>
+    </item>
+    
+    <item>
+      <title>空投信号-测试网交互-元宇宙项目PHI</title>
+      <link>https://fengche.io/posts/119/</link>
+      <pubDate>Fri, 25 Mar 2022 17:44:48 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/119/</guid>
+      <description>本文翻译自其官方介绍，目前该项目可进行测试网交互，有概率成为早期支持用户不需要介绍的老鸟们可以直接[点击链接进入](https://philand.xyz/)向您介绍Phi项目，将以太坊链上活动可视化的元宇宙![](https://edit.fcdaohang.org/assets/9a94494f-e6e2-405f-acd5-810a65389ecd.png)Phi是一个基于ENS域名和ETH链上活动创建的元宇宙，建立在StarkNet上。我们的使命是可视化链上身份，并创建一个基于通用web...</description>
+    </item>
+    
+  </channel>
+</rss>

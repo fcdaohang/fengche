@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>dune on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/dune/</link>
+    <description>Recent content in dune on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Mon, 28 Feb 2022 00:49:45 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/dune/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dune 链上数据分析器</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Mon, 28 Feb 2022 00:49:45 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>一个高阶玩家用来分析链上数据的工具，提供简易的数据分析工具。但对新手而言依然比较复杂</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LRC on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/lrc/</link>
+    <description>Recent content in LRC on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Tue, 22 Mar 2022 22:11:20 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/lrc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VITE项目的总结</title>
+      <link>https://fengche.io/posts/82/</link>
+      <pubDate>Tue, 22 Mar 2022 22:11:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/82/</guid>
+      <description>之前百倍币大哥披露了此币，本着认真钻研的态度看了一下官网，当时以为是跨链。直到看完白皮书，发现里面有肉：#1.高性能是其主要方向在此基础上确保足够的扩展和安全性，账本采用DAG结构#2.共识算法层面进行了改良引入了快照链的概念，快照链是安全的核心基石#3.快照链需要大的存储空间可能和验证节点要求有关，如抵押币？暂未知#4.EMV兼容但代码和Solidity略有区别，命名为Solidity&#43;&#43;，拥有标准库#5.原生代币VITE用于奖励快照链验证节点出块#6.Gas费模式和ETH不同高频使用者的Ga...</description>
+    </item>
+    
+  </channel>
+</rss>

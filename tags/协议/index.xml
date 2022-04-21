@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>协议 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E5%8D%8F%E8%AE%AE/</link>
+    <description>Recent content in 协议 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Mon, 18 Apr 2022 16:29:35 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%8D%8F%E8%AE%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>信任机器 — 第 4 部分：Tangle — 一种广义的投票协议</title>
+      <link>https://fengche.io/posts/247/</link>
+      <pubDate>Mon, 18 Apr 2022 16:29:35 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/247/</guid>
+      <description>[原文链接](https://husqy.medium.com/the-trust-machine-part4-the-tangle-a-generalized-voting-protocol-38c57f0eb7c?source=fenche.io)为数字世界设计人文信任层```本文你可以了解到：网络结构的设计和考量以及每个细节的优化和权衡--风车注```作者：[HansMoog](https://husqy.medium.com/)-一名为IOTA工作并努力让世界变得更美好的黑客、女权主义者...</description>
+    </item>
+    
+    <item>
+      <title>0X协议是什么-0x流动性协议</title>
+      <link>https://fengche.io/posts/28/</link>
+      <pubDate>Tue, 08 Mar 2022 18:25:59 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/28/</guid>
+      <description>关于[0x是一个流动性协议](https://0x.org/)，它能够在以太坊网络中实现DeFi应用。任何人可以通过这个协议来开创去中心化交易所。![](http://fcdaohang.com:8088/assets/4a7710c5-44c7-43e2-b1cb-29fe7c3b3675.png)0x促进了智能合约生态系统，以允许基于以太坊的资产的P2P交换。它的原生代币ZRX使社区成员能够对0x系统内的各种提案进行投票。理论上，各种现实世界和数字资产，包括法定货币、股票和商品，都可以在0x...</description>
+    </item>
+    
+  </channel>
+</rss>

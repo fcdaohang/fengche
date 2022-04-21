@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sablier on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/sablier/</link>
+    <description>Recent content in Sablier on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 12 Mar 2022 03:24:44 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/sablier/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[基础概念]流支付的概念与实现</title>
+      <link>https://fengche.io/posts/41/</link>
+      <pubDate>Sat, 12 Mar 2022 03:24:44 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/41/</guid>
+      <description>流支付概念当前社会普遍实施的是月薪制，即每月固定时间发放固定数量的薪资。还有部分采用周薪、日薪或时薪制。由于便于财务结算、降低支付成本、公司管理需要等原因此支付制度一直延续至今。因公司经营困难时常会出现欠薪的问题，有越来越多的需求强烈希望压缩发放薪资的时间，从而减轻薪资拖欠的风险。请想象一下”流式支付资金“，只要你打卡期间，你的钱包每秒钟都能收到一部分薪资，直到满一个月收满一个月完整的数量。支付的革命也是时间和空间的压缩过程。区块链的极大的压缩了空间，使任何人可以在任何地点支付或接收任何数额的资...</description>
+    </item>
+    
+  </channel>
+</rss>

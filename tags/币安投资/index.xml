@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>币安投资 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E5%B8%81%E5%AE%89%E6%8A%95%E8%B5%84/</link>
+    <description>Recent content in 币安投资 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 26 Feb 2022 01:22:20 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%B8%81%E5%AE%89%E6%8A%95%E8%B5%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coin98 wallet C98</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Feb 2022 01:22:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>一个以平台化为目标的钱包，集成各链主流的去中心化交易所DEX，以及各类DAPP，便于一站式交易，适合老手玩家</description>
+    </item>
+    
+    <item>
+      <title>Trust Wallet</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Sat, 26 Feb 2022 01:21:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>除了支持多链这一主要属性外，还集成了简单的交换功能，可以换币，也可以法币买币，手机使用最方便。新版本集成了浏览器，从此可以直接交互</description>
+    </item>
+    
+  </channel>
+</rss>

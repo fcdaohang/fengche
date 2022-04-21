@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>VITE on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/vite/</link>
+    <description>Recent content in VITE on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Tue, 22 Mar 2022 22:11:20 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/vite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VITE项目的总结</title>
+      <link>https://fengche.io/posts/82/</link>
+      <pubDate>Tue, 22 Mar 2022 22:11:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/82/</guid>
+      <description>之前百倍币大哥披露了此币，本着认真钻研的态度看了一下官网，当时以为是跨链。直到看完白皮书，发现里面有肉：#1.高性能是其主要方向在此基础上确保足够的扩展和安全性，账本采用DAG结构#2.共识算法层面进行了改良引入了快照链的概念，快照链是安全的核心基石#3.快照链需要大的存储空间可能和验证节点要求有关，如抵押币？暂未知#4.EMV兼容但代码和Solidity略有区别，命名为Solidity&#43;&#43;，拥有标准库#5.原生代币VITE用于奖励快照链验证节点出块#6.Gas费模式和ETH不同高频使用者的Ga...</description>
+    </item>
+    
+    <item>
+      <title>20220322-大盘继续上升-潜力币暂时活跃度下降-目前热点概括一下</title>
+      <link>https://fengche.io/posts/79/</link>
+      <pubDate>Tue, 22 Mar 2022 17:26:08 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/79/</guid>
+      <description>1.STG此项目潜力巨大，略了解了一下，最近要和sushi整合了，社区正在投票，整合成功再掀一波巨浪问题不大2.VITE深入看了一下，项目核心团队是国内科学家，大概率是国内项目，不过最近老鼠仓迹象明显，期待一个LRC级别涨幅3.BSW这几天涨幅可观，但综合分析所有走势判断是刷量的结果，继续观望4.GOZ一个土耳其的粉丝代币，突然涌入千万级美金的资金，当然涨幅也很高，而且购买比较缺渠道，观望...</description>
+    </item>
+    
+    <item>
+      <title>20220322-突发-潜力币来袭-VITE</title>
+      <link>https://fengche.io/posts/77/</link>
+      <pubDate>Tue, 22 Mar 2022 03:28:55 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/77/</guid>
+      <description>说明：潜力币投资风险大，要参与的话请一定以推荐价格甚至低于推荐价格买入后续币种项目资料将通过CMC链接发送，不另外啰嗦（赚钱指标才是重点）潜力币名称：[VITE](https://coinmarketcap.com/currencies/vite/)现价：$0.06942推荐理由：#1.跨链赛道#2.老鼠仓第二波#3.推出了[DEX项目](https://twitter.com/ViteXExchange)#4.不扯多了建议成本：0.05666建议仓位：1000U去哪买？：[币安](https:...</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Layer2 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/layer2/</link>
+    <description>Recent content in Layer2 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Wed, 20 Apr 2022 12:52:34 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/layer2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimism 要发币？怎么赶上最后一班车呢？教程来了</title>
+      <link>https://fengche.io/posts/275/</link>
+      <pubDate>Wed, 20 Apr 2022 12:52:34 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/275/</guid>
+      <description>[原文链接](https://medium.com/@CalendarDefi/mainnet-guide-optimism-3141281eb2f9)介绍[Optimism](https://twitter.com/optimismPBC)是以太坊Layer2扩展解决方案。Optimism和Arbitrum都使用OptimisticRollup技术。![](https://img.fengche.io/7d94d9d3-fe2b-4967-b1a9-1c686ef448ce.png空投规则截止...</description>
+    </item>
+    
+    <item>
+      <title>用图表解释什么是区块链的 Layer0、Layer1、Layer2、Layer3（L0, L1, L2, L3）</title>
+      <link>https://fengche.io/posts/182/</link>
+      <pubDate>Mon, 04 Apr 2022 19:35:38 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/182/</guid>
+      <description>[原文链接](https://medium.com/@nick.5montana/blockchain-layers-l0-l1-l2-l3-in-a-diagram-569162398db)因为我的阅读障碍，所以做了这些内容首先是全局一览：![](https://edit.fcdaohang.org/assets/3ebd6aec-64f8-4d7a-a81e-bf2e6bb114c1.png)Layer0![](https://edit.fcdaohang.org/assets/1df2d9...</description>
+    </item>
+    
+  </channel>
+</rss>

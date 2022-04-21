@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>metamask on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/metamask/</link>
+    <description>Recent content in metamask on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 10 Apr 2022 12:29:26 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/metamask/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>您的 Metamask 是如何被黑客入侵的</title>
+      <link>https://fengche.io/posts/216/</link>
+      <pubDate>Sun, 10 Apr 2022 12:29:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/216/</guid>
+      <description>[原文链接](https://medium.com/coinmonks/how-your-metamask-got-hacked-probably-795abca4534a)前言我欣然承认我喜欢DeFi加密投资--从大量垃圾项目和庞氏骗局中寻找新合法项目并确定其能产生收益是一项令人愉快且有利可图的挑战。但是DeFi有一个明显的缺点--你必须使用像Metamask这样的非中心化交易所托管钱包来与DeFi交易所进行交互。是的，Metamask运行良好，完全符合您的要求，但遗憾的是它在安全性方面存在严...</description>
+    </item>
+    
+    <item>
+      <title>MetaMask全面迈入Web3.0加密世界</title>
+      <link>https://fengche.io/posts/116/</link>
+      <pubDate>Fri, 25 Mar 2022 16:32:39 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/116/</guid>
+      <description>ConsenSys首席执行官JoeLubin在接受采访时表示，MetaMask很快将推出去中心化自治组织（DAO），新的DAO不参与管理MetaMask，只为MetaMask的更新提供资金，还计划发行Token。背景Metamask最初的愿景并不是作为钱包插件之类的消费者项目，而是希望成为一种开发工具。根据ConsenSys首席执行官JoeLubin的说法，MetaMask正在追求“渐进式去中心化”，同时还优先考虑安全性并改进一些人认为不便的界面。作为实现其各种目标的计划的一部分，MetaMas...</description>
+    </item>
+    
+    <item>
+      <title>Metamask小狐狸钱包</title>
+      <link>https://fengche.io/nav/</link>
+      <pubDate>Fri, 25 Feb 2022 14:28:53 +0800</pubDate>
+      
+      <guid>https://fengche.io/nav/</guid>
+      <description>Metamask 最常用钱包，最常使用于电脑chrome浏览器插件，其次使用手机app</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>徐望川 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/editors/%E5%BE%90%E6%9C%9B%E5%B7%9D/</link>
+    <description>Recent content in 徐望川 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Wed, 20 Apr 2022 09:55:48 +0800</lastBuildDate><atom:link href="https://fengche.io/editors/%E5%BE%90%E6%9C%9B%E5%B7%9D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过 Internet Computer 的区块链进行直接 HTTP 请求</title>
+      <link>https://fengche.io/posts/274/</link>
+      <pubDate>Wed, 20 Apr 2022 09:55:48 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/274/</guid>
+      <description>[原文链接](https://thenewstack.io/blockchain-direct-http-requests-via-the-internet-computer/)尽管Web3对一切都发生在区块链上的未来充满乐观，但我们离实现这一目标还有很长的路要走。绝大多数有用数据是在传统数据中心或云计算基础设施中生成的，并使用基于HTTP或HTTPS协议的接口进行传输。运行在任何第1层区块链（如Ethereum或Solana）上的去中心化应用程序使用所谓的预言机与基于HTTP的服务交互。这些预...</description>
+    </item>
+    
+    <item>
+      <title>DFINITY，世界的精神先祖</title>
+      <link>https://fengche.io/posts/252/</link>
+      <pubDate>Wed, 20 Apr 2022 03:24:00 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/252/</guid>
+      <description>[原文链接](http://www.itechpost.com/articles/109411/20220304/dfinity-the-spiritual-ancestor-of-the-world.htm)![](https://img.fengche.io/cfe24881-756c-4ee6-8280-355cd6dd2e6a.jpg)前言很难相信时间流逝的速度，今年，万维网已经32岁了，并且正在缓慢而坚定地迈向“中年”。那些在网络兴起后出生的人，包括DFINITY和互联网计算机（Int...</description>
+    </item>
+    
+    <item>
+      <title>Layer 1 的性能 - 比较 6 个领先的区块链项目</title>
+      <link>https://fengche.io/posts/251/</link>
+      <pubDate>Tue, 19 Apr 2022 18:06:52 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/251/</guid>
+      <description>[原文链接](https://coincodex.com/article/14198/layer-1-performance-comparing-6-leading-blockchains/)中本聪（SatoshiNakamoto）对比特币和区块链的发展标志着彻底改变全球金融的潜力。然后，以太坊智能合约的引入使分散式应用程序（dApps）的增长超出了中心化公司的控制范围。但比特币和以太坊的表现都有限，导致许多人认为区块链本质上是缓慢、昂贵且难以扩展的。已经出现了一系列第1层协议，旨在改善不同用例...</description>
+    </item>
+    
+    <item>
+      <title>公链百家争鸣.01 - IOTA是一条什么样的公链</title>
+      <link>https://fengche.io/posts/250/</link>
+      <pubDate>Tue, 19 Apr 2022 14:06:04 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/250/</guid>
+      <description>公链百家争鸣是风车为即将到来的Q2行情准备的一系列公链项目探索概括性质的合辑，以概念叙事、团队背景、社区运营、币价K线四个维度进行综合评估，为读者提供决策信息参考，非投资建议，敬请关注风险。概念叙事#发展历程IOTA项目成立于2015年，由四位创始人：[DavidSonstebo](https://twitter.com/davidsonstebo),[SergeyIvancheglo](https://twitter.com/c___f___b),[DominikSchiener](https...</description>
+    </item>
+    
+    <item>
+      <title>信任机器 — 第 4 部分：Tangle — 一种广义的投票协议</title>
+      <link>https://fengche.io/posts/247/</link>
+      <pubDate>Mon, 18 Apr 2022 16:29:35 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/247/</guid>
+      <description>[原文链接](https://husqy.medium.com/the-trust-machine-part4-the-tangle-a-generalized-voting-protocol-38c57f0eb7c?source=fenche.io)为数字世界设计人文信任层```本文你可以了解到：网络结构的设计和考量以及每个细节的优化和权衡--风车注```作者：[HansMoog](https://husqy.medium.com/)-一名为IOTA工作并努力让世界变得更美好的黑客、女权主义者...</description>
+    </item>
+    
+    <item>
+      <title>信任机器 — 第 3 部分：四维记账法</title>
+      <link>https://fengche.io/posts/246/</link>
+      <pubDate>Mon, 18 Apr 2022 16:27:54 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/246/</guid>
+      <description>[原文链接](https://husqy.medium.com/the-trust-machine-part3-quadruple-entry-accounting-6da022f5e832?source=fengche.io)为数字世界设计人文信任层```本文你可以了解到：记账方式发明对于人类社会变革所产生的根本作用宇宙运行规律和现实世界的类比关系为什么要学习哲学--风车注```作者：[HansMoog](https://husqy.medium.com/)-一名为IOTA工作并努力让世界变得...</description>
+    </item>
+    
+    <item>
+      <title>信任机器 — 第 2 部分：DLT 整体空间模型</title>
+      <link>https://fengche.io/posts/245/</link>
+      <pubDate>Mon, 18 Apr 2022 16:26:11 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/245/</guid>
+      <description>[原文链接](https://husqy.medium.com/the-trust-machine-part2-a-model-of-the-entire-dlt-space-f169fe527c75?source=fengche.io)为数字世界设计人文信任层作者：[HansMoog](https://husqy.medium.com/)-一名为IOTA工作并努力让世界变得更美好的黑客、女权主义者、未来主义者和技术爱好者。```本文可以学到：如何进行项目分析如何通过定义模型分析竞品项目分析的重...</description>
+    </item>
+    
+    <item>
+      <title>信任机器 — 第 1 部分：女巫保护</title>
+      <link>https://fengche.io/posts/244/</link>
+      <pubDate>Mon, 18 Apr 2022 16:24:24 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/244/</guid>
+      <description>[原文链接](https://husqy.medium.com/the-trust-machine-part1-sybil-protection-1799861fa56?source=fengche.io)为数字世界设计人文信任层作者：[HansMoog](https://husqy.medium.com/)-一名为IOTA工作并努力让世界变得更美好的黑客、女权主义者、未来主义者和技术爱好者。本系列所有文章：[信任机器—第1部分：女巫保护](/posts/247/)[信任机器—第2部分：DLT整...</description>
+    </item>
+    
+    <item>
+      <title>简单评价AC回归宣言：加密文化的潮起潮落</title>
+      <link>https://fengche.io/posts/243/</link>
+      <pubDate>Mon, 18 Apr 2022 15:19:28 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/243/</guid>
+      <description>&amp;gt;Crypto已死，Crypto万岁。旧的时代已经过去，新的未来已悄然来临并将持续。&amp;gt;我希望足够年长。年长到能去见证货币政策的诞生。我希望已经看见了那些人曾经犯过的错误，因为我认为当下我们正在重蹈覆辙。我希望能亲历原来的那段历史，这样我就明白今天要怎么做选择。&amp;gt;我经常想象Crypto的那些建设者们，在阅读了维基百科上那些关于债券、铸币税或债务工具的文章之后，经常会想“他们可以做得更好”。可以想象大家做事的出发点，是为了把事情做好，还是表现自己比别人更棒？&amp;gt;这是编写代码中经常发生的事情，你发现另一...</description>
+    </item>
+    
+    <item>
+      <title>认识 Assembly 04：互操作性和可组合性</title>
+      <link>https://fengche.io/posts/242/</link>
+      <pubDate>Mon, 18 Apr 2022 14:53:18 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/242/</guid>
+      <description>[原文链接](https://blog.assembly.sc/meet-assembly-4-interoperability-and-composability/)无缝创建跨链dApp长文预警系列导航：[认识Assembly01：让你打开和去中心化世界的钥匙](/posts/242/)[认识Assembly02：验证者和验证者委员会](/posts/241/)[认识Assembly03：Assembly即市场](/posts/240/)[认识Assembly04：互操作性和可组合性](/po...</description>
+    </item>
+    
+    <item>
+      <title>认识 Assembly 03：Assembly 即市场</title>
+      <link>https://fengche.io/posts/241/</link>
+      <pubDate>Mon, 18 Apr 2022 14:42:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/241/</guid>
+      <description>[原文链接](url)认识Assembly的主要参与者长文预警系列导航：[认识Assembly01：让你打开和去中心化世界的钥匙](/posts/242/)[认识Assembly02：验证者和验证者委员会](/posts/241/)[认识Assembly03：Assembly即市场](/posts/240/)[认识Assembly04：互操作性和可组合性](/posts/239/)Assembly的低费用为在Assembly网络上构建业务模型的新用例和可预测性提供了巨大的机会。您可以作为IOTA...</description>
+    </item>
+    
+    <item>
+      <title>认识 Assembly 02：验证者和验证者委员会</title>
+      <link>https://fengche.io/posts/240/</link>
+      <pubDate>Mon, 18 Apr 2022 14:28:32 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/240/</guid>
+      <description>[原文链接](https://blog.assembly.sc/meet-assembly-2-validators-and-committees/)通往无许可和去中心化IOTA智能合约的道路。长文预警系列导航：[认识Assembly01：让你打开和去中心化世界的钥匙](/posts/242/)[认识Assembly02：验证者和验证者委员会](/posts/241/)[认识Assembly03：Assembly即市场](/posts/240/)[认识Assembly04：互操作性和可组合性](...</description>
+    </item>
+    
+    <item>
+      <title>认识 Assembly 01：让你打开和去中心化世界的钥匙</title>
+      <link>https://fengche.io/posts/239/</link>
+      <pubDate>Mon, 18 Apr 2022 14:20:39 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/239/</guid>
+      <description>[原文链接](https://blog.assembly.sc/meet-assembly-1-your-key-to-open-and-decentralized-worlds/)使用分片智能合约链并在任意地点连接以构建您的世界长文预警系列导航：[认识Assembly01：让你打开和去中心化世界的钥匙](/posts/242/)[认识Assembly02：验证者和验证者委员会](/posts/241/)[认识Assembly03：Assembly即市场](/posts/240/)[认识Asse...</description>
+    </item>
+    
+    <item>
+      <title>以太坊基金会报告2022年4月</title>
+      <link>https://fengche.io/posts/238/</link>
+      <pubDate>Mon, 18 Apr 2022 08:18:23 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/238/</guid>
+      <description>[原文链接PDF格式](https://ethereum.foundation/report-2022-04.pdf)```本文内容：通过此报告，你将了解到以太坊和以太坊基金会不是一回事以太坊基金会是什么其工作目的和方法以及投资者关心的财务状况&#43;报告提及的几个项目这次报告首次披露了资产组合占比，意味着监管时代即将拉开帷幕加密或许即将由边缘正式跻身主流地位--风车注```以太坊基金会今日发布了官方报告{{&amp;lt;twitteruser=ethereumid=1515950624592080900&amp;gt;}}!...</description>
+    </item>
+    
+    <item>
+      <title>探索原生资产的属性和好处</title>
+      <link>https://fengche.io/posts/237/</link>
+      <pubDate>Mon, 18 Apr 2022 03:05:23 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/237/</guid>
+      <description>[原文链接](https://blog.iota.org/exploring-the-properties-and-benefits-of-native-assets/)```本文内容：如果你曾经做过或者经历过O2O项目你会发现有了IOTA就可以变成现实--风车注```长文预警从稀有的收藏品到电动汽车，从足球俱乐部到智慧城市，本土资产有能力改变行业和经济——以及价值本身的概念和交换。当IOTA的数字资产框架发布时，由于网络基于零费用的架构，数字资产将变得更加无处不在。数字资产框架是IOTA上最受...</description>
+    </item>
+    
+    <item>
+      <title>IOTA 代币化框架规范</title>
+      <link>https://fengche.io/posts/235/</link>
+      <pubDate>Sun, 17 Apr 2022 16:36:40 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/235/</guid>
+      <description>[原文链接](https://blog.iota.org/iota-tokenization-framework-specifications/)```本文内容：了解为什么要有WETH，什么是多资产分类账IOTA的NFT有什么不同之处（音乐NFT解决方案）--风车注```长文预警今天，我们发布了IOTA主网新代币化框架的规范。这次未来的升级将把主网协议转变为具有智能合约和无缝跨链资产转移的多资产分类账。原生代币和NFT存在于Tangle中，并继承了基础货币IOTA硬币的无费用和可扩展性。原生代币...</description>
+    </item>
+    
+    <item>
+      <title>三网融合共创未来 - IOTA, Shimmer 和 Assembly</title>
+      <link>https://fengche.io/posts/234/</link>
+      <pubDate>Sun, 17 Apr 2022 14:10:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/234/</guid>
+      <description>[原文链接](https://blog.iota.org/three-networks-to-unite-them-all/)```本文内容：这是一篇关于IOTA整体网络进度路线图的详细介绍用途将是在未来对其工作交付的验证IOTA必然是个长期投资项目，需要不定期对价值进行验证已确保稳定性需要验证时不妨查阅本文--风车注```长文预警全面运行的IOTA、Shimmer和Assembly网络的要求是相互关联和相互依赖的。以下路线图概述了每个网络即将到来的协议升级里程碑，同时概述了它们的相互依赖性。2...</description>
+    </item>
+    
+    <item>
+      <title>IOTA 质押获取 Assembly 网络原生代币活动继续！</title>
+      <link>https://fengche.io/posts/233/</link>
+      <pubDate>Sun, 17 Apr 2022 13:56:27 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/233/</guid>
+      <description>[原文链接](https://blog.iota.org/iota-staking-for-assembly-continues/)```本文内容：质押IOTA获得ASMB空投第二轮即将开始时间为2022年4月19日星期二下午3:00CEST（UTC&#43;2北京时间晚上9点）IOTA主网上线以及后期项目上线可能会奖励前期支持者质押成本不到1美元，建议最低10美元的IOTA参与详细质押教程详见全文--风车注```让活动继续！#长文预警Assembly网络（ASMB代币）的IOTA质押将于4月19日星期...</description>
+    </item>
+    
+    <item>
+      <title>IOTA、Shimmer 和 Assembly 质押路线图</title>
+      <link>https://fengche.io/posts/232/</link>
+      <pubDate>Sun, 17 Apr 2022 13:26:51 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/232/</guid>
+      <description>[原文链接](https://blog.iota.org/iota-shimmer-and-assembly-staking-roadmap/)```IOTA质押奖励的两个代币目前是未分发状态所以这接近于盲挖，有一定风险当然也可能有惊喜，想想YFI惊喜的可能来自于币价这个就不提了，未知但是可以肯定的是，作为早期参与者，后面必然会有相关空投所以值得尝试--风车注```截止发稿，新一轮质押活动将于2022年4月19日北京时间21点开始，有兴趣的朋友请留意官方动态。{{&amp;lt;twitteruser=iot...</description>
+    </item>
+    
+    <item>
+      <title>Liquity 论流动性的价格稳定性</title>
+      <link>https://fengche.io/posts/231/</link>
+      <pubDate>Sun, 17 Apr 2022 05:35:36 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/231/</guid>
+      <description>[原文链接](https://www.liquity.org/blog/on-price-stability-of-liquity)```本文你将学到：稳定币之所以稳定的机制稳定币脱钩会如何重新挂钩哪些稳定币概念项目不能碰--风车注```自2020年5月我们正式宣布项目以来，我们收到了许多关于我们的价格稳定机制的有趣问题和评论。在这篇文章中，除了更深入地了解Liquity如何保持其稳定币LUSD与美元挂钩。我们还将研究其他稳定币所面临的挑战，例如Dai，由于[外部影响](https://defi...</description>
+    </item>
+    
+    <item>
+      <title>Liquity 2022 Q1 季度报告</title>
+      <link>https://fengche.io/posts/230/</link>
+      <pubDate>Sun, 17 Apr 2022 03:58:01 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/230/</guid>
+      <description>[原文链接](https://www.liquity.org/blog/liquity-q1-2022-report)在整个2021年持续增长一段时间后，由于22年Q1的市场波动，Liquity在新的一年开局缓慢。尽管如此，该系统仍然保持健康，LUSD继续保持挂钩，协议也持续产生收入。在以下报告中，我们总结了Liquity系统的所有关键方面以及用户在21年Q4是如何与Liquity进行交互的。系统整体健康#整体抵押率TotalCollateralRatio在整个22年Q1，我们看到ETH的价格在...</description>
+    </item>
+    
+    <item>
+      <title>2022年如何在加密领域变富-12. 问题汇总</title>
+      <link>https://fengche.io/posts/227/</link>
+      <pubDate>Wed, 13 Apr 2022 10:27:02 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/227/</guid>
+      <description>题注：终于完成这一系列的所有翻译工作，其中有部分因为赶时间的关系难免会有瑕疵，希望诸位读者见谅。这系列文章经历了BTC从48000跌至39200的阴暗时刻，也正是因为市场的回调才可能会让投资者吸收投资方面的营养，最后希望本系列内容能帮助所有风车的读者，以及，期待山寨行情季正式拉开帷幕！所有内容链接：[2022年如何在加密领域变富-01.加密市场本质和现状](/posts/206)[2022年如何在加密领域变富-02.新时代的机会](/posts/209)[2022年如何在加密领域变富-03.如何...</description>
+    </item>
+    
+    <item>
+      <title>2022年如何在加密领域变富-11. 投研报告示例</title>
+      <link>https://fengche.io/posts/226/</link>
+      <pubDate>Tue, 12 Apr 2022 17:00:04 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/226/</guid>
+      <description>所有内容链接：[2022年如何在加密领域变富-01.加密市场本质和现状](/posts/206)[2022年如何在加密领域变富-02.新时代的机会](/posts/209)[2022年如何在加密领域变富-03.如何DYOR1](/posts/211)[2022年如何在加密领域变富-04.如何DYOR2](/posts/212)[2022年如何在加密领域变富-05.心态调整](/posts/214)[2022年如何在加密领域变富-06.明确你的目标](/posts/217)[2022年如何在加密领...</description>
+    </item>
+    
+    <item>
+      <title>2022年如何在加密领域变富-10. 思维是否跟上市场变化</title>
+      <link>https://fengche.io/posts/225/</link>
+      <pubDate>Tue, 12 Apr 2022 14:06:08 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/225/</guid>
+      <description>所有内容链接：[2022年如何在加密领域变富-01.加密市场本质和现状](/posts/206)[2022年如何在加密领域变富-02.新时代的机会](/posts/209)[2022年如何在加密领域变富-03.如何DYOR1](/posts/211)[2022年如何在加密领域变富-04.如何DYOR2](/posts/212)[2022年如何在加密领域变富-05.心态调整](/posts/214)[2022年如何在加密领域变富-06.明确你的目标](/posts/217)[2022年如何在加密领...</description>
+    </item>
+    
+    <item>
+      <title>2022年如何在加密领域变富-09. 别用眼也别用心</title>
+      <link>https://fengche.io/posts/224/</link>
+      <pubDate>Tue, 12 Apr 2022 12:02:33 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/224/</guid>
+      <description>所有内容链接：[2022年如何在加密领域变富-01.加密市场本质和现状](/posts/206)[2022年如何在加密领域变富-02.新时代的机会](/posts/209)[2022年如何在加密领域变富-03.如何DYOR1](/posts/211)[2022年如何在加密领域变富-04.如何DYOR2](/posts/212)[2022年如何在加密领域变富-05.心态调整](/posts/214)[2022年如何在加密领域变富-06.明确你的目标](/posts/217)[2022年如何在加密领...</description>
+    </item>
+    
+    <item>
+      <title>2022年如何在加密领域变富-08. 指标和执行</title>
+      <link>https://fengche.io/posts/219/</link>
+      <pubDate>Sun, 10 Apr 2022 21:50:30 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/219/</guid>
+      <description>所有内容链接：[2022年如何在加密领域变富-01.加密市场本质和现状](/posts/206)[2022年如何在加密领域变富-02.新时代的机会](/posts/209)[2022年如何在加密领域变富-03.如何DYOR1](/posts/211)[2022年如何在加密领域变富-04.如何DYOR2](/posts/212)[2022年如何在加密领域变富-05.心态调整](/posts/214)[2022年如何在加密领域变富-06.明确你的目标](/posts/217)[2022年如何在加密领...</description>
+    </item>
+    
+    <item>
+      <title>2022年如何在加密领域变富-07. 交易的策略</title>
+      <link>https://fengche.io/posts/218/</link>
+      <pubDate>Sun, 10 Apr 2022 16:37:25 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/218/</guid>
+      <description>所有内容链接：[2022年如何在加密领域变富-01.加密市场本质和现状](/posts/206)[2022年如何在加密领域变富-02.新时代的机会](/posts/209)[2022年如何在加密领域变富-03.如何DYOR1](/posts/211)[2022年如何在加密领域变富-04.如何DYOR2](/posts/212)[2022年如何在加密领域变富-05.心态调整](/posts/214)[2022年如何在加密领域变富-06.明确你的目标](/posts/217)[2022年如何在加密领...</description>
+    </item>
+    
+    <item>
+      <title>2022年如何在加密领域变富-06. 明确你的目标</title>
+      <link>https://fengche.io/posts/217/</link>
+      <pubDate>Sun, 10 Apr 2022 15:59:31 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/217/</guid>
+      <description>所有内容链接：[2022年如何在加密领域变富-01.加密市场本质和现状](/posts/206)[2022年如何在加密领域变富-02.新时代的机会](/posts/209)[2022年如何在加密领域变富-03.如何DYOR1](/posts/211)[2022年如何在加密领域变富-04.如何DYOR2](/posts/212)[2022年如何在加密领域变富-05.心态调整](/posts/214)[2022年如何在加密领域变富-06.明确你的目标](/posts/217)[2022年如何在加密领...</description>
+    </item>
+    
+    <item>
+      <title>2022年如何在加密领域变富-05. 心态调整</title>
+      <link>https://fengche.io/posts/214/</link>
+      <pubDate>Sat, 09 Apr 2022 21:51:45 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/214/</guid>
+      <description>所有内容链接：[2022年如何在加密领域变富-01.加密市场本质和现状](/posts/206)[2022年如何在加密领域变富-02.新时代的机会](/posts/209)[2022年如何在加密领域变富-03.如何DYOR1](/posts/211)[2022年如何在加密领域变富-04.如何DYOR2](/posts/212)[2022年如何在加密领域变富-05.心态调整](/posts/214)[2022年如何在加密领域变富-06.明确你的目标](/posts/217)[2022年如何在加密领...</description>
+    </item>
+    
+    <item>
+      <title>2022年如何在加密领域变富-04. 如何DYOR 2</title>
+      <link>https://fengche.io/posts/212/</link>
+      <pubDate>Sat, 09 Apr 2022 17:59:56 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/212/</guid>
+      <description>所有内容链接：[2022年如何在加密领域变富-01.加密市场本质和现状](/posts/206)[2022年如何在加密领域变富-02.新时代的机会](/posts/209)[2022年如何在加密领域变富-03.如何DYOR1](/posts/211)[2022年如何在加密领域变富-04.如何DYOR2](/posts/212)[2022年如何在加密领域变富-05.心态调整](/posts/214)[2022年如何在加密领域变富-06.明确你的目标](/posts/217)[2022年如何在加密领...</description>
+    </item>
+    
+    <item>
+      <title>2022年如何在加密领域变富-03. 如何DYOR 1</title>
+      <link>https://fengche.io/posts/211/</link>
+      <pubDate>Sat, 09 Apr 2022 16:25:01 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/211/</guid>
+      <description>所有内容链接：[2022年如何在加密领域变富-01.加密市场本质和现状](/posts/206)[2022年如何在加密领域变富-02.新时代的机会](/posts/209)[2022年如何在加密领域变富-03.如何DYOR1](/posts/211)[2022年如何在加密领域变富-04.如何DYOR2](/posts/212)[2022年如何在加密领域变富-05.心态调整](/posts/214)[2022年如何在加密领域变富-06.明确你的目标](/posts/217)[2022年如何在加密领...</description>
+    </item>
+    
+    <item>
+      <title>2022年如何在加密领域变富-02.新时代的机会</title>
+      <link>https://fengche.io/posts/209/</link>
+      <pubDate>Sat, 09 Apr 2022 11:51:29 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/209/</guid>
+      <description>所有内容链接：[2022年如何在加密领域变富-01.加密市场本质和现状](/posts/206)[2022年如何在加密领域变富-02.新时代的机会](/posts/209)[2022年如何在加密领域变富-03.如何DYOR1](/posts/211)[2022年如何在加密领域变富-04.如何DYOR2](/posts/212)[2022年如何在加密领域变富-05.心态调整](/posts/214)[2022年如何在加密领域变富-06.明确你的目标](/posts/217)[2022年如何在加密领...</description>
+    </item>
+    
+    <item>
+      <title>DK对目前市场涌现的各种稳定币的看法（乐观）</title>
+      <link>https://fengche.io/posts/208/</link>
+      <pubDate>Fri, 08 Apr 2022 17:55:40 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/208/</guid>
+      <description>原推：{{&amp;lt;twitteruser=stablekwonid=1512365041730785285&amp;gt;}}五年前，当我萌生为去中心化区块链创建去中心化货币的想法时，所有加密货币都在中心化稳定币上运行。从那时起，由[$UST](https://twitter.com/search?q=%24UST&amp;amp;src=cashtag_click)创建的算法稳定币类别已成为行业标准[@NEARProtocol](https://twitter.com/NEARProtocol)的[$USN](https://t...</description>
+    </item>
+    
+    <item>
+      <title>所有你的AVAX都是我们的-Do Kwon主题推</title>
+      <link>https://fengche.io/posts/207/</link>
+      <pubDate>Fri, 08 Apr 2022 17:14:06 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/207/</guid>
+      <description>推文来自[@DoKwon](https://twitter.com/stablekwon){{&amp;lt;twitteruser=stablekwonid=1512291560171311108&amp;gt;}}背景信息在本文发布前，LFG宣布Terra和AVAX进行战略合并，同时购买价值10亿美元的$AVAX作为$UST的储备资产，[相关新闻报道](https://www.theblockcrypto.com/linked/141136/luna-foundation-guard-buys-100-million-...</description>
+    </item>
+    
+    <item>
+      <title>2022年如何在加密领域变富-01. 加密市场本质和现状</title>
+      <link>https://fengche.io/posts/206/</link>
+      <pubDate>Thu, 07 Apr 2022 23:27:30 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/206/</guid>
+      <description>所有内容链接：[2022年如何在加密领域变富-01.加密市场本质和现状](/posts/206)[2022年如何在加密领域变富-02.新时代的机会](/posts/209)[2022年如何在加密领域变富-03.如何DYOR1](/posts/211)[2022年如何在加密领域变富-04.如何DYOR2](/posts/212)[2022年如何在加密领域变富-05.心态调整](/posts/214)[2022年如何在加密领域变富-06.明确你的目标](/posts/217)[2022年如何在加密领...</description>
+    </item>
+    
+    <item>
+      <title>高端经济层面访谈-关于经济、金融市场和第三代布雷顿森林体系</title>
+      <link>https://fengche.io/posts/184/</link>
+      <pubDate>Mon, 04 Apr 2022 21:47:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/184/</guid>
+      <description>视频源：{{&amp;lt;youtubeid=q0EahFBruFAtitle=TheRoundtableInsight-ZoltanPozsar&amp;amp;YraHarrisontheEconomy,FinMarkets&amp;amp;BrettonWoodsIII&amp;gt;}}文章来自推友[@AlexGladstein](https://twitter.com/gladstein){{&amp;lt;twitteruser=gladsteinid=1510680116497727499&amp;gt;}}内容为总结以上视频内讨论的一些重点，参与讨论的嘉宾为Zol...</description>
+    </item>
+    
+    <item>
+      <title>用图表解释什么是区块链的 Layer0、Layer1、Layer2、Layer3（L0, L1, L2, L3）</title>
+      <link>https://fengche.io/posts/182/</link>
+      <pubDate>Mon, 04 Apr 2022 19:35:38 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/182/</guid>
+      <description>[原文链接](https://medium.com/@nick.5montana/blockchain-layers-l0-l1-l2-l3-in-a-diagram-569162398db)因为我的阅读障碍，所以做了这些内容首先是全局一览：![](https://edit.fcdaohang.org/assets/3ebd6aec-64f8-4d7a-a81e-bf2e6bb114c1.png)Layer0![](https://edit.fcdaohang.org/assets/1df2d9...</description>
+    </item>
+    
+    <item>
+      <title>项目介绍-Analog</title>
+      <link>https://fengche.io/posts/180/</link>
+      <pubDate>Sun, 03 Apr 2022 22:30:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/180/</guid>
+      <description>有段时间未发项目介绍了，相信之前的STG项目让大家拿到了红利，希望后面的也能带来同样的效果：[原文链接](https://medium.com/@analogtime/introducing-analog-6756cb2018a2)这是一篇来自官网的翻译：前言荣幸地向大家介绍-Analog--它是世界上第一个由时间证明提供支持的全链网络。![](https://edit.fcdaohang.org/assets/ed1ecc36-9c63-47d0-8929-4b4c450ea925.png)A...</description>
+    </item>
+    
+    <item>
+      <title>2022 年值得关注的 5 大加密和 Web3 项目</title>
+      <link>https://fengche.io/posts/179/</link>
+      <pubDate>Sun, 03 Apr 2022 21:46:39 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/179/</guid>
+      <description>[原文链接](https://blog.cryptostars.is/top-5-crypto-web3-projects-to-watch-in-2022-861850e8d38f)有没有想过加密到底是什么？它与Web3有什么关系，它是未来吗？说实话，这并不难弄清楚。您只需要了解一些Web3项目并带着兴趣深入研究就能搞定。本文中，我将谈论我过去经历过的5个Crypto&amp;amp;Web3项目以及我对每个项目的看法。如果您决定坚持下去，这将是一篇有见地的文章。如果还没打算，我希望你以后好奇时再回来看看。U...</description>
+    </item>
+    
+    <item>
+      <title>2022最有前途的3个实用性代币</title>
+      <link>https://fengche.io/posts/170/</link>
+      <pubDate>Sat, 02 Apr 2022 23:12:36 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/170/</guid>
+      <description>[原文链接](https://www.sammaiyaki.com/3-most-promising-utility-tokens-in-2022-214df6619f90)本文对原文有删减，将科普部分略过，仅提炼大家最感兴趣的三个币名称和判断依据，非投资建议，自担风险BAT基于区块链的数字广告生态系统的原生货币称为BAT（BasicAttentionToken）。该项目的核心是补贴内容创造者和消费者。BAT开发人员解决了在线广告的一系列挑战，包括隐私、广告滥用和安全危险等问题。现成产品为：Br...</description>
+    </item>
+    
+    <item>
+      <title>Waves是最大的旁氏骗局？</title>
+      <link>https://fengche.io/posts/166/</link>
+      <pubDate>Fri, 01 Apr 2022 17:25:15 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/166/</guid>
+      <description>推友[@0xHamZ](https://twitter.com/0xHamz)发布了一篇关于WAVES的分析文章，开篇第一句就指明WAVES是旁氏骗局而且是区块链世界中最大的，让我们来看一看发生了什么？{{&amp;lt;twitteruser=0xhamzid=1509581295621451779&amp;gt;}}老徐总结：给不喜欢长文的朋友：这是一个之前LUNA翻版的故事，LUNA毫无疑问从$13被质疑直到冲上$100&#43;，那WAVES是否也会如此呢？有个前提需要知道：首先LFG有钱其次LUNA里UST收益率是稳定在...</description>
+    </item>
+    
+    <item>
+      <title>害怕上车？不知道上哪台车？给大家整理了一个强势币名单</title>
+      <link>https://fengche.io/posts/165/</link>
+      <pubDate>Fri, 01 Apr 2022 16:55:32 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/165/</guid>
+      <description>这轮回调中表现抢眼的币种列表，大家可以挑选喜欢的在之后回调中介入：当然，这其中的远古老币或者没有实际项目支撑的可以不考虑转发给患有选择困难症的朋友们吧![](https://edit.fcdaohang.org/assets/382becf1-2bd9-4c6e-bfef-a22317ceb453.gif)![](https://edit.fcdaohang.org/assets/cfe5af78-da65-4a54-8ff3-262718bb84dc.gif)![](https://edit....</description>
+    </item>
+    
+    <item>
+      <title>我们正处于一个全新的BTC牛市早期阶段</title>
+      <link>https://fengche.io/posts/150/</link>
+      <pubDate>Wed, 30 Mar 2022 20:01:00 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/150/</guid>
+      <description>推友[@VijayBoyapati](https://twitter.com/real_vijay)于2019年7月20日发布的一篇老帖，可以用来对照现在的情况，有兴趣的朋友不妨一读。{{&amp;lt;twitteruser=real_vijayid=1141599541554294784&amp;gt;}}1前言我们正处于新的#Bitcoin牛市的早期阶段。让我们根据对比特币已经经历的四个主要炒作周期的观察来探索我们对这种牛市的了解。2开始由于潜在供应过剩，牛市初期运行会相对缓慢。比如，一些在上一周期很高的价格购买并希...</description>
+    </item>
+    
+    <item>
+      <title>Cosmos 生态：2022的隐藏宝石</title>
+      <link>https://fengche.io/posts/142/</link>
+      <pubDate>Tue, 29 Mar 2022 00:17:37 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/142/</guid>
+      <description>本文选自推友[@CryptoSecretCircle(Aztec)](https://twitter.com/circle_crypto)[原文链接](https://medium.com/@fomobroscapital/cosmos-ecosystem-2022-hidden-gems-cf931621c6e1){{&amp;lt;twitteruser=circle_cryptoid=1508191976780283905&amp;gt;}}推特大意说自己五年里找到过很多超级潜力宝石且经过证实，而且这些内容是实实在在...</description>
+    </item>
+    
+    <item>
+      <title>Defi2.0又添新成员-来自Solana的借贷协议Accrue.finance</title>
+      <link>https://fengche.io/posts/134/</link>
+      <pubDate>Sun, 27 Mar 2022 00:20:30 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/134/</guid>
+      <description>这是一篇短文，因该项目产品尚未上线，但其性质足以划归Defi2.0赛道首先是其官推发布了一个公告引起了本人注意：{{&amp;lt;twitteruser=accrue_financeid=1505927599222001665&amp;gt;}}大概意思是融资完成，顺便挨个@了一下里面的所有大佬（比如有CoinbaseCOO）基金会阵容，包括Solana,Polygon,OpenSea,Figma（是的，你没看错，就是那个最好用的Figma）,Alchemy,Audius,Syndicate那么这个项目是什么呢？经过调查...</description>
+    </item>
+    
+    <item>
+      <title>以 DeFi 方式投资黄金</title>
+      <link>https://fengche.io/posts/130/</link>
+      <pubDate>Sat, 26 Mar 2022 22:58:36 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/130/</guid>
+      <description>![](https://edit.fcdaohang.org/assets/4b1907fb-a1e2-4e7b-98c3-ccde4e4dee6b.jpeg)对集中的恶性通货膨胀法定货币失去信心？担心整晚都弹出清算信息？对流动性挖矿的高滑点感到沮丧？试试黄金！我的意思是，以DeFi方式！本文译自[NotSexy,ButUseful-InvestingGoldinDeFiWay](https://tokeninsight.com/en/blogs/11518)前言首先，我为什么要投资黄金而不是比...</description>
+    </item>
+    
+    <item>
+      <title>资本效率-Gearbox 协议：DeFi 中可组合杠杆协议-可能有空投</title>
+      <link>https://fengche.io/posts/128/</link>
+      <pubDate>Sat, 26 Mar 2022 04:16:25 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/128/</guid>
+      <description>[原文链接](https://consensys.net/blog/cryptoeconomic-research/gearbox-protocol-a-composable-leverage-protocol-in-defi/?utm_content=202143845&amp;amp;utm_source=fengche.io)![](https://edit.fcdaohang.org/assets/e30089f1-8bc0-4816-9689-3f2881704845.png)简介Gearbox通过一...</description>
+    </item>
+    
+    <item>
+      <title>[深度]没钱怎么办？用一个稳定币套利策略 4 个月内悄悄赚 1.13 亿美金</title>
+      <link>https://fengche.io/posts/122/</link>
+      <pubDate>Fri, 25 Mar 2022 21:04:29 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/122/</guid>
+      <description>[原文链接](https://eigenphi.substack.com/p/how-one-stablecoins-arbitrage-strategy?r=1avow0&amp;amp;s=w)由于风险敞口较小，类似闪电贷的套利将稳定币送上风口浪尖。5个重点-MIM-UST套利策略在过去四个月中赚1.13亿美元。-这是一种无需大额投资加快速贷款的高级形式，它仅支付Gas费而获得650倍的回报，而无需像三明治套利支付矿工高昂gas费，也不需要智能合约编程能力。-该策略一直在相对低调的流动资金池上搜寻机会，因此...</description>
+    </item>
+    
+    <item>
+      <title>[深度]为进行即时流动性提供的交易机器人进行行为好坏的定义</title>
+      <link>https://fengche.io/posts/120/</link>
+      <pubDate>Fri, 25 Mar 2022 19:39:34 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/120/</guid>
+      <description>原文出自[ComposableFinance](https://twitter.com/ComposableFin)BotsLead[0xBobafetador](https://twitter.com/bobafetador/status/1506666252126892033?s=21)老徐总结：为了便于读者理解，提一下里面的重点：TVL和资本效率。本文再一次强调资本效率，基本上我们可以视Defi1.0为TVL也就是量，Defi2.0则为CapitalEfficiency资本效率即质，如果有...</description>
+    </item>
+    
+    <item>
+      <title>机器人交易赛道项目KRL 内容一瞥</title>
+      <link>https://fengche.io/posts/106/</link>
+      <pubDate>Thu, 24 Mar 2022 18:10:14 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/106/</guid>
+      <description>昨天[100x](/editors/每天寻找百倍币/)推荐了一个[潜力币KRL](/posts/101/)据说该项目属于比较新潮的概念-量化机器人交易自己也和量化机构打过交道，也知道迟早机构用过的东西会流入民众，所以对此类项目略有兴趣本着钻研亲自上的精神上去看了一下，给读者们做个简单的汇报注册登录它并不像现在Web3项目一样使用钱包登录，而是需要走Web2的注册流程经过注册和邮箱验证后，输入邮箱和密码登录，这说明项目架构还是Web2，但这个问题不大，只要能提高用户效率或赋能用户的都是好项目新用户...</description>
+    </item>
+    
+    <item>
+      <title>为什么我们选择投资 Wintermute</title>
+      <link>https://fengche.io/posts/97/</link>
+      <pubDate>Wed, 23 Mar 2022 21:35:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/97/</guid>
+      <description>[原文链接](https://sinoglobalcap.medium.com/why-we-invested-in-wintermute-c72b8c151a42)不少朋友看过之前的[为什么我们投资LayerZero](/posts/94/)之后深受启发，除了大家印象中的项目，一些隐藏在幕后的另类基础设施供应商也是SINO的投资标的，这篇我们来看市面上很少见的对于MM的分析为什么我们选择投资WintermuteNotinvestmentadvice-非投资建议介绍Wintermute是一家总部...</description>
+    </item>
+    
+    <item>
+      <title>名字带2.0，性质也很Defi2.0，一个可以自动还款的借贷平台</title>
+      <link>https://fengche.io/posts/95/</link>
+      <pubDate>Wed, 23 Mar 2022 16:03:52 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/95/</guid>
+      <description>原文出自Alchemix联合创始人ScupyTrooplesST也是币圈Defi界的名人之一{{&amp;lt;twitteruser=scupytrooplesid=1503751703019110410&amp;gt;}}老徐总结：1.Defi1.0时期热门项目之一，当时概念就火热。如今升级进行了大幅改变2.亮点1：可避免被清算、通过聚合收益自动帮贷方偿还贷款-对标可再生金融产品，属性是负利率3.亮点2：支持多种复合收益策略4.亮点3：可作为协议让其他平台进行集成，其他借贷平台自动获得免清算自还款功能5.已经和一些平台...</description>
+    </item>
+    
+    <item>
+      <title>为什么我们选择投资 LayerZero Labs</title>
+      <link>https://fengche.io/posts/94/</link>
+      <pubDate>Wed, 23 Mar 2022 03:47:28 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/94/</guid>
+      <description>Notfinancialadvice.-非投资建议[原文链接](https://sinoglobalcap.medium.com/why-we-invested-in-layerzero-labs-b8f386dfc807)个人投资者投资逻辑主要是看好币的未来价格，那机构是怎么认为的呢？以最近各方面都较优秀的项目LayerZero的投资方SINO发的这篇文章入手，看看机构投资看的是哪些方面，我们个人投资者是否可以借鉴参考从中获得一些什么经验？多链、多层次的未来在过去的几年中，区块链技术的采用率一...</description>
+    </item>
+    
+    <item>
+      <title>Co-Mint — Multichain 的通用跨链桥 - 另一种跨链解决方案</title>
+      <link>https://fengche.io/posts/92/</link>
+      <pubDate>Wed, 23 Mar 2022 01:25:54 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/92/</guid>
+      <description>相信不少朋友已经错过了即将翻倍的STG，不过没关系，首先STG本身存在至少十倍潜力，现在还在早期，另外，还有其他项目同样存在可竞争空间。从Multchain官推了解到他们刚刚发布了新的跨链解决方案，一起来看一眼。{{&amp;lt;twitteruser=MultichainOrgid=1506217502459760647&amp;gt;}}*欢迎来到联合铸币厂——跨链多铸币厂桥接发展的新纪元已经来临*就像恐龙让位于哺乳动物一样，你无法阻止进化。共同铸造代币的能力就体现在这里。当Multichain推出跨链路由时，它很快...</description>
+    </item>
+    
+    <item>
+      <title>什么是Defi2.0？了解并做好拥抱大趋势的准备</title>
+      <link>https://fengche.io/posts/90/</link>
+      <pubDate>Tue, 22 Mar 2022 23:51:48 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/90/</guid>
+      <description>[原文链接](https://coin98insights.com/what-is-defi-2-0#Capital_Efficiency_-_The_next_interest)这是一篇2021年10月的老文章，当时的Defi2.0还是概念，因此只是泡沫，缺乏价值。现在不同了，因此我们有必要加强了解，以便在未来的日子能更精准发现目标题外话：同一篇文章，放在10月，看过的人都说骗子，现在我再翻译发出来，能被叫大神吗？拭目以待：）最近“DeFi2.0”这个关键词已经成为一种现象，一些代币如OHM、...</description>
+    </item>
+    
+    <item>
+      <title>为什么投资者要为虚拟土地支付真金白银</title>
+      <link>https://fengche.io/posts/83/</link>
+      <pubDate>Tue, 22 Mar 2022 22:53:45 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/83/</guid>
+      <description>作者：[raisabruner](https://twitter.com/raisabruner)原文链接：[WhyInvestorsArePayingRealMoneyForVirtualLand](https://time.com/6140467/metaverse-real-estate/)![](https://edit.fcdaohang.org/assets/951ac186-75c6-493b-8c6a-b85164236fa3.jpg)Cryptovoxels虚拟世界中的品牌房地...</description>
+    </item>
+    
+    <item>
+      <title>Defi Summer的味道，你是否已经闻到？我闻到了</title>
+      <link>https://fengche.io/posts/80/</link>
+      <pubDate>Tue, 22 Mar 2022 20:38:31 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/80/</guid>
+      <description>本文源自两篇英文报道：其一-[2022年展望：一个全新DeFiSummer和RDeFi的出现](https://www.theblockcrypto.com/post/129756/outlook-2022-a-new-defi-summer-and-the-emergence-of-rdefi)其二-[2022年夏季的大趋势-DeFi2.0](https://dailycoin.com/defi-2-0-a-megatrend-for-the-2022-summer/)以及笔者本人对于最近链上...</description>
+    </item>
+    
+    <item>
+      <title>新人科普-什么是空投 What is airdrop</title>
+      <link>https://fengche.io/posts/73/</link>
+      <pubDate>Mon, 21 Mar 2022 20:15:04 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/73/</guid>
+      <description>1.什么是空投？空投是将加密货币分发给白名单上钱包地址的行为。通常是免费赠送给参与者。空投这个名字起源于第二次世界大战，当时使用降落伞从飞机上分发部队，食物和设备。在加密社区中，空投被放入接收者的钱包中。一般空投的是代币，现在也有空投NFT的。2.空投的目的是什么？开发人员决定执行空投背后有许多策略。开发人员必须分配资源才能及时和金钱地成功完成空投。此外，对于在区块链上分发代币，需要支付交易成本。空投有几个原因：#1市场营销实施空投的主要原因是将其作为营销策略的一部分。空投可以在加密社区中提高知...</description>
+    </item>
+    
+    <item>
+      <title>LayerZero - 致力于IBC（Inter-Blockchain Communication 跨链通信）传输层建设</title>
+      <link>https://fengche.io/posts/66/</link>
+      <pubDate>Sun, 20 Mar 2022 21:13:46 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/66/</guid>
+      <description>长文预警：在LayerZero之上对IBC进行更深入的技术研究全链互操作性协议有望在不同链上的任意两个协定之间实现安全、有序和通用的消息传输。为此，[IBC](https://github.com/cosmos/ibc)定义了一组标准，定义了一个通用消息传输层，其中包括数据结构、抽象和语义，一旦由参与链实现，它们将允许它们安全地进行通信。在传输层之上，IBC还定义了一个具有一组标准的应用层，例如用于可替代令牌的ICS-20，用于定义应如何解释消息。但是，IBC的传输层使用成本高昂，并且跨链的连接...</description>
+    </item>
+    
+    <item>
+      <title>Stargate 星际之门-告别过去的桥</title>
+      <link>https://fengche.io/posts/65/</link>
+      <pubDate>Sun, 20 Mar 2022 21:13:16 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/65/</guid>
+      <description>长文预警：桥会成为过去，让我们为桥的贡献道声祝福![](https://edit.fcdaohang.org/assets/7a8e2b59-f33b-4021-be91-f8671a4227f5.png)全链宇宙（多链生态格局-风车注）将继续存在，但目前的基础设施十分零散。对于跨链桥接，现焦点集中在由用户驱动链与链之间的资产转移。虽然这看起来是一种直观的解决方法，但实际上距离实用还很远。比如，您想在一个热门的新链上进行收益耕种或挖矿，您必须将您的资产交换为可跨链资产，再进行跨链，然后再至少进行...</description>
+    </item>
+    
+    <item>
+      <title>跨链的三难困境</title>
+      <link>https://fengche.io/posts/64/</link>
+      <pubDate>Sun, 20 Mar 2022 21:11:36 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/64/</guid>
+      <description>长文预警我们介绍了一个建立在LayerZero之上完全可组合的原生资产跨链桥，具有统一流动性和即时保证的最终性。在设计桥时，有一个著名的三难困境，它是指在以下三个方面取得平衡：1.即时保证的确定性：当交易在源链上成功提交时，目标链上有对应资金保证交易成功。2.统一流动性：多个链之间的单个流动性池的共享访问。3.原生资产：目标链上用户想要的资产（原生或最具流动性的合成资产）。![](https://edit.fcdaohang.org/assets/e800549a-b99b-4e7f-8a92-...</description>
+    </item>
+    
+    <item>
+      <title>LayerZero - 一种全链互操作性协议</title>
+      <link>https://fengche.io/posts/63/</link>
+      <pubDate>Sun, 20 Mar 2022 15:38:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/63/</guid>
+      <description>![](http://fcdaohang.com:8088/assets/62a4f819-4bc7-4480-bcd8-9eafb0235c09.png)对于跨链桥接和消息传递，几乎现有每种方法都属于两大类之一：一个是形成共识，在链之间验证和转发消息。第二个是在链上运行轻量级节点。让我们来讨论一下。中间链中间链在链之间接收、验证和转发消息。在此模型中，中间链被授予对所有消息的完全签名权，使其成为单点故障风险隐患。如果发生问题，所有链上的流动性可能立即被盗。由于今天的中间链只绑定了数亿美元，同时...</description>
+    </item>
+    
+    <item>
+      <title>潜力项目-StargateFinance-STG概述</title>
+      <link>https://fengche.io/posts/62/</link>
+      <pubDate>Sun, 20 Mar 2022 15:14:31 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/62/</guid>
+      <description>最新补充：希望可以了解更多项目信息的小伙伴可以查看这三篇文章[LayerZero-一种全链互操作性协议](/posts/63/)[跨链的三难困境](/posts/64/)[Stargate星际之门-告别过去的桥](/posts/65/)[LayerZero-致力于IBC（Inter-BlockchainCommunication跨链通信）传输层建设](/posts/66/)[推友@shitcoin_daily](https://twitter.com/shitcoin_daily)发布了关于[该...</description>
+    </item>
+    
+    <item>
+      <title>2022超级空投指南-译文</title>
+      <link>https://fengche.io/posts/59/</link>
+      <pubDate>Sat, 19 Mar 2022 18:06:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/59/</guid>
+      <description>本文译自：[MEGAAIRDROPTHREAD2022](https://mirror.xyz/0x0161d1Cc10116bb2a073A0c293d5E4F1a97A00b6/tCfhgEb5y0SKwHqp_zPovgwhN0o96VYYxx89rHkUm0c)原文作者：[EnneZeta.eth](https://twitter.com/EnneZeta)前言在每晚丧心病狂的搜集信息了解项目以及介入一些资本之后，我在过去几年中收到了一些最好的空投，包括：$UNI、$ENS、$dYdX、...</description>
+    </item>
+    
+    <item>
+      <title>加密词典（保持更新）</title>
+      <link>https://fengche.io/posts/56/</link>
+      <pubDate>Fri, 18 Mar 2022 19:58:02 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/56/</guid>
+      <description>加密币圈是一个充满激情和生机的环境。每一段时期都会诞生很多五花八门的专业术语或俚语，为了让大家能熟悉这些内容和了解其中的信息，我们设立了本文，尽可能多的给大家解释这些词语，有兴趣的朋友可以收藏转发分享给朋友，感谢支持！快速导航[0](#0)-[2](#2)-[5](#5)-[A](#a)-[B](#b)-[C](#c)-[D](#d)-[E](#e)-[F](#f)-[G](#g)-[H](#h)-[I](#i)-[J](#j)-[K](#k)-[L](#l)-[M](#m)-[N](#n)-[...</description>
+    </item>
+    
+    <item>
+      <title>Zero-Knowledge 零知识证明 概览</title>
+      <link>https://fengche.io/posts/55/</link>
+      <pubDate>Fri, 18 Mar 2022 18:03:04 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/55/</guid>
+      <description>本文译自tolks的TheZero-KnowledgeLandscape[原文链接](https://page1.substack.com/p/the-zero-knowledge-landscape?utm_source=substack&amp;amp;utm_campaign=post_embed&amp;amp;utm_medium=web&amp;amp;s=r)为什么要了解ZK，主要是ZK作为WEB3.0核心的一部分，真正展开了和WEB2.0的差异W2时代，我们需要信任才能验证信息，而W3时代的高效，则需要用ZK这个核心去除信任这...</description>
+    </item>
+    
+    <item>
+      <title>Ansem夏季展望全文重点提炼</title>
+      <link>https://fengche.io/posts/53/</link>
+      <pubDate>Fri, 18 Mar 2022 17:12:11 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/53/</guid>
+      <description>[Ansem发表了对2022年二季度的展望长文](https://blknoiz06.substack.com/p/quarter-ii-2022?s=r)[中文版](/posts/52/)因文字太长，这篇将对其进行重点提炼：1.目前已经见底这是可以确定的事情2.我在11月卖掉了不少币，因为K线上预示了风险（这也是为什么说看了他的文章暴富的原因之一-风车注）3.我不擅长将宏观事件纳入分析，加密市场和科技股被打压，但商品、战争类股票表现良好（具体原因见[《概述加息的一些逻辑》](/posts/51...</description>
+    </item>
+    
+    <item>
+      <title>[项目] Ziktalk Web 3.0短视频平台</title>
+      <link>https://fengche.io/posts/44/</link>
+      <pubDate>Mon, 14 Mar 2022 21:01:49 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/44/</guid>
+      <description>项目白皮书：ZiktalkWeb3.0短视频平台白皮书v2.0摘要：Ziktalk是Web3.0短视频平台，拥有[超过65万用户](https://ambcrypto.com/ziktalk-aces-luniverse-dapps-in-terms-of-total-transactions/)，允许内容创作者和消费者通过社交挖掘的概念赚取ZIK代币在应用程序内进行交互并奖励有利于生态系统发展的贡献的用户。Ziktalk为98%收入低于贫困线的内容创作者和发展中国家的用户提供了变现机会。#一、...</description>
+    </item>
+    
+    <item>
+      <title>[基础概念]流支付的概念与实现</title>
+      <link>https://fengche.io/posts/41/</link>
+      <pubDate>Sat, 12 Mar 2022 03:24:44 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/41/</guid>
+      <description>流支付概念当前社会普遍实施的是月薪制，即每月固定时间发放固定数量的薪资。还有部分采用周薪、日薪或时薪制。由于便于财务结算、降低支付成本、公司管理需要等原因此支付制度一直延续至今。因公司经营困难时常会出现欠薪的问题，有越来越多的需求强烈希望压缩发放薪资的时间，从而减轻薪资拖欠的风险。请想象一下”流式支付资金“，只要你打卡期间，你的钱包每秒钟都能收到一部分薪资，直到满一个月收满一个月完整的数量。支付的革命也是时间和空间的压缩过程。区块链的极大的压缩了空间，使任何人可以在任何地点支付或接收任何数额的资...</description>
+    </item>
+    
+    <item>
+      <title>牛比特研报：流支付赛道4个项目盘点（附交互教程）</title>
+      <link>https://fengche.io/posts/40/</link>
+      <pubDate>Sat, 12 Mar 2022 03:05:38 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/40/</guid>
+      <description>编者注：前几天有SOL[流支付项目MEANFI的分析报告](/posts/35/)，今天推友[牛比特@CNJayC](https://twitter.com/CNJayC)更是一口气带来了ETH上的4个流支付项目的盘点文章，转载于此供大家研究。大家有对流支付概念不理解的可以先看这篇介绍文章-[流支付概念和实现](/post/41)正文：![](http://fcdaohang.com:8088/assets/314a7ccc-4229-4319-8e9f-83be88eec372.jpeg)什么...</description>
+    </item>
+    
+    <item>
+      <title>国外媒体”边缘“对孙宇晨的负面报道-孙宇晨的历次逃脱经历</title>
+      <link>https://fengche.io/posts/38/</link>
+      <pubDate>Thu, 10 Mar 2022 21:29:13 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/38/</guid>
+      <description>风车注：此文即为孙哥发文抨击的外媒扭曲事实报道的全文汉化（因涉政有删减）看起来还是做空资金的一次试探性的攻击行为，加密领域因缺乏监管，正说反说都是通的。作者[ChristopherHarland-Dunaway](https://www.theverge.com/users/ChristopherHarland-Dunaway)|Mar9,2022,11:00amEST艺术设计byAlexCastro,AmeliaHolowatyKrales&amp;amp;KristenRadtkeTron基金会创始人孙宇晨...</description>
+    </item>
+    
+    <item>
+      <title>拜登政府下令研究监管，发行加密货币</title>
+      <link>https://fengche.io/posts/33/</link>
+      <pubDate>Wed, 09 Mar 2022 22:21:44 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/33/</guid>
+      <description>华盛顿时间3月7日（路透社）-美国总统乔·拜登预计将于本周签署一项期待已久的行政命令，指示司法部，财政部和其他机构研究创建美国央行数字货币的法律和经济后果，一位熟悉此事的消息人士周一表示。白宫去年表示，它正在考虑对加密货币市场进行广泛的监督-包括行政命令-以应对日益增长的勒索软件和其他网络犯罪威胁。拜登的命令为一系列关于货币的未来以及加密货币在不断变化的格局中将发挥的作用的报告设定了180天的最后期限。我们可以在180天内看到政策的重大转变。这可能是朝着创建央行数字货币迈出的一步，消息人士称，并...</description>
+    </item>
+    
+    <item>
+      <title>治理挖矿 — 人力资本的流动性挖矿</title>
+      <link>https://fengche.io/posts/30/</link>
+      <pubDate>Wed, 09 Mar 2022 03:44:15 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/30/</guid>
+      <description>治理挖矿—人力资本的流动性挖矿![](http://fcdaohang.com:8088/assets/70c913aa-8cef-4681-9f35-b74c401b19ce.jpeg)作者[0x6507](https://etherscan.io/address/0x6507C1693c70Ebab813BCeBD8Bcd9152Cfffa91b)2021年10月16日这个想法是在周六凌晨2点，当我浏览COMP论坛时，突然有了这个想法。事实证明，这不是一个新想法。[JamesWaugh](h...</description>
+    </item>
+    
+    <item>
+      <title>0X协议是什么-0x流动性协议</title>
+      <link>https://fengche.io/posts/28/</link>
+      <pubDate>Tue, 08 Mar 2022 18:25:59 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/28/</guid>
+      <description>关于[0x是一个流动性协议](https://0x.org/)，它能够在以太坊网络中实现DeFi应用。任何人可以通过这个协议来开创去中心化交易所。![](http://fcdaohang.com:8088/assets/4a7710c5-44c7-43e2-b1cb-29fe7c3b3675.png)0x促进了智能合约生态系统，以允许基于以太坊的资产的P2P交换。它的原生代币ZRX使社区成员能够对0x系统内的各种提案进行投票。理论上，各种现实世界和数字资产，包括法定货币、股票和商品，都可以在0x...</description>
+    </item>
+    
+    <item>
+      <title>欢迎参加 DexGuru DAO 启动阶段</title>
+      <link>https://fengche.io/posts/27/</link>
+      <pubDate>Tue, 08 Mar 2022 18:10:12 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/27/</guid>
+      <description>DexGuruDAOBootstrapPhaseDexGuruDAO启动阶段(注：DexGuru是采用基于[0x协议](/post/28)建立的Dex交易所)长文预警：DexGuruDAO即将推出！从一开始，我们就致力于产品优于一切的法则。我们的目标一直是建立一个人们真正想要使用的强大平台，然后由$GURU代币提供支持，开始将治理权力和资金管理交给社区。我们的目标是尽可能分散地启动DAO治理，同时保持社区的参与和娱乐。我们希望社区成员将自己视为项目的一部分，与相同的目标保持一致。因此，社区应该向...</description>
+    </item>
+    
+    <item>
+      <title>CoinMarketCap官方报告中文版-如何走出低谷</title>
+      <link>https://fengche.io/posts/24/</link>
+      <pubDate>Tue, 08 Mar 2022 05:44:51 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/24/</guid>
+      <description>[CoinMarketCap](https://coinmarketcap.com/)是著名的币圈信息查询网站，涵盖几乎市面上存在的靠谱的各种代币和项目，数据详尽真实。在1月至今发生的下跌中，[CoinMarketCap](https://coinmarketcap.com/)给大家总结了一些数据，希望能以此带领大家走出低谷。[右键点击下载报告全文](https://fcdaohang.com:8099/06c41735-c680-4ef1-b632-4a09829c868e.pdf)封面-Co...</description>
+    </item>
+    
+    <item>
+      <title>湮灭 - Arthur Hayes 亚瑟·哈亚斯 最新长文</title>
+      <link>https://fengche.io/posts/21/</link>
+      <pubDate>Fri, 04 Mar 2022 21:55:06 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/21/</guid>
+      <description>本文译自ArthurHayes-Annihilation[原文链接](https://cryptohayes.medium.com/annihilation-4effdaf3c73f)风车整理总结：作者中心思想：全球金融利率-美联储为标杆且由6%，然后是5%，然后是2%-每十年，金融市场在正值和名义利率上下的水平稳步下降。目前他认为整个金融市场无法长期应对2%的名义利率，会因此发生连锁的崩盘效应，这将导致下一次，市场连1%都无法应对，最终恶性循环终结。在此之前，不确定的是市场会先下跌再拉升，还是...</description>
+    </item>
+    
+    <item>
+      <title>$LUNA和$UST，为什么年化能长期保持19.5%，一文说明你的全部困惑</title>
+      <link>https://fengche.io/posts/19/</link>
+      <pubDate>Wed, 02 Mar 2022 22:12:51 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/19/</guid>
+      <description>长文预警关于$UST，一直以来有很多疑惑和困扰占用了我的时间是时候好好谈谈与其相关的Anchor协议（$ANC）、19.5%年化收益的可持续性、$UST挂钩还有$LUNA价格影响的问题了本文还将研究Anchor协议的解决方案是如何能以最佳方式处理这些问题的LUNA为何被各种攻击为何有这么多人讨厌$UST和Anchor协议呢？看看这个一年前$UST市值仅2.6亿美金，Terra（LUNA主链）生态还只有一个协议：Mirror协议。今天它的市值高达112亿美金，其生态已有17个协议落地（2022年还...</description>
+    </item>
+    
+    <item>
+      <title>228夜间-301早上，是谁买走了你的比特币？</title>
+      <link>https://fengche.io/posts/18/</link>
+      <pubDate>Tue, 01 Mar 2022 14:52:32 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/18/</guid>
+      <description>228-301BTC爆发了一轮疯狂上涨，日涨幅创下了自21年2月8日以来的最大幅度-14.52%那么，在美联储加息预期、俄罗斯禁止虚拟货币举棋不定、俄乌战争冲突种种利空的背景下，为何能创造出如此神奇的涨幅呢？twitter用户@Phyrex_Ni给大家做了如下分析：谁买走了你的BTC从昨天晚上开始#BTC进入疯狂的领涨模式，一直持续到早晨八点，其中一度冲破了44,000美金，虽然目前已经回调到43,000美金左右，但是24小时内将近15%的上涨，而且还是领涨还是蛮可怕的，那么是什么原因或者说是什...</description>
+    </item>
+    
+    <item>
+      <title>DAO将是2022年主流概念之一，而且会颠覆很多行业</title>
+      <link>https://fengche.io/posts/15/</link>
+      <pubDate>Mon, 28 Feb 2022 02:10:43 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/15/</guid>
+      <description>我们仍在探索DAO的表面以及其所蕴藏的巨大可能性，更多行业将在今年开始被颠覆。加密货币和区块链的牛市并不会立刻结束，随着越来越多的人被引入具有革命性技术的数字空间中，这些技术也在不断顺应需求升级。过去几年，DeFi和NFT行业经历了巨大增长，目前呼声最高的则是元宇宙以及Web3。尚不清楚这些颠覆性技术将把我们引向何方，但我们确信会有很多价值可供挖掘。在Web3和NFT的融合中，有许多平台希望利用技术和基础设施来使NFT生态系统更加去中心化、结构化和社区驱动化。同时使用社会建设和治理，去中心化的自...</description>
+    </item>
+    
+    <item>
+      <title>V神发推，告诉大家可以给乌克兰捐款的机会</title>
+      <link>https://fengche.io/posts/10/</link>
+      <pubDate>Sun, 27 Feb 2022 20:03:32 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/10/</guid>
+      <description>V神发推让大家尽量避免捐款到未经验证的地址随后确认是正确的，之前的推文已删除接下来又发推转发了ukraineDAO的官推*AnopportunitytosupportUkrainianshere!ProceedsgotocivilianeffortshelpingUkrainianssufferingfromthewar.这里有机会支持乌克兰！收益用于民间组织努力帮助饱受战争之苦的乌克兰人民。*点击进入[ukraineDAO](https://www.ukrainedao.love/)页面看起来...</description>
+    </item>
+    
+    <item>
+      <title>Opensea疑似合约漏洞被黑客利用进行钓鱼盗取NFT低价抛售</title>
+      <link>https://fengche.io/posts/4/</link>
+      <pubDate>Fri, 25 Feb 2022 16:28:07 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/4/</guid>
+      <description>起因2月20日早间，据部分英文twitter大V透露信息，某黑客钱包地址一直不停和Opensea某合约进行交互，用意不明，但其钱包地址的ETH逐渐增加，怀疑是发生了利用合约漏洞的攻击事件，一时间引发市场恐慌情绪，币价随之暴跌，BTC来到关键支撑区间35-38k，截至发稿最低见379xx发展Opensea官方随后在官网发布置顶公告称：”We&amp;#39;recontinuingtoinvestigaterumorsofaphishingattackoriginatingoutsideofOpenSea.Don...</description>
+    </item>
+    
+    <item>
+      <title>读完倒吸一口寒气，一亿美元差点被骗走！！</title>
+      <link>https://fengche.io/posts/3/</link>
+      <pubDate>Fri, 25 Feb 2022 16:17:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/3/</guid>
+      <description>由于ENS钱包中存有超1亿美元的ETHthomasg.eth被诈骗团伙盯上，个人资产险些全被骗走。在过去两周的时间里，我成为了一个高级诈骗团伙的目标，这几乎让我损失了所有的ETH。我非常幸运能够毫发无损地躲过这一劫，所以想把事件的经过分享给大家。我是Arrow的创始人(这是一个致力于构建开源空中的士平台的DAO）。我们仍处于早期阶段，专注于发展团队，因此对贡献者保持着持开放的态度，如果他们愿意提供帮助，我们不会拒绝任何人。在两周前一个叫做「heckshine」的用户加入了我们的Discord并开...</description>
+    </item>
+    
+    <item>
+      <title>当游戏遇到区块链之链游经济系统思考</title>
+      <link>https://fengche.io/posts/2/</link>
+      <pubDate>Fri, 25 Feb 2022 00:23:13 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/2/</guid>
+      <description>（编著：本文转自网络有自我宣发的目的，敬请去粗取精）链游的经济范式「封闭专卖」到「开放市场」我们认为链游是游戏经济范式转变，从封闭的专卖式的经济变成真正的开放市场。在此之前，游戏是游戏开发者给玩家提供的一项服务，即游戏体验。游戏体验可能会因为其他玩家的参与而增强，是服务-消费的模式。玩家之间的交互是游戏体验的一部分，但是游戏玩家之间的交易通常来说是不被支持的，因为它被认为是专卖利益的流失。Web3.0时代的链游，有个重要的变化：就是原来的作为游戏的数值系统一部分的游戏内资产发行政策会被剥离出来，...</description>
+    </item>
+    
+    <item>
+      <title>a16z前合伙人单飞：KRH会否成为下一个Paradigm？</title>
+      <link>https://fengche.io/posts/1/</link>
+      <pubDate>Fri, 25 Feb 2022 00:22:40 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/1/</guid>
+      <description>原文标题：《加密风投新贵KRHPartners：a16z前合伙人KatieHaun和她的单干计划》原文作者：RichardLee，链捕手在加密发展早期，资本和投资人是市场关注的一大重点。去年12月，硅谷加密投资明星、a16z前普通合伙人KatieHaun宣布离开a16z，成立自己的加密和Web3投资基金。其后她开始快速招聘，其团队已有至少9人规模，并参投了OpenseaC轮及体育NFT平台Autograph的B轮融资。以Paradigm为代表的加密原生风投机构向来被项目方青睐，KRH会否成为下一...</description>
+    </item>
+    
+  </channel>
+</rss>

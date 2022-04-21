@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Zero-Knowledge on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/zero-knowledge/</link>
+    <description>Recent content in Zero-Knowledge on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Fri, 18 Mar 2022 18:03:04 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/zero-knowledge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zero-Knowledge 零知识证明 概览</title>
+      <link>https://fengche.io/posts/55/</link>
+      <pubDate>Fri, 18 Mar 2022 18:03:04 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/55/</guid>
+      <description>本文译自tolks的TheZero-KnowledgeLandscape[原文链接](https://page1.substack.com/p/the-zero-knowledge-landscape?utm_source=substack&amp;amp;utm_campaign=post_embed&amp;amp;utm_medium=web&amp;amp;s=r)为什么要了解ZK，主要是ZK作为WEB3.0核心的一部分，真正展开了和WEB2.0的差异W2时代，我们需要信任才能验证信息，而W3时代的高效，则需要用ZK这个核心去除信任这...</description>
+    </item>
+    
+  </channel>
+</rss>

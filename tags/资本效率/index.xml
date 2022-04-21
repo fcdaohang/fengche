@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>资本效率 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E8%B5%84%E6%9C%AC%E6%95%88%E7%8E%87/</link>
+    <description>Recent content in 资本效率 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sun, 27 Mar 2022 00:20:30 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E8%B5%84%E6%9C%AC%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Defi2.0又添新成员-来自Solana的借贷协议Accrue.finance</title>
+      <link>https://fengche.io/posts/134/</link>
+      <pubDate>Sun, 27 Mar 2022 00:20:30 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/134/</guid>
+      <description>这是一篇短文，因该项目产品尚未上线，但其性质足以划归Defi2.0赛道首先是其官推发布了一个公告引起了本人注意：{{&amp;lt;twitteruser=accrue_financeid=1505927599222001665&amp;gt;}}大概意思是融资完成，顺便挨个@了一下里面的所有大佬（比如有CoinbaseCOO）基金会阵容，包括Solana,Polygon,OpenSea,Figma（是的，你没看错，就是那个最好用的Figma）,Alchemy,Audius,Syndicate那么这个项目是什么呢？经过调查...</description>
+    </item>
+    
+    <item>
+      <title>[深度]为进行即时流动性提供的交易机器人进行行为好坏的定义</title>
+      <link>https://fengche.io/posts/120/</link>
+      <pubDate>Fri, 25 Mar 2022 19:39:34 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/120/</guid>
+      <description>原文出自[ComposableFinance](https://twitter.com/ComposableFin)BotsLead[0xBobafetador](https://twitter.com/bobafetador/status/1506666252126892033?s=21)老徐总结：为了便于读者理解，提一下里面的重点：TVL和资本效率。本文再一次强调资本效率，基本上我们可以视Defi1.0为TVL也就是量，Defi2.0则为CapitalEfficiency资本效率即质，如果有...</description>
+    </item>
+    
+  </channel>
+</rss>

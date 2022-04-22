@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Quoth on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/quoth/</link>
+    <description>Recent content in Quoth on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Fri, 22 Apr 2022 16:03:44 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/quoth/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quoth正式上线Beta MVP：开启质押奖励，多功能评判NFT投资价值</title>
+      <link>https://fengche.io/posts/284/</link>
+      <pubDate>Fri, 22 Apr 2022 16:03:44 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/284/</guid>
+      <description>如何在各式各样良莠不齐的项目中找到潜力股？Quoth正式上线的BetaMVP或将为玩家的投资决策和NFT价值发现助力。伴随着NFT与艺术、游戏、体育、娱乐等诸多领域的碰撞，各类题材项目开始不断涌现，且不少创新NFT已成长为市场的中流砥柱。尽管不少NFT的投资回报率可观，但对于大部分普通玩家而言，要想判断新项目是否具有持久性或能否捕获真正价值并非易事。不仅如此，NFT抄袭和盗版现象时有发生，除了无法保障创作者版权，也损害着投资者的利益。而全链NFT预言机Quoth作为人工智能NFT索引协议、API...</description>
+    </item>
+    
+  </channel>
+</rss>

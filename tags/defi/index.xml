@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Wed, 20 Apr 2022 04:42:32 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/defi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Apr 2022 16:25:09 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/defi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基于Optimism的项目因空投代币的传闻而激增</title>
+      <link>https://fengche.io/posts/293/</link>
+      <pubDate>Fri, 22 Apr 2022 16:25:09 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/293/</guid>
+      <description>Optimism指出：“我们正接近一章的结尾和下一章的开始——由社区所有权和治理驱动。”由于有传言称Optimism网络将很快推出代币并将其空投给社区，因此使用以太坊第2层扩展解决方案Optimism的多个项目的原生代币价格飙升了约20%。Optimism是第2层扩展解决方案，它利用OptimisticRollups处理来自以太坊区块链的大量交易。该项目声称，它可以以比以太坊第一层便宜5到500倍的价格操作智能合约。根据DefiLlama的说法，该平台目前在Synthetix、UniSwap、S...</description>
+    </item>
+    
     <item>
       <title>DeFi可以为传统资产注入新的活力</title>
       <link>https://fengche.io/posts/261/</link>

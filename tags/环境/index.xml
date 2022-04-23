@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>环境 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E7%8E%AF%E5%A2%83/</link>
+    <description>Recent content in 环境 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Fri, 22 Apr 2022 16:16:13 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E7%8E%AF%E5%A2%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorand 计划将网络交易费用转换为碳补偿</title>
+      <link>https://fengche.io/posts/290/</link>
+      <pubDate>Fri, 22 Apr 2022 16:16:13 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/290/</guid>
+      <description>智能合约将自动分配Algorand区块链的部分交易费用，在碳补偿市场ClimateTrade购买碳信用额。权益证明区块链协议Algorand将实施一个智能合约，自动补偿网络的碳排放。在最近的公告中，Algorand透露，一项新的智能合约将在其区块链网络中收取每笔交易费用的一部分，并自动对其进行处理，以在基于区块链的碳补偿市场ClimateTrade购买经过验证的碳信用额。根据Algorand基金会首席执行官StaciWarden的说法，此举将允许网络在保持碳负排放的同时扩大规模。Warden告诉...</description>
+    </item>
+    
+  </channel>
+</rss>

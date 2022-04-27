@@ -6,20 +6,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Sat, 23 Apr 2022 03:23:49 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Apr 2022 03:32:19 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Canisters</title>
-      <link>https://fengche.io/tags/canisters/</link>
-      <pubDate>Sat, 23 Apr 2022 03:23:49 +0800</pubDate>
+      <title>CKC</title>
+      <link>https://fengche.io/tags/ckc/</link>
+      <pubDate>Sat, 23 Apr 2022 03:32:19 +0800</pubDate>
       
-      <guid>https://fengche.io/tags/canisters/</guid>
+      <guid>https://fengche.io/tags/ckc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ICP</title>
       <link>https://fengche.io/tags/icp/</link>
-      <pubDate>Sat, 23 Apr 2022 03:23:49 +0800</pubDate>
+      <pubDate>Sat, 23 Apr 2022 03:32:19 +0800</pubDate>
       
       <guid>https://fengche.io/tags/icp/</guid>
       <description></description>
@@ -28,9 +28,27 @@
     <item>
       <title>InternetComputer</title>
       <link>https://fengche.io/tags/internetcomputer/</link>
-      <pubDate>Sat, 23 Apr 2022 03:23:49 +0800</pubDate>
+      <pubDate>Sat, 23 Apr 2022 03:32:19 +0800</pubDate>
       
       <guid>https://fengche.io/tags/internetcomputer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>安全</title>
+      <link>https://fengche.io/tags/%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Sat, 23 Apr 2022 03:32:19 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/%E5%AE%89%E5%85%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Canisters</title>
+      <link>https://fengche.io/tags/canisters/</link>
+      <pubDate>Sat, 23 Apr 2022 03:23:49 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/canisters/</guid>
       <description></description>
     </item>
     
@@ -2020,15 +2038,6 @@
       <pubDate>Mon, 18 Apr 2022 03:05:23 +0800</pubDate>
       
       <guid>https://fengche.io/tags/%E5%8E%9F%E7%94%9F%E8%B5%84%E4%BA%A7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>安全</title>
-      <link>https://fengche.io/tags/%E5%AE%89%E5%85%A8/</link>
-      <pubDate>Sun, 17 Apr 2022 17:30:02 +0800</pubDate>
-      
-      <guid>https://fengche.io/tags/%E5%AE%89%E5%85%A8/</guid>
       <description></description>
     </item>
     

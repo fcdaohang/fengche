@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Sat, 23 Apr 2022 03:23:49 +0800</lastBuildDate><atom:link href="https://fengche.io/categories/%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Apr 2022 03:32:19 +0800</lastBuildDate><atom:link href="https://fengche.io/categories/%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>了解 ICP.02 安全性的保障 - CKC(CHAIN KEY CRYPTOGRAPHY) 链密钥加密技术：IC背后的科学突破</title>
+      <link>https://fengche.io/posts/313/</link>
+      <pubDate>Sat, 23 Apr 2022 03:32:19 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/313/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/chain-key-technology)作者：JanCamenisch,加密研究部门副总裁|DFINITY密钥链加密技术是使互联网计算机能够扩展到数百万个节点的基本突破之一。它最显着的创新是IC拥有单一的公钥，这使得任何设备都可以验证IC所生成人工制品的真实性，甚至包括智能手表和手机。{{&amp;lt;youtubeid=vUcDRFC09J0title=探索ICP内部|密钥链加密技术&amp;gt;}}前言密钥链加密技术是一组密码协议，用于编...</description>
+    </item>
+    
     <item>
       <title>了解 ICP.01 互联网计算机区块链概述</title>
       <link>https://fengche.io/posts/312/</link>

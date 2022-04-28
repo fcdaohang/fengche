@@ -2,40 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://fengche.io/tags/ckc/</loc>
-    <lastmod>2022-04-23T03:32:19+08:00</lastmod>
-  </url><url>
     <loc>https://fengche.io/tags/icp/</loc>
-    <lastmod>2022-04-23T03:32:19+08:00</lastmod>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
   </url><url>
     <loc>https://fengche.io/tags/internetcomputer/</loc>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/tags/motoko/</loc>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/tags/</loc>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/categories/</loc>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/</loc>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/posts/314/</loc>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/categories/%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/posts/</loc>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/editors/%E5%BE%90%E6%9C%9B%E5%B7%9D/</loc>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/</loc>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/editors/</loc>
+    <lastmod>2022-04-23T03:33:09+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/tags/ckc/</loc>
     <lastmod>2022-04-23T03:32:19+08:00</lastmod>
   </url><url>
     <loc>https://fengche.io/tags/%E5%AE%89%E5%85%A8/</loc>
     <lastmod>2022-04-23T03:32:19+08:00</lastmod>
   </url><url>
-    <loc>https://fengche.io/tags/</loc>
-    <lastmod>2022-04-23T03:32:19+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/categories/</loc>
-    <lastmod>2022-04-23T03:32:19+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/</loc>
-    <lastmod>2022-04-23T03:32:19+08:00</lastmod>
-  </url><url>
     <loc>https://fengche.io/posts/313/</loc>
-    <lastmod>2022-04-23T03:32:19+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/categories/%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2022-04-23T03:32:19+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/posts/</loc>
-    <lastmod>2022-04-23T03:32:19+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/editors/%E5%BE%90%E6%9C%9B%E5%B7%9D/</loc>
-    <lastmod>2022-04-23T03:32:19+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/editors/</loc>
     <lastmod>2022-04-23T03:32:19+08:00</lastmod>
   </url><url>
     <loc>https://fengche.io/tags/canisters/</loc>
@@ -45,9 +57,6 @@
     <lastmod>2022-04-23T03:23:49+08:00</lastmod>
   </url><url>
     <loc>https://fengche.io/tags/%E7%99%BD%E7%9A%AE%E4%B9%A6/</loc>
-    <lastmod>2022-04-23T03:23:49+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
     <lastmod>2022-04-23T03:23:49+08:00</lastmod>
   </url><url>
     <loc>https://fengche.io/tags/%E5%BC%80%E6%94%BE%E5%BC%8F%E4%BA%92%E8%81%94%E7%BD%91%E6%9C%8D%E5%8A%A1/</loc>
@@ -393,9 +402,6 @@
     <lastmod>2022-04-21T12:28:13+08:00</lastmod>
   </url><url>
     <loc>https://fengche.io/posts/277/</loc>
-    <lastmod>2022-04-21T07:05:49+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/</loc>
     <lastmod>2022-04-21T07:05:49+08:00</lastmod>
   </url><url>
     <loc>https://fengche.io/tags/airdrop/</loc>

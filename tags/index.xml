@@ -6,20 +6,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Sat, 23 Apr 2022 03:32:19 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>CKC</title>
-      <link>https://fengche.io/tags/ckc/</link>
-      <pubDate>Sat, 23 Apr 2022 03:32:19 +0800</pubDate>
-      
-      <guid>https://fengche.io/tags/ckc/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sat, 23 Apr 2022 03:33:09 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ICP</title>
       <link>https://fengche.io/tags/icp/</link>
-      <pubDate>Sat, 23 Apr 2022 03:32:19 +0800</pubDate>
+      <pubDate>Sat, 23 Apr 2022 03:33:09 +0800</pubDate>
       
       <guid>https://fengche.io/tags/icp/</guid>
       <description></description>
@@ -28,9 +19,45 @@
     <item>
       <title>InternetComputer</title>
       <link>https://fengche.io/tags/internetcomputer/</link>
-      <pubDate>Sat, 23 Apr 2022 03:32:19 +0800</pubDate>
+      <pubDate>Sat, 23 Apr 2022 03:33:09 +0800</pubDate>
       
       <guid>https://fengche.io/tags/internetcomputer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MOTOKO</title>
+      <link>https://fengche.io/tags/motoko/</link>
+      <pubDate>Sat, 23 Apr 2022 03:33:09 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/motoko/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>互联网计算机</title>
+      <link>https://fengche.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+      <pubDate>Sat, 23 Apr 2022 03:33:09 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>智能合约</title>
+      <link>https://fengche.io/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/</link>
+      <pubDate>Sat, 23 Apr 2022 03:33:09 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CKC</title>
+      <link>https://fengche.io/tags/ckc/</link>
+      <pubDate>Sat, 23 Apr 2022 03:32:19 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/ckc/</guid>
       <description></description>
     </item>
     
@@ -67,15 +94,6 @@
       <pubDate>Sat, 23 Apr 2022 03:23:49 +0800</pubDate>
       
       <guid>https://fengche.io/tags/%E7%99%BD%E7%9A%AE%E4%B9%A6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>互联网计算机</title>
-      <link>https://fengche.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
-      <pubDate>Sat, 23 Apr 2022 03:23:49 +0800</pubDate>
-      
-      <guid>https://fengche.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
       <description></description>
     </item>
     
@@ -769,15 +787,6 @@
       <pubDate>Thu, 21 Apr 2022 12:28:13 +0800</pubDate>
       
       <guid>https://fengche.io/tags/%E8%BA%AB%E4%BB%BD%E8%AF%81/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>智能合约</title>
-      <link>https://fengche.io/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/</link>
-      <pubDate>Thu, 21 Apr 2022 07:05:49 +0800</pubDate>
-      
-      <guid>https://fengche.io/tags/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/</guid>
       <description></description>
     </item>
     

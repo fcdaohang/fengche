@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MOTOKO on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/motoko/</link>
+    <description>Recent content in MOTOKO on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 23 Apr 2022 03:33:09 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/motoko/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>了解 ICP.03 MOTOKO 智能合约语言</title>
+      <link>https://fengche.io/posts/314/</link>
+      <pubDate>Sat, 23 Apr 2022 03:33:09 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/314/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/motoko/){{&amp;lt;youtubeid=4eSceDOS-Mstitle=Motoko：一种直接在Internet上构建的编程语言&amp;gt;}}Motoko是一种新的智能合约编程语言。它被设计用于无缝支持IC的编程模型，以更容易利用区块链的独特功能。Motoko是强类型的、基于参与者的，并且内置了对正交持久性和异步消息传递的支持。生产力和安全功能包括自动内存管理、泛型、类型推断、模式匹配以及任意精度和固定精度的算术。消息传递透...</description>
+    </item>
+    
+  </channel>
+</rss>

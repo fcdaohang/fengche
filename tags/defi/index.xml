@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Fri, 22 Apr 2022 16:45:37 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/defi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Apr 2022 09:19:50 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/defi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>什么是Solana (SOL) Pay，它如何运作？</title>
+      <link>https://fengche.io/posts/329/</link>
+      <pubDate>Thu, 28 Apr 2022 09:19:50 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/329/</guid>
+      <description>SolanaPay是一个开放的协议，开发者可以使用标准化的支付标准进行构建和定制。PayPal是支付行业的一个巨大创新。这个由彼得·蒂尔(PeterThiel)、马克斯·列夫齐恩(MaxLevchin)以及埃隆·马斯克(ElonMusk)共同创立的金融创意，利用互联网在客户、企业和更多领域之间实现即时支付，其目标远远超前于创立之时所处的时代。Solana(SOL)Pay被许多人认为是支付领域的下一个创新，在考虑了非同质化代币(NFT)和Web3的情况下让支付变得更加便利。有些人甚至称Solana...</description>
+    </item>
+    
     <item>
       <title>《IMF全球金融稳定报告》：加密货币和DeFi扮演着复杂的角色</title>
       <link>https://fengche.io/posts/307/</link>

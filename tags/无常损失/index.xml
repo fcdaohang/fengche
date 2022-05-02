@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>无常损失 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E6%97%A0%E5%B8%B8%E6%8D%9F%E5%A4%B1/</link>
+    <description>Recent content in 无常损失 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 30 Apr 2022 11:46:03 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E6%97%A0%E5%B8%B8%E6%8D%9F%E5%A4%B1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>什么是无常损失？如何避免？</title>
+      <link>https://fengche.io/posts/345/</link>
+      <pubDate>Sat, 30 Apr 2022 11:46:03 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/345/</guid>
+      <description>在收益耕种(yieldfarming)中，什么是无常损失？当你将代币存入流动性池后，代币价格上涨或下跌，这被称为加密货币流动性池的无常损失(impermanentloss，简称IL)。在收益耕种中，你通过借出你的代币来获得奖励，这与无常损失直接相关。然而，这与质押不同，因为投资者需要向区块链注入资金，以验证交易和区块，以赚取质押奖励。相反，收益耕种需要将你的代币借给一个流动性池或提供流动性。根据协议的不同，奖励也不同。尽管收益耕种比持有币更有利可图，但提供流动性也有其风险，包括清算、控制和价格风...</description>
+    </item>
+    
+  </channel>
+</rss>

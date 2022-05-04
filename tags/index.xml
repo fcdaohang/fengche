@@ -6,7 +6,70 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Tue, 03 May 2022 06:58:31 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 May 2022 17:41:22 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assembly</title>
+      <link>https://fengche.io/tags/assembly/</link>
+      <pubDate>Wed, 04 May 2022 17:41:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/assembly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DEX</title>
+      <link>https://fengche.io/tags/dex/</link>
+      <pubDate>Wed, 04 May 2022 17:41:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/dex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IOTA</title>
+      <link>https://fengche.io/tags/iota/</link>
+      <pubDate>Wed, 04 May 2022 17:41:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/iota/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shimmer</title>
+      <link>https://fengche.io/tags/shimmer/</link>
+      <pubDate>Wed, 04 May 2022 17:41:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/shimmer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TangleSwap</title>
+      <link>https://fengche.io/tags/tangleswap/</link>
+      <pubDate>Wed, 04 May 2022 17:41:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/tangleswap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VOID</title>
+      <link>https://fengche.io/tags/void/</link>
+      <pubDate>Wed, 04 May 2022 17:41:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/void/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>无GAS费</title>
+      <link>https://fengche.io/tags/%E6%97%A0gas%E8%B4%B9/</link>
+      <pubDate>Wed, 04 May 2022 17:41:22 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/%E6%97%A0gas%E8%B4%B9/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>NiallFerguson</title>
       <link>https://fengche.io/tags/niallferguson/</link>
@@ -1700,15 +1763,6 @@
     </item>
     
     <item>
-      <title>IOTA</title>
-      <link>https://fengche.io/tags/iota/</link>
-      <pubDate>Wed, 20 Apr 2022 04:08:30 +0800</pubDate>
-      
-      <guid>https://fengche.io/tags/iota/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Internet Computer</title>
       <link>https://fengche.io/tags/internet-computer/</link>
       <pubDate>Wed, 20 Apr 2022 04:07:07 +0800</pubDate>
@@ -2114,15 +2168,6 @@
     </item>
     
     <item>
-      <title>Assembly</title>
-      <link>https://fengche.io/tags/assembly/</link>
-      <pubDate>Mon, 18 Apr 2022 14:53:18 +0800</pubDate>
-      
-      <guid>https://fengche.io/tags/assembly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>EVM</title>
       <link>https://fengche.io/tags/evm/</link>
       <pubDate>Mon, 18 Apr 2022 14:53:18 +0800</pubDate>
@@ -2470,15 +2515,6 @@
       <pubDate>Sun, 17 Apr 2022 14:10:26 +0800</pubDate>
       
       <guid>https://fengche.io/tags/roadmap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shimmer</title>
-      <link>https://fengche.io/tags/shimmer/</link>
-      <pubDate>Sun, 17 Apr 2022 14:10:26 +0800</pubDate>
-      
-      <guid>https://fengche.io/tags/shimmer/</guid>
       <description></description>
     </item>
     
@@ -3154,15 +3190,6 @@
       <pubDate>Tue, 05 Apr 2022 17:57:37 +0800</pubDate>
       
       <guid>https://fengche.io/tags/aurora/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DEX</title>
-      <link>https://fengche.io/tags/dex/</link>
-      <pubDate>Tue, 05 Apr 2022 17:57:37 +0800</pubDate>
-      
-      <guid>https://fengche.io/tags/dex/</guid>
       <description></description>
     </item>
     

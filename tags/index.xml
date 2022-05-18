@@ -6,22 +6,67 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Thu, 12 May 2022 03:48:59 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 May 2022 09:37:16 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BNB</title>
+      <link>https://fengche.io/tags/bnb/</link>
+      <pubDate>Wed, 18 May 2022 09:37:16 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/bnb/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>LUNA</title>
       <link>https://fengche.io/tags/luna/</link>
-      <pubDate>Thu, 12 May 2022 03:48:59 +0800</pubDate>
+      <pubDate>Wed, 18 May 2022 09:37:16 +0800</pubDate>
       
       <guid>https://fengche.io/tags/luna/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>USDT</title>
+      <link>https://fengche.io/tags/usdt/</link>
+      <pubDate>Wed, 18 May 2022 09:37:16 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/usdt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>UST</title>
       <link>https://fengche.io/tags/ust/</link>
-      <pubDate>Thu, 12 May 2022 03:48:59 +0800</pubDate>
+      <pubDate>Wed, 18 May 2022 09:37:16 +0800</pubDate>
       
       <guid>https://fengche.io/tags/ust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>金融</title>
+      <link>https://fengche.io/tags/%E9%87%91%E8%9E%8D/</link>
+      <pubDate>Wed, 18 May 2022 09:37:16 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/%E9%87%91%E8%9E%8D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>市场</title>
+      <link>https://fengche.io/tags/%E5%B8%82%E5%9C%BA/</link>
+      <pubDate>Wed, 18 May 2022 09:37:16 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/%E5%B8%82%E5%9C%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>稳定币</title>
+      <link>https://fengche.io/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</link>
+      <pubDate>Wed, 18 May 2022 09:37:16 +0800</pubDate>
+      
+      <guid>https://fengche.io/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</guid>
       <description></description>
     </item>
     
@@ -206,15 +251,6 @@
     </item>
     
     <item>
-      <title>金融</title>
-      <link>https://fengche.io/tags/%E9%87%91%E8%9E%8D/</link>
-      <pubDate>Tue, 03 May 2022 06:58:31 +0800</pubDate>
-      
-      <guid>https://fengche.io/tags/%E9%87%91%E8%9E%8D/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>竞争对手</title>
       <link>https://fengche.io/tags/%E7%AB%9E%E4%BA%89%E5%AF%B9%E6%89%8B/</link>
       <pubDate>Tue, 03 May 2022 06:58:31 +0800</pubDate>
@@ -310,15 +346,6 @@
       <pubDate>Sat, 30 Apr 2022 12:25:18 +0800</pubDate>
       
       <guid>https://fengche.io/tags/%E6%AF%94%E7%89%B9%E5%B8%81/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>市场</title>
-      <link>https://fengche.io/tags/%E5%B8%82%E5%9C%BA/</link>
-      <pubDate>Sat, 30 Apr 2022 12:25:18 +0800</pubDate>
-      
-      <guid>https://fengche.io/tags/%E5%B8%82%E5%9C%BA/</guid>
       <description></description>
     </item>
     
@@ -2677,15 +2704,6 @@
       <pubDate>Sun, 17 Apr 2022 05:35:36 +0800</pubDate>
       
       <guid>https://fengche.io/tags/%E8%84%B1%E9%92%A9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>稳定币</title>
-      <link>https://fengche.io/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</link>
-      <pubDate>Sun, 17 Apr 2022 05:35:36 +0800</pubDate>
-      
-      <guid>https://fengche.io/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</guid>
       <description></description>
     </item>
     

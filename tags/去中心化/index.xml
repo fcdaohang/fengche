@@ -6,7 +6,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Sat, 30 Apr 2022 12:32:54 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 May 2022 10:03:24 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>隐私的丧失：为什么我们必须为去中心化的未来而斗争</title>
+      <link>https://fengche.io/posts/359/</link>
+      <pubDate>Fri, 13 May 2022 10:03:24 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/359/</guid>
+      <description>作为早期的区块链采用者，我们必须将去中心化带给大众，并与它的天敌——科技巨头们进行斗争。如果你对加密货币或区块链感兴趣，我可能不必详细说明去中心化的好处。你们是这项技术的第一代用户，这项技术将越来越多地定义互联网的未来，你们将坐在Web3全球首演的前排。互联网的使用和控制一直都像我们现在看到的那样极度中心化。早期，在美国国防部的指导下，互联网不需要依赖一台核心计算机。如果恐怖袭击或导弹袭击摧毁了主节点，该怎么办？各个网络部件必须在不依赖单一计算机的情况下进行通信，以减少脆弱的漏洞。后来，促进了所...</description>
+    </item>
+    
+    <item>
+      <title>互联网的未来: Web3基础设施的竞争</title>
+      <link>https://fengche.io/posts/358/</link>
+      <pubDate>Fri, 13 May 2022 10:02:44 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/358/</guid>
+      <description>随着更多的提供商进入赛道，Web3基础设施的竞争加剧，这意味着Web3生态系统健康的去中心化。我们每天都会与开放源码应用程序（如MetaMask、Web3游戏、元宇宙和DeFi协议）进行交互，但并不经常停下来思考后台需要做什么才能正常工作。如果我们将Web3视为一个蓬勃发展的新城市，节点基础设施提供商就是使运营成为可能的基础电网。所有DApps都需要与区块链通信，而完整的节点每天都能满足来自DApps的数十亿个读取和写入数据到链的请求。我们需要一个巨大的节点基础设施来跟上大幅扩展的DApp生态系...</description>
+    </item>
+    
     <item>
       <title>DeFi 的力量: 探索去中心化财务和重大 DeFi 项目</title>
       <link>https://fengche.io/posts/351/</link>

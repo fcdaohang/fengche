@@ -6,7 +6,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Sat, 30 Apr 2022 12:09:22 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/web3.0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 May 2022 10:05:05 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/web3.0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数字主权: 在Web3中收回你的私人数据</title>
+      <link>https://fengche.io/posts/361/</link>
+      <pubDate>Fri, 13 May 2022 10:05:05 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/361/</guid>
+      <description>今天，我们的个人数据被破坏，被货币化，甚至被武器化，但去中心化的解决方案可以将用户信息的完全控制权授予用户。正如公平数据协会(FairDataSociety)所说，我们是数据经济中的劳动者。我们的个人数据——基本上是我们生活的数字蓝图——是由我们互动的平台收集的，而且通常是以一种不透明的方式。最好的情况是，这些个人数据被用来改善我们的用户体验。最坏的情况是，我们的隐私被侵犯，被货币化，甚至被用作武器来对付我们。这一切都始于用户生成网络的出现和发展，当时看似免费的社交媒体网络、搜索引擎和公司看到了...</description>
+    </item>
+    
+    <item>
+      <title>互联网的未来: Web3基础设施的竞争</title>
+      <link>https://fengche.io/posts/358/</link>
+      <pubDate>Fri, 13 May 2022 10:02:44 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/358/</guid>
+      <description>随着更多的提供商进入赛道，Web3基础设施的竞争加剧，这意味着Web3生态系统健康的去中心化。我们每天都会与开放源码应用程序（如MetaMask、Web3游戏、元宇宙和DeFi协议）进行交互，但并不经常停下来思考后台需要做什么才能正常工作。如果我们将Web3视为一个蓬勃发展的新城市，节点基础设施提供商就是使运营成为可能的基础电网。所有DApps都需要与区块链通信，而完整的节点每天都能满足来自DApps的数十亿个读取和写入数据到链的请求。我们需要一个巨大的节点基础设施来跟上大幅扩展的DApp生态系...</description>
+    </item>
+    
+    <item>
+      <title>元宇宙中的博物馆：Web3技术如何助力历史遗迹</title>
+      <link>https://fengche.io/posts/357/</link>
+      <pubDate>Fri, 13 May 2022 10:00:56 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/357/</guid>
+      <description>历史遗迹元宇宙可能会成为旅游业的一种新的商业模式，并可能在这个过程中改写历史。历史遗迹元宇宙活动可能很快会成为旅游业的另一个未来。实体城堡和别墅的业主们已经起草了他们房产的增强现实蓝图，他们认为其在元宇宙中吸引游客的宏伟计划将会成功，因为虚拟活动可以帮助他们支付老化房产的巨额维修费用，也提供了一个改变历史叙事的机会。新冠疫情造成的旅游业低迷加快了元宇宙旅游模式的发展，但该行业可能已经在朝这个方向发展了。目前，主要的元宇宙平台都很笨拙，难以使用，还在等待更多的“房地产”开发，但公司都在专注于可能会...</description>
+    </item>
+    
     <item>
       <title>为什么我们需要Web 3.0（为什么Web 3.0很重要）</title>
       <link>https://fengche.io/posts/347/</link>

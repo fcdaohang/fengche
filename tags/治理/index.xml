@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>NNS on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/nns/</link>
-    <description>Recent content in NNS on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <title>治理 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E6%B2%BB%E7%90%86/</link>
+    <description>Recent content in 治理 on 风车 - 专注区块链快速安全有效的入门信息</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Sat, 23 Apr 2022 03:34:17 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/nns/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Apr 2022 03:34:17 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E6%B2%BB%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>了解ICP.04 网络神经系统NNS：互联网计算机区块链治理</title>
       <link>https://fengche.io/posts/315/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://fengche.io/posts/315/</guid>
       <description>[原文链接](https://dfinity.org/howitworks/network-nervous-system-nns)NNS是组织、跟踪和管理Internet计算机的节点和子网的控制机制。作者：LaraSchmid，研究员|DFINITY通过结合世界各地独立数据中心运行的节点机器的计算能力，互联网计算机托管称为容器的智能合约，允许开发人员在开放的互联网上部署可互操作的软件。互联网计算机区块链的一个关键特征是网络神经系统（NNS）,一个开放的算法治理系统，负责监督网络和代币经济，使构建...</description>
-    </item>
-    
-    <item>
-      <title>了解 ICP.01 互联网计算机区块链概述</title>
-      <link>https://fengche.io/posts/312/</link>
-      <pubDate>Sat, 23 Apr 2022 03:23:49 +0800</pubDate>
-      
-      <guid>https://fengche.io/posts/312/</guid>
-      <description>[原文链接](https://dfinity.org/howitworks/overview-of-the-internet-computer)对区块链网络基础设施的解释，以及Canister智能合约如何使Web服务不受限制地扩展。![](https://img.fengche.io/32909621-3e02-4bbe-96e5-f406bb88ea68.png){{&amp;lt;youtubeid=YWHTNr8RZHgtitle=对话-互联网计算机InternetComputer介绍(DominicW...</description>
     </item>
     
   </channel>

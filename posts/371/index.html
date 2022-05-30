@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>如何在去中心化交易所避免抢先交易 | 风车 - 专注区块链快速安全有效的入门信息</title>
+<meta name="keywords" content="区块链,加密货币,科技,去中心化,交易" />
+<meta name="description" content="想要避免抢先交易，可以将交易分割成多笔小型交易，定期匹配拍卖，或者调低滑点。去中心化交易所(DEX)可以将与中心化交易所有关的一些问题扼杀在萌芽状态，如流动性集中在少数参与者手中、在安全漏洞情况下资金的泄露、封闭的控制结构等。然而，有一个问题一直没有消退，那就是抢先交易。肆无忌惮的人仍在想方设法欺骗毫无戒心的交易者。如果你在DEX交易时收到的交易金额低于预期，那么你很有可能中了抢先交易的招。这些不法分子利用自动做市商(AMM)模型，牺牲毫无防备的交易者来获取利润。本文将解释攻击向量，并帮助你理解...">
+<meta name="author" content="
+茉莉花茶">
+<link rel="canonical" href="https://fengche.io/posts/371/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.9a70498391f8adca004cded811aefa9d98674c66090df071732233658f113870.css" integrity="sha256-mnBJg5H4rcoATN7YEa76nZhnTGYJDfBxcyIzZY8ROHA=" rel="preload stylesheet" as="style">
+<link rel="preload" href="/fclogo.svg" as="image">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-49BWTSEZDZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49BWTSEZDZ');
+</script><meta property="og:title" content="如何在去中心化交易所避免抢先交易" />
+<meta property="og:description" content="想要避免抢先交易，可以将交易分割成多笔小型交易，定期匹配拍卖，或者调低滑点。去中心化交易所(DEX)可以将与中心化交易所有关的一些问题扼杀在萌芽状态，如流动性集中在少数参与者手中、在安全漏洞情况下资金的泄露、封闭的控制结构等。然而，有一个问题一直没有消退，那就是抢先交易。肆无忌惮的人仍在想方设法欺骗毫无戒心的交易者。如果你在DEX交易时收到的交易金额低于预期，那么你很有可能中了抢先交易的招。这些不法分子利用自动做市商(AMM)模型，牺牲毫无防备的交易者来获取利润。本文将解释攻击向量，并帮助你理解..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fengche.io/posts/371/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-13T10:13:53&#43;08:00" />
+<meta property="article:modified_time" content="2022-05-13T10:13:53&#43;08:00" />
+<meta property="og:image" content="https://fengche.io/fcslogo.png" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="如何在去中心化交易所避免抢先交易"/>
+<meta name="twitter:description" content="想要避免抢先交易，可以将交易分割成多笔小型交易，定期匹配拍卖，或者调低滑点。去中心化交易所(DEX)可以将与中心化交易所有关的一些问题扼杀在萌芽状态，如流动性集中在少数参与者手中、在安全漏洞情况下资金的泄露、封闭的控制结构等。然而，有一个问题一直没有消退，那就是抢先交易。肆无忌惮的人仍在想方设法欺骗毫无戒心的交易者。如果你在DEX交易时收到的交易金额低于预期，那么你很有可能中了抢先交易的招。这些不法分子利用自动做市商(AMM)模型，牺牲毫无防备的交易者来获取利润。本文将解释攻击向量，并帮助你理解..."/>
+<meta name="twitter:image" content="https://fengche.io/fcslogo.png"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "文章精选",
+      "item": "https://fengche.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "如何在去中心化交易所避免抢先交易",
+      "item": "https://fengche.io/posts/371/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "如何在去中心化交易所避免抢先交易",
+  "name": "如何在去中心化交易所避免抢先交易",
+  "description": "想要避免抢先交易，可以将交易分割成多笔小型交易，定期匹配拍卖，或者调低滑点。去中心化交易所(DEX)可以将与中心化交易所有关的一些问题扼杀在萌芽状态，如流动性集中在少数参与者手中、在安全漏洞情况下资金的泄露、封闭的控制结构等。然而，有一个问题一直没有消退，那就是抢先交易。肆无忌惮的人仍在想方设法欺骗毫无戒心的交易者。如果你在DEX交易时收到的交易金额低于预期，那么你很有可能中了抢先交易的招。这些不法分子利用自动做市商(AMM)模型，牺牲毫无防备的交易者来获取利润。本文将解释攻击向量，并帮助你理解...",
+  "keywords": [
+    "区块链,加密货币,科技,去中心化,交易"
+  ],
+  "articleBody": "想要避免抢先交易，可以将交易分割成多笔小型交易，定期匹配拍卖，或者调低滑点。\n去中心化交易所(DEX)可以将与中心化交易所有关的一些问题扼杀在萌芽状态，如流动性集中在少数参与者手中、在安全漏洞情况下资金的泄露、封闭的控制结构等。然而，有一个问题一直没有消退，那就是抢先交易。肆无忌惮的人仍在想方设法欺骗毫无戒心的交易者。\n如果你在DEX交易时收到的交易金额低于预期，那么你很有可能中了抢先交易的招。这些不法分子利用自动做市商(AMM)模型，牺牲毫无防备的交易者来获取利润。\n本文将解释攻击向量，并帮助你理解加密交易中抢先交易的基本概念、潜在的后果以及如何防止抢先交易。\n加密货币的抢先交易是什么意思？ “抢先交易”(front-running)这个术语指的是某人利用技术或市场优势提前获得即将到来的交易信息的过程。这使得不法分子可以利用即将到来的价格波动，以那些引入这些交易的人的代价获得经济利益。加密货币中的抢先交易通过操纵gas费或时间戳来实现，也被称为慢匹配。\n无论是中心化还是去中心化交易所，抢先交易活动都很频繁。抢先交易者的目标是低价买入大量代币，然后以更高的价格卖出，同时退出头寸。当精确执行时，它为抢先交易者带来无风险利润。\n根据内幕消息进行股票和资产交易，利用价格变动牟利，这是一个众所周知的策略。尽管违法且不道德，但股票经纪人一直在参与其中。这种策略与内幕交易非常相似，只有一个细微的区别：执行者为了客户的佣金工作，而不是为了客户的业务。\n什么是抢先交易机器人？ 抢先交易是使用加密机器人在毫秒尺度的时间内运行完成的。利用机器人，眨眼之间，他们就可以读取一串交易，计算出最佳交易规模和gas费，配置交易并执行。\n抢先交易机器人的核心功能是侦听区块链上的未决交易。使用交互式脚本与区块链交互，机器人在买家之前购买，在买家之后立即出售。机器人分析加密货币的趋势，并执行交易以获取利润。\n在去中心化交易所的抢先交易策略 当交易发生时，系统将其广播给区块链，要求矿工验证交易。但是，在任何重要的区块链中，传入的交易流都大于后续块的容量。未挖掘的交易停留在内存池(mempool)中。\n区块链内存池是透明的，抢先交易者正是利用了这一点。通过了解普通交易者的情绪，他们能够预测即将到来的价格走势，并相应地下达自己的订单。他们在交易中设定更高的gas价格，从而鼓励在即将进行的交易之前挑选他们的交易，从而抢先于其他毫无防备的交易者。\n交易者防止抢先交易的方式 没有单一的解决方案可以解决所有平台上的抢先交易问题。但是，根据场景的不同，不同的项目需要遵循不同的反抢先交易的方法。\n使用流动性大的池子 抢先交易者青睐流动性较低的资金池，因为竞争的可能性较小，而且他们的交易也不会被一个意外改变资金池权重的大订单所扰乱。所以，在大型流动性池中交易，可以大大降低受到抢先交易攻击的可能性。\n最大滑点不要太高 “我如何避免滑点”这个问题是不是一直在刺痛你？你能做的是在大多数去中心化的交易所中设置一个最大的滑点容差。换句话说，你可以修复与预期回报的最大偏差。可以参照下面的示例来了解。\n假设你在DEX上下了一个订单，并期望收到500 Tether (USDT)。如果你将滑点值设置为订单的1%，那么你收到的金额不会低于495 USDT。但是，如果滑点容差越大，则偏差就越大。\n因此，公式很简单：设置的最大滑点值不要太高，约0.5%-2%，从而避开抢先交易者。如果你要下一个大订单，保持你的滑点在较低水平。抢先交易者希望你保持高滑点，所以你只需反其道而行之。\n支付超额的Gas费 抢先交易者很高兴看到缓慢的交易，因为这给了他们更多的时间来设计订单，利用你的交易获利。Gas价格过低会让你的交易排队时间更长，让抢先交易者有更多时间制定策略，损害你的利益。\n支付更高的gas费会促使矿商更快地验证你的交易，从而降低你成为目标的几率。为了达到这个目的，你可以将gas价格设置为高于平均水平，或者简单地使用钱包上的快速gas的选项。如果你下了一个很大的价值订单，更需要重视这一点，通过支付超额gas费来快速完成交易。\n为了盈利，抢先交易者必须达到一些最低门槛。在进入和退出市场时，需要支付两次gas费，而且还需要返还gas费。他们只有在收回这些费用后才开始盈利。\n目前，Uniswap、Balancer和SushiSwap等知名以太坊自动做市商每笔交易支付25美元的gas费。因为他们需要两笔交易来执行抢先交易，他们可能需要花费50美元来完成交易。这也意味着，如果你的交易价值不到50美元，你成为抢先交易者目标的可能性微乎其微。\n当你进行一笔低价值交易时，你实际上是在让抢先交易者做一笔无利可图的冒险。大多数时候，低于1000美元的交易是安全的。\n找到吃单方 公开的订单簿是首先吸引到抢先交易者的信息。如果你能找到吃单方(taker)，你就能完成给定的订单，并避开公开市场，自己抢先交易。当你找到一个吃单方并成功谈判价格时，就会执行一笔去信任的链上交易。\nDEX可以设置几个关键机制让抢先交易难以执行：\n快速匹配 抢先交易者会寻找较慢的匹配速度，以便在执行前下订单。DEX可以确保快速匹配，让抢先交易者没时间推进流程。超快的区块时间将有效地让抢先交易者措手不及。对于大多数不太擅长技术的抢先交易者来说，这应该足够了。\n去中心化的匹配引擎 在中心化匹配引擎的情况下，很难确定交易所本身有没有参与抢先交易。另一方面，去中心化的匹配引擎允许任何运行完整节点的人实时查看匹配情况。他们可以将最新块中的交易与当前订单簿手动匹配。\n定期拍卖匹配 定期拍卖匹配增加了一层额外的安全保护以防止抢先交易。这添加了一个非确定性层，使任何人都不可能知道下一个执行价格，除非他们知道匹配的逻辑、下一个区块的传入订单、交易价格和上次匹配的当前订单簿。\n如何在以太坊2.0中避免抢先交易 一些交易者想知道2023年晚些时候完全发布以太坊2.0的影响，届时以太坊将主网与Beacon Chain合并，并引入权益证明(PoS)共识机制。在某一时段(epoch)处理交易的验证者将事先获知他们的头寸。\n一个epoch是区块链网络中定义的时间跨度。此时间框架用于描述区块链网络中的某些事件何时发生，例如何时分发奖励或何时分配一组新的验证人员来验证交易。\n在这种情况下，抢先交易者很难在一个充斥着交易的区块链中找到有利可图的交易，但也并非不可能。许多抢先交易者都是技术高手，所以你不能排除这种可能性。去中心化交易所可以覆盖快速匹配、去中心化匹配引擎和定期拍卖匹配等机制，以最大限度地减少出行抢先交易的可能性。\n",
+  "wordCount" : "2678",
+  "inLanguage": "zh",
+  "datePublished": "2022-05-13T10:13:53+08:00",
+  "dateModified": "2022-05-13T10:13:53+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://fengche.io/posts/371/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "风车 - 专注区块链快速安全有效的入门信息",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://fengche.io" accesskey="h" title="风车 - 专注区块链快速安全有效的入门信息 (Alt + H)">
+                <img src="/fclogo.svg" alt="logo" aria-label="logo" height=" 36px"></a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://fengche.io/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/nav/" title="导航">
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/editors/" title="作者">
+                    <span>作者</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://fengche.io">主页</a>&nbsp;»&nbsp;<a href="https://fengche.io/posts/">文章精选</a></div>
+    <h1 class="post-title">
+      如何在去中心化交易所避免抢先交易
+    </h1>
+    <div class="post-description">
+      内容简介：<br>
+      想要避免抢先交易，可以将交易分割成多笔小型交易，定期匹配拍卖，或者调低滑点。去中心化交易所(DEX)可以将与中心化交易所有关的一些问题扼杀在萌芽状态，如流动性集中在少数参与者手中、在安全漏洞情况下资金的泄露、封闭的控制结构等。然而，有一个问题一直没有消退，那就是抢先交易。肆无忌惮的人仍在想方设法欺骗毫无戒心的交易者。如果你在DEX交易时收到的交易金额低于预期，那么你很有可能中了抢先交易的招。这些不法分子利用自动做市商(AMM)模型，牺牲毫无防备的交易者来获取利润。本文将解释攻击向量，并帮助你理解...
+    </div>
+    <div class="post-meta"><span title='2022-05-13 10:13:53 +0800 +0800'>五月 13, 2022</span>&nbsp;·&nbsp;阅读耗时 6 分钟&nbsp;·&nbsp;
+<a href="/editors/%e8%8c%89%e8%8e%89%e8%8a%b1%e8%8c%b6">茉莉花茶</a>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%8a%a0%e5%af%86%e8%b4%a7%e5%b8%81%e7%9a%84%e6%8a%a2%e5%85%88%e4%ba%a4%e6%98%93%e6%98%af%e4%bb%80%e4%b9%88%e6%84%8f%e6%80%9d" aria-label="加密货币的抢先交易是什么意思？">加密货币的抢先交易是什么意思？</a></li>
+                <li>
+                    <a href="#%e4%bb%80%e4%b9%88%e6%98%af%e6%8a%a2%e5%85%88%e4%ba%a4%e6%98%93%e6%9c%ba%e5%99%a8%e4%ba%ba" aria-label="什么是抢先交易机器人？">什么是抢先交易机器人？</a></li>
+                <li>
+                    <a href="#%e4%ba%a4%e6%98%93%e8%80%85%e9%98%b2%e6%ad%a2%e6%8a%a2%e5%85%88%e4%ba%a4%e6%98%93%e7%9a%84%e6%96%b9%e5%bc%8f" aria-label="交易者防止抢先交易的方式">交易者防止抢先交易的方式</a></li>
+                <li>
+                    <a href="#%e4%bd%bf%e7%94%a8%e6%b5%81%e5%8a%a8%e6%80%a7%e5%a4%a7%e7%9a%84%e6%b1%a0%e5%ad%90" aria-label="使用流动性大的池子">使用流动性大的池子</a></li>
+                <li>
+                    <a href="#%e6%9c%80%e5%a4%a7%e6%bb%91%e7%82%b9%e4%b8%8d%e8%a6%81%e5%a4%aa%e9%ab%98" aria-label="最大滑点不要太高">最大滑点不要太高</a></li>
+                <li>
+                    <a href="#%e6%94%af%e4%bb%98%e8%b6%85%e9%a2%9d%e7%9a%84gas%e8%b4%b9" aria-label="支付超额的Gas费">支付超额的Gas费</a></li>
+                <li>
+                    <a href="#%e6%89%be%e5%88%b0%e5%90%83%e5%8d%95%e6%96%b9" aria-label="找到吃单方">找到吃单方</a></li>
+                <li>
+                    <a href="#%e5%bf%ab%e9%80%9f%e5%8c%b9%e9%85%8d" aria-label="快速匹配">快速匹配</a></li>
+                <li>
+                    <a href="#%e5%8e%bb%e4%b8%ad%e5%bf%83%e5%8c%96%e7%9a%84%e5%8c%b9%e9%85%8d%e5%bc%95%e6%93%8e" aria-label="去中心化的匹配引擎">去中心化的匹配引擎</a></li>
+                <li>
+                    <a href="#%e5%ae%9a%e6%9c%9f%e6%8b%8d%e5%8d%96%e5%8c%b9%e9%85%8d" aria-label="定期拍卖匹配">定期拍卖匹配</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+    
+    <pre tabindex="0">
+<code class="hljs diff">以下为赞助内容：<br>
+点击风车邀请链接或使用邀请码开户<br>
+每笔手续费均可免去20%<br>
+<a href="https://accounts.binance.me/zh-CN/register?ref=XVZ8RMFQ">币安注册开户</a> 邀请码：XVZ8RMFQ<br>
+<a href="https://www.ouyicn.kim/join/267411054">OKX注册开户</a> 邀请码：267411054
+</code>
+    </pre>
+    <p>想要避免抢先交易，可以将交易分割成多笔小型交易，定期匹配拍卖，或者调低滑点。</p>
+<p>去中心化交易所(DEX)可以将与中心化交易所有关的一些问题扼杀在萌芽状态，如流动性集中在少数参与者手中、在安全漏洞情况下资金的泄露、封闭的控制结构等。然而，有一个问题一直没有消退，那就是抢先交易。肆无忌惮的人仍在想方设法欺骗毫无戒心的交易者。</p>
+<p>如果你在DEX交易时收到的交易金额低于预期，那么你很有可能中了抢先交易的招。这些不法分子利用自动做市商(AMM)模型，牺牲毫无防备的交易者来获取利润。</p>
+<p>本文将解释攻击向量，并帮助你理解加密交易中抢先交易的基本概念、潜在的后果以及如何防止抢先交易。</p>
+<h2 id="加密货币的抢先交易是什么意思">加密货币的抢先交易是什么意思？<a hidden class="anchor" aria-hidden="true" href="#加密货币的抢先交易是什么意思">#</a></h2>
+<p>“抢先交易”(front-running)这个术语指的是某人利用技术或市场优势提前获得即将到来的交易信息的过程。这使得不法分子可以利用即将到来的价格波动，以那些引入这些交易的人的代价获得经济利益。加密货币中的抢先交易通过操纵gas费或时间戳来实现，也被称为慢匹配。</p>
+<p>无论是中心化还是去中心化交易所，抢先交易活动都很频繁。抢先交易者的目标是低价买入大量代币，然后以更高的价格卖出，同时退出头寸。当精确执行时，它为抢先交易者带来无风险利润。</p>
+<p>根据内幕消息进行股票和资产交易，利用价格变动牟利，这是一个众所周知的策略。尽管违法且不道德，但股票经纪人一直在参与其中。这种策略与内幕交易非常相似，只有一个细微的区别：执行者为了客户的佣金工作，而不是为了客户的业务。</p>
+<h2 id="什么是抢先交易机器人">什么是抢先交易机器人？<a hidden class="anchor" aria-hidden="true" href="#什么是抢先交易机器人">#</a></h2>
+<p>抢先交易是使用加密机器人在毫秒尺度的时间内运行完成的。利用机器人，眨眼之间，他们就可以读取一串交易，计算出最佳交易规模和gas费，配置交易并执行。</p>
+<p>抢先交易机器人的核心功能是侦听区块链上的未决交易。使用交互式脚本与区块链交互，机器人在买家之前购买，在买家之后立即出售。机器人分析加密货币的趋势，并执行交易以获取利润。</p>
+<p>在去中心化交易所的抢先交易策略
+当交易发生时，系统将其广播给区块链，要求矿工验证交易。但是，在任何重要的区块链中，传入的交易流都大于后续块的容量。未挖掘的交易停留在内存池(mempool)中。</p>
+<p>区块链内存池是透明的，抢先交易者正是利用了这一点。通过了解普通交易者的情绪，他们能够预测即将到来的价格走势，并相应地下达自己的订单。他们在交易中设定更高的gas价格，从而鼓励在即将进行的交易之前挑选他们的交易，从而抢先于其他毫无防备的交易者。</p>
+<h2 id="交易者防止抢先交易的方式">交易者防止抢先交易的方式<a hidden class="anchor" aria-hidden="true" href="#交易者防止抢先交易的方式">#</a></h2>
+<p>没有单一的解决方案可以解决所有平台上的抢先交易问题。但是，根据场景的不同，不同的项目需要遵循不同的反抢先交易的方法。</p>
+<h2 id="使用流动性大的池子">使用流动性大的池子<a hidden class="anchor" aria-hidden="true" href="#使用流动性大的池子">#</a></h2>
+<p>抢先交易者青睐流动性较低的资金池，因为竞争的可能性较小，而且他们的交易也不会被一个意外改变资金池权重的大订单所扰乱。所以，在大型流动性池中交易，可以大大降低受到抢先交易攻击的可能性。</p>
+<h2 id="最大滑点不要太高">最大滑点不要太高<a hidden class="anchor" aria-hidden="true" href="#最大滑点不要太高">#</a></h2>
+<p>“我如何避免滑点”这个问题是不是一直在刺痛你？你能做的是在大多数去中心化的交易所中设置一个最大的滑点容差。换句话说，你可以修复与预期回报的最大偏差。可以参照下面的示例来了解。</p>
+<p>假设你在DEX上下了一个订单，并期望收到500 Tether (USDT)。如果你将滑点值设置为订单的1%，那么你收到的金额不会低于495 USDT。但是，如果滑点容差越大，则偏差就越大。</p>
+<p>因此，公式很简单：设置的最大滑点值不要太高，约0.5%-2%，从而避开抢先交易者。如果你要下一个大订单，保持你的滑点在较低水平。抢先交易者希望你保持高滑点，所以你只需反其道而行之。</p>
+<h2 id="支付超额的gas费">支付超额的Gas费<a hidden class="anchor" aria-hidden="true" href="#支付超额的gas费">#</a></h2>
+<p>抢先交易者很高兴看到缓慢的交易，因为这给了他们更多的时间来设计订单，利用你的交易获利。Gas价格过低会让你的交易排队时间更长，让抢先交易者有更多时间制定策略，损害你的利益。</p>
+<p>支付更高的gas费会促使矿商更快地验证你的交易，从而降低你成为目标的几率。为了达到这个目的，你可以将gas价格设置为高于平均水平，或者简单地使用钱包上的快速gas的选项。如果你下了一个很大的价值订单，更需要重视这一点，通过支付超额gas费来快速完成交易。</p>
+<p>为了盈利，抢先交易者必须达到一些最低门槛。在进入和退出市场时，需要支付两次gas费，而且还需要返还gas费。他们只有在收回这些费用后才开始盈利。</p>
+<p>目前，Uniswap、Balancer和SushiSwap等知名以太坊自动做市商每笔交易支付25美元的gas费。因为他们需要两笔交易来执行抢先交易，他们可能需要花费50美元来完成交易。这也意味着，如果你的交易价值不到50美元，你成为抢先交易者目标的可能性微乎其微。</p>
+<p>当你进行一笔低价值交易时，你实际上是在让抢先交易者做一笔无利可图的冒险。大多数时候，低于1000美元的交易是安全的。</p>
+<h2 id="找到吃单方">找到吃单方<a hidden class="anchor" aria-hidden="true" href="#找到吃单方">#</a></h2>
+<p>公开的订单簿是首先吸引到抢先交易者的信息。如果你能找到吃单方(taker)，你就能完成给定的订单，并避开公开市场，自己抢先交易。当你找到一个吃单方并成功谈判价格时，就会执行一笔去信任的链上交易。</p>
+<p>DEX可以设置几个关键机制让抢先交易难以执行：</p>
+<h2 id="快速匹配">快速匹配<a hidden class="anchor" aria-hidden="true" href="#快速匹配">#</a></h2>
+<p>抢先交易者会寻找较慢的匹配速度，以便在执行前下订单。DEX可以确保快速匹配，让抢先交易者没时间推进流程。超快的区块时间将有效地让抢先交易者措手不及。对于大多数不太擅长技术的抢先交易者来说，这应该足够了。</p>
+<h2 id="去中心化的匹配引擎">去中心化的匹配引擎<a hidden class="anchor" aria-hidden="true" href="#去中心化的匹配引擎">#</a></h2>
+<p>在中心化匹配引擎的情况下，很难确定交易所本身有没有参与抢先交易。另一方面，去中心化的匹配引擎允许任何运行完整节点的人实时查看匹配情况。他们可以将最新块中的交易与当前订单簿手动匹配。</p>
+<h2 id="定期拍卖匹配">定期拍卖匹配<a hidden class="anchor" aria-hidden="true" href="#定期拍卖匹配">#</a></h2>
+<p>定期拍卖匹配增加了一层额外的安全保护以防止抢先交易。这添加了一个非确定性层，使任何人都不可能知道下一个执行价格，除非他们知道匹配的逻辑、下一个区块的传入订单、交易价格和上次匹配的当前订单簿。</p>
+<p>如何在以太坊2.0中避免抢先交易
+一些交易者想知道2023年晚些时候完全发布以太坊2.0的影响，届时以太坊将主网与Beacon Chain合并，并引入权益证明(PoS)共识机制。在某一时段(epoch)处理交易的验证者将事先获知他们的头寸。</p>
+<p>一个epoch是区块链网络中定义的时间跨度。此时间框架用于描述区块链网络中的某些事件何时发生，例如何时分发奖励或何时分配一组新的验证人员来验证交易。</p>
+<p>在这种情况下，抢先交易者很难在一个充斥着交易的区块链中找到有利可图的交易，但也并非不可能。许多抢先交易者都是技术高手，所以你不能排除这种可能性。去中心化交易所可以覆盖快速匹配、去中心化匹配引擎和定期拍卖匹配等机制，以最大限度地减少出行抢先交易的可能性。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://fengche.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/">区块链</a></li>
+      <li><a href="https://fengche.io/tags/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/">加密货币</a></li>
+      <li><a href="https://fengche.io/tags/%E7%A7%91%E6%8A%80/">科技</a></li>
+      <li><a href="https://fengche.io/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96/">去中心化</a></li>
+      <li><a href="https://fengche.io/tags/%E4%BA%A4%E6%98%93/">交易</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://fengche.io/posts/372/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>创作者经济将在元宇宙中爆发，但不会在科技巨头的统治之下</span>
+  </a>
+  <a class="next" href="https://fengche.io/posts/370/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>NFT: 它的过去式与未来式</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 如何在去中心化交易所避免抢先交易 on twitter"
+        href="https://twitter.com/intent/tweet/?text=%e5%a6%82%e4%bd%95%e5%9c%a8%e5%8e%bb%e4%b8%ad%e5%bf%83%e5%8c%96%e4%ba%a4%e6%98%93%e6%89%80%e9%81%bf%e5%85%8d%e6%8a%a2%e5%85%88%e4%ba%a4%e6%98%93&amp;url=https%3a%2f%2ffengche.io%2fposts%2f371%2f&amp;hashtags=%e5%8c%ba%e5%9d%97%e9%93%be%2c%e5%8a%a0%e5%af%86%e8%b4%a7%e5%b8%81%2c%e7%a7%91%e6%8a%80%2c%e5%8e%bb%e4%b8%ad%e5%bf%83%e5%8c%96%2c%e4%ba%a4%e6%98%93">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 如何在去中心化交易所避免抢先交易 on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2ffengche.io%2fposts%2f371%2f&amp;title=%e5%a6%82%e4%bd%95%e5%9c%a8%e5%8e%bb%e4%b8%ad%e5%bf%83%e5%8c%96%e4%ba%a4%e6%98%93%e6%89%80%e9%81%bf%e5%85%8d%e6%8a%a2%e5%85%88%e4%ba%a4%e6%98%93&amp;summary=%e5%a6%82%e4%bd%95%e5%9c%a8%e5%8e%bb%e4%b8%ad%e5%bf%83%e5%8c%96%e4%ba%a4%e6%98%93%e6%89%80%e9%81%bf%e5%85%8d%e6%8a%a2%e5%85%88%e4%ba%a4%e6%98%93&amp;source=https%3a%2f%2ffengche.io%2fposts%2f371%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 如何在去中心化交易所避免抢先交易 on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2ffengche.io%2fposts%2f371%2f&title=%e5%a6%82%e4%bd%95%e5%9c%a8%e5%8e%bb%e4%b8%ad%e5%bf%83%e5%8c%96%e4%ba%a4%e6%98%93%e6%89%80%e9%81%bf%e5%85%8d%e6%8a%a2%e5%85%88%e4%ba%a4%e6%98%93">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 如何在去中心化交易所避免抢先交易 on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2ffengche.io%2fposts%2f371%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 如何在去中心化交易所避免抢先交易 on whatsapp"
+        href="https://api.whatsapp.com/send?text=%e5%a6%82%e4%bd%95%e5%9c%a8%e5%8e%bb%e4%b8%ad%e5%bf%83%e5%8c%96%e4%ba%a4%e6%98%93%e6%89%80%e9%81%bf%e5%85%8d%e6%8a%a2%e5%85%88%e4%ba%a4%e6%98%93%20-%20https%3a%2f%2ffengche.io%2fposts%2f371%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 如何在去中心化交易所避免抢先交易 on telegram"
+        href="https://telegram.me/share/url?text=%e5%a6%82%e4%bd%95%e5%9c%a8%e5%8e%bb%e4%b8%ad%e5%bf%83%e5%8c%96%e4%ba%a4%e6%98%93%e6%89%80%e9%81%bf%e5%85%8d%e6%8a%a2%e5%85%88%e4%ba%a4%e6%98%93&amp;url=https%3a%2f%2ffengche.io%2fposts%2f371%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</span>
+    <span>
+        Powered at 2021
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" fill="currentColor">
+        <path style="fill:#777bc6" d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

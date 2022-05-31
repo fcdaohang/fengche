@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>代码 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E4%BB%A3%E7%A0%81/</link>
+    <description>Recent content in 代码 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Tue, 17 May 2022 12:30:52 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E4%BB%A3%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICME 和 Blocks：互联网计算机上的无代码开发</title>
+      <link>https://fengche.io/posts/380/</link>
+      <pubDate>Tue, 17 May 2022 12:30:52 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/380/</guid>
+      <description>“我们认为编码的未来根本不是编码，”2017年离职的GitHub首席执行官ChrisWanstrath说。“编程不是打字，而是思考。”今天，Web2领域存在一系列无代码开发平台，使非技术人员能够创建软件应用程序——但Web3开发的无代码选项非常有限。ICME和Blocks是在互联网计算机区块链上运行的两个无代码平台，它们填补了这一空白，使使用罐式智能合约更容易编码。ICME联合创始人HoumanShadab说：“IC是最快、最具可扩展性和最实惠的区块链，具有低成本的链上文件存储和零gas费用。”...</description>
+    </item>
+    
+  </channel>
+</rss>

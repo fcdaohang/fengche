@@ -6,7 +6,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Fri, 13 May 2022 10:13:53 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 May 2022 12:29:20 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>互联网计算机的比特币集成即将完成</title>
+      <link>https://fengche.io/posts/378/</link>
+      <pubDate>Tue, 17 May 2022 12:29:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/378/</guid>
+      <description>互联网计算机区块链与比特币直接集成和实施阈值ECDSA签名的进展更新。互联网计算机与比特币的直接集成为世界上最大的加密货币带来了先进的智能合约，无需中介或桥梁，为使用比特币的DeFi项目提供了无需信任的基础。比特币集成和阈值ECDSA签名的开发，将使互联网计算机智能合约能够安全地持有和使用BTC和其他加密货币，具有高度的探索性，因此DFINITY研发团队必须克服各种困难，努力实现全面实施。该团队在这方面取得了出色的进展。我们最近在测试网上部署了副本，启用了比特币集成，并同步了整个比特币测试网。测...</description>
+    </item>
+    
+    <item>
+      <title>比特币的波动性消失，最有前途的加密货币</title>
+      <link>https://fengche.io/posts/376/</link>
+      <pubDate>Fri, 13 May 2022 10:19:40 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/376/</guid>
+      <description>就季节性而言，五月被认为是BTC相对成功的月份。鉴于目前投资者的风险厌恶情绪和宏观经济环境，今年5月的情况可能会有所不同。那些习惯了比特币极端波动的人非常疑惑，他们期待着一场类似于去年的反弹。去年，这种加密货币的价格从7月份涨到了11月份的历史最高点。比特币的波动性消失去年12月报道，机构投资者可能会抑制加密市场的波动性，并在未来某个时候平稳化市场的动态，事实似乎已经印证了这一点。平均范围指数显示，比特币的波动性一直在下降，目前处于2020年12月以来的最低水平。顶级加密货币在过去三个月，合共价...</description>
+    </item>
+    
+    <item>
+      <title>加密货币和NFT交易中的front-running是什么意思？</title>
+      <link>https://fengche.io/posts/375/</link>
+      <pubDate>Fri, 13 May 2022 10:18:44 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/375/</guid>
+      <description>NFT市场中的front-running是什么意思？抢先交易(front-running)是一个股市术语，指的是利用内幕消息抢在竞争对手之前进入市场。因此，这是一种内幕交易。抢先交易(front-running)并不局限于股票市场和去中心化金融(DeFi)领域——它也可能发生在非同质化代币(NFT)市场。发生这种情况是因为NFT平台的内部人员知道哪些NFT将被交易网站极力推荐。此外，有了这些消息，他们就可以在NFT获得推荐前购买该NFT，最终提高其价格。价格上涨的原因是这些NFT被公开出售，内部...</description>
+    </item>
+    
+    <item>
+      <title>古驰成为最新一家接受加密支付的奢侈品牌</title>
+      <link>https://fengche.io/posts/373/</link>
+      <pubDate>Fri, 13 May 2022 10:15:59 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/373/</guid>
+      <description>古驰过去在Web3的努力达到了顶峰，该品牌在几家选定的门店接受12种加密货币，并计划在未来更广泛地扩展。意大利高端时尚品牌古驰(Gucci)宣布，将于本月底开始在其美国的五家门店接受加密货币支付，并计划将这项服务扩展到其在北美的所有111家门店。据VogueBusiness报道，古驰将接受12种加密货币，包括BTC、BCH、ETH、WBTC、LTC、SHIB、DOGE和5种美元稳定币。在纽约、洛杉矶、迈阿密、亚特兰大和拉斯维加斯的试点门店，在店内用加密货币付款的顾客将收到一封带有二维码的电子邮件...</description>
+    </item>
+    
     <item>
       <title>如何在去中心化交易所避免抢先交易</title>
       <link>https://fengche.io/posts/371/</link>

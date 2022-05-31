@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>机器人 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
+    <description>Recent content in 机器人 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Fri, 13 May 2022 10:18:44 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>加密货币和NFT交易中的front-running是什么意思？</title>
+      <link>https://fengche.io/posts/375/</link>
+      <pubDate>Fri, 13 May 2022 10:18:44 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/375/</guid>
+      <description>NFT市场中的front-running是什么意思？抢先交易(front-running)是一个股市术语，指的是利用内幕消息抢在竞争对手之前进入市场。因此，这是一种内幕交易。抢先交易(front-running)并不局限于股票市场和去中心化金融(DeFi)领域——它也可能发生在非同质化代币(NFT)市场。发生这种情况是因为NFT平台的内部人员知道哪些NFT将被交易网站极力推荐。此外，有了这些消息，他们就可以在NFT获得推荐前购买该NFT，最终提高其价格。价格上涨的原因是这些NFT被公开出售，内部...</description>
+    </item>
+    
+  </channel>
+</rss>

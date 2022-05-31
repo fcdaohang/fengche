@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Fri, 25 Mar 2022 21:05:39 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%B9%B3%E5%8F%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 May 2022 12:33:34 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%B9%B3%E5%8F%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>升级互联网计算机协议</title>
+      <link>https://fengche.io/posts/383/</link>
+      <pubDate>Tue, 17 May 2022 12:33:34 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/383/</guid>
+      <description>互联网计算机协议结合了运行在世界各地数据中心的特殊节点机器的计算能力，为智能合约软件和数据创建了一个无缝且可扩展的环境。由于该平台可以为用户提供交互式Web内容，因此可以使用智能合约构建网站、企业系统、大众市场互联网服务、泛行业平台、DeFi等等。乍一看，升级似乎是一个简单的问题。然而，传统区块链的升级表明，实现协议升级可能需要几个月到几年的时间。首先，社区必须同意采用新版本的协议。接下来，必须商定应用升级的时间点，最后，所有客户端软件都需要升级以支持新的协议版本。因为这是一项艰巨的任务，协议升...</description>
+    </item>
+    
     <item>
       <title>20220325-潜力币-财富密码-XED</title>
       <link>https://fengche.io/posts/123/</link>

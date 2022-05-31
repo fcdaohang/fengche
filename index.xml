@@ -17,6 +17,105 @@
     </item>
     
     <item>
+      <title>升级互联网计算机协议</title>
+      <link>https://fengche.io/posts/383/</link>
+      <pubDate>Tue, 17 May 2022 12:33:34 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/383/</guid>
+      <description>互联网计算机协议结合了运行在世界各地数据中心的特殊节点机器的计算能力，为智能合约软件和数据创建了一个无缝且可扩展的环境。由于该平台可以为用户提供交互式Web内容，因此可以使用智能合约构建网站、企业系统、大众市场互联网服务、泛行业平台、DeFi等等。乍一看，升级似乎是一个简单的问题。然而，传统区块链的升级表明，实现协议升级可能需要几个月到几年的时间。首先，社区必须同意采用新版本的协议。接下来，必须商定应用升级的时间点，最后，所有客户端软件都需要升级以支持新的协议版本。因为这是一项艰巨的任务，协议升...</description>
+    </item>
+    
+    <item>
+      <title>2021 年的 DFINITY:互联网计算机开发者和社区成长的一年</title>
+      <link>https://fengche.io/posts/382/</link>
+      <pubDate>Tue, 17 May 2022 12:32:35 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/382/</guid>
+      <description>2016年，DFINITY基金会开始了实现“世界计算机”愿景的使命，该愿景起源于早期的以太坊社区。随着比特币作为数字黄金出现，以太坊作为全球结算层出现，Web3仍然需要一台100%主权的世界计算机来进行去中心化计算和存储，以充分发挥其潜力。互联网计算机项目的创立是DFINITY创始人DominicWilliams的一项雄心勃勃的事业，他召集了200多名世界知名的密码学家、分布式系统工程师和编程语言专家来应对这一巨大挑战，为Web3dapps构建最强大的通用区块链.五年后，2021年是多事之秋，标...</description>
+    </item>
+    
+    <item>
+      <title>互联网计算机的交易速度和确定性超过了其他 L1 区块链</title>
+      <link>https://fengche.io/posts/381/</link>
+      <pubDate>Tue, 17 May 2022 12:31:27 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/381/</guid>
+      <description>互联网计算机区块链旨在持续处理大量更新和交易，而不会影响速度、安全性、主权或去中心化。网络通过网络神经系统(NNS)对自身进行分区并根据需要添加新的子网和节点来进行扩展。它的速度和可扩展性使智能合约能够向最终用户提供Web内容，并使基于Web的dapp完全在链上运行。DFINITY基金会最近进行了一系列测试来评估互联网计算机的性能。通过针对所有相关节点，针对子网同时运行实验，逐步增加负载以评估网络的整体吞吐能力。保守地进行的评估表明，互联网计算机每秒能够处理多达11,500个事务，在dapp子网...</description>
+    </item>
+    
+    <item>
+      <title>ICME 和 Blocks：互联网计算机上的无代码开发</title>
+      <link>https://fengche.io/posts/380/</link>
+      <pubDate>Tue, 17 May 2022 12:30:52 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/380/</guid>
+      <description>“我们认为编码的未来根本不是编码，”2017年离职的GitHub首席执行官ChrisWanstrath说。“编程不是打字，而是思考。”今天，Web2领域存在一系列无代码开发平台，使非技术人员能够创建软件应用程序——但Web3开发的无代码选项非常有限。ICME和Blocks是在互联网计算机区块链上运行的两个无代码平台，它们填补了这一空白，使使用罐式智能合约更容易编码。ICME联合创始人HoumanShadab说：“IC是最快、最具可扩展性和最实惠的区块链，具有低成本的链上文件存储和零gas费用。”...</description>
+    </item>
+    
+    <item>
+      <title>OpenChat Dapp 通过即时消息实现 ICP 令牌传输</title>
+      <link>https://fengche.io/posts/379/</link>
+      <pubDate>Tue, 17 May 2022 12:29:49 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/379/</guid>
+      <description>OpenChat是一个即时消息dapp，其功能类似于WhatsApp和Signal，主要区别在于OpenChat完全在InternetComputer区块链上运行。基于容器智能合约的架构，捆绑代码和数据，允许运行在互联网计算机上的dapps实现显示Web3潜力的特性和能力。互联网计算机上的智能合约可以安全地为网络浏览器提供交互式内容。OpenChat在区块链上端到端运行，不依赖云提供商或中心化中介来运行。OpenChat用户现在可以通过OpenChat转移ICP实用代币，展示了SocialFi如...</description>
+    </item>
+    
+    <item>
+      <title>互联网计算机的比特币集成即将完成</title>
+      <link>https://fengche.io/posts/378/</link>
+      <pubDate>Tue, 17 May 2022 12:29:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/378/</guid>
+      <description>互联网计算机区块链与比特币直接集成和实施阈值ECDSA签名的进展更新。互联网计算机与比特币的直接集成为世界上最大的加密货币带来了先进的智能合约，无需中介或桥梁，为使用比特币的DeFi项目提供了无需信任的基础。比特币集成和阈值ECDSA签名的开发，将使互联网计算机智能合约能够安全地持有和使用BTC和其他加密货币，具有高度的探索性，因此DFINITY研发团队必须克服各种困难，努力实现全面实施。该团队在这方面取得了出色的进展。我们最近在测试网上部署了副本，启用了比特币集成，并同步了整个比特币测试网。测...</description>
+    </item>
+    
+    <item>
+      <title>互联网计算机(IC)与以太网: 互联网计算机有什么不同？</title>
+      <link>https://fengche.io/posts/377/</link>
+      <pubDate>Fri, 13 May 2022 10:21:00 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/377/</guid>
+      <description>互联网计算机(IC)是一个区块链创新。互联网计算机(IC)和Dfinity基金会的重点是建立一个分散的区块链网络，旨在扩大互联网的功能。根据这个定义，IC的重点不仅仅是区块链技术，它的目标是建立一个分散的、可扩展的类云平台，可以存储数据、执行计算、支持治理，并通过互联网直接向用户提供连锁服务。本质上，它试图解决困扰传统互联网的问题:数据安全，复杂的系统，以及由技术垄断的私人基础设施。互联网计算机(IC)是建立一个开放存取的互联网。它通过互联网计算机协议(ICP)实现这一点，ICP是一个公共计算平...</description>
+    </item>
+    
+    <item>
+      <title>比特币的波动性消失，最有前途的加密货币</title>
+      <link>https://fengche.io/posts/376/</link>
+      <pubDate>Fri, 13 May 2022 10:19:40 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/376/</guid>
+      <description>就季节性而言，五月被认为是BTC相对成功的月份。鉴于目前投资者的风险厌恶情绪和宏观经济环境，今年5月的情况可能会有所不同。那些习惯了比特币极端波动的人非常疑惑，他们期待着一场类似于去年的反弹。去年，这种加密货币的价格从7月份涨到了11月份的历史最高点。比特币的波动性消失去年12月报道，机构投资者可能会抑制加密市场的波动性，并在未来某个时候平稳化市场的动态，事实似乎已经印证了这一点。平均范围指数显示，比特币的波动性一直在下降，目前处于2020年12月以来的最低水平。顶级加密货币在过去三个月，合共价...</description>
+    </item>
+    
+    <item>
+      <title>加密货币和NFT交易中的front-running是什么意思？</title>
+      <link>https://fengche.io/posts/375/</link>
+      <pubDate>Fri, 13 May 2022 10:18:44 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/375/</guid>
+      <description>NFT市场中的front-running是什么意思？抢先交易(front-running)是一个股市术语，指的是利用内幕消息抢在竞争对手之前进入市场。因此，这是一种内幕交易。抢先交易(front-running)并不局限于股票市场和去中心化金融(DeFi)领域——它也可能发生在非同质化代币(NFT)市场。发生这种情况是因为NFT平台的内部人员知道哪些NFT将被交易网站极力推荐。此外，有了这些消息，他们就可以在NFT获得推荐前购买该NFT，最终提高其价格。价格上涨的原因是这些NFT被公开出售，内部...</description>
+    </item>
+    
+    <item>
+      <title>迄今为止，流动性推动了DeFi的增长，那未来前景如何？</title>
+      <link>https://fengche.io/posts/374/</link>
+      <pubDate>Fri, 13 May 2022 10:17:45 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/374/</guid>
+      <description>链上流动性是2020年DeFiSummer的催化剂，那又是什么，将让DeFi市场在未来一两年内达到万亿美元？2020年2月中旬，去中心化金融(DeFi)应用锁定的总价值首次超过10亿美元。在2020年DeFiSummer的推动下，这个数字甚至不用一年就增长了20倍，达到200亿美元，再过10个月又达到2000亿美元。考虑到目前的增长速度，想象未来一两年DeFi市场规模达到1万亿美元似乎也不足为奇。我们可以把这种巨大的增长归功于——流动性。回顾过去，DeFi的扩张可以分为三个时代，每个时代都代表着...</description>
+    </item>
+    
+    <item>
+      <title>古驰成为最新一家接受加密支付的奢侈品牌</title>
+      <link>https://fengche.io/posts/373/</link>
+      <pubDate>Fri, 13 May 2022 10:15:59 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/373/</guid>
+      <description>古驰过去在Web3的努力达到了顶峰，该品牌在几家选定的门店接受12种加密货币，并计划在未来更广泛地扩展。意大利高端时尚品牌古驰(Gucci)宣布，将于本月底开始在其美国的五家门店接受加密货币支付，并计划将这项服务扩展到其在北美的所有111家门店。据VogueBusiness报道，古驰将接受12种加密货币，包括BTC、BCH、ETH、WBTC、LTC、SHIB、DOGE和5种美元稳定币。在纽约、洛杉矶、迈阿密、亚特兰大和拉斯维加斯的试点门店，在店内用加密货币付款的顾客将收到一封带有二维码的电子邮件...</description>
+    </item>
+    
+    <item>
       <title>创作者经济将在元宇宙中爆发，但不会在科技巨头的统治之下</title>
       <link>https://fengche.io/posts/372/</link>
       <pubDate>Fri, 13 May 2022 10:14:55 +0800</pubDate>

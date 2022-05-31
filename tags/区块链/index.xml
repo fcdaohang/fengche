@@ -6,7 +6,70 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Fri, 13 May 2022 10:14:55 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 May 2022 12:33:34 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>升级互联网计算机协议</title>
+      <link>https://fengche.io/posts/383/</link>
+      <pubDate>Tue, 17 May 2022 12:33:34 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/383/</guid>
+      <description>互联网计算机协议结合了运行在世界各地数据中心的特殊节点机器的计算能力，为智能合约软件和数据创建了一个无缝且可扩展的环境。由于该平台可以为用户提供交互式Web内容，因此可以使用智能合约构建网站、企业系统、大众市场互联网服务、泛行业平台、DeFi等等。乍一看，升级似乎是一个简单的问题。然而，传统区块链的升级表明，实现协议升级可能需要几个月到几年的时间。首先，社区必须同意采用新版本的协议。接下来，必须商定应用升级的时间点，最后，所有客户端软件都需要升级以支持新的协议版本。因为这是一项艰巨的任务，协议升...</description>
+    </item>
+    
+    <item>
+      <title>2021 年的 DFINITY:互联网计算机开发者和社区成长的一年</title>
+      <link>https://fengche.io/posts/382/</link>
+      <pubDate>Tue, 17 May 2022 12:32:35 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/382/</guid>
+      <description>2016年，DFINITY基金会开始了实现“世界计算机”愿景的使命，该愿景起源于早期的以太坊社区。随着比特币作为数字黄金出现，以太坊作为全球结算层出现，Web3仍然需要一台100%主权的世界计算机来进行去中心化计算和存储，以充分发挥其潜力。互联网计算机项目的创立是DFINITY创始人DominicWilliams的一项雄心勃勃的事业，他召集了200多名世界知名的密码学家、分布式系统工程师和编程语言专家来应对这一巨大挑战，为Web3dapps构建最强大的通用区块链.五年后，2021年是多事之秋，标...</description>
+    </item>
+    
+    <item>
+      <title>互联网计算机的交易速度和确定性超过了其他 L1 区块链</title>
+      <link>https://fengche.io/posts/381/</link>
+      <pubDate>Tue, 17 May 2022 12:31:27 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/381/</guid>
+      <description>互联网计算机区块链旨在持续处理大量更新和交易，而不会影响速度、安全性、主权或去中心化。网络通过网络神经系统(NNS)对自身进行分区并根据需要添加新的子网和节点来进行扩展。它的速度和可扩展性使智能合约能够向最终用户提供Web内容，并使基于Web的dapp完全在链上运行。DFINITY基金会最近进行了一系列测试来评估互联网计算机的性能。通过针对所有相关节点，针对子网同时运行实验，逐步增加负载以评估网络的整体吞吐能力。保守地进行的评估表明，互联网计算机每秒能够处理多达11,500个事务，在dapp子网...</description>
+    </item>
+    
+    <item>
+      <title>ICME 和 Blocks：互联网计算机上的无代码开发</title>
+      <link>https://fengche.io/posts/380/</link>
+      <pubDate>Tue, 17 May 2022 12:30:52 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/380/</guid>
+      <description>“我们认为编码的未来根本不是编码，”2017年离职的GitHub首席执行官ChrisWanstrath说。“编程不是打字，而是思考。”今天，Web2领域存在一系列无代码开发平台，使非技术人员能够创建软件应用程序——但Web3开发的无代码选项非常有限。ICME和Blocks是在互联网计算机区块链上运行的两个无代码平台，它们填补了这一空白，使使用罐式智能合约更容易编码。ICME联合创始人HoumanShadab说：“IC是最快、最具可扩展性和最实惠的区块链，具有低成本的链上文件存储和零gas费用。”...</description>
+    </item>
+    
+    <item>
+      <title>互联网计算机的比特币集成即将完成</title>
+      <link>https://fengche.io/posts/378/</link>
+      <pubDate>Tue, 17 May 2022 12:29:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/378/</guid>
+      <description>互联网计算机区块链与比特币直接集成和实施阈值ECDSA签名的进展更新。互联网计算机与比特币的直接集成为世界上最大的加密货币带来了先进的智能合约，无需中介或桥梁，为使用比特币的DeFi项目提供了无需信任的基础。比特币集成和阈值ECDSA签名的开发，将使互联网计算机智能合约能够安全地持有和使用BTC和其他加密货币，具有高度的探索性，因此DFINITY研发团队必须克服各种困难，努力实现全面实施。该团队在这方面取得了出色的进展。我们最近在测试网上部署了副本，启用了比特币集成，并同步了整个比特币测试网。测...</description>
+    </item>
+    
+    <item>
+      <title>互联网计算机(IC)与以太网: 互联网计算机有什么不同？</title>
+      <link>https://fengche.io/posts/377/</link>
+      <pubDate>Fri, 13 May 2022 10:21:00 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/377/</guid>
+      <description>互联网计算机(IC)是一个区块链创新。互联网计算机(IC)和Dfinity基金会的重点是建立一个分散的区块链网络，旨在扩大互联网的功能。根据这个定义，IC的重点不仅仅是区块链技术，它的目标是建立一个分散的、可扩展的类云平台，可以存储数据、执行计算、支持治理，并通过互联网直接向用户提供连锁服务。本质上，它试图解决困扰传统互联网的问题:数据安全，复杂的系统，以及由技术垄断的私人基础设施。互联网计算机(IC)是建立一个开放存取的互联网。它通过互联网计算机协议(ICP)实现这一点，ICP是一个公共计算平...</description>
+    </item>
+    
+    <item>
+      <title>迄今为止，流动性推动了DeFi的增长，那未来前景如何？</title>
+      <link>https://fengche.io/posts/374/</link>
+      <pubDate>Fri, 13 May 2022 10:17:45 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/374/</guid>
+      <description>链上流动性是2020年DeFiSummer的催化剂，那又是什么，将让DeFi市场在未来一两年内达到万亿美元？2020年2月中旬，去中心化金融(DeFi)应用锁定的总价值首次超过10亿美元。在2020年DeFiSummer的推动下，这个数字甚至不用一年就增长了20倍，达到200亿美元，再过10个月又达到2000亿美元。考虑到目前的增长速度，想象未来一两年DeFi市场规模达到1万亿美元似乎也不足为奇。我们可以把这种巨大的增长归功于——流动性。回顾过去，DeFi的扩张可以分为三个时代，每个时代都代表着...</description>
+    </item>
+    
     <item>
       <title>创作者经济将在元宇宙中爆发，但不会在科技巨头的统治之下</title>
       <link>https://fengche.io/posts/372/</link>

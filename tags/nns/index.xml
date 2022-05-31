@@ -6,7 +6,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Sat, 23 Apr 2022 03:34:17 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/nns/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 May 2022 12:33:34 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/nns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>升级互联网计算机协议</title>
+      <link>https://fengche.io/posts/383/</link>
+      <pubDate>Tue, 17 May 2022 12:33:34 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/383/</guid>
+      <description>互联网计算机协议结合了运行在世界各地数据中心的特殊节点机器的计算能力，为智能合约软件和数据创建了一个无缝且可扩展的环境。由于该平台可以为用户提供交互式Web内容，因此可以使用智能合约构建网站、企业系统、大众市场互联网服务、泛行业平台、DeFi等等。乍一看，升级似乎是一个简单的问题。然而，传统区块链的升级表明，实现协议升级可能需要几个月到几年的时间。首先，社区必须同意采用新版本的协议。接下来，必须商定应用升级的时间点，最后，所有客户端软件都需要升级以支持新的协议版本。因为这是一项艰巨的任务，协议升...</description>
+    </item>
+    
+    <item>
+      <title>互联网计算机的交易速度和确定性超过了其他 L1 区块链</title>
+      <link>https://fengche.io/posts/381/</link>
+      <pubDate>Tue, 17 May 2022 12:31:27 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/381/</guid>
+      <description>互联网计算机区块链旨在持续处理大量更新和交易，而不会影响速度、安全性、主权或去中心化。网络通过网络神经系统(NNS)对自身进行分区并根据需要添加新的子网和节点来进行扩展。它的速度和可扩展性使智能合约能够向最终用户提供Web内容，并使基于Web的dapp完全在链上运行。DFINITY基金会最近进行了一系列测试来评估互联网计算机的性能。通过针对所有相关节点，针对子网同时运行实验，逐步增加负载以评估网络的整体吞吐能力。保守地进行的评估表明，互联网计算机每秒能够处理多达11,500个事务，在dapp子网...</description>
+    </item>
+    
     <item>
       <title>了解ICP.04 网络神经系统NNS：互联网计算机区块链治理</title>
       <link>https://fengche.io/posts/315/</link>

@@ -6,7 +6,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Fri, 13 May 2022 10:14:55 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/web3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 May 2022 12:32:35 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/web3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021 年的 DFINITY:互联网计算机开发者和社区成长的一年</title>
+      <link>https://fengche.io/posts/382/</link>
+      <pubDate>Tue, 17 May 2022 12:32:35 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/382/</guid>
+      <description>2016年，DFINITY基金会开始了实现“世界计算机”愿景的使命，该愿景起源于早期的以太坊社区。随着比特币作为数字黄金出现，以太坊作为全球结算层出现，Web3仍然需要一台100%主权的世界计算机来进行去中心化计算和存储，以充分发挥其潜力。互联网计算机项目的创立是DFINITY创始人DominicWilliams的一项雄心勃勃的事业，他召集了200多名世界知名的密码学家、分布式系统工程师和编程语言专家来应对这一巨大挑战，为Web3dapps构建最强大的通用区块链.五年后，2021年是多事之秋，标...</description>
+    </item>
+    
+    <item>
+      <title>ICME 和 Blocks：互联网计算机上的无代码开发</title>
+      <link>https://fengche.io/posts/380/</link>
+      <pubDate>Tue, 17 May 2022 12:30:52 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/380/</guid>
+      <description>“我们认为编码的未来根本不是编码，”2017年离职的GitHub首席执行官ChrisWanstrath说。“编程不是打字，而是思考。”今天，Web2领域存在一系列无代码开发平台，使非技术人员能够创建软件应用程序——但Web3开发的无代码选项非常有限。ICME和Blocks是在互联网计算机区块链上运行的两个无代码平台，它们填补了这一空白，使使用罐式智能合约更容易编码。ICME联合创始人HoumanShadab说：“IC是最快、最具可扩展性和最实惠的区块链，具有低成本的链上文件存储和零gas费用。”...</description>
+    </item>
+    
     <item>
       <title>创作者经济将在元宇宙中爆发，但不会在科技巨头的统治之下</title>
       <link>https://fengche.io/posts/372/</link>

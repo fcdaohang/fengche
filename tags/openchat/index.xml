@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OpenChat on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/openchat/</link>
+    <description>Recent content in OpenChat on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Tue, 17 May 2022 12:29:49 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/openchat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenChat Dapp 通过即时消息实现 ICP 令牌传输</title>
+      <link>https://fengche.io/posts/379/</link>
+      <pubDate>Tue, 17 May 2022 12:29:49 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/379/</guid>
+      <description>OpenChat是一个即时消息dapp，其功能类似于WhatsApp和Signal，主要区别在于OpenChat完全在InternetComputer区块链上运行。基于容器智能合约的架构，捆绑代码和数据，允许运行在互联网计算机上的dapps实现显示Web3潜力的特性和能力。互联网计算机上的智能合约可以安全地为网络浏览器提供交互式内容。OpenChat在区块链上端到端运行，不依赖云提供商或中心化中介来运行。OpenChat用户现在可以通过OpenChat转移ICP实用代币，展示了SocialFi如...</description>
+    </item>
+    
+  </channel>
+</rss>

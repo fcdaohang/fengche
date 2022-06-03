@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Sat, 23 Apr 2022 03:33:09 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/internetcomputer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 May 2022 14:20:49 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/internetcomputer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sonic DEX 开启互联网计算机零 Gas 的 DeFi 新时代</title>
+      <link>https://fengche.io/posts/386/</link>
+      <pubDate>Thu, 19 May 2022 14:20:49 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/386/</guid>
+      <description>随着Sonic推出在InternetComputer区块链上运行的新去中心化交易所和自动做市商(AMM)，用户现在可以通过协议访问无许可的代币交换和流动性服务——InternetComputer的反向气体模型引入了DeFi的新时代零汽油费和1秒的交易确定性。在DFinance更名并与Web3产品工作室Psychedelic合作后成立，Sonic旨在成为服务于互联网计算机及其生态系统的领先DeFi中心之一。Sonic本质上由一组DeFi协议组成，提供无需许可的交换和流动性挖掘。它的交换将使用户能够...</description>
+    </item>
+    
     <item>
       <title>了解 ICP.03 MOTOKO 智能合约语言</title>
       <link>https://fengche.io/posts/314/</link>

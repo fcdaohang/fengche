@@ -6,7 +6,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Tue, 17 May 2022 12:32:35 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/dfinity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 May 2022 14:21:26 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/dfinity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为可扩展性而构建：互联网计算机如何让 Web3 Dapps 无限扩展</title>
+      <link>https://fengche.io/posts/387/</link>
+      <pubDate>Thu, 19 May 2022 14:21:26 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/387/</guid>
+      <description>比特币作为去中心化数字货币的成功激发了全球对区块链技术的采用。多年来，区块链已被证明具有变革潜力，可以用分散的、社区运行的替代方案取代中央控制系统。当以太坊引入智能合约时，它帮助创建了一个由自己的用户管理和监管的全球结算层。使开发人员能够完全在链上构建抗审查的Web3体验的最后一个装置是“世界计算机”——这个概念首先出现在早期的以太坊社区。DFINITY创始人兼首席科学家DominicWilliams汇集了来自谷歌、亚马逊、微软、IBM等公司的200多名世界知名密码学家、分布式系统工程师和编程语...</description>
+    </item>
+    
+    <item>
+      <title>“极客互联网计算机”：新的 DFINITY 白皮书</title>
+      <link>https://fengche.io/posts/385/</link>
+      <pubDate>Thu, 19 May 2022 14:19:57 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/385/</guid>
+      <description>互联网计算机重新构想区块链架构。它旨在传递早期以太坊社区中出现的“世界计算机”的概念，反映了由200多名世界知名密码学家、分布式系统工程师和编程语言专家组成的团队多年专注的研究和开发。DFINITY基金会。为了帮助公众访问和理解互联网计算机背后的技术，DFINITY团队发布了“极客的互联网计算机”，这是一份新的白皮书，解释了区块链如何使用智能合约为新兴的去中心化生态系统提供动力的基本原理可互操作的Web3dapp、DeFi平台、游戏、NFT、社交媒体和元界项目。通过应用强大的新“链密钥”加密技术...</description>
+    </item>
+    
     <item>
       <title>2021 年的 DFINITY:互联网计算机开发者和社区成长的一年</title>
       <link>https://fengche.io/posts/382/</link>

@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Fri, 22 Apr 2022 16:17:18 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E9%92%B1%E5%8C%85/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 May 2022 15:12:20 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E9%92%B1%E5%8C%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GeroWallet 宣布整合 Nervos 网络</title>
+      <link>https://fengche.io/posts/393/</link>
+      <pubDate>Mon, 23 May 2022 15:12:20 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/393/</guid>
+      <description>Nervos是一个开源的公共区块链生态系统和协议集合，为通用的类似互联网的公共网络奠定了基础钱包整合这对Gero用户意味着他们将可以访问GeroWallet中的Nervos区块链。随着我们进入多链支持并最终成为区块链不可知论者，Nervos将成为我们支持的首批区块链之一。Nervos是额外区块链支持的一个很好的早期选择，因为他们已经与Cardano建立了合作伙伴关系，是开源的，并且在互操作性方面有着相同的愿景。关于GeroWallet我们的用户是我们的动力。我们致力于通过为DeFi社区设计创新的...</description>
+    </item>
+    
     <item>
       <title>Cardano区块链一个月内新增400个项目和10万个钱包</title>
       <link>https://fengche.io/posts/291/</link>

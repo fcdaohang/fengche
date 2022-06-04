@@ -6,7 +6,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Mon, 23 May 2022 15:10:57 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E4%BA%92%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 10:16:10 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E4%BA%92%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>你需要知道的关于区块链的一切</title>
+      <link>https://fengche.io/posts/403/</link>
+      <pubDate>Thu, 26 May 2022 10:16:10 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/403/</guid>
+      <description>传统分类帐是公司用来跟踪其交易的书。这是高度集中的（只有公司拥有），具有单点故障、不透明（只有特权人员可以访问）并且容易出现人为错误。从那以后，我们从实体书籍毕业到会计软件，但其他方面并没有太大变化。区块链是一种共享且不可变的数字分类账，用于存储和跟踪交易。区块链技术通常用于分散的点对点或“P2P”网络。在这种形式下，我们有一个公开共享的账本（任何拥有计算机和互联网访问权限的人都可以访问），没有单点故障，高度透明（所有交易数据都是公开的），并且受算法控制。什么是节点？节点是安装了比特币软件和比特...</description>
+    </item>
+    
+    <item>
+      <title>NFT——Web3 墙中的砖块</title>
+      <link>https://fengche.io/posts/401/</link>
+      <pubDate>Thu, 26 May 2022 10:14:50 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/401/</guid>
+      <description>NFT简介2021年，NFT这个词的使用已经在广阔的互联网领域广泛使用。很难找到一个不知道这个词的年轻人。在Facebook上分享的文章中，数百万美元的数字猴子绘画成为头条新闻——真是太疯狂了！因此，可以理解NFT经常在混乱的呼吸或声明中被提及，谴责并质疑其投机性质。与一般新闻的情况一样，头条新闻往往是耸人听闻的，在这个社交媒体时代尤其如此。与对NFT技术的冗长解释相反，华而不实且可能具有误导性的文章通常能够吸引更多点击。说实话，NFT生态系统是世界前所未见的。通过了解NFT的细节和潜力，很容易...</description>
+    </item>
+    
     <item>
       <title>Mrweb AMA 停止在 Tron 网络上运行</title>
       <link>https://fengche.io/posts/390/</link>

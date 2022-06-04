@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>VIRES on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/vires/</link>
+    <description>Recent content in VIRES on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Thu, 26 May 2022 10:13:55 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/vires/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Losermail POAP for Early Subscribers</title>
+      <link>https://fengche.io/posts/400/</link>
+      <pubDate>Thu, 26 May 2022 10:13:55 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/400/</guid>
+      <description>锁定一段时间内的流动性现在将产生大部分VIRES每日分配（每天225个VIRES），而常规流动性提供将只获得一小部分（每天25个VIRES）。借款人不会获得VIRES。为什么需要锁定功能？这旨在为vires.finance的市场创造可预测的退出动态。如果大多数用户锁定他们的头寸，想要退出协议的少数用户将能够这样做，而不会导致大规模的流动性退出问题。由于有许多社区成员希望支持Vires的长期可持续性，因此长期流动性提供需要通过协议进行激励和奖励。然而，也有许多用户想要离开，我们希望以一种可持续的方...</description>
+    </item>
+    
+  </channel>
+</rss>

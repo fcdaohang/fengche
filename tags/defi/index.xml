@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Thu, 19 May 2022 14:22:05 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/defi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 10:15:37 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/defi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>介绍Risk DAO</title>
+      <link>https://fengche.io/posts/402/</link>
+      <pubDate>Thu, 26 May 2022 10:15:37 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/402/</guid>
+      <description>我们很高兴地宣布推出RiskDAO——一项由B.Protocol和1kx牵头的服务DAO，将专注于为DeFi借贷协议以及L1网络提供新的开源风险评估框架和相关审计。为什么要推出RiskDAO借贷和CDP协议占DeFi锁定的110B美元总价值的30%以上。作为快速发展的行业中的主导部门，我们构建开源工具和资源以使协议更安全并让用户更清楚地了解风险非常重要。RiskDAO将致力于做到这一点。由于经济剥削或借款协议管理不善，数千万至数亿美元已被抹去或面临风险，进一步凸显了客观的第三方风险评估和频繁监控...</description>
+    </item>
+    
     <item>
       <title>互联网计算机区块链的隐私优势</title>
       <link>https://fengche.io/posts/388/</link>

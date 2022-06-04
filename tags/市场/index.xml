@@ -17,6 +17,42 @@
     </item>
     
     <item>
+      <title>你需要知道的关于区块链的一切</title>
+      <link>https://fengche.io/posts/403/</link>
+      <pubDate>Thu, 26 May 2022 10:16:10 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/403/</guid>
+      <description>传统分类帐是公司用来跟踪其交易的书。这是高度集中的（只有公司拥有），具有单点故障、不透明（只有特权人员可以访问）并且容易出现人为错误。从那以后，我们从实体书籍毕业到会计软件，但其他方面并没有太大变化。区块链是一种共享且不可变的数字分类账，用于存储和跟踪交易。区块链技术通常用于分散的点对点或“P2P”网络。在这种形式下，我们有一个公开共享的账本（任何拥有计算机和互联网访问权限的人都可以访问），没有单点故障，高度透明（所有交易数据都是公开的），并且受算法控制。什么是节点？节点是安装了比特币软件和比特...</description>
+    </item>
+    
+    <item>
+      <title>介绍Risk DAO</title>
+      <link>https://fengche.io/posts/402/</link>
+      <pubDate>Thu, 26 May 2022 10:15:37 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/402/</guid>
+      <description>我们很高兴地宣布推出RiskDAO——一项由B.Protocol和1kx牵头的服务DAO，将专注于为DeFi借贷协议以及L1网络提供新的开源风险评估框架和相关审计。为什么要推出RiskDAO借贷和CDP协议占DeFi锁定的110B美元总价值的30%以上。作为快速发展的行业中的主导部门，我们构建开源工具和资源以使协议更安全并让用户更清楚地了解风险非常重要。RiskDAO将致力于做到这一点。由于经济剥削或借款协议管理不善，数千万至数亿美元已被抹去或面临风险，进一步凸显了客观的第三方风险评估和频繁监控...</description>
+    </item>
+    
+    <item>
+      <title>你需要知道的关于 NXSUD 的一切</title>
+      <link>https://fengche.io/posts/399/</link>
+      <pubDate>Thu, 26 May 2022 09:29:17 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/399/</guid>
+      <description>Nereus协议的第二阶段终于到来了；我们很高兴地宣布，我们已经推出了Nereus的完全抵押稳定币NXUSD。NXUSD拥有市场领先的实用性，并利用Wirex和Nereus之间的关系，在DeFi2.0时代的创新前沿提供开创性的功能。什么是稳定币？创建稳定币是为了帮助消除通常与加密相关的波动因素。与此同时，他们将继续提供加密货币的其他好处，使其成为比传统资产更好的交易媒介，例如更快的交易速度和更低的成本。它们也是加密生态系统的一个很好的入口/出口。有不同类型的稳定币，它们的价格使用各种机制来维持。...</description>
+    </item>
+    
+    <item>
+      <title>Pixion Games 加入 Avalanche 生态系统</title>
+      <link>https://fengche.io/posts/397/</link>
+      <pubDate>Thu, 26 May 2022 09:28:14 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/397/</guid>
+      <description>在开发Fableborne的过程中，我们开始看到区块链成为实现我们愿景的主要支柱的可行解决方案——为我们的玩家提供有价值的奖励并维持他们对时间和精力投资的所有权。完美契合我们评估了许多第1层和第2层区块链选项来构建我们的游戏。由于其无缝、可定制、可扩展的特性，Avalanche立即适合我们。我们知道我们需要每秒高速的交易才能处理大量用户的交易。Avalanche提供了这一点，因为它目前被称为区块链行业中最快的智能合约平台，以完成时间来衡量。我们还认识到，我们需要一个与EVM兼容且可互操作的区块链...</description>
+    </item>
+    
+    <item>
       <title>从LUNA谈起-金融和市场</title>
       <link>https://fengche.io/posts/384/</link>
       <pubDate>Wed, 18 May 2022 09:37:16 +0800</pubDate>

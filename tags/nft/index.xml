@@ -6,7 +6,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Tue, 17 May 2022 12:30:52 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/nft/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 10:14:50 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/nft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NFT——Web3 墙中的砖块</title>
+      <link>https://fengche.io/posts/401/</link>
+      <pubDate>Thu, 26 May 2022 10:14:50 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/401/</guid>
+      <description>NFT简介2021年，NFT这个词的使用已经在广阔的互联网领域广泛使用。很难找到一个不知道这个词的年轻人。在Facebook上分享的文章中，数百万美元的数字猴子绘画成为头条新闻——真是太疯狂了！因此，可以理解NFT经常在混乱的呼吸或声明中被提及，谴责并质疑其投机性质。与一般新闻的情况一样，头条新闻往往是耸人听闻的，在这个社交媒体时代尤其如此。与对NFT技术的冗长解释相反，华而不实且可能具有误导性的文章通常能够吸引更多点击。说实话，NFT生态系统是世界前所未见的。通过了解NFT的细节和潜力，很容易...</description>
+    </item>
+    
+    <item>
+      <title>Pixion Games 加入 Avalanche 生态系统</title>
+      <link>https://fengche.io/posts/397/</link>
+      <pubDate>Thu, 26 May 2022 09:28:14 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/397/</guid>
+      <description>在开发Fableborne的过程中，我们开始看到区块链成为实现我们愿景的主要支柱的可行解决方案——为我们的玩家提供有价值的奖励并维持他们对时间和精力投资的所有权。完美契合我们评估了许多第1层和第2层区块链选项来构建我们的游戏。由于其无缝、可定制、可扩展的特性，Avalanche立即适合我们。我们知道我们需要每秒高速的交易才能处理大量用户的交易。Avalanche提供了这一点，因为它目前被称为区块链行业中最快的智能合约平台，以完成时间来衡量。我们还认识到，我们需要一个与EVM兼容且可互操作的区块链...</description>
+    </item>
+    
     <item>
       <title>ICME 和 Blocks：互联网计算机上的无代码开发</title>
       <link>https://fengche.io/posts/380/</link>

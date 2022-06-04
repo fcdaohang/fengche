@@ -17,6 +17,87 @@
     </item>
     
     <item>
+      <title>你需要知道的关于区块链的一切</title>
+      <link>https://fengche.io/posts/403/</link>
+      <pubDate>Thu, 26 May 2022 10:16:10 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/403/</guid>
+      <description>传统分类帐是公司用来跟踪其交易的书。这是高度集中的（只有公司拥有），具有单点故障、不透明（只有特权人员可以访问）并且容易出现人为错误。从那以后，我们从实体书籍毕业到会计软件，但其他方面并没有太大变化。区块链是一种共享且不可变的数字分类账，用于存储和跟踪交易。区块链技术通常用于分散的点对点或“P2P”网络。在这种形式下，我们有一个公开共享的账本（任何拥有计算机和互联网访问权限的人都可以访问），没有单点故障，高度透明（所有交易数据都是公开的），并且受算法控制。什么是节点？节点是安装了比特币软件和比特...</description>
+    </item>
+    
+    <item>
+      <title>介绍Risk DAO</title>
+      <link>https://fengche.io/posts/402/</link>
+      <pubDate>Thu, 26 May 2022 10:15:37 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/402/</guid>
+      <description>我们很高兴地宣布推出RiskDAO——一项由B.Protocol和1kx牵头的服务DAO，将专注于为DeFi借贷协议以及L1网络提供新的开源风险评估框架和相关审计。为什么要推出RiskDAO借贷和CDP协议占DeFi锁定的110B美元总价值的30%以上。作为快速发展的行业中的主导部门，我们构建开源工具和资源以使协议更安全并让用户更清楚地了解风险非常重要。RiskDAO将致力于做到这一点。由于经济剥削或借款协议管理不善，数千万至数亿美元已被抹去或面临风险，进一步凸显了客观的第三方风险评估和频繁监控...</description>
+    </item>
+    
+    <item>
+      <title>NFT——Web3 墙中的砖块</title>
+      <link>https://fengche.io/posts/401/</link>
+      <pubDate>Thu, 26 May 2022 10:14:50 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/401/</guid>
+      <description>NFT简介2021年，NFT这个词的使用已经在广阔的互联网领域广泛使用。很难找到一个不知道这个词的年轻人。在Facebook上分享的文章中，数百万美元的数字猴子绘画成为头条新闻——真是太疯狂了！因此，可以理解NFT经常在混乱的呼吸或声明中被提及，谴责并质疑其投机性质。与一般新闻的情况一样，头条新闻往往是耸人听闻的，在这个社交媒体时代尤其如此。与对NFT技术的冗长解释相反，华而不实且可能具有误导性的文章通常能够吸引更多点击。说实话，NFT生态系统是世界前所未见的。通过了解NFT的细节和潜力，很容易...</description>
+    </item>
+    
+    <item>
+      <title>Losermail POAP for Early Subscribers</title>
+      <link>https://fengche.io/posts/400/</link>
+      <pubDate>Thu, 26 May 2022 10:13:55 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/400/</guid>
+      <description>锁定一段时间内的流动性现在将产生大部分VIRES每日分配（每天225个VIRES），而常规流动性提供将只获得一小部分（每天25个VIRES）。借款人不会获得VIRES。为什么需要锁定功能？这旨在为vires.finance的市场创造可预测的退出动态。如果大多数用户锁定他们的头寸，想要退出协议的少数用户将能够这样做，而不会导致大规模的流动性退出问题。由于有许多社区成员希望支持Vires的长期可持续性，因此长期流动性提供需要通过协议进行激励和奖励。然而，也有许多用户想要离开，我们希望以一种可持续的方...</description>
+    </item>
+    
+    <item>
+      <title>你需要知道的关于 NXSUD 的一切</title>
+      <link>https://fengche.io/posts/399/</link>
+      <pubDate>Thu, 26 May 2022 09:29:17 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/399/</guid>
+      <description>Nereus协议的第二阶段终于到来了；我们很高兴地宣布，我们已经推出了Nereus的完全抵押稳定币NXUSD。NXUSD拥有市场领先的实用性，并利用Wirex和Nereus之间的关系，在DeFi2.0时代的创新前沿提供开创性的功能。什么是稳定币？创建稳定币是为了帮助消除通常与加密相关的波动因素。与此同时，他们将继续提供加密货币的其他好处，使其成为比传统资产更好的交易媒介，例如更快的交易速度和更低的成本。它们也是加密生态系统的一个很好的入口/出口。有不同类型的稳定币，它们的价格使用各种机制来维持。...</description>
+    </item>
+    
+    <item>
+      <title>Quadra：旧金山寻宝</title>
+      <link>https://fengche.io/posts/398/</link>
+      <pubDate>Thu, 26 May 2022 09:28:42 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/398/</guid>
+      <description>Quadra是一个基于区块链的应用程序，它鼓励现​​实世界的探索以换取Web3奖励。类似于PokémonGo将现实世界和数字世界融合在一起的方式，Quadra推动人们在现实世界中寻找新的和偏远的地方，以换取可以收集、定制和出售的数字土地块。用户竞相成为第一个到达极端位置的人，每个代币的价值与实际前往每个相应代币所在位置所花费的能量、资源和风险相关。从技术上讲，整个地球被分成500x500平方米的正方形，称为四边形。Quadsquare是虚拟世界中的一块数字房地产，当用户实际前往地球上的相应位置时...</description>
+    </item>
+    
+    <item>
+      <title>Pixion Games 加入 Avalanche 生态系统</title>
+      <link>https://fengche.io/posts/397/</link>
+      <pubDate>Thu, 26 May 2022 09:28:14 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/397/</guid>
+      <description>在开发Fableborne的过程中，我们开始看到区块链成为实现我们愿景的主要支柱的可行解决方案——为我们的玩家提供有价值的奖励并维持他们对时间和精力投资的所有权。完美契合我们评估了许多第1层和第2层区块链选项来构建我们的游戏。由于其无缝、可定制、可扩展的特性，Avalanche立即适合我们。我们知道我们需要每秒高速的交易才能处理大量用户的交易。Avalanche提供了这一点，因为它目前被称为区块链行业中最快的智能合约平台，以完成时间来衡量。我们还认识到，我们需要一个与EVM兼容且可互操作的区块链...</description>
+    </item>
+    
+    <item>
+      <title>介绍 Telcoin V3</title>
+      <link>https://fengche.io/posts/396/</link>
+      <pubDate>Thu, 26 May 2022 09:27:38 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/396/</guid>
+      <description>今天，Telcoin很高兴地介绍去中心化金融平台期待已久的“V3”。我们将展示两个新网站，详细介绍Telcoin平台的两个核心层，以及如何参与的说明。V3不仅仅是一次增量更新——它标志着Telcoin的一个重要进化里程碑。我们开始了专注于普惠金融的旅程，我们相信V3将这一使命推向了新的高度。Telcoin不仅将提供地球上最实惠的汇款网络，24/7/365全天候即时全球结算，而且我们已将平台的流动性引擎分散给用户，使他们能够参与并收取他们现在专属的费用从他们在日常生活中依赖的产品中奖励传统金融机构...</description>
+    </item>
+    
+    <item>
+      <title>加密市场是否需要更多监管？</title>
+      <link>https://fengche.io/posts/395/</link>
+      <pubDate>Thu, 26 May 2022 09:27:04 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/395/</guid>
+      <description>预先对市场进行更多监管似乎很有吸引力，尤其是当企业媒体旋转它以便以某种方式保护公众时。然而，正如历史告诉我们的那样，任何市场的政府监管都是披着羊皮的狼。它通常会导致市场垄断，因为它会削弱其他企业或企业。通常是通过增加不必要的限制来降低盈利能力，这些限制通常会提供更好的服务或产品。最近的一个很好的例子是奥巴马的医疗保健和对制药业的影响以及由此产生的零售药品价格的影响。即使总统或政府官员是好意，结果还是一样。如果我们有一个公平而强大的政府体系，那么监管可能会产生积极的影响。然而现实情况是，政府官员通...</description>
+    </item>
+    
+    <item>
       <title>CULT 是一种公共物品</title>
       <link>https://fengche.io/posts/394/</link>
       <pubDate>Mon, 23 May 2022 15:14:45 +0800</pubDate>

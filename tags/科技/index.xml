@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Thu, 26 May 2022 10:16:10 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E7%A7%91%E6%8A%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 10:16:50 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E7%A7%91%E6%8A%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>技术更新-COTI 基础设施</title>
+      <link>https://fengche.io/posts/404/</link>
+      <pubDate>Thu, 26 May 2022 10:16:50 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/404/</guid>
+      <description>自我们上次更新以来已经过去了几周，我们很高兴地分享COTI生态系统中的所有产品仍与2022年路线图保持一致。研发团队正在努力部署新的开发和升级。阅读以下内容查看最新更新：MultiDAG2.0：后端开发团队已完成MultiDAG2.0相关任务，目前处于测试阶段。前端团队正在致力于所有与向Trustchain引入新代币相关的UI增强功能。他们专注于：我的地址、发送、接收和新的我的代币页面，这将使代币的生成和铸造成为可能。探索2.0和桥梁2.0：前端开发团队已经开始着手开发新的和改进的Explore...</description>
+    </item>
+    
     <item>
       <title>你需要知道的关于区块链的一切</title>
       <link>https://fengche.io/posts/403/</link>

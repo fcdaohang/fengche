@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Gitcoin on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/gitcoin/</link>
+    <description>Recent content in Gitcoin on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 11 Jun 2022 12:14:31 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/gitcoin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>空投潜力，主网指南 - Gitcoin 第 14 轮捐款</title>
+      <link>https://fengche.io/posts/453/</link>
+      <pubDate>Sat, 11 Jun 2022 12:14:31 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/453/</guid>
+      <description>[原文链接](https://www.deficalendar.xyz/p/mainnet-guide-gitcoin-grants-round?s=r)长文预警：主网，无最低限度，潜在空投建议捐赠的项目（至少每个10美元，以防止被归类为刷子）推荐捐的项目[ViaProtocol](https://gitcoin.co/grants/4665/via-protocol-web3-mastercard-best-ux-among-any-to)(跨链桥聚合器)-20年发明了机枪池，也就是聚合很多挖...</description>
+    </item>
+    
+  </channel>
+</rss>

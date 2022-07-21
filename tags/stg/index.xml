@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Wed, 23 Mar 2022 03:47:28 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/stg/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Jul 2022 12:59:29 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/stg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SushiXSwap - 统治所有资产池的跨链 DEX</title>
+      <link>https://fengche.io/posts/460/</link>
+      <pubDate>Thu, 21 Jul 2022 12:59:29 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/460/</guid>
+      <description>[](https://img.fengche.io/aa32650c-b0a3-4e23-81ab-1123f87d7e3a.jpeg)今天我们发布了有史以来第一个跨链AMM——基于Layer0的Stargate。借助XSwap，Sushi现在可让您跨以下链桥接和交易代币（更多内容即将推出#soon！）：Ethereum,Optimism,Arbitrum,Fantom,BinanceChainandAvalanchePolygonSushi现在通过一个易于使用的dApp界面连接所有主要的公链和...</description>
+    </item>
+    
     <item>
       <title>为什么我们选择投资 LayerZero Labs</title>
       <link>https://fengche.io/posts/94/</link>

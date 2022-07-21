@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Sun, 19 Jun 2022 17:19:35 +0800</lastBuildDate><atom:link href="https://fengche.io/editors/%E5%BE%90%E6%9C%9B%E5%B7%9D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Jul 2022 12:59:29 +0800</lastBuildDate><atom:link href="https://fengche.io/editors/%E5%BE%90%E6%9C%9B%E5%B7%9D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SushiXSwap - 统治所有资产池的跨链 DEX</title>
+      <link>https://fengche.io/posts/460/</link>
+      <pubDate>Thu, 21 Jul 2022 12:59:29 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/460/</guid>
+      <description>[](https://img.fengche.io/aa32650c-b0a3-4e23-81ab-1123f87d7e3a.jpeg)今天我们发布了有史以来第一个跨链AMM——基于Layer0的Stargate。借助XSwap，Sushi现在可让您跨以下链桥接和交易代币（更多内容即将推出#soon！）：Ethereum,Optimism,Arbitrum,Fantom,BinanceChainandAvalanchePolygonSushi现在通过一个易于使用的dApp界面连接所有主要的公链和...</description>
+    </item>
+    
     <item>
       <title>下一个是BlockFi？泄露的文件数据表明其在两年牛市期间损失了2.85亿美元</title>
       <link>https://fengche.io/posts/456/</link>
@@ -68,6 +77,15 @@
       
       <guid>https://fengche.io/posts/352/</guid>
       <description>新冠疫情的中断和俄罗斯入侵乌克兰，显示了西方体系的强大和中国体系的弱点。```本文内容：提出种种数据证明美元依然强大合作是以美元强大为基础最后总结：若Defi变得普及，则比特币价值会进一步下降，从而支撑“旧美元”的昂贵本文观点不代表本人观点--风车注```![合作ChrisRatcliffe/Bloomberg供图](https://img.fengche.io/2b8d4a65-4947-4613-9885-35d80b736999.jpg)作者：[尼尔·弗格森NiallFerguson](h...</description>
+    </item>
+    
+    <item>
+      <title>了解ICP.05 分布式生成非交互密钥</title>
+      <link>https://fengche.io/posts/316/</link>
+      <pubDate>Sat, 23 Apr 2022 03:38:09 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/316/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/noninteractive-distributed-key-generation-nidkg/)NIDKG是一种加密协议，用于为参与子网区块链的每个节点分布式生成密钥共享。它应用了高级密码学，包括前向保密加密和正确共享密钥的非交互式零知识证明。前言互联网计算机——由独立运行先进去中心化协议数据中心网络创建的革命性区块链计算机，[使开发人员、组织和企业家能够构建和部署安全的应用程序和自主软件程序](https://int...</description>
     </item>
     
     <item>

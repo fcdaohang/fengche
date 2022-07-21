@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>密钥 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E5%AF%86%E9%92%A5/</link>
+    <description>Recent content in 密钥 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 23 Apr 2022 03:38:09 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E5%AF%86%E9%92%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>了解ICP.05 分布式生成非交互密钥</title>
+      <link>https://fengche.io/posts/316/</link>
+      <pubDate>Sat, 23 Apr 2022 03:38:09 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/316/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/noninteractive-distributed-key-generation-nidkg/)NIDKG是一种加密协议，用于为参与子网区块链的每个节点分布式生成密钥共享。它应用了高级密码学，包括前向保密加密和正确共享密钥的非交互式零知识证明。前言互联网计算机——由独立运行先进去中心化协议数据中心网络创建的革命性区块链计算机，[使开发人员、组织和企业家能够构建和部署安全的应用程序和自主软件程序](https://int...</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>了解ICP.06 互联网身份证：匿名区块链认证系统 | 风车 - 专注区块链快速安全有效的入门信息</title>
+<meta name="keywords" content="ICP,KYC,互联网身份证,匿名,身份验证" />
+<meta name="description" content="[原文链接](https://dfinity.org/howitworks/web-authentication-identity)本文分三部分ICP上的Web身份和身份验证[原文链接](https://medium.com/dfinity/web-authentication-and-identity-on-the-internet-computer-a9bd5754c547)作者：BjörnTackmann，研究团队负责人|DFINITYInternet计算机用更高级和更安全的密码验证方法代...">
+<meta name="author" content="
+徐望川">
+<link rel="canonical" href="https://fengche.io/posts/317/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.9a70498391f8adca004cded811aefa9d98674c66090df071732233658f113870.css" integrity="sha256-mnBJg5H4rcoATN7YEa76nZhnTGYJDfBxcyIzZY8ROHA=" rel="preload stylesheet" as="style">
+<link rel="preload" href="/fclogo.svg" as="image">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-49BWTSEZDZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49BWTSEZDZ');
+</script><meta property="og:title" content="了解ICP.06 互联网身份证：匿名区块链认证系统" />
+<meta property="og:description" content="[原文链接](https://dfinity.org/howitworks/web-authentication-identity)本文分三部分ICP上的Web身份和身份验证[原文链接](https://medium.com/dfinity/web-authentication-and-identity-on-the-internet-computer-a9bd5754c547)作者：BjörnTackmann，研究团队负责人|DFINITYInternet计算机用更高级和更安全的密码验证方法代..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fengche.io/posts/317/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-23T03:39:18&#43;08:00" />
+<meta property="article:modified_time" content="2022-04-23T03:39:18&#43;08:00" />
+<meta property="og:image" content="https://fengche.io/fcslogo.png" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="了解ICP.06 互联网身份证：匿名区块链认证系统"/>
+<meta name="twitter:description" content="[原文链接](https://dfinity.org/howitworks/web-authentication-identity)本文分三部分ICP上的Web身份和身份验证[原文链接](https://medium.com/dfinity/web-authentication-and-identity-on-the-internet-computer-a9bd5754c547)作者：BjörnTackmann，研究团队负责人|DFINITYInternet计算机用更高级和更安全的密码验证方法代..."/>
+<meta name="twitter:image" content="https://fengche.io/fcslogo.png"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "文章精选",
+      "item": "https://fengche.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "了解ICP.06 互联网身份证：匿名区块链认证系统",
+      "item": "https://fengche.io/posts/317/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "了解ICP.06 互联网身份证：匿名区块链认证系统",
+  "name": "了解ICP.06 互联网身份证：匿名区块链认证系统",
+  "description": "[原文链接](https://dfinity.org/howitworks/web-authentication-identity)本文分三部分ICP上的Web身份和身份验证[原文链接](https://medium.com/dfinity/web-authentication-and-identity-on-the-internet-computer-a9bd5754c547)作者：BjörnTackmann，研究团队负责人|DFINITYInternet计算机用更高级和更安全的密码验证方法代...",
+  "keywords": [
+    "ICP,KYC,互联网身份证,匿名,身份验证"
+  ],
+  "articleBody": "原文链接\n本文分三部分\nICP 上的 Web 身份和身份验证 原文链接 作者：Björn Tackmann，研究团队负责人 | DFINITY\nInternet 计算机用更高级和更安全的密码验证方法代替了用户名和密码。\n了解身份和身份验证在 Internet 计算机环境中的含义，世界上第一个以网络速度运行并且可以无限制地增加容量的区块链网络，我们必须首先考虑当今网络如何使用身份和身份验证。\n当您登录网站时，您的用户名通常是您的电子邮件地址或一串字母和数字，它充当您的唯一标识符，将服务器上的相关数据与您的身份联系起来。您的密码是身份验证的手段。因为，理论上，只有你应该知道你的密码，服务器将您的密码解释为它正在与您通信的证据。但事实证明，密码实际上并不是一个好的远程身份验证机制。\n当您在网站上输入密码时，您的计算机会将密码发送到服务器，并与密码数据库进行核对。不幸的是，黑客可以访问这些密码数据库。在最恶劣的情况下，密码以明文形式存储在服务器上，这不是推荐的安全做法。然而，即使密码被加密，恢复它们也只是黑客愿意投资以获得访问权限的计算和金钱资源的问题。\nICP 旨在通过跨多个数据中心复制数据和计算来提供安全性，以防止个别计算提供商的恶意行为。复制在保护数据完整性的同时，不能防止信息泄露；在 Internet 计算机上使用密码仍然会遇到与传统 Web 相同的安全问题。因此，对于 Internet 计算机，我们已将密码替换为适当的密码验证。\n{{- youtube id=“9eUTcCP_ELM” title=“Inside the Internet Computer | Identity and Authentication on the Internet Computer” -}}\n我们在 Internet 计算机上用于身份验证的主要加密机制是数字签名方案。数字签名是一个非常标准的概念。它们是在 1970 年代后期发明的，至少从 1990 年代中期开始就被广泛使用。\n它们通常被认为由三种算法组成：\n 密钥生成，您可以将其视为选择密码的模拟。密钥生成创建一对密钥： 1）必须保密的私钥，就像密码一样 2）从私钥派生的公钥，但可以公开。 签名，它接受消息和私钥并生成签名。当我们使用数字签名进行用户身份验证时，该算法在持有私钥的用户端运行。 验证，它获取消息、签名和公钥，并验证签名是否与消息和公钥匹配。这里的关键属性是，与检查密码不同，它需要将秘密密码存储在服务器上，这种情况下的签名验证可以仅基于公开信息进行。服务器存储一个公钥列表，每个用户一个，公钥和签名都不必保密。  互联网计算机上的应用程序是基于通过传递消息进行交互的容器智能合约实现的。更详细地说，交互模型基于请求，这很像远程过程调用。当容器 A 调用容器 B 时，容器 A 指定目标容器（即容器 B）、它所参与调用的函数的名称以及函数的参数。在容器 B 上评估指定函数时，该容器也知道该函数已由容器 A 调用。评估完成后，Canister A 获取函数的返回值作为响应。当用户与容器交互时，应用相同的远程过程调用模型。当用户调用容器时，用户会向目标容器发送请求。该请求还指定了一个带参数的函数，用户获得返回作为响应。在请求变化期间，容器还获知调用它的用户的身份。\n上图是用户发送请求的示意图。中间的浅灰色区域显示了核心请求：目标容器 ID、函数名称、参数以及调用者的身份或主体。较深的灰色区域显示包含身份验证信息、签名和公钥。如左侧所示，调用者的主体是通过从公钥Hash得出的。该技术广泛用于区块链领域，例如比特币或以太坊地址。右侧显示了作为数字签名方案中的消息的请求内容如何通过签名绑定到公钥。当 Internet 计算机收到这样的请求时，它会检查签名在指定的公钥下是否有效，以及公钥和调用者主体之间的关系。\n为了确保消息确实是由消息中指定的调用者发送的，容器不必费心处理这些技术细节。如果一切顺利，互联网计算机将评估容器上的指定功能。如果其中一项检查失败，则简单地丢弃请求。\n我想提一些关于我们使用的主体格式的细节。我们从 DER 格式的公钥开始，并使用 SHA-224 对其进行哈希处理，得到一个 28 字节的字符串。我们附加一个字节，仅用于区分从公钥派生的主体与我们在 Internet 计算机中其他地方使用的主体，例如用于容器的主体。这 29 个字节是用户主体的内部二进制表示。在将主体转换为其文本表示时，我们首先添加一个 CRC-32 错误检测代码。然后，我们在 Base32 中对生成的字符串进行编码，最后构建每组 5 个字符，用破折号分隔。选择该格式是为了支持简单的复制粘贴和适当的错误检测，同时仍然允许 ASCII 表示少于 64 个字符以与 Internet 协议（如 DNS）兼容。\n到目前为止，我们看到的方案在构造上仍然有点不灵活。它将用户的主体绑定到单个加密密钥。这种限制使用户难以与来自不同设备的容器进行交互，因为这需要在这些设备之间共享相同的加密密钥，从安全角度来看，这既乏味又令人沮丧。相反，我们使用不同加密密钥之间的委托。在上图中，您可以看到从黄色键到橙色键的委托。这样的委托由委托的密钥组成，橙色的密钥；一些附加参数，例如授权范围的到期或限制；和授权密钥的签名，黄色的。\n当使用橙色密钥签署请求时，用户现在可以包含来自黄色密钥的委托，以便使用从黄色密钥派生的身份。代表团的特别强大之处在于它们可以组合。例如，橙色键可以将委托扩展到紫色键。如果从公钥基础设施和 X.509 中所有这些看起来都很熟悉，那绝非巧合——我们只是在使用更轻量级的数据结构。\n委托的一种特定应用与 Web 身份验证有关。 Web 身份验证是万维网联盟 (W3C) 的最新标准，主要针对 Web 应用程序的双因素身份验证。该标准的动机是，如前所述，密码具有严重的安全缺陷。他们经常成为网络犯罪分子的牺牲品，无论是通过网络钓鱼电子邮件和安装在用户设备上的恶意软件，还是在服务被黑客入侵时。\n双重身份验证意味着除了密码之外，登录 Web 应用程序还需要一个额外的安全因素，通常是用户拥有的安全设备。在实践中，这可能是一个安全的 USB 密钥或一个内置在用户终端设备中并通过生物识别激活的安全芯片。安全芯片存储密码密钥。由于加密密钥永远不会离开安全芯片，因此即使用户的计算机或手机感染了恶意软件，它们仍然是安全的。\n当 Web 身份验证作为 Web 应用程序中的第二个因素时，协议流程如下： 用户通过提供用户名和密码发起登录过程后，Web 服务器将生成一个随机挑战并发送给用户的浏览器，然后浏览器将质询发送到安全设备，这需要用户交互才能签署质询。然后将签名的质询发送回服务器，服务器会根据用户注册的公钥验证质询上的签名。这确保了登录 Web 应用程序除了密码之外还需要持有安全设备。\n我们正在建立这样一个事实，即 Web 身份验证是一种使用数字签名进行身份验证的开放标准，并且已经在广泛的设备上得到支持。然而，在将其用于 Internet 计算机时，我们必须克服一些障碍。Web 身份验证采用传统 Web 的面向会话的客户端服务器模型，其中用户在登录应用程序时进行一次身份验证，并在同一会话中发送后续消息。相比之下，Internet 计算机实现了一个模型，其中每个请求都单独进行身份验证。特别是，没有服务器可以生成要由安全设备签名的质询，因为在浏览器和 Internet 计算机之间没有状态会话。然而，回想一下，在典型的 Web 身份验证流程中，安全设备为服务器发送的质询提供数字签名。\n为了使用相同的协议实现请求身份验证，我们使用请求本身作为挑战，并由安全设备对其进行签名，类似于我们的一般请求身份验证方案。我们必须克服的另一个问题是 Web 身份验证需要用户对每个签名进行交互。在互联网计算机服务的典型前端中，单个页面加载可以对应多个请求。由于我们不想要求用户明确确认每个请求，我们使用上述委托机制。当使用 Web 身份验证与容器交互时，我们首先生成一个短期会话密钥。然后，我们使用 Web 身份验证来签署针对该会话密钥的委托，以便单个用户交互可以触发对 Internet 计算机的多个请求。\n虽然 Web 身份验证非常适合安全地存储加密密钥，但它不仅将这些密钥绑定到设备，还绑定到特定容器。这样做的原因是浏览器安全模型，它严格区分运行在同一 Web 浏览器中的不同应用程序可访问的状态的来源。在网络上，你可以认为一个来源大致对应于一个网站。在 Internet 计算机上，每个源对应一个容器。这种严格的状态分离对于安全性至关重要，但它也使诸如密钥备份或支持从多个设备无缝访问相同容器等功能变得乏味，因为所有这些操作都必须为每个容器单独执行。我们通过使用Internet 身份服务来解决此问题，该身份提供程序类似于您在网络上熟悉的“使用 Google 或 Facebook 登录”功能。\n当用户首次加载给定容器的前端时，该前端可以显示“使用 IC 登录”按钮。当用户单击该按钮时，浏览器会打开一个带有 Internet 身份服务的弹出窗口，这是一个允许用户管理密钥和身份的特定应用程序。在那里，用户可以决定是否允许容器前端使用用户的身份。如果用户同意，浏览器会被重定向到容器前端，并且可以以用户的身份访问容器。该机制再次使用会话密钥和委托机制。容器前端生成会话密钥对并将公钥传输到 Internet Identity。如果用户确认，Internet Identity 会生成一个委托，并将其返回给容器前端。作为通过大型技术提供商登录的额外好处，身份提供商中的完整身份验证流程发生在用户端，因此私人用户操作的暴露要少得多，因此跟踪也少得多。（互联网身份服务常见问题解答）\n说到用户跟踪，互联网身份将为用户登录的每个容器前端提供不同的身份，这对安全和隐私非常有用。如果不是这样，互联网身份将允许每个前端在用户的单一主体下登录。如果该用户与不相关的服务（例如，留言板和购物网站）进行交互，这些可能会在背后关联用户在这些网站上的行为。更糟糕的是，留言板的前端可以恶意调用购物网站的容器，以用户的名义下单。因此，互联网身份服务为用户登录的每个前端生成不同的身份，前端由其主机名区分。这样，用户在不同服务上的操作就不会那么容易被跟踪。虽然前端仍然能够使用用户的身份调用 Internet 计算机上的任何容器，但只有与执行调用的前端相关联的身份。\n我们最近发布的互联网计算机接口规范中详细说明了上述和互联网身份中使用的机制——我们期待着看到我们的开发者社区还将从中构建什么。\n验证互联网身份代码：演练 原文链接 作者：高级研究员兼工程师 Joachim Breitner | DFINITY\n确认 ICP 区块链身份验证系统的确按照其所声称之方式运行的分步指南。 在互联网计算机上，用户可以使用互联网身份密码认证系统登录各种dapp，如NNS前端dapp、OpenChat等。在这样做的过程中，用户相信这项服务会妥善保管他们的凭据——但他们可能希望直接确认 Internet Identity 确实没有跟踪他们。\n互联网身份是否真正运行它所声称运行的代码？为了帮助您回答这个问题，我将引导您完成验证这一点的步骤。（当然，以下内容也适用于其他容器，但在这种情况下，我将坚持使用 Internet Identity。）\n找出正在运行的内容 互联网计算机上的智能合约，即容器智能合约，是一个WebAssembly 模块。Internet 计算机故意不允许您仅下载任何容器的 Wasm 代码，因为可能有些开发人员希望将其代码保密。但它确实暴露了 Wasm 模块的哈希值。最简单的方法是使用 dfx：\n`$ dfx canister –no-wallet –network ic info rdmx6-jaaaa-aaaaa-aaadq-cai\nController: r7inp-6aaaa-aaaaa-aaabq-cai\nModule hash: 0xd4af9277f3e8d26fd8cdc7874a9f47b6456587fbb2a64d61b6b6880d144d3c04`\n这里的“控制器”是治理容器的容器 id。这告诉您，互联网身份由网络神经系统 (NNS) 控制，其代码只能通过投票的提案进行更改。这很好；如果控制者只是我，我可以更改互联网身份代码并接管您的所有身份。\n“模块哈希”是已部署的 .wasm 的 SHA-256 哈希。因此，让我们跟随那个踪迹。\n找到正确的提交 由于对 Internet 身份的升级是通过向 NNS 提出建议来完成的，因此我们应该在 https://github.com/ic-association/nns-proposals 存储库中的proposals/network_canister_management 目录中找到对此类建议的描述。 我们必须找到升级 Internet Identity 的最新提案。不幸的是，该文件夹包含许多容器的建议，并且文件命名不是很有帮助。我通常从底部浏览列表并查看第二列，其中包含创建或修改文件最新提交的标题。\n在这种情况下，倒数第二个是我们关心的：该文件列出了基本原理，概述了更改，最重要的是，说 bd51eab 是我们要升级到的提交。\n该文件还说 wasm 哈希是 d4a…c04，与我们在上面看到的相符。这很好：看来我们真的找到了升级互联网身份的最年轻的提案，并且提案实际上通过了。\n警告：如果你是偏执狂，不要相信这个文件。没有什么可以阻止提案提出者创建一个指向一个修订的文件，同时在提案中实际包含不同的代码。这就是为什么接下来的步骤对于验证是必要的。\n获取源代码 现在我们有了修订版，我们可以获取源代码并查看修订版 bd51eab： /tmp $ git clone https://github.com/dfinity/internet-identity Klone nach 'internet-identity' ... remote: Enumerating objects: 3959, done. remote: Counting objects: 100% (344/344), done. remote: Compressing objects: 100% (248/248), done. remote: Total 3959 (delta 161), reused 207 (delta 92), pack-reused 3615 Empfange Objekte: 100% (3959/3959), 6.05 MiB | 3.94 MiB/s, Fertig. Löse Unterschiede auf: 100% (2290/2290), Fertig. /tmp $ cd internet-identity/ /tmp/internet-identity $ git checkout bd51eab /tmp/internet-identity $ git log --oneline -n 1 bd51eab (HEAD, tag: mainnet-20210527T2203Z) Registers the seed phrase before showing it (#301) 在最后一行中，您看到 Internet 身份团队已使用包含提案描述文件名的标记名称标记了该修订。很整齐！\n重现构建 README.md 具有以下构建说明：\n实际上运行第一个命令就足够了，因为它还会打印哈希（我们不需要将 .wasm 从 Docker 容器中复制出来）：\n/tmp/internet-identity $ docker build -t internet-identity-service . … Step 26/26 : RUN sha256sum internet_identity.wasm --- Running in 1a04644b544c d4af9277f3e8d26fd8cdc7874a9f47b6456587fbb2a64d61b6b6880d144d3c04 internet_identity.wasm Removing intermediate container 1a04644b544c --- bfe6a63a7980 Successfully built bfe6a63a7980 Successfully tagged internet-identity-service:latest\n成功！哈希匹配。\n你不相信我吗？自己试试（如果你得到不同的哈希，请告诉我们——也许我被黑了）。如果你没有为 Docker 配置足够的 RAM，这可能会失败； 8GB应该足够了。\n此时，您拥有从您面前的代码到运行在 https://identity.ic0.app/ 的 Internet Identity 的信任路径，包括前端代码，您可以开始审核源代码。\n容器的ID是什么呢 如果您仔细观察，您可能已经注意到我们获得了容器 rdmx6-jaaaa-aaaaa-aaadq-cai 的模块，但我们正在访问 https://identity.ic0.app/ 上的 Web 应用程序。那么这个联系在哪里呢？\n将来，我希望 Internet 计算机上有某种形式的类似 DNS 的“好主机名注册表”，它存储从好名称到容器 id 的映射，并且您将能够查询“哪个容器服务于 rdmx6- jaaaa-aaaaa-aaadq-cai”以安全的方式（例如使用认证变量）。但是由于我们还没有这个，但仍然希望您能够为 Internet 身份使用一个好听的名称（并且以后不必更改名称，这会让人头疼），我们现在已经硬编码了这个映射.\n此处的相关代码是您的浏览器在访问任何 * .ic0.app URL 时下载的“Certifying Service Worker”。然后，这段代码将拦截对该域名的所有请求，将其映射到查询调用，然后使用经过认证的变量来验证响应。事实上，映射在代码中：\nconst hostnameCanisterIdMap: Record= { 'identity.ic0.app': ['rdmx6-jaaaa-aaaaa-aaadq-cai', 'ic0.app'], 'nns.ic0.app': ['qoctq-giaaa-aaaaa-aaaea-cai', 'ic0.app'], 'dscvr.ic0.app': ['h5aet-waaaa-aaaab-qaamq-cai', 'ic0.page'], };\n其他容器呢？ 原则上，相同的方法适用于其他容器，无论是 OpenChat、NNS 容器等。但细节会有所不同，因为每个容器开发人员可能有自己的方式：\n 传达其容器源的位置和修订版本 建造容器  特别是，如果没有可复制的方式来构建容器，这将失败，这就是为什么像 https://reproducible-builds.org/ 这样的项目通常如此重要的原因。\n如果您想讨论这篇文章，请考虑加入 DFINITY 论坛并在以下位置发表评论：https://forum.dfinity.org/t/verifying-the-code-of-the-internet-identity-service-a-walk-through/4650\n互联网身份：用户名和密码的终结 原文链接\nInternet Identity 区块链身份验证系统使您能够安全且匿名地登录到 Internet 计算机上的 dapp。\n互联网计算机是世界上第一个真正的互联网规模的公共区块链。与其他区块链不同，它可以处理和存储任意数量的数据。它还托管以网络速度运行的智能合约（区块链软件逻辑），效率比以前高得多。它们能够直接向最终用户提供交互式 Web 内容，使广泛的系统和服务能够以 dapp 的形式完全建立在区块链上，而不依赖于云服务等传统技术。现在终于可以完全在公共区块链上构建和运行超大规模的代币化社交媒体。\n互联网计算机的目的是通过使用托管在网络空间中的智能合约，使几乎所有系统和服务都可以重建和重新构想为安全的 dapp，从而扩展互联网–它将处理和存储他们的所有数据，而无需传统技术及其服务的增强。这将推动“区块链奇点”，几乎每个系统和服务最终都完全从公共区块链运行。\n为了避免困扰传统网络密码认证的安全问题，互联网计算机区块链引入了一种新的密码认证系统。这个被称为互联网身份的新系统非常易于使用，与用于通过网络对区块链进行身份验证的现有系统形成鲜明对比。\n从本质上讲，它允许最终用户使用他们的设备对区块链上的 dapps 进行身份验证，这种方式通过互联网计算机使用的“链密钥”加密技术成为可能。最终用户设备可以是传统的 HSM 设备，例如 YubiKey，也可以是包含 TPM 芯片的移动设备，例如笔记本电脑或手机。\n举例而言，成千上万的人已经在使用笔记本电脑上的指纹传感器或手机上的 FaceID 对完全在互联网计算机上运行的 dapp 进行身份验证。在每种情况下，都提供了出色的可用性，即使公钥加密技术被安全地应用在所涉及设备内部的安全芯片中，用户也不必自己接触密钥材料，并从无缝、低摩擦的体验中受益。\nInternet Identity 正在不断改进，以使其与越来越多的支持称为 WebAuthn 的 Web 标准的设备兼容。如果您的设备较旧，并且您的浏览器不支持适用于 Internet 身份的标准（以便您可以使用例如指纹传感器进行身份验证），然后您可以使用诸如 YubiKey 之类的 HSM 设备来增强它。这也可以很方便。\n例如，您可以购买支持 NFC 的 YubiKey，它允许您通过手机等方式登录，只需用钥匙轻敲即可。幸运的是，消费者设备越来越多地默认包含此类身份验证器。\n互联网身份使用户能够通过他们的设备安全地对区块链上的 dapp 进行身份验证的方式是革命性的。\n您可以直接在 https://identity.ic0.app/ 尝试互联网身份认证配置器（该页面直接来自互联网计算机区块链）。\n这使您可以创建称为 IIs（发音为 eye-eyes）的身份。每个身份都有一个“身份锚”，您可以记住它以重新连接（身份锚刻意较短）。这些锚不是以任何方式解锁 II 的秘密，但你不应该分享它们。\n您可以创建任意数量的 II。例如，您可以为区块链社交媒体 dapps 创建一个 II，为 DeFi 和 Staking 创建另一个 II，等等。您可以为每个 II 添加任意数量的设备。例如，如果您创建一个用于社交媒体的 II，您可能会添加笔记本电脑的指纹传感器、手机上的 Face ID 以及一个或两个 YubiKey 用于备份（因此，如果您丢失了笔记本电脑和手机，您可以重新连接 II，删除旧设备并添加新设备）。\n当您对区块链上的 dapp 或服务进行身份验证时，它会看到一个专用的假名而不是电话号码，这可以防止您在 dapp 和服务中被跟踪，并保持您的匿名性。\n想象一个世界，您可以：\n 无需电子邮件、用户名或密码即可安全地在线验证自己的身份 - 只需使用您的设备即可登录。 登录互联网服务而不会被跟踪，也不会被科技公司挖掘您的信息。 与您今天使用的几乎任何类型的身份验证系统相比，您可以更方便地进行身份验证。  {{- youtube id=“oxEr8UzGeBo” title=“Demo | Internet Identity: The End of Usernames and Passwords (Dominic Williams \u0026 Joachim Breitner)” -}}\n互联网身份的工作原理 Internet Identity 建立在 WebAuthn 协议之上，并使用安全的加密身份验证，为用户提供了三种身份验证选项：\n 智能手机或笔记本电脑中的内置生物特征验证方法（例如，Face ID、Touch ID 或指纹扫描仪）。 用户通常用于解锁其计算机或手机的密码或 PIN。 插入计算机 USB 端口的安全密钥（例如 YubiKey）。  当您首次通过区块链网址 https://identity.ic0.app 上的交互式网页内容创建互联网身份时，您设备上的安全芯片将生成一个唯一的加密密钥，其公钥将存储在互联网上计算机以及为您生成的身份锚。\nIdentity Anchor 是一个总括身份，您可以在该身份下重新连接到您希望使用的各种设备上的 II。您可以使用与 II 关联的身份锚来注册新设备，这样您就可以在所有设备上无缝使用应用程序。\n仔细记下与您使用的每个 II 相关联的身份锚。如果您丢失了身份锚，您将无法使用 Internet 身份来管理您的设备或访问您的应用程序。此外，在同一身份锚下添加多个身份验证设备以实现冗余至关重要。\nIdentity Anchor 的一个主要优点是它对安全性不敏感。它不会与任何 PIID 绑定，因此是否有人了解身份锚并不重要（受上述问题的影响）。\n有关如何使用 Internet Identity 的详细步骤，请参阅： https://sdk.dfinity.org/docs/ic-identity-guide/auth-how-to.html\nhttps://dfinity.org/faq/internet-identity-and-nns-app-faqs\n用户如何使用 Internet Identity 与 dapp 进行交互？ 当用户首次加载给定容器智能合约的前端时（例如，当使用 dapp 或“开放互联网服务”，这是由代币化治理系统控制的自治 dapp）时，该前端会显示一个按钮供用户使用验证自己，类似于许多人已经熟悉的单点登录 (“SSO”) 服务。\n当用户单击该按钮时，浏览器会打开一个带有 Internet 身份的弹出窗口，允许用户管理密钥和身份。\n使用互联网身份，用户使用他们选择的设备和方法进行身份验证，然后授权访问应用程序。然后，浏览器重定向到canister智能合约前端，可以访问用户选择的II下的canister。 （此机制使用会话密钥和委托机制。容器前端生成会话密钥对并将公钥传输到 Internet 身份。如果用户确认，互联网身份会生成一个委托并将其返回给容器前端。）\n一旦您使用已经概述的三种方法之一在浏览器中验证了您的身份，系统将提示您确认您的注册。要注册您的设备，您将创建一个身份锚。这个身份锚是独一无二的，但它不是秘密，所以你应该把它保存在多个地方。您的浏览器会记住您使用的 II 的身份锚，但如果您在另一台计算机上登录或清除浏览器状态，您将需要它。同样，如果您丢失了身份锚并在所有设备上注销，您将无法使用相关的 II。\n与通过单点登录进行登录相比，身份提供者中的完整身份验证流程发生在用户端，因此私人用户行为的暴露要少得多，大型科技公司跟踪的风险也较小。\n值得注意的是，互联网身份还将为用户登录的每个容器前端提供不同的假名身份，以防止他们被跟踪，从而增强匿名性和隐私性。\n作为一个思想实验，如果 Internet 身份没有为用户登录的每个容器前端提供不同的身份，那么 Internet 身份将允许每个前端在用户的单一主体下登录。如果该用户与不相关的服务交互——例如，社交媒体网络和电子商务网站——这些不相关的公司可以关联用户在这些网站上的行为。在最坏的情况下，社交媒体网络的前端现在可以恶意调用电子商务网站的罐子并冒充用户下订单。\n这就是为什么互联网身份为用户使用某些特定 II 进行交互的每个 dapp 和服务提供不同的假名身份的原因。\n改进的身份验证 当您访问使用身份验证系统的去中心化应用程序 (dapps) 时，互联网身份使您能够安全且匿名地进行身份验证。\n与大多数身份验证服务不同，您的 Internet 身份不需要您设置和管理密码、生成加密安全种子短语或向应用程序或服务提供任何个人识别信息。本质上，在幕后，Chain Key 加密用于验证您与 II 关联的每个设备。现在您可以使用您选择的身份验证方法，例如智能手机的面部识别、您的计算机解锁密码或安全密钥。\n在 https://identity.ic0.app/试一试。有关注册设备的分步指南，请参阅我们的文档。\n请继续关注更多详细介绍 Internet 计算机背后技术的版本。\n",
+  "wordCount" : "8784",
+  "inLanguage": "zh",
+  "datePublished": "2022-04-23T03:39:18+08:00",
+  "dateModified": "2022-04-23T03:39:18+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://fengche.io/posts/317/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "风车 - 专注区块链快速安全有效的入门信息",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://fengche.io" accesskey="h" title="风车 - 专注区块链快速安全有效的入门信息 (Alt + H)">
+                <img src="/fclogo.svg" alt="logo" aria-label="logo" height=" 36px"></a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://fengche.io/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/nav/" title="导航">
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/editors/" title="作者">
+                    <span>作者</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://fengche.io/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://fengche.io">主页</a>&nbsp;»&nbsp;<a href="https://fengche.io/posts/">文章精选</a></div>
+    <h1 class="post-title">
+      了解ICP.06 互联网身份证：匿名区块链认证系统
+    </h1>
+    <div class="post-description">
+      内容简介：<br>
+      [原文链接](https://dfinity.org/howitworks/web-authentication-identity)本文分三部分ICP上的Web身份和身份验证[原文链接](https://medium.com/dfinity/web-authentication-and-identity-on-the-internet-computer-a9bd5754c547)作者：BjörnTackmann，研究团队负责人|DFINITYInternet计算机用更高级和更安全的密码验证方法代...
+    </div>
+    <div class="post-meta"><span title='2022-04-23 03:39:18 +0800 +0800'>四月 23, 2022</span>&nbsp;·&nbsp;阅读耗时 18 分钟&nbsp;·&nbsp;
+<a href="/editors/%e5%be%90%e6%9c%9b%e5%b7%9d">徐望川</a>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#icp-%e4%b8%8a%e7%9a%84-web-%e8%ba%ab%e4%bb%bd%e5%92%8c%e8%ba%ab%e4%bb%bd%e9%aa%8c%e8%af%81" aria-label="ICP 上的 Web 身份和身份验证">ICP 上的 Web 身份和身份验证</a></li>
+                <li>
+                    <a href="#%e9%aa%8c%e8%af%81%e4%ba%92%e8%81%94%e7%bd%91%e8%ba%ab%e4%bb%bd%e4%bb%a3%e7%a0%81%e6%bc%94%e7%bb%83" aria-label="验证互联网身份代码：演练">验证互联网身份代码：演练</a><ul>
+                        
+                <li>
+                    <a href="#%e6%89%be%e5%87%ba%e6%ad%a3%e5%9c%a8%e8%bf%90%e8%a1%8c%e7%9a%84%e5%86%85%e5%ae%b9" aria-label="找出正在运行的内容">找出正在运行的内容</a></li>
+                <li>
+                    <a href="#%e6%89%be%e5%88%b0%e6%ad%a3%e7%a1%ae%e7%9a%84%e6%8f%90%e4%ba%a4" aria-label="找到正确的提交">找到正确的提交</a></li>
+                <li>
+                    <a href="#%e8%8e%b7%e5%8f%96%e6%ba%90%e4%bb%a3%e7%a0%81" aria-label="获取源代码">获取源代码</a></li>
+                <li>
+                    <a href="#%e9%87%8d%e7%8e%b0%e6%9e%84%e5%bb%ba" aria-label="重现构建">重现构建</a></li>
+                <li>
+                    <a href="#%e5%ae%b9%e5%99%a8%e7%9a%84id%e6%98%af%e4%bb%80%e4%b9%88%e5%91%a2" aria-label="容器的ID是什么呢">容器的ID是什么呢</a></li>
+                <li>
+                    <a href="#%e5%85%b6%e4%bb%96%e5%ae%b9%e5%99%a8%e5%91%a2" aria-label="其他容器呢？">其他容器呢？</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%ba%92%e8%81%94%e7%bd%91%e8%ba%ab%e4%bb%bd%e7%94%a8%e6%88%b7%e5%90%8d%e5%92%8c%e5%af%86%e7%a0%81%e7%9a%84%e7%bb%88%e7%bb%93" aria-label="互联网身份：用户名和密码的终结">互联网身份：用户名和密码的终结</a><ul>
+                        
+                <li>
+                    <a href="#%e4%ba%92%e8%81%94%e7%bd%91%e8%ba%ab%e4%bb%bd%e7%9a%84%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86" aria-label="互联网身份的工作原理">互联网身份的工作原理</a></li>
+                <li>
+                    <a href="#%e7%94%a8%e6%88%b7%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8-internet-identity-%e4%b8%8e-dapp-%e8%bf%9b%e8%a1%8c%e4%ba%a4%e4%ba%92" aria-label="用户如何使用 Internet Identity 与 dapp 进行交互？">用户如何使用 Internet Identity 与 dapp 进行交互？</a></li>
+                <li>
+                    <a href="#%e6%94%b9%e8%bf%9b%e7%9a%84%e8%ba%ab%e4%bb%bd%e9%aa%8c%e8%af%81" aria-label="改进的身份验证">改进的身份验证</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content">
+    
+    <pre tabindex="0">
+<code class="hljs diff">以下为赞助内容：<br>
+点击风车邀请链接或使用邀请码开户<br>
+每笔手续费均可免去20%<br>
+<a href="https://accounts.binance.me/zh-CN/register?ref=XVZ8RMFQ">币安注册开户</a> 邀请码：XVZ8RMFQ<br>
+<a href="https://www.ouyicn.kim/join/267411054">OKX注册开户</a> 邀请码：267411054
+</code>
+    </pre>
+    <p><a href="https://dfinity.org/howitworks/web-authentication-identity">原文链接</a></p>
+<p>本文分三部分</p>
+<h2 id="icp-上的-web-身份和身份验证">ICP 上的 Web 身份和身份验证<a hidden class="anchor" aria-hidden="true" href="#icp-上的-web-身份和身份验证">#</a></h2>
+<p><a href="https://medium.com/dfinity/web-authentication-and-identity-on-the-internet-computer-a9bd5754c547">原文链接</a>
+作者：Björn Tackmann，研究团队负责人 | DFINITY<br>
+Internet 计算机用更高级和更安全的密码验证方法代替了用户名和密码。</p>
+<p>了解身份和身份验证在 Internet 计算机环境中的含义，世界上第一个以网络速度运行并且可以无限制地增加容量的区块链网络，我们必须首先考虑当今网络如何使用身份和身份验证。</p>
+<p>当您登录网站时，您的用户名通常是您的电子邮件地址或一串字母和数字，它充当您的唯一标识符，将服务器上的相关数据与您的身份联系起来。您的密码是身份验证的手段。因为，理论上，只有你应该知道你的密码，服务器将您的密码解释为它正在与您通信的证据。但事实证明，密码实际上并不是一个好的远程身份验证机制。</p>
+<p>当您在网站上输入密码时，您的计算机会将密码发送到服务器，并与密码数据库进行核对。不幸的是，黑客可以访问这些密码数据库。在最恶劣的情况下，密码以明文形式存储在服务器上，这不是推荐的安全做法。然而，即使密码被加密，恢复它们也只是黑客愿意投资以获得访问权限的计算和金钱资源的问题。</p>
+<p>ICP 旨在通过跨多个数据中心复制数据和计算来提供安全性，以防止个别计算提供商的恶意行为。复制在保护数据完整性的同时，不能防止信息泄露；在 Internet 计算机上使用密码仍然会遇到与传统 Web 相同的安全问题。因此，对于 Internet 计算机，我们已将密码替换为适当的密码验证。</p>
+<p>{{- youtube id=&ldquo;9eUTcCP_ELM&rdquo; title=&ldquo;Inside the Internet Computer | Identity and Authentication on the Internet Computer&rdquo; -}}</p>
+<p>我们在 Internet 计算机上用于身份验证的主要加密机制是数字签名方案。数字签名是一个非常标准的概念。它们是在 1970 年代后期发明的，至少从 1990 年代中期开始就被广泛使用。</p>
+<p>它们通常被认为由三种算法组成：</p>
+<ul>
+<li>密钥生成，您可以将其视为选择密码的模拟。密钥生成创建一对密钥：</li>
+<li>1）必须保密的私钥，就像密码一样</li>
+<li>2）从私钥派生的公钥，但可以公开。</li>
+<li>签名，它接受消息和私钥并生成签名。当我们使用数字签名进行用户身份验证时，该算法在持有私钥的用户端运行。</li>
+<li>验证，它获取消息、签名和公钥，并验证签名是否与消息和公钥匹配。这里的关键属性是，与检查密码不同，它需要将秘密密码存储在服务器上，这种情况下的签名验证可以仅基于公开信息进行。服务器存储一个公钥列表，每个用户一个，公钥和签名都不必保密。</li>
+</ul>
+<p>互联网计算机上的应用程序是基于通过传递消息进行交互的容器智能合约实现的。更详细地说，交互模型基于请求，这很像远程过程调用。当容器 A 调用容器 B 时，容器 A 指定目标容器（即容器 B）、它所参与调用的函数的名称以及函数的参数。在容器 B 上评估指定函数时，该容器也知道该函数已由容器 A 调用。评估完成后，Canister A 获取函数的返回值作为响应。当用户与容器交互时，应用相同的远程过程调用模型。当用户调用容器时，用户会向目标容器发送请求。该请求还指定了一个带参数的函数，用户获得返回作为响应。在请求变化期间，容器还获知调用它的用户的身份。</p>
+<p><img src="https://img.fengche.io/74d63a94-e288-47f7-b600-75bf6793e911.png" alt=""></p>
+<p>上图是用户发送请求的示意图。中间的浅灰色区域显示了核心请求：目标容器 ID、函数名称、参数以及调用者的身份或主体。较深的灰色区域显示包含身份验证信息、签名和公钥。如左侧所示，调用者的主体是通过从公钥Hash得出的。该技术广泛用于区块链领域，例如比特币或以太坊地址。右侧显示了作为数字签名方案中的消息的请求内容如何通过签名绑定到公钥。当 Internet 计算机收到这样的请求时，它会检查签名在指定的公钥下是否有效，以及公钥和调用者主体之间的关系。</p>
+<p>为了确保消息确实是由消息中指定的调用者发送的，容器不必费心处理这些技术细节。如果一切顺利，互联网计算机将评估容器上的指定功能。如果其中一项检查失败，则简单地丢弃请求。</p>
+<p><img src="https://img.fengche.io/7393c087-9025-443d-b4f5-14ffe1a5da88.png" alt=""></p>
+<p>我想提一些关于我们使用的主体格式的细节。我们从 DER 格式的公钥开始，并使用 SHA-224 对其进行哈希处理，得到一个 28 字节的字符串。我们附加一个字节，仅用于区分从公钥派生的主体与我们在 Internet 计算机中其他地方使用的主体，例如用于容器的主体。这 29 个字节是用户主体的内部二进制表示。在将主体转换为其文本表示时，我们首先添加一个 CRC-32 错误检测代码。然后，我们在 Base32 中对生成的字符串进行编码，最后构建每组 5 个字符，用破折号分隔。选择该格式是为了支持简单的复制粘贴和适当的错误检测，同时仍然允许 ASCII 表示少于 64 个字符以与 Internet 协议（如 DNS）兼容。</p>
+<p><img src="https://img.fengche.io/c2c319d3-bd51-4f91-9d86-ad9827217004.png" alt=""></p>
+<p>到目前为止，我们看到的方案在构造上仍然有点不灵活。它将用户的主体绑定到单个加密密钥。这种限制使用户难以与来自不同设备的容器进行交互，因为这需要在这些设备之间共享相同的加密密钥，从安全角度来看，这既乏味又令人沮丧。相反，我们使用不同加密密钥之间的委托。在上图中，您可以看到从黄色键到橙色键的委托。这样的委托由委托的密钥组成，橙色的密钥；一些附加参数，例如授权范围的到期或限制；和授权密钥的签名，黄色的。</p>
+<p>当使用橙色密钥签署请求时，用户现在可以包含来自黄色密钥的委托，以便使用从黄色密钥派生的身份。代表团的特别强大之处在于它们可以组合。例如，橙色键可以将委托扩展到紫色键。如果从公钥基础设施和 X.509 中所有这些看起来都很熟悉，那绝非巧合——我们只是在使用更轻量级的数据结构。</p>
+<p>委托的一种特定应用与 Web 身份验证有关。 Web 身份验证是万维网联盟 (W3C) 的最新标准，主要针对 Web 应用程序的双因素身份验证。该标准的动机是，如前所述，密码具有严重的安全缺陷。他们经常成为网络犯罪分子的牺牲品，无论是通过网络钓鱼电子邮件和安装在用户设备上的恶意软件，还是在服务被黑客入侵时。</p>
+<p>双重身份验证意味着除了密码之外，登录 Web 应用程序还需要一个额外的安全因素，通常是用户拥有的安全设备。在实践中，这可能是一个安全的 USB 密钥或一个内置在用户终端设备中并通过生物识别激活的安全芯片。安全芯片存储密码密钥。由于加密密钥永远不会离开安全芯片，因此即使用户的计算机或手机感染了恶意软件，它们仍然是安全的。</p>
+<p>当 Web 身份验证作为 Web 应用程序中的第二个因素时，协议流程如下： 用户通过提供用户名和密码发起登录过程后，Web 服务器将生成一个随机挑战并发送给用户的浏览器，然后浏览器将质询发送到安全设备，这需要用户交互才能签署质询。然后将签名的质询发送回服务器，服务器会根据用户注册的公钥验证质询上的签名。这确保了登录 Web 应用程序除了密码之外还需要持有安全设备。</p>
+<p>我们正在建立这样一个事实，即 Web 身份验证是一种使用数字签名进行身份验证的开放标准，并且已经在广泛的设备上得到支持。然而，在将其用于 Internet 计算机时，我们必须克服一些障碍。Web 身份验证采用传统 Web 的面向会话的客户端服务器模型，其中用户在登录应用程序时进行一次身份验证，并在同一会话中发送后续消息。相比之下，Internet 计算机实现了一个模型，其中每个请求都单独进行身份验证。特别是，没有服务器可以生成要由安全设备签名的质询，因为在浏览器和 Internet 计算机之间没有状态会话。然而，回想一下，在典型的 Web 身份验证流程中，安全设备为服务器发送的质询提供数字签名。</p>
+<p>为了使用相同的协议实现请求身份验证，我们使用请求本身作为挑战，并由安全设备对其进行签名，类似于我们的一般请求身份验证方案。我们必须克服的另一个问题是 Web 身份验证需要用户对每个签名进行交互。在互联网计算机服务的典型前端中，单个页面加载可以对应多个请求。由于我们不想要求用户明确确认每个请求，我们使用上述委托机制。当使用 Web 身份验证与容器交互时，我们首先生成一个短期会话密钥。然后，我们使用 Web 身份验证来签署针对该会话密钥的委托，以便单个用户交互可以触发对 Internet 计算机的多个请求。</p>
+<p><img src="https://img.fengche.io/be30437d-5112-4590-90fe-e052280e696a.png" alt=""></p>
+<p>虽然 Web 身份验证非常适合安全地存储加密密钥，但它不仅将这些密钥绑定到设备，还绑定到特定容器。这样做的原因是<a href="https://en.wikipedia.org/wiki/Browser_security">浏览器安全模型</a>，它严格区分运行在同一 Web 浏览器中的不同应用程序可访问的状态的来源。在网络上，你可以认为一个来源大致对应于一个网站。在 Internet 计算机上，每个源对应一个容器。这种严格的状态分离对于安全性至关重要，但它也使诸如密钥备份或支持从多个设备无缝访问相同容器等功能变得乏味，因为所有这些操作都必须为每个容器单独执行。我们通过使用<a href="https://sdk.dfinity.org/docs/ic-identity-guide/what-is-ic-identity.html"> Internet 身份服务</a>来解决此问题，该身份提供程序类似于您在网络上熟悉的“使用 Google 或 Facebook 登录”功能。</p>
+<p>当用户首次加载给定容器的前端时，该前端可以显示“使用 IC 登录”按钮。当用户单击该按钮时，<a href="https://identity.ic0.app/">浏览器会打开一个带有 Internet 身份服务的弹出窗口</a>，这是一个<a href="https://sdk.dfinity.org/docs/ic-identity-guide/auth-how-to.html">允许用户管理密钥和身份的特定应用程序</a>。在那里，用户可以决定是否允许容器前端使用用户的身份。如果用户同意，浏览器会被重定向到容器前端，并且可以以用户的身份访问容器。该机制再次使用会话密钥和委托机制。容器前端生成会话密钥对并将公钥传输到 Internet Identity。如果用户确认，Internet Identity 会生成一个委托，并将其返回给容器前端。作为通过大型技术提供商登录的额外好处，身份提供商中的完整身份验证流程发生在用户端，因此私人用户操作的暴露要少得多，因此跟踪也少得多。<a href="https://dfinity.org/faq/internet-identity-and-nns-app-faqs">（互联网身份服务常见问题解答）</a></p>
+<p>说到用户跟踪，互联网身份将为用户登录的每个容器前端提供不同的身份，这对安全和隐私非常有用。如果不是这样，互联网身份将允许每个前端在用户的单一主体下登录。如果该用户与不相关的服务（例如，留言板和购物网站）进行交互，这些可能会在背后关联用户在这些网站上的行为。更糟糕的是，留言板的前端可以恶意调用购物网站的容器，以用户的名义下单。因此，互联网身份服务为用户登录的每个前端生成不同的身份，前端由其主机名区分。这样，用户在不同服务上的操作就不会那么容易被跟踪。虽然前端仍然能够使用用户的身份调用 Internet 计算机上的任何容器，但只有与执行调用的前端相关联的身份。</p>
+<p>我们最近发布的<a href="https://medium.com/dfinity/introducing-the-internet-computer-interface-specification-850a113a66d9">互联网计算机接口规范</a>中详细说明了上述和互联网身份中使用的机制——我们期待着看到我们的开发者社区还将从中构建什么。</p>
+<h2 id="验证互联网身份代码演练">验证互联网身份代码：演练<a hidden class="anchor" aria-hidden="true" href="#验证互联网身份代码演练">#</a></h2>
+<p><a href="https://medium.com/dfinity/verifying-the-internet-identity-code-a-walkthrough-c1dd7a53f883">原文链接</a>
+作者：高级研究员兼工程师 Joachim Breitner | DFINITY</p>
+<p>确认 ICP 区块链身份验证系统的确按照其所声称之方式运行的分步指南。
+<img src="https://img.fengche.io/0f6d2019-1f47-4f5c-8079-b2582034d182.jpeg" alt=""></p>
+<p>在<a href="https://identity.ic0.app/">互联网计算机</a>上，用户可以使用互联网身份密码认证系统登录各种dapp，如<a href="https://nns.ic0.app/">NNS前端dapp</a>、<a href="https://oc.app/">OpenChat</a>等。在这样做的过程中，用户相信这项服务会妥善保管他们的凭据——但他们可能希望直接确认 Internet Identity 确实没有跟踪他们。</p>
+<p>互联网身份是否真正运行它所声称运行的代码？为了帮助您回答这个问题，我将引导您完成验证这一点的步骤。（当然，以下内容也适用于其他容器，但在这种情况下，我将坚持使用 Internet Identity。）</p>
+<h3 id="找出正在运行的内容">找出正在运行的内容<a hidden class="anchor" aria-hidden="true" href="#找出正在运行的内容">#</a></h3>
+<p>互联网计算机上的智能合约，即<a href="https://medium.com/dfinity/software-canisters-an-evolution-of-smart-contracts-internet-computer-f1f92f1bfffb?source=friends_link&amp;sk=3a7803a6aacb5dc3dcb8a373a5c9a8d4">容器智能合约</a>，是一个<a href="https://webassembly.org/"> WebAssembly</a> 模块。Internet 计算机故意不允许您仅下载任何容器的 Wasm 代码，因为可能有些开发人员希望将其代码保密。但它确实暴露了 Wasm 模块的哈希值。最简单的方法是使用 dfx：</p>
+<p>`$ dfx canister &ndash;no-wallet &ndash;network ic info rdmx6-jaaaa-aaaaa-aaadq-cai</p>
+<p>Controller: r7inp-6aaaa-aaaaa-aaabq-cai</p>
+<p>Module hash: 0xd4af9277f3e8d26fd8cdc7874a9f47b6456587fbb2a64d61b6b6880d144d3c04`</p>
+<p>这里的“控制器”是治理容器的容器 id。这告诉您，互联网身份由网络神经系统 (NNS) 控制，其代码只能通过投票的提案进行更改。这很好；如果控制者只是我，我可以更改互联网身份代码并接管您的所有身份。</p>
+<p>“模块哈希”是已部署的 .wasm 的 SHA-256 哈希。因此，让我们跟随那个踪迹。</p>
+<h3 id="找到正确的提交">找到正确的提交<a hidden class="anchor" aria-hidden="true" href="#找到正确的提交">#</a></h3>
+<p>由于对 Internet 身份的升级是通过向 NNS 提出建议来完成的，因此我们应该在 <a href="https://github.com/ic-association/nns-proposals">https://github.com/ic-association/nns-proposals</a> 存储库中的<a href="https://github.com/ic-association/nns-proposals/tree/main/proposals/network_canister_management/">proposals/network_canister_management</a> 目录中找到对此类建议的描述。
+<img src="https://img.fengche.io/e5df3efe-9eaa-46d6-b78b-0aca03e4874e.png" alt="Github 近期 NNS 提案列表"></p>
+<p>我们必须找到升级 Internet Identity 的最新提案。不幸的是，该文件夹包含许多容器的建议，并且文件命名不是很有帮助。我通常从底部浏览列表并查看第二列，其中包含创建或修改文件最新提交的标题。</p>
+<p>在这种情况下，<a href="https://github.com/ic-association/nns-proposals/blob/main/proposals/network_canister_management/20210527T2203Z.md">倒数第二个</a>是我们关心的：该文件列出了基本原理，概述了更改，最重要的是，说 bd51eab 是我们要升级到的提交。</p>
+<p>该文件还说 wasm 哈希是 d4a&hellip;c04，与我们在上面看到的相符。这很好：看来我们真的找到了升级互联网身份的最年轻的提案，并且提案实际上通过了。</p>
+<p>警告：如果你是偏执狂，不要相信这个文件。没有什么可以阻止提案提出者创建一个指向一个修订的文件，同时在提案中实际包含不同的代码。这就是为什么接下来的步骤对于验证是必要的。</p>
+<h3 id="获取源代码">获取源代码<a hidden class="anchor" aria-hidden="true" href="#获取源代码">#</a></h3>
+<p>现在我们有了修订版，我们可以获取源代码并查看修订版 bd51eab：
+<code>/tmp $ git clone https://github.com/dfinity/internet-identity Klone nach 'internet-identity' ... remote: Enumerating objects: 3959, done. remote: Counting objects: 100% (344/344), done. remote: Compressing objects: 100% (248/248), done. remote: Total 3959 (delta 161), reused 207 (delta 92), pack-reused 3615 Empfange Objekte: 100% (3959/3959), 6.05 MiB | 3.94 MiB/s, Fertig. Löse Unterschiede auf: 100% (2290/2290), Fertig. /tmp $ cd internet-identity/ /tmp/internet-identity $ git checkout bd51eab /tmp/internet-identity $ git log --oneline -n 1 bd51eab (HEAD, tag: mainnet-20210527T2203Z) Registers the seed phrase before showing it (#301)</code>
+在最后一行中，您看到 Internet 身份团队已使用包含提案描述文件名的标记名称标记了该修订。很整齐！</p>
+<h3 id="重现构建">重现构建<a hidden class="anchor" aria-hidden="true" href="#重现构建">#</a></h3>
+<p>README.md 具有以下构建说明：</p>
+<p><img src="https://img.fengche.io/1c802ce0-7550-4ed8-959b-6f6548dbbc61.png" alt=""></p>
+<p>实际上运行第一个命令就足够了，因为它还会打印哈希（我们不需要将 .wasm 从 Docker 容器中复制出来）：</p>
+<p><code>/tmp/internet-identity $ docker build -t internet-identity-service . … Step 26/26 : RUN sha256sum internet_identity.wasm ---&gt; Running in 1a04644b544c d4af9277f3e8d26fd8cdc7874a9f47b6456587fbb2a64d61b6b6880d144d3c04  internet_identity.wasm Removing intermediate container 1a04644b544c ---&gt; bfe6a63a7980 Successfully built bfe6a63a7980 Successfully tagged internet-identity-service:latest</code></p>
+<p>成功！哈希匹配。</p>
+<p>你不相信我吗？自己试试（如果你得到不同的哈希，请告诉我们——也许我被黑了）。如果你没有为 Docker 配置足够的 RAM，这可能会失败； 8GB应该足够了。</p>
+<p>此时，您拥有从您面前的代码到运行在 <a href="https://identity.ic0.app">https://identity.ic0.app/</a> 的 Internet Identity 的信任路径，包括前端代码，您可以开始审核源代码。</p>
+<h3 id="容器的id是什么呢">容器的ID是什么呢<a hidden class="anchor" aria-hidden="true" href="#容器的id是什么呢">#</a></h3>
+<p>如果您仔细观察，您可能已经注意到我们获得了容器 rdmx6-jaaaa-aaaaa-aaadq-cai 的模块，但我们正在访问 <a href="https://identity.ic0.app">https://identity.ic0.app/</a> 上的 Web 应用程序。那么这个联系在哪里呢？</p>
+<p>将来，我希望 Internet 计算机上有某种形式的类似 DNS 的“好主机名注册表”，它存储从好名称到容器 id 的映射，并且您将能够查询“哪个容器服务于 rdmx6- jaaaa-aaaaa-aaadq-cai”以安全的方式（例如使用认证变量）。但是由于我们还没有这个，但仍然希望您能够为 Internet 身份使用一个好听的名称（并且以后不必更改名称，这会让人<a href="https://forum.dfinity.org/t/an-internet-identity-principal-is-tied-to-a-domain-name/4527/2">头疼</a>），我们现在已经硬编码了这个映射.</p>
+<p>此处的相关代码是您的浏览器在访问任何 * .ic0.app URL 时下载的“Certifying Service Worker”。然后，这段代码将拦截对该域名的所有请求，将其映射到查询调用，然后使用经过认证的变量来验证响应。事实上，映射<a href="https://github.com/dfinity/agent-js/blob/6e8c64cf07c7722aafbf52351eb0f19fcb954ff0/apps/sw-cert/src/sw/http_request.ts#L12">在代码中</a>：</p>
+<p><code>const hostnameCanisterIdMap: Record&lt;string, [string, string]&gt; = { 'identity.ic0.app': ['rdmx6-jaaaa-aaaaa-aaadq-cai', 'ic0.app'], 'nns.ic0.app': ['qoctq-giaaa-aaaaa-aaaea-cai', 'ic0.app'], 'dscvr.ic0.app': ['h5aet-waaaa-aaaab-qaamq-cai', 'ic0.page'], };</code></p>
+<h3 id="其他容器呢">其他容器呢？<a hidden class="anchor" aria-hidden="true" href="#其他容器呢">#</a></h3>
+<p>原则上，相同的方法适用于其他容器，无论是 OpenChat、NNS 容器等。但细节会有所不同，因为每个容器开发人员可能有自己的方式：</p>
+<ul>
+<li>传达其容器源的位置和修订版本</li>
+<li>建造容器</li>
+</ul>
+<p>特别是，如果没有可复制的方式来构建容器，这将失败，这就是为什么像 <a href="https://reproducible-builds.org/">https://reproducible-builds.org/</a> 这样的项目通常如此重要的原因。</p>
+<p>如果您想讨论这篇文章，请考虑加入 DFINITY 论坛并在以下位置发表评论：<a href="https://forum.dfinity.org/t/verifying-the-code-of-the-internet-identity-service-a-walk-through/4650">https://forum.dfinity.org/t/verifying-the-code-of-the-internet-identity-service-a-walk-through/4650</a></p>
+<h2 id="互联网身份用户名和密码的终结">互联网身份：用户名和密码的终结<a hidden class="anchor" aria-hidden="true" href="#互联网身份用户名和密码的终结">#</a></h2>
+<p><a href="https://medium.com/dfinity/internet-identity-the-end-of-usernames-and-passwords-ff45e4861bf7">原文链接</a></p>
+<p>Internet Identity 区块链身份验证系统使您能够安全且匿名地登录到 Internet 计算机上的 dapp。</p>
+<p><img src="https://img.fengche.io/6c063c0a-f2e8-45b7-993a-33227ebf8158.jpeg" alt=""></p>
+<p>互联网计算机是世界上第一个真正的互联网规模的公共区块链。与其他区块链不同，它可以处理和存储任意数量的数据。它还托管以网络速度运行的智能合约（区块链软件逻辑），效率比以前高得多。它们能够直接向最终用户提供交互式 Web 内容，使广泛的系统和服务能够以 dapp 的形式完全建立在区块链上，而不依赖于云服务等传统技术。现在终于可以完全在公共区块链上构建和运行超大规模的代币化社交媒体。</p>
+<p>互联网计算机的目的是通过使用托管在网络空间中的智能合约，使几乎所有系统和服务都可以重建和重新构想为安全的 dapp，从而扩展互联网&ndash;它将处理和存储他们的所有数据，而无需传统技术及其服务的增强。这将推动“区块链奇点”，几乎每个系统和服务最终都完全从公共区块链运行。</p>
+<p>为了避免困扰传统网络密码认证的安全问题，互联网计算机区块链引入了一种新的密码认证系统。这个被称为<a href="https://sdk.dfinity.org/docs/ic-identity-guide/what-is-ic-identity.html">互联网身份</a>的新系统非常易于使用，与用于通过网络对区块链进行身份验证的现有系统形成鲜明对比。</p>
+<p>从本质上讲，它允许最终用户使用他们的设备对区块链上的 dapps 进行身份验证，这种方式通过互联网计算机使用的“链密钥”加密技术成为可能。最终用户设备可以是传统的 HSM 设备，例如 YubiKey，也可以是包含 TPM 芯片的移动设备，例如笔记本电脑或手机。</p>
+<p>举例而言，成千上万的人已经在使用笔记本电脑上的指纹传感器或手机上的 FaceID 对完全在互联网计算机上运行的 dapp 进行身份验证。在每种情况下，都提供了出色的可用性，即使公钥加密技术被安全地应用在所涉及设备内部的安全芯片中，用户也不必自己接触密钥材料，并从无缝、低摩擦的体验中受益。</p>
+<p>Internet Identity 正在不断改进，以使其与越来越多的支持称为 <a href="https://www.w3.org/TR/webauthn-2/">WebAuthn</a> 的 Web 标准的设备兼容。如果您的设备较旧，并且您的浏览器不支持适用于 Internet 身份的标准（以便您可以使用例如指纹传感器进行身份验证），然后您可以使用诸如 YubiKey 之类的 HSM 设备来增强它。这也可以很方便。</p>
+<p>例如，您可以购买支持 NFC 的 YubiKey，它允许您通过手机等方式登录，只需用钥匙轻敲即可。幸运的是，消费者设备越来越多地默认包含此类身份验证器。</p>
+<p>互联网身份使用户能够通过他们的设备安全地对区块链上的 dapp 进行身份验证的方式是革命性的。</p>
+<p>您可以直接在 <a href="https://identity.ic0.app/">https://identity.ic0.app/</a> 尝试互联网身份认证配置器（该页面直接来自互联网计算机区块链）。</p>
+<p>这使您可以创建称为 IIs（发音为 eye-eyes）的身份。每个身份都有一个“身份锚”，您可以记住它以重新连接（身份锚刻意较短）。这些锚不是以任何方式解锁 II 的秘密，但你不应该分享它们。</p>
+<p>您可以创建任意数量的 II。例如，您可以为区块链社交媒体 dapps 创建一个 II，为 DeFi 和 Staking 创建另一个 II，等等。您可以为每个 II 添加任意数量的设备。例如，如果您创建一个用于社交媒体的 II，您可能会添加笔记本电脑的指纹传感器、手机上的 Face ID 以及一个或两个 YubiKey 用于备份（因此，如果您丢失了笔记本电脑和手机，您可以重新连接 II，删除旧设备并添加新设备）。</p>
+<p>当您对区块链上的 dapp 或服务进行身份验证时，它会看到一个专用的假名而不是电话号码，这可以防止您在 dapp 和服务中被跟踪，并保持您的匿名性。</p>
+<p>想象一个世界，您可以：</p>
+<ol>
+<li>无需电子邮件、用户名或密码即可安全地在线验证自己的身份 - 只需使用您的设备即可登录。</li>
+<li>登录互联网服务而不会被跟踪，也不会被科技公司挖掘您的信息。</li>
+<li>与您今天使用的几乎任何类型的身份验证系统相比，您可以更方便地进行身份验证。</li>
+</ol>
+<p>{{- youtube id=&ldquo;oxEr8UzGeBo&rdquo; title=&ldquo;Demo | Internet Identity: The End of Usernames and Passwords (Dominic Williams &amp; Joachim Breitner)&rdquo; -}}</p>
+<h3 id="互联网身份的工作原理">互联网身份的工作原理<a hidden class="anchor" aria-hidden="true" href="#互联网身份的工作原理">#</a></h3>
+<p>Internet Identity 建立在 <a href="https://medium.com/dfinity/web-authentication-and-identity-on-the-internet-computer-a9bd5754c547?source=friends_link&amp;sk=211f6274de5b4841c72532666e21ae0e">WebAuthn</a> 协议之上，并使用安全的加密身份验证，为用户提供了三种身份验证选项：</p>
+<ol>
+<li>智能手机或笔记本电脑中的内置生物特征验证方法（例如，Face ID、Touch ID 或指纹扫描仪）。</li>
+<li>用户通常用于解锁其计算机或手机的密码或 PIN。</li>
+<li>插入计算机 USB 端口的安全密钥（例如 YubiKey）。</li>
+</ol>
+<p>当您首次通过区块链网址 <a href="https://identity.ic0.app">https://identity.ic0.app</a> 上的交互式网页内容创建互联网身份时，您设备上的安全芯片将生成一个唯一的加密密钥，其公钥将存储在互联网上计算机以及为您生成的身份锚。</p>
+<p>Identity Anchor 是一个总括身份，您可以在该身份下重新连接到您希望使用的各种设备上的 II。您可以使用与 II 关联的身份锚来注册新设备，这样您就可以在所有设备上无缝使用应用程序。</p>
+<p><strong>仔细记下与您使用的每个 II 相关联的身份锚。如果您丢失了身份锚，您将无法使用 Internet 身份来管理您的设备或访问您的应用程序。此外，在同一身份锚下添加多个身份验证设备以实现冗余至关重要。</strong></p>
+<p>Identity Anchor 的一个主要优点是它对安全性不敏感。它不会与任何 PIID 绑定，因此是否有人了解身份锚并不重要（受上述问题的影响）。</p>
+<p>有关如何使用 Internet Identity 的详细步骤，请参阅：
+<a href="https://sdk.dfinity.org/docs/ic-identity-guide/auth-how-to.html">https://sdk.dfinity.org/docs/ic-identity-guide/auth-how-to.html</a></p>
+<p><a href="https://dfinity.org/faq/internet-identity-and-nns-app-faqs">https://dfinity.org/faq/internet-identity-and-nns-app-faqs</a></p>
+<h3 id="用户如何使用-internet-identity-与-dapp-进行交互">用户如何使用 Internet Identity 与 dapp 进行交互？<a hidden class="anchor" aria-hidden="true" href="#用户如何使用-internet-identity-与-dapp-进行交互">#</a></h3>
+<p>当用户首次加载给定容器智能合约的前端时（例如，当使用 dapp 或“开放互联网服务”，这是由代币化治理系统控制的自治 dapp）时，该前端会显示一个按钮供用户使用验证自己，类似于许多人已经熟悉的单点登录 (“SSO”) 服务。</p>
+<p>当用户单击该按钮时，浏览器会打开一个带有 Internet 身份的弹出窗口，允许用户管理密钥和身份。</p>
+<p><img src="https://img.fengche.io/0625e31d-1e00-42b8-a15d-77879737ede5.png" alt=""></p>
+<p>使用互联网身份，用户使用他们选择的设备和方法进行身份验证，然后授权访问应用程序。然后，浏览器重定向到canister智能合约前端，可以访问用户选择的II下的canister。 （此机制使用会话密钥和委托机制。容器前端生成会话密钥对并将公钥传输到 Internet 身份。如果用户确认，互联网身份会生成一个委托并将其返回给容器前端。）</p>
+<p>一旦您使用已经概述的三种方法之一在浏览器中验证了您的身份，系统将提示您确认您的注册。要注册您的设备，您将创建一个身份锚。这个身份锚是独一无二的，但它不是秘密，所以你应该把它保存在多个地方。您的浏览器会记住您使用的 II 的身份锚，但如果您在另一台计算机上登录或清除浏览器状态，您将需要它。同样，如果您丢失了身份锚并在所有设备上注销，您将无法使用相关的 II。</p>
+<p>与通过单点登录进行登录相比，身份提供者中的完整身份验证流程发生在用户端，因此私人用户行为的暴露要少得多，大型科技公司跟踪的风险也较小。</p>
+<p>值得注意的是，互联网身份还将为用户登录的每个容器前端提供不同的假名身份，以防止他们被跟踪，从而增强匿名性和隐私性。</p>
+<p>作为一个思想实验，如果 Internet 身份没有为用户登录的每个容器前端提供不同的身份，那么 Internet 身份将允许每个前端在用户的单一主体下登录。如果该用户与不相关的服务交互——例如，社交媒体网络和电子商务网站——这些不相关的公司可以关联用户在这些网站上的行为。在最坏的情况下，社交媒体网络的前端现在可以恶意调用电子商务网站的罐子并冒充用户下订单。</p>
+<p>这就是为什么互联网身份为用户使用某些特定 II 进行交互的每个 dapp 和服务提供不同的假名身份的原因。</p>
+<h3 id="改进的身份验证">改进的身份验证<a hidden class="anchor" aria-hidden="true" href="#改进的身份验证">#</a></h3>
+<p>当您访问使用身份验证系统的去中心化应用程序 (dapps) 时，互联网身份使您能够安全且匿名地进行身份验证。</p>
+<p>与大多数身份验证服务不同，您的 Internet 身份不需要您设置和管理密码、生成加密安全种子短语或向应用程序或服务提供任何个人识别信息。本质上，在幕后，Chain Key 加密用于验证您与 II 关联的每个设备。现在您可以使用您选择的身份验证方法，例如智能手机的面部识别、您的计算机解锁密码或安全密钥。</p>
+<p>在 <a href="https://identity.ic0.app">https://identity.ic0.app/</a>试一试。有关注册设备的分步指南，请<a href="https://sdk.dfinity.org/docs/ic-identity-guide/auth-how-to.html">参阅我们的文档</a>。</p>
+<p>请继续关注更多详细介绍 Internet 计算机背后技术的版本。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://fengche.io/tags/icp/">ICP</a></li>
+      <li><a href="https://fengche.io/tags/kyc/">KYC</a></li>
+      <li><a href="https://fengche.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%BA%AB%E4%BB%BD%E8%AF%81/">互联网身份证</a></li>
+      <li><a href="https://fengche.io/tags/%E5%8C%BF%E5%90%8D/">匿名</a></li>
+      <li><a href="https://fengche.io/tags/%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/">身份验证</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://fengche.io/posts/329/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>什么是Solana (SOL) Pay，它如何运作？</span>
+  </a>
+  <a class="next" href="https://fengche.io/posts/316/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>了解ICP.05 分布式生成非交互密钥</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 了解ICP.06 互联网身份证：匿名区块链认证系统 on twitter"
+        href="https://twitter.com/intent/tweet/?text=%e4%ba%86%e8%a7%a3ICP.06%20%e4%ba%92%e8%81%94%e7%bd%91%e8%ba%ab%e4%bb%bd%e8%af%81%ef%bc%9a%e5%8c%bf%e5%90%8d%e5%8c%ba%e5%9d%97%e9%93%be%e8%ae%a4%e8%af%81%e7%b3%bb%e7%bb%9f&amp;url=https%3a%2f%2ffengche.io%2fposts%2f317%2f&amp;hashtags=ICP%2cKYC%2c%e4%ba%92%e8%81%94%e7%bd%91%e8%ba%ab%e4%bb%bd%e8%af%81%2c%e5%8c%bf%e5%90%8d%2c%e8%ba%ab%e4%bb%bd%e9%aa%8c%e8%af%81">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 了解ICP.06 互联网身份证：匿名区块链认证系统 on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2ffengche.io%2fposts%2f317%2f&amp;title=%e4%ba%86%e8%a7%a3ICP.06%20%e4%ba%92%e8%81%94%e7%bd%91%e8%ba%ab%e4%bb%bd%e8%af%81%ef%bc%9a%e5%8c%bf%e5%90%8d%e5%8c%ba%e5%9d%97%e9%93%be%e8%ae%a4%e8%af%81%e7%b3%bb%e7%bb%9f&amp;summary=%e4%ba%86%e8%a7%a3ICP.06%20%e4%ba%92%e8%81%94%e7%bd%91%e8%ba%ab%e4%bb%bd%e8%af%81%ef%bc%9a%e5%8c%bf%e5%90%8d%e5%8c%ba%e5%9d%97%e9%93%be%e8%ae%a4%e8%af%81%e7%b3%bb%e7%bb%9f&amp;source=https%3a%2f%2ffengche.io%2fposts%2f317%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 了解ICP.06 互联网身份证：匿名区块链认证系统 on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2ffengche.io%2fposts%2f317%2f&title=%e4%ba%86%e8%a7%a3ICP.06%20%e4%ba%92%e8%81%94%e7%bd%91%e8%ba%ab%e4%bb%bd%e8%af%81%ef%bc%9a%e5%8c%bf%e5%90%8d%e5%8c%ba%e5%9d%97%e9%93%be%e8%ae%a4%e8%af%81%e7%b3%bb%e7%bb%9f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 了解ICP.06 互联网身份证：匿名区块链认证系统 on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2ffengche.io%2fposts%2f317%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 了解ICP.06 互联网身份证：匿名区块链认证系统 on whatsapp"
+        href="https://api.whatsapp.com/send?text=%e4%ba%86%e8%a7%a3ICP.06%20%e4%ba%92%e8%81%94%e7%bd%91%e8%ba%ab%e4%bb%bd%e8%af%81%ef%bc%9a%e5%8c%bf%e5%90%8d%e5%8c%ba%e5%9d%97%e9%93%be%e8%ae%a4%e8%af%81%e7%b3%bb%e7%bb%9f%20-%20https%3a%2f%2ffengche.io%2fposts%2f317%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 了解ICP.06 互联网身份证：匿名区块链认证系统 on telegram"
+        href="https://telegram.me/share/url?text=%e4%ba%86%e8%a7%a3ICP.06%20%e4%ba%92%e8%81%94%e7%bd%91%e8%ba%ab%e4%bb%bd%e8%af%81%ef%bc%9a%e5%8c%bf%e5%90%8d%e5%8c%ba%e5%9d%97%e9%93%be%e8%ae%a4%e8%af%81%e7%b3%bb%e7%bb%9f&amp;url=https%3a%2f%2ffengche.io%2fposts%2f317%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</span>
+    <span>
+        Powered at 2021
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" fill="currentColor">
+        <path style="fill:#777bc6" d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>互联网身份证 on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%BA%AB%E4%BB%BD%E8%AF%81/</link>
+    <description>Recent content in 互联网身份证 on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 23 Apr 2022 03:39:18 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%BA%AB%E4%BB%BD%E8%AF%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>了解ICP.06 互联网身份证：匿名区块链认证系统</title>
+      <link>https://fengche.io/posts/317/</link>
+      <pubDate>Sat, 23 Apr 2022 03:39:18 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/317/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/web-authentication-identity)本文分三部分ICP上的Web身份和身份验证[原文链接](https://medium.com/dfinity/web-authentication-and-identity-on-the-internet-computer-a9bd5754c547)作者：BjörnTackmann，研究团队负责人|DFINITYInternet计算机用更高级和更安全的密码验证方法代...</description>
+    </item>
+    
+  </channel>
+</rss>

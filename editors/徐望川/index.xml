@@ -80,6 +80,15 @@
     </item>
     
     <item>
+      <title>了解ICP.07 互联网计算机的共识</title>
+      <link>https://fengche.io/posts/318/</link>
+      <pubDate>Sat, 23 Apr 2022 03:40:00 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/318/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/consensus)作者：ManuDrijvers，工程经理（共识）|DFINITY区块链新颖的共识协议的异步完成速度快得令人难以置信——不到两秒就完成了。![](https://img.fengche.io/931cc498-fbab-4e9a-993d-93e355326e70.jpeg)前言安全性和可靠性对于互联网计算机的愿景至关重要——这是世界上第一个网络速度、互联网规模的公共区块链，它使智能合约能够安全地将交互...</description>
+    </item>
+    
+    <item>
       <title>了解ICP.06 互联网身份证：匿名区块链认证系统</title>
       <link>https://fengche.io/posts/317/</link>
       <pubDate>Sat, 23 Apr 2022 03:39:18 +0800</pubDate>

@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>了解ICP.10 区块链协议升级</title>
+      <link>https://fengche.io/posts/321/</link>
+      <pubDate>Sat, 23 Apr 2022 03:41:42 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/321/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/upgrades)作者：StefanKaestle，高级研究员（性能）|DFINITY前言互联网计算机区块链由其算法治理系统网络神经系统(NNS)管理。NNS的众多职责之一是在社区采纳升级提案时，将Internet计算机升级到新的协议版本。对任何区块链进行升级都需要解决去中心化系统的性质带来的几个具有挑战性的问题，包括如何允许对协议进行任意更改、保留所有罐式智能合约的状态、最大限度地减少停机时间以及自主推出升级。{{&amp;lt;y...</description>
+    </item>
+    
+    <item>
       <title>了解ICP.04 网络神经系统NNS：互联网计算机区块链治理</title>
       <link>https://fengche.io/posts/315/</link>
       <pubDate>Sat, 23 Apr 2022 03:34:17 +0800</pubDate>

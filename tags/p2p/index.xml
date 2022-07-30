@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>P2P on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/p2p/</link>
+    <description>Recent content in P2P on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 23 Apr 2022 03:40:32 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/p2p/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>了解ICP.08 对等层 Peer-to-Peer Layer</title>
+      <link>https://fengche.io/posts/319/</link>
+      <pubDate>Sat, 23 Apr 2022 03:40:32 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/319/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/peer-to-peer-p2p)互联网计算机区块链旨在安全、可靠和可扩展。可扩展性是通过在选定节点上运行Canister智能合约的子网区块链提供的。对等层（“P2P”）实现了参与同一子网的节点之间的可靠和安全通信。P2P从用户以及其他节点收集和发布消息，以便最终将它们复制到同一子网区块链中的所有节点。{{&amp;lt;youtubeid=HOQb0lKIy9Ititle=InsidetheInternetComputer|Peer...</description>
+    </item>
+    
+  </channel>
+</rss>

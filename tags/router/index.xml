@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Router on 风车 - 专注区块链快速安全有效的入门信息</title><link>https://fengche.io/tags/router/</link>
+    <description>Recent content in Router on 风车 - 专注区块链快速安全有效的入门信息</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
+    <lastBuildDate>Sat, 23 Apr 2022 03:42:17 +0800</lastBuildDate><atom:link href="https://fengche.io/tags/router/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>了解ICP.11 消息路由</title>
+      <link>https://fengche.io/posts/322/</link>
+      <pubDate>Sat, 23 Apr 2022 03:42:17 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/322/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/message-routing)互联网计算机区块链使用户能够向容器智能合约发送消息，并且容器可以在它们之间发送消息。为了可扩展性，互联网计算机由许多子网区块链组成，互联网计算机的网络神经系统可以根据需要添加新的子网。消息路由组件通过所有Internet计算机的子网区块链将消息路由到容器以及从容器路由消息，并确保可以无缝添加新子网。{{&amp;lt;youtubeid=YexfeByBXlotitle=InsidetheInterne...</description>
+    </item>
+    
+  </channel>
+</rss>

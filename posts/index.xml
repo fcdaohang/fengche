@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Thu, 21 Jul 2022 12:59:29 +0800</lastBuildDate><atom:link href="https://fengche.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jul 2022 15:32:30 +0800</lastBuildDate><atom:link href="https://fengche.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20220730-周末第一炮-大型潜力现场报道</title>
+      <link>https://fengche.io/posts/461/</link>
+      <pubDate>Sat, 30 Jul 2022 15:32:30 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/461/</guid>
+      <description>说明：潜力币投资风险大，要参与的话请一定以推荐价格甚至低于推荐价格买入后续币种项目资料将通过CMC链接发送，不另外啰嗦（赚钱指标才是重点）全部内容仅为信息参考，非投资建议。潜力币名称：[SOL](https://coinmarketcap.com/currencies/solana/)现价：$45推荐理由：#1.公链王者之一，虽然老是宕机#2.超跌&#43;横盘&#43;突破关键阻力#3.出现强力拉盘建议成本：$44.88-$46目标止盈：$82止损设置：$35建议仓位：1000U去哪买？：[Binancce]...</description>
+    </item>
+    
     <item>
       <title>SushiXSwap - 统治所有资产池的跨链 DEX</title>
       <link>https://fengche.io/posts/460/</link>
@@ -842,6 +851,60 @@
       
       <guid>https://fengche.io/posts/329/</guid>
       <description>SolanaPay是一个开放的协议，开发者可以使用标准化的支付标准进行构建和定制。PayPal是支付行业的一个巨大创新。这个由彼得·蒂尔(PeterThiel)、马克斯·列夫齐恩(MaxLevchin)以及埃隆·马斯克(ElonMusk)共同创立的金融创意，利用互联网在客户、企业和更多领域之间实现即时支付，其目标远远超前于创立之时所处的时代。Solana(SOL)Pay被许多人认为是支付领域的下一个创新，在考虑了非同质化代币(NFT)和Web3的情况下让支付变得更加便利。有些人甚至称Solana...</description>
+    </item>
+    
+    <item>
+      <title>了解ICP.13 变量认证</title>
+      <link>https://fengche.io/posts/324/</link>
+      <pubDate>Sat, 23 Apr 2022 03:43:01 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/324/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/response-certification)作者约阿希姆·布莱特纳JoachimBreitner容器智能合约可以将变量声明为已认证。无论何时设置，这些变量都会自动获得由Internet计算机区块链签名的默克尔树证书。这允许任何人使用Internet计算机的公钥验证此类数据的真实性。{{&amp;lt;youtubeid=3mZHEfICi_Utitle=InsidetheInternetComputer|CertifiedVaria...</description>
+    </item>
+    
+    <item>
+      <title>了解ICP.12 容器智能合约生命周期</title>
+      <link>https://fengche.io/posts/323/</link>
+      <pubDate>Sat, 23 Apr 2022 03:42:48 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/323/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/canister-lifecycle)本演讲涵盖了如何在互联网计算机上创建容器智能合约、如何安装和升级他们的软件，以及如何使用周期为容器充值。{{&amp;lt;youtubeid=c5nv6vIG3OQtitle=InsidetheInternetComputer|CanisterLifecycle&amp;gt;}}...</description>
+    </item>
+    
+    <item>
+      <title>了解ICP.11 消息路由</title>
+      <link>https://fengche.io/posts/322/</link>
+      <pubDate>Sat, 23 Apr 2022 03:42:17 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/322/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/message-routing)互联网计算机区块链使用户能够向容器智能合约发送消息，并且容器可以在它们之间发送消息。为了可扩展性，互联网计算机由许多子网区块链组成，互联网计算机的网络神经系统可以根据需要添加新的子网。消息路由组件通过所有Internet计算机的子网区块链将消息路由到容器以及从容器路由消息，并确保可以无缝添加新子网。{{&amp;lt;youtubeid=YexfeByBXlotitle=InsidetheInterne...</description>
+    </item>
+    
+    <item>
+      <title>了解ICP.10 区块链协议升级</title>
+      <link>https://fengche.io/posts/321/</link>
+      <pubDate>Sat, 23 Apr 2022 03:41:42 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/321/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/upgrades)作者：StefanKaestle，高级研究员（性能）|DFINITY前言互联网计算机区块链由其算法治理系统网络神经系统(NNS)管理。NNS的众多职责之一是在社区采纳升级提案时，将Internet计算机升级到新的协议版本。对任何区块链进行升级都需要解决去中心化系统的性质带来的几个具有挑战性的问题，包括如何允许对协议进行任意更改、保留所有罐式智能合约的状态、最大限度地减少停机时间以及自主推出升级。{{&amp;lt;y...</description>
+    </item>
+    
+    <item>
+      <title>了解ICP.09 容灾与恢复</title>
+      <link>https://fengche.io/posts/320/</link>
+      <pubDate>Sat, 23 Apr 2022 03:41:12 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/320/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/resumption)互联网计算机区块链由位于世界各地众多独立数据中心的节点提供支持。这些节点运行互联网计算机协议(ICP)，通过充分复制容器状态和计算来确保容器智能合约的安全性和可靠性。在本次演讲中，解释了协议的部分内容，这些部分使节点能够赶上最后的复制状态，并在它们与网络断开连接后恢复参与区块链。当新节点被添加到互联网计算机的子网区块链之一时，同样的机制也是关键。{{&amp;lt;youtubeid=H7HCqonSMFUtit...</description>
+    </item>
+    
+    <item>
+      <title>了解ICP.08 对等层 Peer-to-Peer Layer</title>
+      <link>https://fengche.io/posts/319/</link>
+      <pubDate>Sat, 23 Apr 2022 03:40:32 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/319/</guid>
+      <description>[原文链接](https://dfinity.org/howitworks/peer-to-peer-p2p)互联网计算机区块链旨在安全、可靠和可扩展。可扩展性是通过在选定节点上运行Canister智能合约的子网区块链提供的。对等层（“P2P”）实现了参与同一子网的节点之间的可靠和安全通信。P2P从用户以及其他节点收集和发布消息，以便最终将它们复制到同一子网区块链中的所有节点。{{&amp;lt;youtubeid=HOQb0lKIy9Ititle=InsidetheInternetComputer|Peer...</description>
     </item>
     
     <item>

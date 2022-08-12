@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Thu, 21 Jul 2022 12:59:29 +0800</lastBuildDate><atom:link href="https://fengche.io/editors/%E5%BE%90%E6%9C%9B%E5%B7%9D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Aug 2022 16:14:04 +0800</lastBuildDate><atom:link href="https://fengche.io/editors/%E5%BE%90%E6%9C%9B%E5%B7%9D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 IOTA 登录的时代即将到来！</title>
+      <link>https://fengche.io/posts/462/</link>
+      <pubDate>Fri, 12 Aug 2022 16:14:04 +0800</pubDate>
+      
+      <guid>https://fengche.io/posts/462/</guid>
+      <description>[原文链接](https://blog.iota.org/login-with-iota-walt-id/)IOTA基金会和walt.id为世界带来无缝登录长文预警IOTA基金会和walt.id正在开发一种保护隐私、基于SSI的登录系统，允许传统(Web2)和去中心化(Web3)应用程序轻松登录用户。用户仍然可以完全控制他们的数据，并且能够自行决定安全地共享信息。IOTA基金会正在开发一种基于自我主权身份(SSI)的隐私保护登录系统，称为LoginWithIOTA，它允许传统(Web2)和去中心...</description>
+    </item>
+    
     <item>
       <title>SushiXSwap - 统治所有资产池的跨链 DEX</title>
       <link>https://fengche.io/posts/460/</link>

@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://fengche.io/posts/468/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/tags/alameda/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/tags/bnb/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/tags/cz/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/tags/ftt/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/tags/ftx/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/tags/sbf/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/tags/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/categories/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/categories/%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/posts/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/editors/%E5%BE%90%E6%9C%9B%E5%B7%9D/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
+    <loc>https://fengche.io/editors/</loc>
+    <lastmod>2022-11-06T16:55:29+08:00</lastmod>
+  </url><url>
     <loc>https://fengche.io/tags/dao/</loc>
     <lastmod>2022-09-20T13:42:37+08:00</lastmod>
   </url><url>
@@ -14,31 +56,10 @@
     <loc>https://fengche.io/tags/v%E7%A5%9E/</loc>
     <lastmod>2022-09-20T13:42:37+08:00</lastmod>
   </url><url>
-    <loc>https://fengche.io/tags/</loc>
-    <lastmod>2022-09-20T13:42:37+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/categories/</loc>
-    <lastmod>2022-09-20T13:42:37+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/</loc>
-    <lastmod>2022-09-20T13:42:37+08:00</lastmod>
-  </url><url>
     <loc>https://fengche.io/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96/</loc>
     <lastmod>2022-09-20T13:42:37+08:00</lastmod>
   </url><url>
-    <loc>https://fengche.io/categories/%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2022-09-20T13:42:37+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/posts/</loc>
-    <lastmod>2022-09-20T13:42:37+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/editors/%E5%BE%90%E6%9C%9B%E5%B7%9D/</loc>
-    <lastmod>2022-09-20T13:42:37+08:00</lastmod>
-  </url><url>
     <loc>https://fengche.io/tags/%E8%87%AA%E6%B2%BB%E7%BB%84%E7%BB%87/</loc>
-    <lastmod>2022-09-20T13:42:37+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/editors/</loc>
     <lastmod>2022-09-20T13:42:37+08:00</lastmod>
   </url><url>
     <loc>https://fengche.io/posts/465/</loc>
@@ -256,9 +277,6 @@
   </url><url>
     <loc>https://fengche.io/posts/453/</loc>
     <lastmod>2022-06-11T12:14:31+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/tags/alameda/</loc>
-    <lastmod>2022-06-10T17:32:16+08:00</lastmod>
   </url><url>
     <loc>https://fengche.io/tags/lido/</loc>
     <lastmod>2022-06-10T17:32:16+08:00</lastmod>
@@ -487,9 +505,6 @@
   </url><url>
     <loc>https://fengche.io/posts/385/</loc>
     <lastmod>2022-05-19T14:19:57+08:00</lastmod>
-  </url><url>
-    <loc>https://fengche.io/tags/bnb/</loc>
-    <lastmod>2022-05-18T09:37:16+08:00</lastmod>
   </url><url>
     <loc>https://fengche.io/tags/luna/</loc>
     <lastmod>2022-05-18T09:37:16+08:00</lastmod>

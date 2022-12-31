@@ -6,7 +6,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©风车 招募内容创作者，联系邮箱：fcdaohang@gmail.com</copyright>
-    <lastBuildDate>Fri, 30 Dec 2022 13:18:45 +0800</lastBuildDate><atom:link href="https://fengche.io/editors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Dec 2022 14:28:36 +0800</lastBuildDate><atom:link href="https://fengche.io/editors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文文</title>
+      <link>https://fengche.io/editors/%E6%96%87%E6%96%87/</link>
+      <pubDate>Sat, 31 Dec 2022 14:28:36 +0800</pubDate>
+      
+      <guid>https://fengche.io/editors/%E6%96%87%E6%96%87/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>徐望川</title>
       <link>https://fengche.io/editors/%E5%BE%90%E6%9C%9B%E5%B7%9D/</link>
@@ -40,15 +49,6 @@
       <pubDate>Mon, 04 Jul 2022 06:14:35 +0800</pubDate>
       
       <guid>https://fengche.io/editors/%E6%B5%AA%E4%BA%BA/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>文文</title>
-      <link>https://fengche.io/editors/%E6%96%87%E6%96%87/</link>
-      <pubDate>Fri, 24 Jun 2022 09:28:29 +0800</pubDate>
-      
-      <guid>https://fengche.io/editors/%E6%96%87%E6%96%87/</guid>
       <description></description>
     </item>
     
